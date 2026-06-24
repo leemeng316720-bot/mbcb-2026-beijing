@@ -1,0 +1,65 @@
+{
+  "brewery_id": "everywhere",
+  "name": {
+    "english": "everywhere",
+    "chinese": "艾微儿"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "加利福尼亚州",
+    "state_en": "California",
+    "city": "Orange",
+    "city_en": "Orange",
+    "address": "1501 W. Orangewood Ave., Orange, CA"
+  },
+  "founded": "2022年8月",
+  "founded_en": "August 2022",
+  "founder": {
+    "founder_1": "Jeremy Grinkey",
+    "founder_1_role": "联合创始人，首席酿酒师，被称为'酸啤耶稣'， trained winemaker",
+    "founder_2": "Daniel Muñoz",
+    "founder_2_role": "联合创始人，市场营销VP，曾领导The Bruery数字业务和会员计划",
+    "founder_3": "Keith Pumilia",
+    "founder_3_role": "联合创始人，创新、桶陈项目和试点酿造负责人",
+    "founder_4": "Stefan Weber",
+    "founder_4_role": "首席酿酒师，Siebel-trained，曾管理The Bruery从12K到20K桶的年产量"
+  },
+  "history": {
+    "origin": "四位创始人在The Bruery、Bruery Terreux和Offshoot Beer Co共事多年，累计超过40年的精酿啤酒经验。在COVID-19疫情早期的艰难日子里，他们决定一起创业。",
+    "jeremy_story": "Jeremy Grinkey是trained winemaker，在加州葡萄酒产区开始职业生涯，2014年加入The Bruery担任Bruery Terreux的生产经理，最终升任所有品牌的生产总监。他被酒友称为'酸啤耶稣'，是技术专家和 charismatic personality，2018年被Good Beer Hunting评为'Signifiers'之一。",
+    "daniel_story": "Daniel Muñoz是洛杉矶本地人，大学毕业后创立并出售了一家教育科技公司，随后进入精品葡萄酒和啤酒分销领域。他创立了Inside the Cellar（早期DTC精酿啤酒平台之一），并领导啤酒科技初创公司Hopsy的营销工作（该公司融资2000万美元，部分被喜力收购）。在The Bruery担任营销负责人期间，将会员计划扩展到年收入超过700万美元。",
+    "keith_story": "Keith Pumilia来自新奥尔良，在Abita Brewing Company开始酿酒生涯，随后进入销售领域。2014年加入The Bruery，在野生发酵、R&D和试点酿造方面扩展技能，最终负责创新、桶陈项目和试点酿造。",
+    "stefan_story": "Stefan Weber是图森本地人，Siebel-trained酿酒师。在Barrio Brewing开始职业生涯，随后加入The Bruery。近十年间从首席酿酒师晋升为生产经理，最终管理所有生产运营， overseeing 20多名生产员工。",
+    "opening": "2022年8月，everywhere在Orange, California的前Gunwhale Ales设施中开业。团队在一个月内完成了拆除、改造和新生产设施的搭建。",
+    "philosophy": "'简约而不简单'——从评分网站可以看出，诞生4年多，平均分高达4.16，大部分都是平易近人的酒款。Jeremy Grinkey形容高分原因：'推动我们前进的因素之一是新鲜度，平易近人的酒会更受大家欢迎，一个月的IPA对我们来说已经太陈旧了。'"
+  },
+  "specialty": {
+    "primary": "浑浊IPA、西海岸IPA、拉格、水果酸啤、桶陈帝国艾尔",
+    "styles": ["Hazy IPA", "West Coast IPA", "Lager", "Fruited Sour", "Barrel-Aged Imperial Ale", "Hard Seltzer", "Spritz", "Slushie"],
+    "philosophy": "平易近人、新鲜至上。3年创造了200多款独特啤酒，目标是建立一个积极的空间，让多元化和热情的社区蓬勃发展。"
+  },
+  "awards": [
+    "2024年GABF一金一银",
+    "2025年GABF一金",
+    "2025年啤酒世界杯浑浊IPA金牌（Shifted Visions Hazy IPA）",
+    "UNTAPPD 2025社区奖10金7银4铜",
+    "2024年GABF年度酒厂和年度酿酒师（1,000-2,000桶类别）"
+  ],
+  "notable_beers": [
+    "Shifted Visions - Hazy IPA，2025年World Beer Cup金牌",
+    "Relax - Hazy IPA 6.8% ABV",
+    "Hazy IPA - 6.8% ABV",
+    "Where The Sky Meets - American IPA 6.4% ABV"
+  ],
+  "sources": [
+    "https://dayonedistro.com/2025/05/15/everywhere-beer/",
+    "https://www.beerandbrewing.com/podcast-episode-205-jeremy-grinkey-of-the-bruery",
+    "https://www.everywherebeer.com/",
+    "https://www.beeradvocate.com/beer/profile/63540/"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，美国加州超新星酒厂"
+  }
+}

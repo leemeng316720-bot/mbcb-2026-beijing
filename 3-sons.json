@@ -1,0 +1,60 @@
+{
+  "brewery_id": "3-sons",
+  "name": {
+    "english": "3 Sons Brewing Co.",
+    "chinese": "3 Sons"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "佛罗里达州",
+    "state_en": "Florida",
+    "city": "Dania Beach",
+    "city_en": "Dania Beach",
+    "address": "1940s仓库改造，靠近Ft. Lauderdale机场，拥有30英尺挑高天花板"
+  },
+  "founded": "2011年开始家酿，2015年12月签租约，2019年正式开业",
+  "founded_en": "Homebrewing began 2011, lease signed December 2015, officially opened 2019",
+  "founder": {
+    "name": "Corey Artanis",
+    "name_zh": "科里·阿尔塔尼斯",
+    "co_founder": "Joe Artanis（父亲）",
+    "co_founder_zh": "乔·阿尔塔尼斯",
+    "name_origin": "酒厂名字来源于Corey的三个儿子：Tristan（10岁）、Alexzander（9岁）、Jaxson（5岁），由Corey的妻子提出"
+  },
+  "history": {
+    "corey_background": "Corey Artanis出生于纽约州Buffalo，高中毕业后参军，驻扎在华盛顿州Ft. Lewis。在那里他开始大量接触精酿啤酒。2000年，他和来自Idaho的室友回家过周末，室友的父亲是一位家酿爱好者，用自制的啤酒搭配 magnificent porterhouse steaks招待他们。Corey第一次意识到'原来啤酒可以在家酿造'。",
+    "florida_move": "2006年，Corey搬到佛罗里达州，加入消防学院，随后完成EMT和急救医师培训。之后他在Joe DiMaggio儿童医院工作了约7年。",
+    "homebrew_beginning": "2011年，Corey在自家厨房开始家酿，最初主要为家庭重大活动酿造——为姐姐的婚礼定制了带标签的啤酒，也为自己的婚礼酿造了啤酒。他的第一款酿造风格是比利时小麦啤。",
+    "bottle_share_club": "约2011年，Corey加入了一个瓶分享俱乐部，俱乐部有两条规则：不能带本地商店能买到的酒，可以带家酿。他带了一款Last Snow的克隆酒，获得了大家的一致好评。",
+    "first_events": "Corey在Tap 42酒吧酿造了他的第一款商业规模啤酒。之后他在St. Petersburg的Brewers' Tasting Room（一个家酿者孵化器）酿造，并带着自己的酒去见Cigar City的人，成功获得了Hunahpu's Day啤酒节的邀请。",
+    "hunahpu_days": "2014年，Corey受邀参加Cigar City著名的Hunahpu's Day啤酒节。2015年，3 Sons赢得了最佳酒厂和最佳啤酒奖。2016年，他们再次获奖，并包揽了最佳啤酒的前两名。这段经历让3 Sons在佛罗里达精酿圈声名鹊起。",
+    "opening_journey": "2015年12月，Corey和父亲Joe签下了Dania Beach一处1940年代仓库的租约。但建设过程充满挑战——'所有可能出错的事情都出错了'。他们通过SBA贷款支持建设，历经三年多才最终开业。父亲Joe是品酒室、酒吧设计和整体布局的 visionary。",
+    "aha_moment": "Corey的'顿悟时刻'是喝到Goose Island原始的Bourbon County Brand Vanilla Stout。'我记得当时想，天哪，这是我喝过最好的啤酒。'这促使他开始酿造自己的桶陈世涛Summation，至今仍在生产。"
+  },
+  "specialty": {
+    "primary": "桶陈世涛、欧洲风格拉格、浑浊IPA",
+    "styles": ["Barrel-Aged Stout", "Imperial Stout", "Hazy IPA", "Lager", "Pale Ale", "Coffee Beer"],
+    "philosophy": "为非常规口味酿造非常规艾尔（unconventional ales for unconventional palates）"
+  },
+  "awards": [
+    "全球百大精酿厂牌",
+    "Cigar City Hunahpu's Day 2015最佳酒厂、最佳啤酒",
+    "Cigar City Hunahpu's Day 2016最佳酒厂、最佳啤酒（包揽前两名）"
+  ],
+  "notable_beers": [
+    "Summation - 桶陈世涛，灵感来自Goose Island Bourbon County Vanilla Stout，加入咖啡",
+    "Dopealicious IPA - 浑浊IPA，干投Citra和Mosaic",
+    "Boysen Tha Hood - 博伊森莓增味啤酒"
+  ],
+  "sources": [
+    "https://www.beerandbrewing.com/breakout-brewer-3-sons",
+    "https://thewhetpalette.com/2020/09/17/nomad-no-more-a-home-for-3-sons-brewing-co-part-1/",
+    "https://floridabeerblog.wordpress.com/2015/08/24/interview-corey-artanis-3-sons-brewing/",
+    "https://www.sun-sentinel.com/2019/03/26/how-did-3-sons-brewing-in-dania-beach-become-south-floridas-hottest-new-brewery/"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "全球百大精酿厂牌"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "brewery_id": "hill-farmstead",
+  "name": {
+    "english": "Hill Farmstead",
+    "chinese": "农舍山"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "佛蒙特州",
+    "state_en": "Vermont",
+    "city": "Greensboro Bend",
+    "address": "403 Hill Rd, Greensboro Bend, VT 05841"
+  },
+  "founded": "2010年3月31日",
+  "founded_en": "March 31, 2010",
+  "founder": {
+    "name": "Shaun E. Hill",
+    "name_zh": "肖恩·E·希尔",
+    "background": "Haverford College哲学专业毕业，高中时期因科学课项目开始家酿啤酒"
+  },
+  "history": {
+    "family_legacy": "Hill家族在佛蒙特州东北王国的历史跨越8代人，可追溯至1791年Peleg Hill Sr.和Peleg Hill Jr.抵达Greensboro。家族参与创建了Greensboro和North Greensboro，修建了当地第一条道路、磨坊，并于1809年开设了第一家酒馆——由Aaron Hill经营。这家酒馆的招牌直接启发了现代Hill Farmstead Brewery的logo设计。",
+    "founder_journey": "Shaun Hill从小对发酵过程着迷，15岁时以发酵为主题完成高中科学课项目，制作了第一杯家酿啤酒。大学期间在Haverford College学习哲学，这为他日后严谨、有意识的酿酒工作奠定了独特基础。毕业后在佛蒙特州几家早期小型酒厂工作，随后前往丹麦哥本哈根的Nørrebro Bryghus，在传奇酿酒师Anders Kissmeyer指导下精进技艺，期间赢得了多枚World Beer Cup奖牌。2009年11月从丹麦返回，2010年3月30日在祖父Edward的农用棚屋里，用从The Alchemist和Trout River获得的旧设备拼凑的酿酒系统，酿造了第一批次啤酒'Edward'。",
+    "land_history": "酒厂所在的土地220多年来一直是Hill家族的祖产，Shaun Hill是第7代持续使用这片土地的家庭成员。土地长期作为奶牛场和农作物农场使用，至今仍在为Tom Hill的奶牛生产饲料干草。"
+  },
+  "specialty": {
+    "primary": "农舍艾尔/Farmstead Ale（已注册商标）",
+    "styles": ["IPA", "Pale Ale", "Saison", "Stout", "Porter", "Pilsner", "Barleywine", "Smoked Beer", "Lager"],
+    "philosophy": "专注风土，使用家族井水酿造，尊重当地农场和手工生产者"
+  },
+  "awards": [
+    "RateBeer 2012年全球最佳酒厂",
+    "RateBeer 2014-2020年连续六年蝉联全球最佳酒厂榜首",
+    "Untappd 2025社区奖美国地区38金15银20铜，美国第三",
+    "Untappd农舍艾尔风格实时排行榜Top50中占32席",
+    "啤酒媒体HopCulture评选为21家最具标志性的美国啤酒厂之一"
+  ],
+  "notable_beers": ["Edward", "Anna", "Walden", "George", "Song of Spring", "James"],
+  "sources": [
+    "https://hillfarmstead.com/our-story/",
+    "https://www.beerandbrewing.com/podcast-episode-414-shaun-hill",
+    "https://www.pastemagazine.com/drink/sitting-down-with-shaun-hill-of-hill-farmstead"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "专注风土的朝圣级酒厂，美国标志性啤酒厂之一"
+  }
+}

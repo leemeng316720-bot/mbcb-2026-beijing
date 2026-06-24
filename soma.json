@@ -1,0 +1,62 @@
+{
+  "brewery_id": "soma",
+  "name": {
+    "english": "SOMA",
+    "chinese": "SOMA"
+  },
+  "location": {
+    "country": "西班牙",
+    "country_en": "Spain",
+    "region": "加泰罗尼亚",
+    "region_en": "Catalonia",
+    "city": "Cornellà del Terri (Girona)",
+    "city_en": "Cornellà del Terri, Girona"
+  },
+  "founded": "2012年（家酿起步），2016年正式商业化",
+  "founded_en": "Homebrewing began 2012, officially founded 2016",
+  "founder": {
+    "name": "Ramón Prats",
+    "name_zh": "拉蒙·普拉茨",
+    "background": "原本是葡萄酒爱好者，在故乡Banyoles尝到一杯风味惊艳的IPA后踏上自酿之路"
+  },
+  "history": {
+    "origin": "Ramón Prats原本是葡萄酒爱好者，在故乡Banyoles尝到一杯风味惊艳的IPA后，决定踏上自酿之路。他从50升小型设备起步，慢慢积累口碑。",
+    "turning_point": "一次偶然的100升订单（为一场派对酿造，但派对取消），Ramón决定把啤酒带到酒吧售卖。这次偶然让他获得了酒吧的长期合作机会，顺利从家酿爱好者转型为职业酿酒师。",
+    "philosophy": "酒厂风格简约纯粹，以极致打造浑浊IPA风格为核心，追寻凸显饱满浓郁的热带果香。每款啤酒都是限量生产，每周尝试不同的配方和酒花组合，持续学习和实验。",
+    "growth": "自2016年酿造第一款IPA以来，SOMA专注于生产最高品质的啤酒。凭借稳定出众的酒质与专注深耕的态度，在短短数年间迅速崛起，成为西班牙浑浊IPA领域的标杆厂牌，收获全球精酿爱好者的认可。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA / NEIPA / Imperial IPA",
+    "styles": ["NEIPA", "Imperial IPA", "IPA", "Pilsner"],
+    "philosophy": "追求完美的啤酒，通过限量生产不断实验不同配方和酒花组合"
+  },
+  "awards": [
+    "西班牙UNTAPPD评分TOP1酒厂",
+    "UNTAPPD 2024社区奖11枚奖牌",
+    "UNTAPPD 2025社区奖2金3银4铜",
+    "Hop Culture评为2025年最值得关注的酒厂之一"
+  ],
+  "notable_beers": [
+    "Combo - 固定酒款之一",
+    "Pyramids - 固定酒款之一",
+    "Eazy IPA - NEIPA 5% ABV, 69 IBU, Mosaic/Citra/Azacca/Azacca Cryo",
+    "Boost - Imperial IPA 8% ABV, Motueka Cryo/Nectaron/Riwaka",
+    "Fever - NEIPA 6% ABV, Citra",
+    "Belly Full - Imperial IPA 8% ABV",
+    "Gumbo - Imperial IPA 8% ABV, Untappd 4.32",
+    "WUPHF - Imperial IPA 8% ABV, Untappd 4.27",
+    "Scooby Snax - Imperial IPA 8% ABV, Untappd 4.25",
+    "Type R - TIPA 10% ABV, Mega Motueka/Nelson/Nectaron",
+    "Boss Mode - TIPA 10% ABV, Riwaka/Citra/Citra Cryo"
+  ],
+  "sources": [
+    "https://beerbay.es/shop/soma/",
+    "https://www.beertasting.com/en/brewery/soma-beer",
+    "https://beerfromspain.com/meet-our-beer/soma-beer/",
+    "https://birrapedia.com/soma-eazy-ipa/"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，西班牙UNTAPPD评分TOP1酒厂"
+  }
+}

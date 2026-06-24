@@ -1,0 +1,65 @@
+{
+  "brewery_id": "warpigs",
+  "name": {
+    "english": "Warpigs",
+    "chinese": "Warpigs"
+  },
+  "location": {
+    "country": "丹麦",
+    "country_en": "Denmark",
+    "city": "哥本哈根",
+    "city_en": "Copenhagen",
+    "district": "Kødbyen（肉库区）",
+    "district_en": "Meatpacking District",
+    "address": "White Meat District, Kødbyen, Copenhagen"
+  },
+  "founded": "2015年4月10日",
+  "founded_en": "April 10, 2015",
+  "founder": {
+    "partner_1": "Mikkeller",
+    "partner_1_desc": "丹麦传奇吉普赛酿酒师Mikkel Borg Bjergsø创立，世界上最著名的吉普赛酿酒商",
+    "partner_2": "3 Floyds Brewing Company",
+    "partner_2_desc": "美国印第安纳州Munster的先锋酒厂，以重金属文化和酒花啤酒闻名",
+    "head_brewer": "Kyle Wolak",
+    "head_brewer_desc": "曾在3 Floyds工作5年多，2014年底移居哥本哈根担任Warpigs首席酿酒师"
+  },
+  "history": {
+    "partnership": "Warpigs是Mikkeller和3 Floyds的合资企业。Mikkeller由前高中科学老师Mikkel Borg Bjergsø于2006年创立，是世界上最著名的吉普赛酿酒商。3 Floyds是美国印第安纳州Munster的先锋酒厂，以重金属文化和酒花啤酒闻名。",
+    "location_history": "Warpigs位于哥本哈根历史悠久的肉库区Kødbyen（丹麦语意为'肉城'）。这个区域在20世纪30年代建成，曾是欧洲屠夫密度最高的地区。2005年，当地议会决定效仿纽约肉库区重新开发这个区域，如今已成为哥本哈根最时尚的娱乐区之一。",
+    "building": "Warpigs坐落在一座 former butchery（前屠宰场）中。由于历史建筑保护法规，内部几乎不能改动——白色瓷砖墙壁、天花板上的肉钩轨道都保留了下来。White Meat District占地12英亩，被描述为'功能主义建筑的巅峰'。",
+    "brewing": "首席酿酒师Kyle Wolak在3 Floyds工作5年多后，于2014年底移居哥本哈根。助理酿酒师Lan-xin Foo来自Mikkeller试点酒厂。10百升（约8.5桶）BrauKon系统被Wolak形容为'哈雷戴维森轻便摩托车'。",
+    "water": "Warpigs的水源经过反渗透系统处理，去除所有矿物质，然后重建为与密歇根湖相同的水质——完美复制了3 Floyds使用的水。",
+    "bbq": "Warpigs拥有两台烟熏炉（300公斤和750公斤），是欧洲最大的烟熏作业。每天可慢火烟熏超过两吨肉类。",
+    "white_labs": "Warpigs还设有White Labs（酵母公司）的第一个美国以外前哨站。Troels Prahl领导研发团队，使用全谷物酿造麦汁，每周在Warpigs酿酒设备上酿造两次。",
+    "philosophy": "Mikkel的愿景是'创造欧洲最好的酒花啤酒，让人们可以从服务罐中直接获得新鲜的啤酒'。Warpigs是我们的游乐场，我可以做在生产酒厂中难以实现的事情，有3 Floyds作为合作伙伴让一切更棒。"
+  },
+  "specialty": {
+    "primary": "美式酒花艾尔、IPA、德克萨斯烧烤",
+    "styles": ["IPA", "American Pale Ale", "Saison", "Berliner Weisse", "Belgian Strong Ale", "Braggot"],
+    "philosophy": "美式-丹麦风格酿造，酒花导向，实验性强。20多个月内酿造了各种奇特酒款——从Sloe Berry Braggot到黑米赛松，再到甘草管IPA。"
+  },
+  "awards": [
+    "2024年十大最佳国际酒厂",
+    "Mikkeller和3 Floyds的强强联合"
+  ],
+  "notable_beers": [
+    "Lazurite - 旗舰IPA，明亮但苦味明显，酒花侵略性强，酵母特征让人联想到Zombie Dust或Alpha King",
+    "Sloe Berry Braggot - 实验酒款",
+    "Berliner Weisse with sea buckthorn - 实验酸啤",
+    "Saison with smoked hay - 实验赛松",
+    "Saison with black rice - 实验赛松",
+    "Riesling-grape-juice-infused Belgian Strong Ale - 实验烈性艾尔",
+    "Licorice pipe IPA - 与瑞典独立乐队Bob Hund合酿"
+  ],
+  "sources": [
+    "https://www.goodbeerhunting.com/blog/2017/3/21/just-like-witches-warpigs-brewpub-in-copenhagen-denmark",
+    "https://www.visitcopenhagen.com/copenhagen/planning/warpigs-gdk1004612",
+    "https://www.brewbound.com/news/3-floyds-mikkeller-open-warpigs-april/",
+    "https://www.thebeerprofessor.com/?p=3827",
+    "https://www.chicagotribune.com/2017/06/04/three-floyds-launching-warpigs-beer-in-chicago-with-danish-brewer-mikkeller/"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "2024十大最佳国际酒厂，Mikkeller与3 Floyds合营"
+  }
+}

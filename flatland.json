@@ -1,0 +1,64 @@
+{
+  "brewery_id": "flatland",
+  "name": {
+    "english": "Flatland Brewing Company",
+    "chinese": "Flatland"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "加利福尼亚州",
+    "state_en": "California",
+    "city": "Elk Grove",
+    "city_en": "Elk Grove",
+    "address": "9183 Survey Rd. #104, Elk Grove, CA 95624"
+  },
+  "founded": "2016年1月",
+  "founded_en": "January 2016",
+  "founder": {
+    "name": "Andrew and Michelle Mohsenzadegan",
+    "name_zh": "安德鲁和米歇尔·莫森扎德甘",
+    "background": "夫妻团队，Andrew是首席酿酒师，从家酿爱好者起步"
+  },
+  "history": {
+    "origin": "Flatland Brewing Company由Andrew和Michelle Mohsenzadegan夫妇于2016年1月创立。Andrew从家酿爱好者起步，怀揣一个大梦想和极少的预算。",
+    "early_days": "酒厂最初只有1桶（1-barrel）的酿酒系统和一个小型品酒室。凭借对啤酒的热情和社区的支撑，迅速发展到3桶系统。",
+    "expansion": "2020年，Flatland升级到10桶官方酿酒系统，年产能达到2000桶。除了不锈钢发酵设备外，酒厂还建立了酸啤项目，拥有24个专用桶用于酸啤陈酿。",
+    "community": "Elk Grove市政府通过新创立的Brewery & Winery Incentive & Assistance Program向Flatland提供了5000美元创业资助，帮助这家小型酒厂起步。",
+    "philosophy": "'Small batch, huge impact. Be social, drink local.' 酒厂以创新和创意驱动酸啤项目，这是Andrew作为首席酿酒师的骄傲和乐趣。品酒室欢迎朋友、家人、宠物和精酿啤酒爱好者聚集。"
+  },
+  "specialty": {
+    "primary": "皮尔森、水果啤酒、酸啤、西海岸IPA",
+    "styles": ["Pilsner", "Blonde Ale", "Fruited Sour", "West Coast IPA", "Porter", "Stout"],
+    "philosophy": "小批量，大影响。热爱使用当地水果和实验性原料，向土地致敬。"
+  },
+  "awards": [
+    "2017年加州州展最佳展示奖（Best in Show）- Pilsnerish Blonde Ale",
+    "2022年GABF金奖",
+    "San Diego国际啤酒节金奖和第二佳展示奖"
+  ],
+  "notable_beers": [
+    "Pilsnerish Blonde Ale - 2017年加州州展Best in Show金奖，Andrew的最爱。'它是一扇玻璃窗，不隐藏任何东西，麦芽轮廓非常柔和，酒花投放非常精致。'",
+    "Weird Al Dankovich - 特色酒款",
+    "Dank Clouds - West Coast IPA 6.71% ABV",
+    "Departure - Russian Imperial Stout 9.0% ABV",
+    "Goosed - Double/Imperial IPA 8.0% ABV",
+    "Hop Hype - American IPA 7.5% ABV",
+    "Hop Loss - American Pale Ale 5.0% ABV",
+    "NocturnALE Porter - 6.0% ABV",
+    "Pink is Still the New Black - Lager 5.5% ABV",
+    "Post Hop - Double IPA 8.2% ABV",
+    "Spring Side - American Pale Ale 5.0% ABV"
+  ],
+  "sources": [
+    "https://www.exploreelkgrove.com/directory/flatland-brewing-company/",
+    "https://flatlandbrewingco.com/new-page",
+    "https://www.brewbound.com/breweries/flatland-brewing-company",
+    "https://elkgrovetribune.com/flatland-brewery-wins-small-business-grant/",
+    "https://ediblesacramento.com/editorial/drinks-2018/drinks18-area-craft-brewers/"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "美国宝藏级小众酒厂"
+  }
+}

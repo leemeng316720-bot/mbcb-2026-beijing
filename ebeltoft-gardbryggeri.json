@@ -1,0 +1,52 @@
+{
+  "brewery_id": "ebeltoft-gardbryggeri",
+  "name": {
+    "english": "Ebeltoft Gårdbryggeri",
+    "chinese": "Ebeltoft Gårdbryggeri"
+  },
+  "location": {
+    "country": "丹麦",
+    "country_en": "Denmark",
+    "region": "日德兰半岛东部",
+    "region_en": "East Jutland",
+    "city": "Ebeltoft",
+    "city_en": "Ebeltoft",
+    "setting": "Mols Bjerge National Park内，乡村农场环境"
+  },
+  "founded": "具体年份不详，家族经营的农场酒厂",
+  "founded_en": "Family-owned farm brewery",
+  "founder": {
+    "description": "家族经营的农场酒厂，位于丹麦最美小镇Ebeltoft",
+    "background": "Ebeltoft是丹麦13世纪建立的沿海小镇，以保存完好的16世纪木制建筑和造船贸易历史闻名。酒厂坐落在这个历史悠久的小镇附近的农场中。"
+  },
+  "history": {
+    "town_history": "Ebeltoft是丹麦一个迷人的沿海小镇，始建于13世纪，17世纪成为造船和贸易中心。小镇以保存完好的16世纪木制建筑、鹅卵石街道和Ebeltoft玻璃博物馆闻名。每年举办'Ebeltoft Festival'庆祝音乐、艺术和当地手工艺。",
+    "brewery_setting": "Ebeltoft Gårdbryggeri beautifully situated in the heart of Mols Bjerge National Park。酒厂坐落在一个历史悠久的农舍中，周围是起伏的乡村和Mols Bjerge国家公园的自然美景。",
+    "philosophy": "家族经营的酒厂，致力于质量、创新和可持续发展。使用当地和有机原料，尽可能减少环境足迹。包装采用回收和环保解决方案。",
+    "taproom": "现代品酒室和咖啡馆提供放松的环境，可欣赏Jernhatten和Ebeltoft Vig的景观。酒厂提供导览，让游客了解酿造过程和酒厂的历史价值观。",
+    "events": "酒厂全年举办各种活动，如品鉴会、现场音乐和与当地供应商合作的美食体验。"
+  },
+  "specialty": {
+    "primary": "IPA、Pale Ale、Stout、Porter、手工苏打",
+    "styles": ["IPA", "Pale Ale", "Stout", "Porter", "Pilsner", "Handcrafted Soda"],
+    "philosophy": "小批量手工酿造，使用天然原料，不使用人工添加剂。注重展现自然风味。"
+  },
+  "awards": [
+    "丹麦领先的手工饮料生产商之一",
+    "以质量和创新在丹麦精酿界建立声誉"
+  ],
+  "notable_beers": [
+    "各类IPA和Pale Ale",
+    "Stout和Porter",
+    "获奖的手工苏打（使用新鲜水果和浆果制作，深受儿童和成人喜爱）"
+  ],
+  "sources": [
+    "https://grenaastrandcamping.dk/en/aktiviteter-udenfor/ebeltoft-farm-brewery/",
+    "https://evendo.com/locations/denmark/mols-bjerge-national-park/bar/ebeltoft-gardbryggeri",
+    "https://www.takeyourbackpack.com/backpacking-in-denmark/visit-ebeltoft/"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "丹麦最美小镇酒厂"
+  }
+}

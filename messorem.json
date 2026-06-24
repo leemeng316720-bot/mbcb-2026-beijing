@@ -1,0 +1,57 @@
+{
+  "brewery_id": "messorem",
+  "name": {
+    "english": "Messorem Bracitorium",
+    "chinese": "Messorem"
+  },
+  "location": {
+    "country": "加拿大",
+    "country_en": "Canada",
+    "state": "魁北克省",
+    "state_en": "Quebec",
+    "city": "蒙特利尔",
+    "city_en": "Montreal",
+    "district": "Saint-Henri工业区，Lachine运河附近",
+    "district_en": "Saint-Henri, near Lachine Canal"
+  },
+  "founded": "2019年",
+  "founded_en": "2019",
+  "founder": {
+    "founder_1": "Marc-André Filion",
+    "founder_1_role": "财务与设计专长",
+    "founder_2": "Sébastien Chaput",
+    "founder_2_role": "酿酒专长",
+    "founder_3": "Vincent Ménard",
+    "founder_3_role": "技术酿酒师，拥有酿酒学位"
+  },
+  "history": {
+    "name_origin": "Messorem Bracitorium来自拉丁语——'Messorem'意为'收割者'、'收割人'，'Bracitorium'意为'酒厂'。合起来就是'死神的酒厂'或'收割者的酒厂'。",
+    "founders_meeting": "三位创始人在2000年代初蒙特利尔的地下金属音乐场景中相识。三人都是啤酒爱好者，各自拥有不同的专长：Vincent Ménard拥有酿酒学位，曾在魁北克极受欢迎的酒厂Auval实习，并在Les Trois Mousquetaires拥有专业酿酒经验；Marc-André Filion和Sébastien Chaput则分别带来财务和酿酒方面的专长。",
+    "philosophy": "对他们来说，Messorem Bracitorium是连接爱好（啤酒）与日常工作的桥梁，是与朋友一起做的事。酒厂严格按照标准酿造，对啤酒的口味、口感和外观都有非常精确的要求。",
+    "taproom": "品酒室位于工业区，拥有高挑天花板、开放式酿酒设施景观和宽敞的露台，营造出真实的工业氛围。酒单变化频繁，通常有30多种不同啤酒在售，从经典皮尔森到复杂的大麦酒风格。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA、酸啤、桶陈实验酒款",
+    "styles": ["Hazy IPA", "Hazy TIPA", "Sour Beer", "Wild Ale", "Barrel-Aged Beer", "Helles Lager", "Stout", "Barleywine"],
+    "philosophy": "在甜与酸、饱满与易饮之间寻找大胆的平衡"
+  },
+  "awards": [
+    "Untappd评分4.2",
+    "被北美精酿界誉为加拿大最出色的酒花导向酒厂之一"
+  ],
+  "notable_beers": [
+    "Triple Statim Finis - 浑浊三倍IPA，使用Citra、Mosaic、Galaxy、Ella酒花",
+    "Écoulement Des Vives (Flow of Lives) - 特色干投野菌艾尔，混合foeder啤酒和桶陈野菌艾尔，Mosaic干投",
+    "Vivre Le Jour (Live the Day) - 特色桶陈世涛，混合两款在Willet波本桶中陈酿32个月和34个月的世涛，加入巴西坚果和巴西香草"
+  ],
+  "sources": [
+    "https://thewhalecollective.com/events/messorem-tap-feature/",
+    "https://www.tasteatlas.com/best-rated-beverages-in-quebec",
+    "https://untappd.com/MessoremBracitorium/collaborations",
+    "https://www.beerandbrewing.com/podcasts"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "加拿大第一浑浊IPA酒厂"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "brewery_id": "moksa",
+  "name": {
+    "english": "Moksa",
+    "chinese": "蒙克萨"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "加利福尼亚州",
+    "state_en": "California",
+    "city": "Rocklin（萨克拉门托地区）",
+    "city_en": "Rocklin",
+    "address": "5860 Pacific St., Rocklin, CA"
+  },
+  "founded": "2017年成立，2018年2月3日正式开业",
+  "founded_en": "Founded 2017, officially opened February 3, 2018",
+  "founder": {
+    "head_brewer": "Derek Gallanosa",
+    "head_brewer_zh": "德里克·加拉诺萨",
+    "co_founder_brewer": "Cory Meyer",
+    "co_founder_brewer_zh": "科里·迈耶",
+    "owner": "Nu Boonkham",
+    "owner_zh": "努·布恩卡姆"
+  },
+  "history": {
+    "name_origin": "Moksa（也写作Moksha）是梵语，意指各种形式的解脱、解放与释放。这是酒厂的mantra（真谛），也是将酒厂命名为Moksa的全部缘由。酒厂持续致力于在啤酒中创造一门艺术，使其摆脱经典啤酒风格与传统酿酒哲学的束缚，另辟蹊径，开拓前行。",
+    "derek_story": "Derek Gallanosa此前是San Diego知名酒厂Abnormal Beer Co.的首位员工和首席酿酒师。在Abnormal的短短两年间，他让这家原本默默无闻的酒厂变成了排队抢购的热门目的地。2017年底，当消息传出Derek将离开Abnormal加入Moksa时，震惊了整个精酿啤酒圈。2017年12月27日，50度的晴朗天气下，Derek戴着Moksa帽子来到酒厂，与合伙人Cory Meyer一起开启了Moksa的首个酿酒日。",
+    "cory_story": "Cory Meyer此前是Sacramento地区New Glory Craft Brewery的首席酿酒师，以酸啤酿造见长。Nu Boonkham评价说：'Cory非常严谨，Derek极具创新精神。这就像在加州北部组建一支梦之队。'",
+    "opening": "Moksa Brewing Company于2018年2月3日正式开业，提供3000平方英尺的品酒室。首批酒单包括8款啤酒：皮尔森、淡色艾尔、IPA和世涛等。",
+    "team_dynamic": "Derek主要负责酒花啤酒和桶陈世涛，Cory负责酸啤方向。Nu Boonkham表示：'Derek将是我们的领袖，我对他全力以赴。'"
+  },
+  "specialty": {
+    "primary": "桶陈帝国世涛、浑浊IPA、酸啤",
+    "styles": ["Imperial Stout", "Hazy IPA", "Hazy TIPA", "Sour Blonde", "Pilsner", "West Coast IPA", "Pastry Stout"],
+    "philosophy": "摆脱经典啤酒风格与传统酿酒哲学的束缚，在啤酒中创造艺术"
+  },
+  "awards": [
+    "Untappd双倍/帝国甜品世涛全球TOP50榜单上榜6款",
+    "Untappd 2025社区奖美国地区9金4银6铜"
+  ],
+  "notable_beers": [
+    "Moksa FIVE - 帝国世涛，在27年陈Hennessy XXO Hors d'Age桶中陈酿17个月",
+    "Moksa 6 - 双麦帝国世涛，在Bernheim小麦桶中陈酿17个月、Elijah Craig 14年桶中陈酿19个月",
+    "Singularity^2 - 在Elijah Craig 20年桶中陈酿17个月，再转入Bookers 8年桶陈酿13个月",
+    "Preponderance - 帝国世涛，在Henry Mckenna、Elijah Craig和Stagg Jr桶中陈酿22个月"
+  ],
+  "sources": [
+    "https://www.hopculture.com/interview-derek-gallanosa-moksa-brewing/",
+    "https://www.rocklin.ca.us/post/moksa-brewing-co-0",
+    "https://moksabrewing.com/beer-in-rocklin.html"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "全球顶尖千元级世涛酒厂，限量发行的桶陈世涛被爱好者评价为'增味世涛的神'"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "brewery_id": "ghost-town",
+  "name": {
+    "english": "Ghost Town Brewing",
+    "chinese": "Ghost Town"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "加利福尼亚州",
+    "state_en": "California",
+    "city": "奥克兰",
+    "city_en": "Oakland",
+    "neighborhood": "West Oakland和Laurel",
+    "address": "1960 Adeline St, Oakland, CA 94607（West Oakland）；3506 MacArthur Blvd, Oakland, CA 94619（Laurel）"
+  },
+  "founded": "2012年开始运营，2017年开设首个taproom",
+  "founded_en": "Brewing began 2012, first taproom opened 2017",
+  "founder": {
+    "founder_1": "Ryan Nosek",
+    "founder_1_role": "联合创始人，负责品牌管理",
+    "founder_2": "Adam Hill",
+    "founder_3": "Jason Gehman",
+    "founder_4": "Samuel Carr-Prindle",
+    "head_brewer": "Justin Burdt",
+    "head_brewer_role": "首席酿酒师，2017年加入"
+  },
+  "history": {
+    "name_origin": "Ghost Town的名字来源于奥克兰的West Oakland社区，这个社区被称为'Ghost Town'。据说很久以前，这个社区被两个棺材制造商夹在中间。",
+    "band_origin": "Ghost Town最初是由四个重金属乐队成员创立的。为了支付排练室的租金，乐队成员们在一套1桶（1-barrel）的酿酒系统上酿造啤酒，把桶装啤酒卖给当地餐厅。Ryan Nosek是乐队的吉他手之一。最终他们发现：'我们酿酒比玩音乐更在行。'",
+    "early_days": "2012年开始，四位创始人在West Oakland的一个小型1桶系统上酿酒，向当地酒吧和瓶装店分销。Ryan Nosek回忆说：'我们都住在West Oakland，也想留在West Oakland。'",
+    "expansion": "2017年，Ghost Town在West Oakland的1960 Adeline Street开设了首个品酒室，从1桶系统升级到15桶系统。这栋建筑此前曾是汽车修理店、焊接店和二手家具店。品酒室对狗和儿童友好，设有自行车停车区和大型游戏区。",
+    "oakland_beer_scene": "Ghost Town开始时，奥克兰还有另外两家酒厂在运营，但它们后来都关闭了。Ryan Nosek指出：'所以我们实际上是奥克兰最古老的酒厂，尽管我们只从2012年开始。现在奥克兰大约有15家酒厂。'Ghost Town在很大程度上帮助奥克兰成为了啤酒目的地。",
+    "metal_theme": "Ghost Town的品酒室装饰被Ryan Nosek自嘲地描述为'邪恶时尚'（evil chic）——有棺材标志和骷髅。啤酒名字如Demonium、Cryptid、Final Rites、Gallows Humor、Tormentor。罐装标签上的 artwork 有时像死亡金属专辑封面。",
+    "laurel_location": "后来Ghost Town在Laurel社区开设了第二个品酒室，提供丰富的食物菜单，菜品名字同样充满恐怖双关：Attack of the Killer Tomatoes、Bugermortis、Altar of Sacri-Fries、Eggplant Ragnarok。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA、西海岸IPA、新西兰风格IPA、Robust Porter",
+    "styles": ["Hazy IPA", "West Coast IPA", "New Zealand-Style IPA", "Robust Porter", "India Pale Lager", "American Strong Pale Ale", "Cream Ale"],
+    "philosophy": "重金属精神 meets 幽灵精神；对啤酒质量进行'过度监督'"
+  },
+  "awards": [
+    "Great American Beer Festival (GABF) 2023年所在规模类别（5,001-15,000桶/年）最高荣誉",
+    "GABF 2022年、2023年Nose Goblin帝国IPA金奖",
+    "GABF 2022年India Pale Lager金奖",
+    "GABF 2022年American-Style Strong Pale Ale银奖",
+    "World Beer Cup 2023年Ossuary Robust Porter银奖",
+    "World Beer Cup 2025年Perverse Inverse新西兰风格IPA金奖",
+    "World Beer Cup 2025年Ossuary Robust Porter金奖",
+    "World Beer Cup 2025年Chasmic Absorption Through Whirlpools of Disarray西海岸IPA银奖"
+  ],
+  "notable_beers": [
+    "Nose Goblin - 帝国IPA，GABF双料金奖，酒精度高但'喝起来像单倍IPA'，带有白葡萄、柴油味、阴湿感和草莓/深色浆果风味",
+    "Inhume - 旗舰酒款，西海岸IPA，全年唯一固定酿造的啤酒",
+    "Ossuary - Robust Porter，World Beer Cup金奖",
+    "Perverse Inverse - 新西兰风格IPA，World Beer Cup金奖",
+    "Deiform - 与Moksa合酿的西海岸IPA"
+  ],
+  "sources": [
+    "https://usmanufacturingreport.com/article/ghost-town-brewing/",
+    "https://www.hopculture.com/best-craft-breweries-oakland-ca/",
+    "https://sf.eater.com/2017/8/2/16087328/ghost-town-brewing-west-oakland-taproom",
+    "https://ktla.com/news/california/california-beers-named-best-in-the-world-in-international-competition/"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "啤酒世界杯冠军厂牌"
+  }
+}

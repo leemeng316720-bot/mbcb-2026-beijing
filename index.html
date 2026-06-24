@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBCB 2026 BEIJING | Mikkeller Beer Celebration Beijing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0d0d0d;
+            --bg-card: #1a1a1a;
+            --bg-card-hover: #222;
+            --accent-gold: #c9a96e;
+            --accent-gold-light: #e8d5a3;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666;
+            --border: #2a2a2a;
+            --tag-bg: #2d2d2d;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(180deg, #1a1a1a 0%, var(--bg-dark) 100%);
+            padding: 60px 20px 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .header .subtitle {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .header .desc {
+            margin-top: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item { text-align: center; }
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 4px;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            padding: 30px 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--tag-bg);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 8px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--accent-gold);
+            color: var(--bg-dark);
+            border-color: var(--accent-gold);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        .brewery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 24px;
+        }
+
+        .brewery-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .brewery-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-gold);
+            box-shadow: 0 20px 40px rgba(201, 169, 110, 0.1);
+        }
+
+        .card-header {
+            padding: 24px 24px 16px;
+            position: relative;
+        }
+
+        .country-flag {
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        .card-heart {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+
+        .brewery-name-en {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .brewery-name-zh {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .location-icon { color: var(--accent-gold); }
+
+        .card-body {
+            padding: 0 24px 20px;
+        }
+
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .tag {
+            background: var(--tag-bg);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            border: 1px solid var(--border);
+        }
+
+        .tag.highlight {
+            background: rgba(201, 169, 110, 0.15);
+            color: var(--accent-gold-light);
+            border-color: var(--accent-gold);
+        }
+
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            margin: 16px 0 8px;
+            font-weight: 500;
+        }
+
+        .story-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .founder-box {
+            background: rgba(201, 169, 110, 0.05);
+            border-left: 3px solid var(--accent-gold);
+            padding: 12px 16px;
+            margin: 12px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .founder-name {
+            color: var(--accent-gold-light);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .founder-desc {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            margin-top: 4px;
+        }
+
+        .card-footer {
+            padding: 16px 24px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .year-badge {
+            background: var(--accent-gold);
+            color: var(--bg-dark);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .detail-btn {
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .detail-btn:hover { color: var(--accent-gold-light); }
+
+        .heart-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            padding: 10px 16px;
+            border-radius: 24px;
+            font-family: 'Noto Sans SC', sans-serif;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .heart-btn:hover {
+            color: var(--accent-gold);
+            background: rgba(201, 169, 110, 0.15);
+            border-color: rgba(201, 169, 110, 0.3);
+            transform: scale(1.08);
+        }
+
+        .heart-btn:active {
+            transform: scale(0.92);
+        }
+
+        .heart-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .heart-btn.liked {
+            color: #e74c3c;
+            background: rgba(231, 76, 60, 0.12);
+            border-color: rgba(231, 76, 60, 0.25);
+            animation: heartPulse 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .heart-btn.liked svg {
+            fill: #e74c3c;
+            stroke: #e74c3c;
+            transform: scale(1.15);
+        }
+
+        @keyframes heartPulse {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(0.95); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .heart-btn .heart-count {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            min-width: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .heart-btn.liked .heart-count {
+            color: #e74c3c;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            overflow-y: auto;
+            backdrop-filter: blur(8px);
+        }
+
+        .modal-overlay.active { display: block; }
+
+        .modal-content {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: var(--tag-bg);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.3s;
+        }
+
+        .modal-close:hover {
+            background: var(--accent-gold);
+            color: var(--bg-dark);
+        }
+
+        .modal-header {
+            padding: 32px 32px 20px;
+            background: linear-gradient(180deg, rgba(201,169,110,0.1) 0%, transparent 100%);
+        }
+
+        /* Tabs */
+        .tabs-nav {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid var(--border);
+            padding: 0 32px;
+            overflow-x: auto;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: var(--text-muted);
+            padding: 14px 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-family: 'Noto Sans SC', sans-serif;
+            white-space: nowrap;
+            transition: all 0.3s;
+        }
+
+        .tab-btn:hover { color: var(--text-secondary); }
+        .tab-btn.active {
+            color: var(--accent-gold);
+            border-bottom-color: var(--accent-gold);
+        }
+
+        .tab-panel {
+            display: none;
+            padding: 24px 32px 32px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-panel.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .modal-body .section-title {
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
+
+        .modal-body .story-text {
+            font-size: 0.9rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 6px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent-gold);
+            opacity: 0.3;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 16px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -22px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            background: var(--accent-gold);
+            border-radius: 50%;
+        }
+
+        .timeline-year {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .timeline-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        .awards-list {
+            list-style: none;
+        }
+
+        .awards-list li {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            padding: 6px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .awards-list li::before {
+            content: "🏆";
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+
+        /* Beer Cards in Modal */
+        .beer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .beer-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            transition: all 0.3s;
+        }
+
+        .beer-card:hover {
+            border-color: var(--accent-gold);
+            background: rgba(201,169,110,0.05);
+        }
+
+        .beer-name {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold-light);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .beer-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .beer-meta span {
+            background: var(--tag-bg);
+            color: var(--text-muted);
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+        }
+
+        .beer-meta .rating {
+            background: rgba(201,169,110,0.2);
+            color: var(--accent-gold);
+        }
+
+        .beer-desc {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .beer-desc .label {
+            color: var(--accent-gold);
+            font-weight: 500;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .header { padding: 40px 16px 30px; }
+            .header h1 { font-size: 1.6rem; letter-spacing: 1px; }
+            .header .subtitle { font-size: 0.8rem; letter-spacing: 2px; }
+            .header .desc { font-size: 0.8rem; padding: 0 10px; }
+            
+            .stats-bar { gap: 20px; margin-top: 20px; }
+            .stat-number { font-size: 1.5rem; }
+            .stat-label { font-size: 0.65rem; letter-spacing: 1px; }
+            
+            .filters { padding: 20px 12px; gap: 8px; }
+            .filter-btn { padding: 6px 14px; font-size: 0.75rem; }
+            
+            .container { padding: 0 12px 40px; }
+            .brewery-grid { grid-template-columns: 1fr; gap: 16px; }
+            
+            .card-header { padding: 18px 18px 12px; }
+            .brewery-name-en { font-size: 1.3rem; }
+            .brewery-name-zh { font-size: 0.8rem; }
+            .card-body { padding: 0 18px 16px; }
+            .tag { font-size: 0.7rem; padding: 3px 10px; }
+            .founder-box { padding: 10px 12px; }
+            .founder-name { font-size: 0.85rem; }
+            .founder-desc { font-size: 0.75rem; }
+            .story-text { font-size: 0.8rem; line-height: 1.7; }
+            .card-footer { padding: 12px 18px; }
+            .year-badge { font-size: 0.7rem; padding: 3px 10px; }
+            .detail-btn { font-size: 0.8rem; }
+            
+            .modal-content { margin: 0; border-radius: 0; min-height: 100vh; }
+            .modal-close { top: 12px; right: 12px; width: 36px; height: 36px; font-size: 1rem; }
+            .modal-header { padding: 24px 16px 16px; }
+            .modal-header h2 { font-size: 1.6rem !important; }
+            .modal-header p { font-size: 0.9rem !important; }
+            
+            .tabs-nav { padding: 0 12px; gap: 4px; }
+            .tab-btn { padding: 10px 12px; font-size: 0.75rem; }
+            .tab-panel { padding: 16px 12px 24px; }
+            
+            .timeline { padding-left: 18px; }
+            .timeline-item::before { left: -18px; width: 8px; height: 8px; }
+            .timeline-year { font-size: 0.9rem; }
+            .timeline-text { font-size: 0.8rem; }
+            
+            .section-title { font-size: 0.7rem; margin-top: 14px; }
+            .modal-body .story-text { font-size: 0.85rem; }
+            
+            .beer-grid { grid-template-columns: 1fr; gap: 12px; }
+            .beer-card { padding: 14px; }
+            .beer-name { font-size: 1rem; }
+            .beer-meta span { font-size: 0.7rem; padding: 2px 8px; }
+            .beer-desc { font-size: 0.75rem; line-height: 1.6; }
+            .beer-desc p { margin-bottom: 4px; }
+            
+            .awards-list li { font-size: 0.75rem; padding: 3px 0 3px 20px; }
+            
+            .footer { padding: 30px 16px; font-size: 0.75rem; }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.4rem; }
+            .stats-bar { gap: 16px; }
+            .stat-number { font-size: 1.3rem; }
+            .brewery-name-en { font-size: 1.2rem; }
+            .tab-btn { padding: 8px 10px; font-size: 0.7rem; }
+        }
+
+        @keyframes cardFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .brewery-card {
+            animation: cardFadeIn 0.6s ease forwards;
+        }
+
+        .brewery-card:nth-child(1) { animation-delay: 0.1s; }
+        .brewery-card:nth-child(2) { animation-delay: 0.2s; }
+        .brewery-card:nth-child(3) { animation-delay: 0.3s; }
+        .brewery-card:nth-child(4) { animation-delay: 0.4s; }
+        .brewery-card:nth-child(5) { animation-delay: 0.5s; }
+    </style>
+    <!-- Supabase REST API (无 CDN 依赖) -->
+</head>
+<body>
+
+    <header class="header">
+        <h1>MBCB 2026 BEIJING</h1>
+        <p class="subtitle">Mikkeller Beer Celebration Beijing</p>
+        <p class="desc">全球顶尖精酿酒厂，完整历史，创始人故事，代表酒款</p>
+        
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">10</div>
+                <div class="stat-label">酒厂</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">国家</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2026</div>
+                <div class="stat-label">MBCB 年份</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="filters">
+        <button class="filter-btn active" onclick="filterBreweries('all')">全部</button>
+        <button class="filter-btn" onclick="filterBreweries('usa')">🇺🇸 美国</button>
+        <button class="filter-btn" onclick="filterBreweries('canada')">🇨🇦 加拿大</button>
+        <button class="filter-btn" onclick="filterBreweries('spain')">🇪🇸 西班牙</button>
+        <button class="filter-btn" onclick="filterBreweries('denmark')">🇩🇰 丹麦</button>
+    </div>
+
+    <div class="container">
+        <div class="brewery-grid" id="breweryGrid"></div>
+    </div>
+
+    <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>数据来源：MBCB 官方文章 + 网络补充研究</p>
+        <p style="margin-top:8px">最后更新：2025年7月 | 档案存储于本地工作区</p>
+    </footer>
+
+<script>
+const breweries = [
+    {
+        id: "hill-farmstead",
+        nameEn: "Hill Farmstead",
+        nameZh: "农舍山",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Greensboro Bend, Vermont",
+        founded: "2010年3月31日",
+        founder: "Shaun E. Hill",
+        founderDesc: "Haverford College哲学系毕业，高中科学课发酵项目开启酿酒之路",
+        tags: ["农舍艾尔", "IPA", "风土酿造", "家族传承"],
+        highlight: "RateBeer 7次全球最佳酒厂",
+        shortStory: "Hill家族在佛蒙特州的历史跨越8代人、220年。Shaun Hill在祖父的农用棚屋里，用拼凑的旧设备酿造了第一杯'Edward'。",
+        fullStory: {
+            nameOrigin: "Hill Farmstead——家族姓氏+农场祖产。酒厂logo灵感来自1809年Aaron Hill经营的家族酒馆招牌。",
+            founderJourney: [
+                { year: "15岁", text: "以发酵为主题完成高中科学课项目，制作第一杯家酿啤酒" },
+                { year: "大学时期", text: "在Haverford College学习哲学，同时担任家酿俱乐部主席" },
+                { year: "2002", text: "加入佛蒙特州早期小型酒厂，成为助理酿酒师" },
+                { year: "2007-2009", text: "前往丹麦哥本哈根Nørrebro Bryghus，在传奇酿酒师Anders Kissmeyer指导下精进，赢得多枚World Beer Cup奖牌" },
+                { year: "2009年11月", text: "从丹麦返回美国" },
+                { year: "2010年3月30日", text: "在祖父Edward的农用棚屋里，用从The Alchemist和Trout River获得的旧设备，酿造第一批次啤酒'Edward'" }
+            ],
+            familyLegacy: "Hill家族1791年抵达Greensboro，参与创建城镇、修建道路和磨坊。Shaun Hill是第7代持续使用家族土地的家庭成员。酒厂至今仍在为Tom Hill的奶牛生产饲料干草。",
+            philosophy: "专注风土，使用家族井水酿造，尊重当地农场和手工生产者。Farmstead Ale已注册商标。",
+            awards: [
+                "RateBeer 2012年全球最佳酒厂",
+                "RateBeer 2014-2020年连续六年蝉联全球最佳酒厂榜首",
+                "Untappd 2025社区奖美国地区38金15银20铜，稳居美国第三",
+                "Untappd农舍艾尔风格实时排行榜Top50中占32席",
+                "啤酒媒体HopCulture评选为21家最具标志性的美国啤酒厂"
+            ],
+            beers: [
+                {
+                    name: "Edward",
+                    style: "American Pale Ale",
+                    abv: "5.2%",
+                    ibu: "65",
+                    rating: "Untappd 4.24 / 69,017评",
+                    hops: "多种美国酒花",
+                    process: "使用American malted barley、ale yeast、Edward's well井水。未过滤，干投。",
+                    flavor: "香气：柑橘、热带水果沙拉、松脂、花香。口感：葡萄柚、柠檬、青草、花香。酒体轻盈，高碳化度，清爽干净。被评价为'有帝国IPA的风味但仅5.2%酒精——简直奇迹'。"
+                },
+                {
+                    name: "Anna",
+                    style: "Honey Saison / Farmstead Ale",
+                    abv: "6.4%",
+                    ibu: "N/A",
+                    rating: "Untappd 4.2+ / 28,000+评",
+                    hops: "欧洲与美国酒花",
+                    process: "使用20% raw wildflower Vermont honey、house saison yeast、家族井水。未过滤，自然碳化。",
+                    flavor: "香气：淡淡的酸味、果味、野菌味、杏子、柠檬、茶、蜂蜜、花香、潮湿干草。口感：清爽，带有农舍酵母的复杂风味，蜂蜜甜感与酵母辛香交织。"
+                },
+                {
+                    name: "Walden",
+                    style: "Blonde Ale (与The Alchemist合酿)",
+                    abv: "4.0%",
+                    ibu: "40",
+                    rating: "Untappd 4.1 / 7,515评",
+                    hops: "Amarillo, Motueka, Simcoe",
+                    process: "Philosophical Series酒款。使用American malted barley、家族井水。",
+                    flavor: "香气：明亮的柑橘、青草、蜂蜜、轻度香料。口感：面包味、泥土味、松脂苦味。酒体非常轻盈，清爽易饮，被形容为'scarily drinkable'。"
+                }
+            ]
+        }
+    },
+    {
+        id: "moksa",
+        nameEn: "Moksa",
+        nameZh: "蒙克萨",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Rocklin, California（萨克拉门托地区）",
+        founded: "2018年2月3日",
+        founder: "Derek Gallanosa, Cory Meyer, Nu Boonkham",
+        founderDesc: "Derek从Abnormal Beer Co.跳槽震惊业界，Cory是酸啤专家，Nu是投资人",
+        tags: ["桶陈世涛", "浑浊IPA", "千元级", "增味世涛"],
+        highlight: "Untappd帝国甜品世涛全球TOP50",
+        shortStory: "Moksa（梵语'Moksha'）意为'解脱'。Derek Gallanosa从San Diego明星酒厂跳槽，与Cory Meyer组建'梦之队'。",
+        fullStory: {
+            nameOrigin: "Moksa（也写作Moksha）是梵语，意指各种形式的解脱、解放与释放。这是酒厂的mantra（真谛），也是命名全部缘由。",
+            founderJourney: [
+                { year: "2015-2017", text: "Derek Gallanosa在San Diego的Abnormal Beer Co.担任首位员工和首席酿酒师，短短两年让酒厂从无名变成排队抢购的热门目的地" },
+                { year: "2017年底", text: "消息传出Derek将离开Abnormal加入Moksa，震惊整个精酿啤酒圈" },
+                { year: "2017年12月27日", text: "Derek戴着Moksa帽子来到酒厂，与合伙人Cory Meyer开启首个酿酒日" },
+                { year: "2018年2月3日", text: "Moksa Brewing Company正式开业，提供3000平方英尺品酒室" }
+            ],
+            teamDynamic: "Derek主要负责酒花啤酒和桶陈世涛，Cory负责酸啤方向。投资人Nu Boonkham评价：'Cory非常严谨，Derek极具创新精神。这就像在加州北部组建一支梦之队。'",
+            philosophy: "摆脱经典啤酒风格与传统酿酒哲学的束缚，在啤酒中创造艺术。限量发行的桶陈世涛价格千元每瓶，被爱好者评价为'增味世涛的神'。",
+            awards: [
+                "Untappd双倍/帝国甜品世涛全球TOP50榜单上榜6款",
+                "Untappd 2025社区奖美国地区9金4银6铜"
+            ],
+            beers: [
+                {
+                    name: "Moksa FIVE",
+                    style: "Barrel-Aged Imperial Stout",
+                    abv: "13.4%",
+                    ibu: "N/A",
+                    rating: "限量发行，千元级",
+                    hops: "N/A",
+                    process: "在27年陈Hennessy XXO Hors d'Age桶中陈酿17个月。",
+                    flavor: "深黑色酒体。浓郁的波本桶风味与Hennessy干邑桶的复杂木质、香草、焦糖交织。酒体厚重粘稠，收口温暖悠长。"
+                },
+                {
+                    name: "Moksa 6",
+                    style: "Double Mash Barrel-Aged Imperial Stout",
+                    abv: "16.0%",
+                    ibu: "N/A",
+                    rating: "顶级桶陈世涛",
+                    hops: "N/A",
+                    process: "双麦配方。在Bernheim小麦威士忌桶中陈酿17个月，再转入Elijah Craig 14年波本桶陈酿19个月。",
+                    flavor: "极高的原始比重带来糖浆般浓稠酒体。小麦桶带来柔和奶油感，波本桶贡献香草、椰子、焦糖。酒精感隐藏极好，层次极其复杂。"
+                },
+                {
+                    name: "Singularity^2",
+                    style: "Barrel-Aged Imperial Stout",
+                    abv: "16.5%",
+                    ibu: "N/A",
+                    rating: "Untappd 4.6 / 232评",
+                    hops: "N/A",
+                    process: "在Elijah Craig 20年桶中陈酿17个月，再转入Bookers 8年桶陈酿13个月。",
+                    flavor: "香气：复杂的烟熏威士忌、波本、深木味。风味：浓郁的木质、波本、烟熏威士忌、香草。极高酒精度但平衡出色，桶味层次递进。"
+                },
+                {
+                    name: "Preponderance",
+                    style: "Barrel-Aged Imperial Stout",
+                    abv: "13.6%",
+                    ibu: "N/A",
+                    rating: "Untappd高分",
+                    hops: "N/A",
+                    process: "在Henry McKenna、Elijah Craig和Stagg Jr三种波本桶中陈酿22个月。加入烤椰子、生椰子、杏仁、山核桃、可可豆、咖啡、科摩罗和印尼香草豆。",
+                    flavor: "甜品世涛的巅峰之作。椰子、坚果、咖啡、香草、巧克力层层叠加，波本桶的焦糖与橡木单宁完美支撑甜感，收口不腻。"
+                }
+            ]
+        }
+    },
+    {
+        id: "messorem",
+        nameEn: "Messorem Bracitorium",
+        nameZh: "Messorem",
+        country: "🇨🇦 加拿大",
+        countryCode: "canada",
+        location: "Montreal, Quebec（Saint-Henri工业区）",
+        founded: "2019年",
+        founder: "Marc-André Filion, Sébastien Chaput, Vincent Ménard",
+        founderDesc: "三位好友在蒙特利尔地下金属音乐场景相识，分别带来财务、酿酒和设计专长",
+        tags: ["浑浊IPA", "酸啤", "桶陈实验", "工业风"],
+        highlight: "加拿大顶尖浑浊IPA酒厂",
+        shortStory: "拉丁语'Messorem Bracitorium'意为'死神的酒厂'。三位创始人在地下金属音乐场景中相识，将爱好变成事业。",
+        fullStory: {
+            nameOrigin: "Messorem Bracitorium来自拉丁语——'Messorem'意为'收割者'、'收割人'，'Bracitorium'意为'酒厂'。合起来就是'死神的酒厂'或'收割者的酒厂'。",
+            founderJourney: [
+                { year: "2000年代初", text: "三位创始人在蒙特利尔的地下金属音乐场景中相识" },
+                { year: "Vincent Ménard", text: "拥有酿酒学位，曾在魁北克极受欢迎的酒厂Auval实习，并在Les Trois Mousquetaires拥有专业酿酒经验" },
+                { year: "Marc-André Filion", text: "带来财务和设计专长" },
+                { year: "Sébastien Chaput", text: "带来酿酒专长" },
+                { year: "2019年", text: "在蒙特利尔西南部Lachine运河附近开设酒厂" }
+            ],
+            philosophy: "对他们来说，Messorem Bracitorium是连接爱好（啤酒）与日常工作的桥梁，是与朋友一起做的事。酒厂严格按照标准酿造，对啤酒的口味、口感和外观都有非常精确的要求。",
+            taproom: "品酒室位于工业区，拥有高挑天花板、开放式酿酒设施景观和宽敞的露台，营造出真实的工业氛围。酒单变化频繁，通常有30多种不同啤酒在售，从经典皮尔森到复杂的大麦酒风格。",
+            awards: [
+                "Untappd评分4.2",
+                "被北美精酿界誉为加拿大最出色的酒花导向酒厂之一"
+            ],
+            beers: [
+                {
+                    name: "Triple Statim Finis",
+                    style: "Hazy Triple IPA",
+                    abv: "10.6%",
+                    ibu: "N/A",
+                    rating: "Untappd 4.3 / 1,443评",
+                    hops: "Citra, Mosaic, Galaxy, Ella",
+                    process: "浑浊三倍IPA，大量干投。",
+                    flavor: "酒体呈浑浊黄色，白色泡沫丰富且持久。香气：柑橘、花香、桃子、杏子、薄荷草本清新感。口感：果味浓郁，苦度与甜度平衡，酒精感隐藏出色。被评价为'甜而满足，但又足够干爽易饮'。"
+                },
+                {
+                    name: "Écoulement Des Vives (Flow of Lives)",
+                    style: "Dry-Hopped Wild Ale",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "限量实验酒款",
+                    hops: "Mosaic干投",
+                    process: "混合foeder啤酒和桶陈野菌艾尔，Mosaic干投。",
+                    flavor: "野菌艾尔与酒花干投的跨界之作。香气：野菌 funk、橡木、柑橘酒花。口感：酸度适中，酒花果味与野菌复杂性交织，收口干爽带矿物质感。"
+                },
+                {
+                    name: "Vivre Le Jour (Live the Day)",
+                    style: "Barrel-Aged Specialty Stout",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "限量桶陈款",
+                    hops: "N/A",
+                    process: "混合两款世涛，分别在Willet Bourbon桶中陈酿32个月和34个月，加入巴西坚果和巴西香草。",
+                    flavor: "超长期桶陈带来极致的波本、橡木、香草融合。巴西坚果增加油脂感和坚果香，巴西香草带来甜美花香。酒体厚重，层次深邃，收口温暖。"
+                }
+            ]
+        }
+    },
+    {
+        id: "3-sons",
+        nameEn: "3 Sons Brewing Co.",
+        nameZh: "3 Sons",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Dania Beach, Florida",
+        founded: "2019年（2011年家酿起步）",
+        founder: "Corey Artanis, Joe Artanis（父子）",
+        founderDesc: "Corey从纽约Buffalo到参军到急救医师，最终从厨房家酿走向职业酿酒",
+        tags: ["桶陈世涛", "欧洲拉格", "浑浊IPA", "咖啡啤酒"],
+        highlight: "Hunahpu's Day连续两年最佳酒厂",
+        shortStory: "Corey Artanis以三个儿子命名酒厂。从厨房家酿到Cigar City啤酒节一鸣惊人，与父亲历时三年建成梦想酒厂。",
+        fullStory: {
+            nameOrigin: "3 Sons——来源于Corey Artanis的三个儿子：Tristan、Alexzander、Jaxson。名字由Corey的妻子提出。",
+            founderJourney: [
+                { year: "童年", text: "Corey出生于纽约州Buffalo，小时候来佛罗里达度假" },
+                { year: "高中后", text: "参军，驻扎在华盛顿州Ft. Lewis。室友来自Idaho，周末去他家时第一次见识家酿啤酒" },
+                { year: "2006年", text: "搬到佛罗里达州，加入消防学院，随后完成EMT和急救医师培训，在Joe DiMaggio儿童医院工作约7年" },
+                { year: "2011年", text: "在自家厨房开始家酿，第一款是比利时小麦啤。加入瓶分享俱乐部，带去的Last Snow克隆酒获得一致好评" },
+                { year: "2014年", text: "受邀参加Cigar City著名的Hunahpu's Day啤酒节" },
+                { year: "2015年", text: "3 Sons赢得Hunahpu's Day最佳酒厂和最佳啤酒奖" },
+                { year: "2016年", text: "再次获奖，包揽最佳啤酒前两名" },
+                { year: "2015年12月", text: "Corey和父亲Joe签下Dania Beach一处1940年代仓库的租约" },
+                { year: "2019年", text: "历经三年多的建设挑战，酒厂终于正式开业" }
+            ],
+            ahaMoment: "Corey的'顿悟时刻'是喝到Goose Island原始的Bourbon County Brand Vanilla Stout。'我记得当时想，天哪，这是我喝过最好的啤酒。'这促使他开始酿造自己的桶陈世涛Summation，至今仍在生产。",
+            philosophy: "为非常规口味酿造非常规艾尔（unconventional ales for unconventional palates）。",
+            awards: [
+                "全球百大精酿厂牌",
+                "Cigar City Hunahpu's Day 2015最佳酒厂、最佳啤酒",
+                "Cigar City Hunahpu's Day 2016最佳酒厂、最佳啤酒（包揽前两名）"
+            ],
+            beers: [
+                {
+                    name: "Summation",
+                    style: "Barrel-Aged Imperial Coffee Stout",
+                    abv: "10.5%",
+                    ibu: "40",
+                    rating: "Untappd 4.5 / 1,231评",
+                    hops: "N/A",
+                    process: "OG 1.154, FG 1.074, SRM 60。使用小桶陈酿（高表面积比带来高萃取率）。进入桶前酒体更甜，以平衡桶中酒精热感。",
+                    flavor: "香气：香草、咖啡、波本、巧克力。口感：饱满、甜、粘稠、咖啡、轻度烘焙、深色水果。酒体饱满，碳化柔和。灵感来自Goose Island Bourbon County Vanilla Stout，但加入了咖啡元素。"
+                },
+                {
+                    name: "Dopealicious IPA",
+                    style: "Hazy IPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "人气浑浊IPA",
+                    hops: "Citra, Mosaic",
+                    process: "干投Citra和Mosaic酒花。",
+                    flavor: "典型的新英格兰浑浊IPA风格。香气：热带水果、柑橘、芒果、菠萝。口感：柔软顺滑，果汁感强，苦度低，收口干净。"
+                },
+                {
+                    name: "Boysen Tha Hood",
+                    style: "Boysenberry-Infused Beer",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "特色增味款",
+                    hops: "N/A",
+                    process: "加入博伊森莓增味。",
+                    flavor: "博伊森莓带来深紫色酒体和浓郁的莓果香气。酸甜平衡，果味突出，是3 Sons实验性增味酒款的代表。"
+                }
+            ]
+        }
+    },
+    {
+        id: "ghost-town",
+        nameEn: "Ghost Town Brewing",
+        nameZh: "Ghost Town",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Oakland, California",
+        founded: "2012年（2017年开设taproom）",
+        founder: "Ryan Nosek, Adam Hill, Jason Gehman, Samuel Carr-Prindle",
+        founderDesc: "四个重金属乐队成员为付排练室租金开始酿酒，发现'酿酒比玩音乐更在行'",
+        tags: ["西海岸IPA", "帝国IPA", "Robust Porter", "重金属主题"],
+        highlight: "GABF + WBC 多项金奖",
+        shortStory: "Ghost Town名字来自奥克兰West Oakland社区绰号。四个金属乐手从1桶系统起步，把酒厂做成'邪恶时尚'风格。",
+        fullStory: {
+            nameOrigin: "Ghost Town——来源于奥克兰的West Oakland社区，这个社区被称为'Ghost Town'。据说很久以前，这个社区被两个棺材制造商夹在中间。",
+            founderJourney: [
+                { year: "2012年", text: "四个重金属乐队成员为支付排练室租金，在一套1桶（1-barrel）的酿酒系统上酿造啤酒，把桶装啤酒卖给当地餐厅" },
+                { year: "乐队时期", text: "Ryan Nosek是乐队吉他手之一。他们发现：'我们酿酒比玩音乐更在行。'" },
+                { year: "2017年", text: "在West Oakland的1960 Adeline Street开设首个品酒室，从1桶系统升级到15桶系统" },
+                { year: "2017年", text: "招募首席酿酒师Justin Burdt加入团队" },
+                { year: "后期", text: "在Laurel社区开设第二个品酒室" }
+            ],
+            metalTheme: "Ghost Town的品酒室装饰被Ryan Nosek自嘲地描述为'邪恶时尚'（evil chic）——有棺材标志和骷髅。啤酒名字如Demonium、Cryptid、Final Rites、Gallows Humor、Tormentor。罐装标签上的artwork有时像死亡金属专辑封面。",
+            oaklandScene: "Ghost Town开始时，奥克兰还有另外两家酒厂在运营，但它们后来都关闭了。Ryan Nosek指出：'所以我们实际上是奥克兰最古老的酒厂，尽管我们只从2012年开始。现在奥克兰大约有15家酒厂。'Ghost Town在很大程度上帮助奥克兰成为了啤酒目的地。",
+            philosophy: "重金属精神 meets 幽灵精神；对啤酒质量进行'过度监督'。",
+            awards: [
+                "Great American Beer Festival (GABF) 2023年所在规模类别最高荣誉",
+                "GABF 2022年、2023年Nose Goblin帝国IPA金奖",
+                "GABF 2022年India Pale Lager金奖",
+                "GABF 2022年American-Style Strong Pale Ale银奖",
+                "World Beer Cup 2023年Ossuary Robust Porter银奖",
+                "World Beer Cup 2025年Perverse Inverse新西兰风格IPA金奖",
+                "World Beer Cup 2025年Ossuary Robust Porter金奖",
+                "World Beer Cup 2025年Chasmic Absorption西海岸IPA银奖"
+            ],
+            beers: [
+                {
+                    name: "Nose Goblin",
+                    style: "West Coast Imperial IPA",
+                    abv: "9.2%",
+                    ibu: "115",
+                    rating: "Untappd 4.04 / 5,131评 | GABF双料金奖",
+                    hops: "Strata, Nelson, Mosaic Cryo（批次不同会换酒花）",
+                    process: "几乎完全使用皮尔森麦芽加少量酸化麦芽。大量whirlpool和干投。",
+                    flavor: "酒体清澈稻草色。香气：白葡萄、甜瓜、浆果、阴湿感、花香蜂蜜、芒果、菠萝糖果。口感：极其顺滑，苦度比预期低，酒精感几乎不可察觉，'喝起来像单倍IPA'。现代西海岸IPA的典范。"
+                },
+                {
+                    name: "Inhume",
+                    style: "West Coast IPA",
+                    abv: "7.0%",
+                    ibu: "73",
+                    rating: "旗舰酒款，全年唯一固定酿造",
+                    hops: "Citra, Simcoe, Centennial",
+                    process: "经典西海岸IPA配方。",
+                    flavor: "香气：柑橘、松脂、花香。口感：干净、清澈、苦味直接但平衡，麦芽骨架支撑酒花风味，收口干爽。Ghost Town的'日常IPA'。"
+                },
+                {
+                    name: "Ossuary",
+                    style: "Robust Porter",
+                    abv: "6.66%",
+                    ibu: "37",
+                    rating: "Untappd 4.0 / 1,896评 | World Beer Cup金奖",
+                    hops: "N/A",
+                    process: "注重麦芽层次的中等酒体波特。",
+                    flavor: "香气：法式烘焙咖啡、焦糖、burnt sugar、可可。口感：中等酒体，轻度奶油感，烘焙麦芽的苦甜平衡出色，收口带咖啡和可可余韵。"
+                },
+                {
+                    name: "Perverse Inverse",
+                    style: "New Zealand-Style IPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "World Beer Cup 2025金奖",
+                    hops: "新西兰酒花（如Nelson Sauvin等）",
+                    process: "100%新西兰酒花酿造。",
+                    flavor: "新西兰酒花带来独特的白葡萄、醋栗、热带水果香气。酒体清澈，苦味干净，麦芽简洁，让酒花成为绝对主角。"
+                }
+            ]
+        }
+    },
+    {
+        id: "soma",
+        nameEn: "SOMA",
+        nameZh: "SOMA",
+        country: "🇪🇸 西班牙",
+        countryCode: "spain",
+        location: "Cornellà del Terri, Girona（加泰罗尼亚）",
+        founded: "2012年（家酿），2016年正式商业化",
+        founder: "Ramón Prats",
+        founderDesc: "原本是葡萄酒爱好者，在故乡Banyoles尝到一杯惊艳的IPA后踏上自酿之路",
+        tags: ["浑浊IPA", "NEIPA", "西班牙TOP1", "限量生产"],
+        highlight: "西班牙Untappd评分TOP1酒厂",
+        shortStory: "Ramón Prats从50升家酿设备起步，一次偶然的100升订单让他从家酿爱好者转型为职业酿酒师，成为西班牙浑浊IPA标杆。",
+        fullStory: {
+            nameOrigin: "SOMA——源自希腊语'身体'，与酒厂追求啤酒本质的理念相关。酒厂位于加泰罗尼亚Girona地区的Cornellà del Terri。",
+            founderJourney: [
+                { year: "2012年", text: "Ramón Prats在故乡Banyoles尝到一杯风味惊艳的IPA，决定踏上自酿之路" },
+                { year: "家酿时期", text: "从50升小型设备起步，慢慢积累口碑，专注酿造IPA供家庭消费" },
+                { year: "转折点", text: "一次为派对酿造的100升啤酒因派对取消，Ramón决定把啤酒带到酒吧售卖，获得长期合作机会" },
+                { year: "2016年", text: "正式成立SOMA Beer，开始商业化酿造，专注浑浊IPA和IPA子风格" }
+            ],
+            philosophy: "酒厂风格简约纯粹，以极致打造浑浊IPA风格为核心，追寻凸显饱满浓郁的热带果香。每款啤酒都是限量生产，每周尝试不同的配方和酒花组合，持续学习和实验。自2016年酿造第一款IPA以来，专注于生产最高品质的啤酒。",
+            awards: [
+                "西班牙UNTAPPD评分TOP1酒厂",
+                "UNTAPPD 2024社区奖11枚奖牌",
+                "UNTAPPD 2025社区奖2金3银4铜",
+                "Hop Culture评为2025年最值得关注的酒厂之一"
+            ],
+            beers: [
+                {
+                    name: "Combo",
+                    style: "固定酒款",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "核心酒款",
+                    hops: "N/A",
+                    process: "SOMA两款固定酒款之一，持续生产。",
+                    flavor: "SOMA的标志性酒款之一，体现酒厂对浑浊IPA风格的理解和追求。"
+                },
+                {
+                    name: "Pyramids",
+                    style: "固定酒款",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "核心酒款",
+                    hops: "N/A",
+                    process: "SOMA两款固定酒款之一，持续生产。",
+                    flavor: "SOMA的标志性酒款之一，体现酒厂对浑浊IPA风格的理解和追求。"
+                },
+                {
+                    name: "Eazy IPA",
+                    style: "NEIPA",
+                    abv: "5.0%",
+                    ibu: "69",
+                    rating: "Untappd高分",
+                    hops: "Mosaic, Citra, Azacca, Azacca Cryo",
+                    process: "新英格兰风格IPA，大量干投。",
+                    flavor: "香气：热带水果、柑橘、芒果、菠萝。口感：柔软顺滑，果汁感强，苦度适中，收口干净。非常易饮的入门级浑浊IPA。"
+                },
+                {
+                    name: "Boost",
+                    style: "Imperial IPA",
+                    abv: "8.0%",
+                    ibu: "N/A",
+                    rating: "Untappd高分",
+                    hops: "Motueka Cryo, Nectaron, Riwaka",
+                    process: "帝国IPA，使用新西兰和实验性酒花。",
+                    flavor: "香气：热带水果、百香果、柑橘、松脂。口感：酒体饱满，果汁感浓郁，酒精感隐藏出色，苦甜平衡。"
+                },
+                {
+                    name: "Belly Full",
+                    style: "Imperial IPA",
+                    abv: "8.0%",
+                    ibu: "N/A",
+                    rating: "Untappd高分",
+                    hops: "N/A",
+                    process: "帝国IPA，限量生产。",
+                    flavor: "香气：浓郁的热带水果和柑橘。口感：饱满浓郁，酒花风味层层递进，收口悠长。"
+                },
+                {
+                    name: "Gumbo",
+                    style: "Imperial IPA",
+                    abv: "8.0%",
+                    ibu: "N/A",
+                    rating: "Untappd 4.32",
+                    hops: "N/A",
+                    process: "帝国IPA，限量生产。",
+                    flavor: "香气：复杂的热带水果、柑橘、松脂。口感：层次丰富，酒花风味浓郁，收口干净。"
+                },
+                {
+                    name: "Type R",
+                    style: "Triple IPA",
+                    abv: "10.0%",
+                    ibu: "N/A",
+                    rating: "Untappd高分",
+                    hops: "Mega Motueka, Nelson, Nectaron",
+                    process: "三倍IPA，使用大量新西兰酒花。",
+                    flavor: "香气：极致的热带水果、白葡萄、柑橘、松脂。口感：酒体厚重但顺滑，酒花风味爆炸，酒精感隐藏极好，收口带矿物质感。"
+                },
+                {
+                    name: "Boss Mode",
+                    style: "Triple IPA",
+                    abv: "10.0%",
+                    ibu: "N/A",
+                    rating: "Untappd高分",
+                    hops: "Riwaka, Citra, Citra Cryo",
+                    process: "三倍IPA，大量干投。",
+                    flavor: "香气：浓郁的热带水果、柑橘、松脂。口感：酒体饱满，果汁感极强，苦度支撑到位，收口悠长。"
+                }
+            ]
+        }
+    },
+    {
+        id: "everywhere",
+        nameEn: "everywhere",
+        nameZh: "艾微儿",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Orange, California",
+        founded: "2022年8月",
+        founder: "Jeremy Grinkey, Daniel Muñoz, Keith Pumilia, Stefan Weber",
+        founderDesc: "四位创始人在The Bruery累计超过40年经验，COVID期间决定一起创业",
+        tags: ["浑浊IPA", "西海岸IPA", "超新星", "The Bruery出身"],
+        highlight: "2024 GABF年度酒厂",
+        shortStory: "四位The Bruery老兵在COVID艰难时期决定创业，一个月内搭建好酒厂，4年创造200+款独特啤酒，平均分4.16。",
+        fullStory: {
+            nameOrigin: "everywhere——名字体现了酒厂的包容性和无处不在的社区精神。'我们希望建立一个积极的空间，让多元化和热情的社区蓬勃发展。'",
+            founderJourney: [
+                { year: "Jeremy Grinkey", text: "trained winemaker，2014年加入The Bruery担任Bruery Terreux生产经理，最终升任所有品牌生产总监。被酒友称为'酸啤耶稣'，2018年被Good Beer Hunting评为'Signifiers'" },
+                { year: "Daniel Muñoz", text: "洛杉矶本地人，创立并出售教育科技公司后进入精品葡萄酒和啤酒分销。创立Inside the Cellar（早期DTC精酿平台），领导Hopsy营销（融资2000万美元，部分被喜力收购）。在The Bruery担任营销负责人，将会员计划扩展到年收入700万美元+" },
+                { year: "Keith Pumilia", text: "来自新奥尔良，在Abita Brewing Company开始酿酒生涯，2014年加入The Bruery，负责创新、桶陈项目和试点酿造" },
+                { year: "Stefan Weber", text: "图森本地人，Siebel-trained酿酒师。在Barrio Brewing开始职业生涯，加入The Bruery后从首席酿酒师晋升为生产经理，管理20+员工，帮助年产量从12K扩展到20K桶" },
+                { year: "2022年", text: "四人在COVID-19疫情早期的艰难日子里决定一起创业。8月在Orange, California的前Gunwhale Ales设施中开业，一个月内完成拆除、改造和新设施搭建" }
+            ],
+            philosophy: "'简约而不简单'——从评分网站可以看出，诞生4年多，平均分高达4.16，大部分都是平易近人的酒款。Jeremy Grinkey形容高分原因：'推动我们前进的因素之一是新鲜度，平易近人的酒会更受大家欢迎，一个月的IPA对我们来说已经太陈旧了。'3年创造了200多款独特啤酒。",
+            awards: [
+                "2024年GABF一金一银",
+                "2025年GABF一金",
+                "2025年啤酒世界杯浑浊IPA金牌（Shifted Visions Hazy IPA）",
+                "UNTAPPD 2025社区奖10金7银4铜",
+                "2024年GABF年度酒厂和年度酿酒师（1,000-2,000桶类别）"
+            ],
+            beers: [
+                {
+                    name: "Shifted Visions",
+                    style: "Hazy IPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "2025 World Beer Cup金牌",
+                    hops: "N/A",
+                    process: "浑浊IPA，2025年啤酒世界杯最竞争类别（Juicy or Hazy India Pale Ale）金牌。",
+                    flavor: "香气：浓郁的热带水果、柑橘、芒果、菠萝。口感：柔软顺滑，果汁感极强，苦度低但支撑到位，收口干净。代表了everywhere对新鲜度和平易近人理念的极致追求。"
+                },
+                {
+                    name: "Relax",
+                    style: "Hazy IPA",
+                    abv: "6.8%",
+                    ibu: "N/A",
+                    rating: "畅销酒款",
+                    hops: "N/A",
+                    process: "浑浊IPA，酒厂最畅销的酒款之一。",
+                    flavor: "香气：热带水果、柑橘、花香。口感：柔软顺滑，果汁感强，苦度低，极其易饮。体现了everywhere'平易近人'的酿造哲学。"
+                },
+                {
+                    name: "Hazy IPA",
+                    style: "Hazy IPA",
+                    abv: "6.8%",
+                    ibu: "N/A",
+                    rating: "畅销酒款 $20/4-pack",
+                    hops: "N/A",
+                    process: "浑浊IPA，酒厂核心产品线。",
+                    flavor: "香气：热带水果、柑橘、松脂。口感：柔软顺滑，果汁感浓郁，收口干净。代表了everywhere对新鲜浑浊IPA的标准诠释。"
+                },
+                {
+                    name: "Where The Sky Meets",
+                    style: "American IPA",
+                    abv: "6.4%",
+                    ibu: "N/A",
+                    rating: "人气酒款",
+                    hops: "N/A",
+                    process: "美式IPA，西海岸和浑浊风格的融合。",
+                    flavor: "香气：柑橘、热带水果、松脂。口感：比传统西海岸更柔软，比典型浑浊更清爽，平衡出色，收口干净。"
+                }
+            ]
+        }
+    },
+    {
+        id: "flatland",
+        nameEn: "Flatland Brewing Company",
+        nameZh: "Flatland",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Elk Grove, California",
+        founded: "2016年1月",
+        founder: "Andrew and Michelle Mohsenzadegan",
+        founderDesc: "夫妻团队，Andrew是首席酿酒师，从家酿爱好者起步，怀揣大梦想和极少预算",
+        tags: ["皮尔森", "水果啤酒", "酸啤", "小众宝藏"],
+        highlight: "2017加州州展Best in Show",
+        shortStory: "Andrew和Michelle从1桶系统和极少预算起步，凭借社区支撑发展到10桶系统。Elk Grove市政府提供5000美元创业资助。",
+        fullStory: {
+            nameOrigin: "Flatland——'平坦之地'，呼应Elk Grove所在的加州中央谷地地形，也象征酒厂从 humble roots 起步的平坦但坚实的道路。",
+            founderJourney: [
+                { year: "2016年1月", text: "Andrew和Michelle Mohsenzadegan夫妇创立Flatland Brewing Company。Andrew从家酿爱好者起步，怀揣一个大梦想和极少的预算" },
+                { year: "创业初期", text: "酒厂最初只有1桶（1-barrel）的酿酒系统和一个小型品酒室。Elk Grove市政府通过Brewery & Winery Incentive & Assistance Program提供了5000美元创业资助" },
+                { year: "发展阶段", text: "凭借对啤酒的热情和社区的支撑，迅速发展到3桶系统" },
+                { year: "2020年", text: "升级到10桶官方酿酒系统，年产能达到2000桶。建立了酸啤项目，拥有24个专用桶用于酸啤陈酿" }
+            ],
+            philosophy: "'Small batch, huge impact. Be social, drink local.' 酒厂以创新和创意驱动酸啤项目，这是Andrew作为首席酿酒师的骄傲和乐趣。品酒室欢迎朋友、家人、宠物和精酿啤酒爱好者聚集。热爱使用当地水果和实验性原料，向土地致敬。",
+            awards: [
+                "2017年加州州展最佳展示奖（Best in Show）- Pilsnerish Blonde Ale",
+                "2022年GABF金奖",
+                "San Diego国际啤酒节金奖和第二佳展示奖"
+            ],
+            beers: [
+                {
+                    name: "Pilsnerish Blonde Ale",
+                    style: "Blonde Ale / Pilsner",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "2017年加州州展Best in Show金奖",
+                    hops: "N/A",
+                    process: "Andrew的最爱酒款，追求完美的皮尔森风格。",
+                    flavor: "香气：淡淡的麦芽、花香、轻度香料。口感：'它是一扇玻璃窗，不隐藏任何东西，麦芽轮廓非常柔和，酒花投放非常精致。可以在炎热的夏日畅饮，也可以坐在篝火旁慢慢品味。'"
+                },
+                {
+                    name: "Weird Al Dankovich",
+                    style: "特色酒款",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "特色推荐",
+                    hops: "N/A",
+                    process: "实验性酒款。",
+                    flavor: "Flatland的创意酒款之一，体现了酒厂对实验性和趣味性的追求。"
+                },
+                {
+                    name: "Dank Clouds",
+                    style: "West Coast IPA",
+                    abv: "6.71%",
+                    ibu: "N/A",
+                    rating: "Untappd高分",
+                    hops: "N/A",
+                    process: "西海岸IPA，干投酒花。",
+                    flavor: "香气：松脂、柑橘、阴湿感。口感：干净、清爽，苦味直接但平衡，麦芽骨架简洁，收口干爽。"
+                },
+                {
+                    name: "Departure",
+                    style: "Russian Imperial Stout",
+                    abv: "9.0%",
+                    ibu: "N/A",
+                    rating: "Untappd高分",
+                    hops: "N/A",
+                    process: "俄罗斯帝国世涛，注重烘焙麦芽层次。",
+                    flavor: "香气：深烘焙咖啡、黑巧克力、焦糖、深色水果。口感：酒体厚重，粘稠顺滑，烘焙苦味与甜味平衡，收口温暖悠长。"
+                },
+                {
+                    name: "Goosed",
+                    style: "Double/Imperial IPA",
+                    abv: "8.0%",
+                    ibu: "N/A",
+                    rating: "Untappd高分",
+                    hops: "N/A",
+                    process: "双倍IPA，大量酒花干投。",
+                    flavor: "香气：浓郁的热带水果、柑橘、松脂。口感：酒体饱满，果汁感强，苦度支撑到位，收口干净。"
+                },
+                {
+                    name: "Pink is Still the New Black",
+                    style: "Lager",
+                    abv: "5.5%",
+                    ibu: "N/A",
+                    rating: "Untappd高分",
+                    hops: "N/A",
+                    process: "拉格，清爽易饮。",
+                    flavor: "香气：淡淡的麦芽、花香。口感：清爽、干净、易饮，适合夏日畅饮。"
+                }
+            ]
+        }
+    },
+    {
+        id: "ebeltoft-gardbryggeri",
+        nameEn: "Ebeltoft Gårdbryggeri",
+        nameZh: "Ebeltoft Gårdbryggeri",
+        country: "🇩🇰 丹麦",
+        countryCode: "denmark",
+        location: "Ebeltoft, Mols Bjerge National Park",
+        founded: "家族经营的农场酒厂",
+        founder: "家族经营",
+        founderDesc: "家族经营的农场酒厂，位于丹麦最美小镇Ebeltoft附近的农场中",
+        tags: ["农场酒厂", "IPA", "手工苏打", "可持续发展"],
+        highlight: "丹麦领先手工饮料生产商",
+        shortStory: "坐落在丹麦最美小镇Ebeltoft附近的百年农舍中，使用当地有机原料，注重可持续发展和社区活动。",
+        fullStory: {
+            nameOrigin: "Ebeltoft Gårdbryggeri——丹麦语'Gård'意为农场，'bryggeri'意为酒厂。合起来就是'Ebeltoft农场酒厂'。酒厂坐落在一个历史悠久的农舍中。",
+            founderJourney: [
+                { year: "Ebeltoft小镇", text: "Ebeltoft是丹麦13世纪建立的沿海小镇，17世纪成为造船和贸易中心。以保存完好的16世纪木制建筑、鹅卵石街道和Ebeltoft玻璃博物馆闻名。每年举办'Ebeltoft Festival'庆祝音乐、艺术和当地手工艺" },
+                { year: "酒厂设立", text: "Ebeltoft Gårdbryggeri beautifully situated in the heart of Mols Bjerge National Park。酒厂坐落在一个历史悠久的农舍中，周围是起伏的乡村和Mols Bjerge国家公园的自然美景" },
+                { year: "现代发展", text: "家族经营的酒厂，致力于质量、创新和可持续发展。使用当地和有机原料，尽可能减少环境足迹。包装采用回收和环保解决方案" }
+            ],
+            philosophy: "小批量手工酿造，使用天然原料，不使用人工添加剂。注重展现自然风味。现代品酒室和咖啡馆提供放松的环境，可欣赏Jernhatten和Ebeltoft Vig的景观。酒厂提供导览，让游客了解酿造过程和酒厂的历史价值观。全年举办各种活动，如品鉴会、现场音乐和与当地供应商合作的美食体验。",
+            awards: [
+                "丹麦领先的手工饮料生产商之一",
+                "以质量和创新在丹麦精酿界建立声誉"
+            ],
+            beers: [
+                {
+                    name: "各类IPA",
+                    style: "IPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "人气酒款",
+                    hops: "N/A",
+                    process: "使用天然原料酿造的IPA。",
+                    flavor: "香气：柑橘、热带水果、花香。口感：清爽、干净，酒花风味突出，收口干净。"
+                },
+                {
+                    name: "各类Pale Ale",
+                    style: "Pale Ale",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "人气酒款",
+                    hops: "N/A",
+                    process: "使用天然原料酿造的淡色艾尔。",
+                    flavor: "香气：麦芽、柑橘、轻度酒花。口感：平衡、易饮，适合各种场合。"
+                },
+                {
+                    name: "Stout和Porter",
+                    style: "Stout / Porter",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "人气酒款",
+                    hops: "N/A",
+                    process: "深色啤酒，注重烘焙麦芽层次。",
+                    flavor: "香气：咖啡、黑巧克力、焦糖。口感：酒体饱满，烘焙风味浓郁，收口温暖。"
+                },
+                {
+                    name: "手工苏打",
+                    style: "Handcrafted Soda",
+                    abv: "0%",
+                    ibu: "N/A",
+                    rating: "获奖产品，深受儿童和成人喜爱",
+                    hops: "N/A",
+                    process: "使用新鲜水果和浆果手工制作，不使用人工添加剂。",
+                    flavor: "香气：天然水果和浆果的清新香气。口感：清爽、自然甜美，气泡细腻，适合所有年龄段。"
+                }
+            ]
+        }
+    },
+    {
+        id: "warpigs",
+        nameEn: "Warpigs",
+        nameZh: "Warpigs",
+        country: "🇩🇰 丹麦",
+        countryCode: "denmark",
+        location: "Copenhagen, Kødbyen（肉库区）",
+        founded: "2015年4月10日",
+        founder: "Mikkeller × 3 Floyds（合营）",
+        founderDesc: "Mikkeller创始人Mikkel Borg Bjergsø与3 Floyds合营，首席酿酒师Kyle Wolak来自3 Floyds",
+        tags: ["美式酒花艾尔", "德克萨斯烧烤", "Mikkeller合营", "3 Floyds合营"],
+        highlight: "2024十大最佳国际酒厂",
+        shortStory: "Mikkeller和3 Floyds在哥本哈根肉库区的前屠宰场中合营，拥有欧洲最大的烟熏炉（每天可烟熏2吨+肉类），White Labs首个美国以外前哨站。",
+        fullStory: {
+            nameOrigin: "Warpigs——名字来源于Black Sabbath的经典歌曲'War Pigs'，呼应3 Floyds的重金属文化和Mikkeller的叛逆精神。",
+            founderJourney: [
+                { year: "2015年", text: "Mikkeller和3 Floyds宣布合营，目标'开设世界上最好的brewpub'。4月10日正式开业" },
+                { year: "Mikkeller", text: "由前高中科学老师Mikkel Borg Bjergsø于2006年创立，是世界上最著名的吉普赛酿酒商。在哥本哈根已有9个其他门店" },
+                { year: "3 Floyds", text: "美国印第安纳州Munster的先锋酒厂，以重金属文化和酒花啤酒闻名，无法满足本土需求" },
+                { year: "Kyle Wolak", text: "首席酿酒师，曾在3 Floyds工作5年多，2014年底移居哥本哈根。助理酿酒师Lan-xin Foo来自Mikkeller试点酒厂" },
+                { year: "Kødbyen", text: "位于哥本哈根历史悠久的肉库区（Meatpacking District），20世纪30年代建成，曾是欧洲屠夫密度最高的地区。2005年重新开发为时尚娱乐区" },
+                { year: "建筑", text: "坐落在一座前屠宰场中，由于历史建筑保护法规，内部几乎不能改动——白色瓷砖墙壁、天花板上的肉钩轨道都保留了下来" }
+            ],
+            philosophy: "Mikkel的愿景是'创造欧洲最好的酒花啤酒，让人们可以从服务罐中直接获得新鲜的啤酒'。Warpigs是我们的游乐场，我可以做在生产酒厂中难以实现的事情，有3 Floyds作为合作伙伴让一切更棒。拥有两台烟熏炉（300公斤和750公斤），是欧洲最大的烟熏作业，每天可慢火烟熏超过两吨肉类。还设有White Labs（酵母公司）的第一个美国以外前哨站。",
+            awards: [
+                "2024年十大最佳国际酒厂",
+                "Mikkeller和3 Floyds的强强联合"
+            ],
+            beers: [
+                {
+                    name: "Lazurite",
+                    style: "IPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "旗舰酒款",
+                    hops: "N/A",
+                    process: "Warpigs旗舰IPA。水经过反渗透系统处理，去除所有矿物质后重建为与密歇根湖相同的水质——完美复制3 Floyds使用的水。",
+                    flavor: "香气：酒花侵略性强，带有Mikkeller和3 Floyds两家的特征。口感：明亮但苦味明显，酒花与麦芽平衡在失衡边缘但从未倾倒，酵母特征让人联想到Zombie Dust或Alpha King。"
+                },
+                {
+                    name: "Sloe Berry Braggot",
+                    style: "Braggot",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "实验酒款",
+                    hops: "N/A",
+                    process: "实验性酒款，使用黑刺李浆果。",
+                    flavor: "香气：浆果、蜂蜜、麦芽。口感：独特的蜂蜜酒与啤酒混合风格，浆果酸甜与麦芽甜味交织。"
+                },
+                {
+                    name: "Berliner Weisse with sea buckthorn",
+                    style: "Berliner Weisse",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "实验酒款",
+                    hops: "N/A",
+                    process: "柏林酸小麦，加入沙棘。",
+                    flavor: "香气：沙棘的独特酸甜香气。口感：清爽的乳酸酸味，沙棘的果味点缀，收口干净。"
+                },
+                {
+                    name: "Saison with smoked hay",
+                    style: "Saison",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "实验酒款",
+                    hops: "N/A",
+                    process: "赛松，加入烟熏干草。",
+                    flavor: "香气：烟熏、干草、野菌。口感：干爽、复杂，烟熏味与赛松的辛香交织。"
+                },
+                {
+                    name: "Licorice pipe IPA",
+                    style: "IPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "与瑞典乐队Bob Hund合酿",
+                    hops: "N/A",
+                    process: "与瑞典独立乐队Bob Hund合酿，使用甘草管。",
+                    flavor: "香气：甘草、柑橘、酒花。口感：独特的甘草甜味与IPA的苦味形成有趣对比，实验性极强。"
+                }
+            ]
+        }
+    }
+];
+
+function getBreweryAge(founded) {
+    const match = founded.match(/(\d{4})/);
+    if (!match) return founded;
+    const year = parseInt(match[1]);
+    const age = 2026 - year;
+    return `建厂${age}年`;
+}
+
+/* ================= Supabase REST API (直接调用，apikey 通过 URL 参数传递) ================= */
+
+const SUPABASE_URL = 'https://pzcyjjcgirhiwzipbtmn.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6Y3lqamNnaXJoaXd6aXBidG1uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzk2ODAsImV4cCI6MjA5NjkxNTY4MH0.6DHCrdl5AyNgyvpKAHswD6W-WGUiQbXqkBoonBT3NPg';
+
+async function sbSelect(table, id) {
+    let url = SUPABASE_URL + '/rest/v1/' + table + '?select=*&apikey=' + encodeURIComponent(SUPABASE_KEY);
+    if (id !== undefined) url += '&id=eq.' + encodeURIComponent(id);
+    try {
+        const res = await fetch(url, { method: 'GET' });
+        const text = await res.text();
+        if (!text || text.startsWith('PGRST')) {
+            console.warn('[sbSelect] error response:', text.substring(0, 100));
+            return [];
+        }
+        try { return JSON.parse(text); }
+        catch (e) { return []; }
+    } catch (err) {
+        console.error('[sbSelect] fetch error:', err);
+        return [];
+    }
+}
+
+async function sbUpsert(table, record) {
+    const url = SUPABASE_URL + '/rest/v1/' + table + '?apikey=' + encodeURIComponent(SUPABASE_KEY);
+    try {
+        const res = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Prefer': 'resolution=merge-duplicates' },
+            body: JSON.stringify(record)
+        });
+        const text = await res.text();
+        if (!res.ok) {
+            console.error('[sbUpsert] HTTP error:', res.status, text);
+            return false;
+        }
+        if (text && text.startsWith('PGRST')) {
+            console.error('[sbUpsert] Supabase error:', text);
+            return false;
+        }
+        return true;
+    } catch (err) {
+        console.error('[sbUpsert] fetch error:', err);
+        return false;
+    }
+}
+
+async function sbUpdate(table, id, record) {
+    const url = SUPABASE_URL + '/rest/v1/' + table + '?id=eq.' + encodeURIComponent(id) + '&apikey=' + encodeURIComponent(SUPABASE_KEY);
+    try {
+        const res = await fetch(url, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+            body: JSON.stringify(record)
+        });
+        return res.ok;
+    } catch (err) {
+        console.error('[sbUpdate] fetch error:', err);
+        return false;
+    }
+}
+
+/* 用户本地点赞状态（防止重复点赞） */
+function getUserLikes() {
+    try { return JSON.parse(localStorage.getItem('mbcb_user_likes')) || {}; }
+    catch { return {}; }
+}
+
+function saveUserLikes(data) {
+    localStorage.setItem('mbcb_user_likes', JSON.stringify(data));
+}
+
+/* 本地计数回退（仅本地存储，不依赖 Supabase） */
+function getLocalCounts() {
+    try { return JSON.parse(localStorage.getItem('mbcb_local_counts')) || {}; }
+    catch { return {}; }
+}
+
+function saveLocalCounts(data) {
+    localStorage.setItem('mbcb_local_counts', JSON.stringify(data));
+}
+
+function getLocalCount(id) {
+    const counts = getLocalCounts();
+    return counts[id] || 0;
+}
+
+function setLocalCount(id, count) {
+    const counts = getLocalCounts();
+    counts[id] = count;
+    saveLocalCounts(counts);
+}
+
+async function toggleHeart(event, id) {
+    event.stopPropagation();
+    const likes = getUserLikes();
+    const hasLiked = !!likes[id];
+
+    try {
+        // 读取当前计数
+        const rows = await sbSelect('hearts', id);
+        const current = (rows && rows[0]) ? rows[0].count : getLocalCount(id);
+        const next = hasLiked ? Math.max(0, current - 1) : current + 1;
+
+        // 写入更新（存在则更新，不存在则插入）
+        const ok = await sbUpsert('hearts', { id: id, count: next });
+        if (!ok) {
+            console.warn('[toggleHeart] Supabase write failed, falling back to local count');
+            setLocalCount(id, next);
+        }
+
+        likes[id] = !hasLiked;
+        saveUserLikes(likes);
+        updateHeartUI(id, next, !hasLiked);
+    } catch (err) {
+        console.error('[toggleHeart] error:', err);
+        // 回退到本地计数
+        const localCurrent = getLocalCount(id);
+        const next = hasLiked ? Math.max(0, localCurrent - 1) : localCurrent + 1;
+        setLocalCount(id, next);
+        likes[id] = !hasLiked;
+        saveUserLikes(likes);
+        updateHeartUI(id, next, !hasLiked);
+    }
+}
+
+function updateHeartUI(id, count, liked) {
+    const btn = document.querySelector(`.heart-btn[data-id="${id}"]`);
+    if (btn) {
+        // 强制重绘动画：先移除 liked，再添加（触发心跳动画）
+        if (liked && !btn.classList.contains('liked')) {
+            btn.classList.remove('liked');
+            // 强制重排
+            void btn.offsetWidth;
+            btn.classList.add('liked');
+        } else if (!liked) {
+            btn.classList.remove('liked');
+        }
+        const countEl = btn.querySelector('.heart-count');
+        if (countEl) {
+            // 数字变化动画
+            countEl.style.transform = 'scale(1.4)';
+            countEl.style.opacity = '0.7';
+            countEl.textContent = count;
+            setTimeout(() => {
+                countEl.style.transform = 'scale(1)';
+                countEl.style.opacity = '1';
+            }, 200);
+        }
+    }
+}
+
+async function initHearts() {
+    try {
+        console.log('[initHearts] starting initialization');
+        // 初始化：为每个酒厂插入 count=0（若不存在）
+        for (const b of breweries) {
+            await sbUpsert('hearts', { id: b.id, count: 0 });
+        }
+
+        // 读取所有初始值并渲染
+        const rows = await sbSelect('hearts');
+        const likes = getUserLikes();
+        if (Array.isArray(rows)) {
+            rows.forEach(r => {
+                updateHeartUI(r.id, r.count, !!likes[r.id]);
+            });
+        } else {
+            console.warn('[initHearts] rows is not an array, skipping initial render');
+        }
+
+        // 每 3 秒轮询一次，实现跨用户同步（无需 WebSocket）
+        setInterval(async () => {
+            try {
+                const rows = await sbSelect('hearts');
+                const likes = getUserLikes();
+                if (Array.isArray(rows)) {
+                    rows.forEach(r => {
+                        updateHeartUI(r.id, r.count, !!likes[r.id]);
+                    });
+                }
+            } catch (e) {
+                console.error('[initHearts] poll error:', e);
+            }
+        }, 3000);
+        console.log('[initHearts] initialization complete');
+    } catch (err) {
+        console.error('[initHearts] initialization failed:', err);
+        // 回退到本地计数渲染
+        const likes = getUserLikes();
+        const counts = getLocalCounts();
+        breweries.forEach(b => {
+            const count = counts[b.id] || 0;
+            updateHeartUI(b.id, count, !!likes[b.id]);
+        });
+    }
+}
+
+function renderBreweries(filter = 'all') {
+    const grid = document.getElementById('breweryGrid');
+    const filtered = filter === 'all' ? breweries : breweries.filter(b => b.countryCode === filter);
+    
+    grid.innerHTML = filtered.map(b => `
+        <div class="brewery-card" data-country="${b.countryCode}" onclick="openModal('${b.id}')">
+            <div class="card-header">
+                <button class="heart-btn card-heart" onclick="toggleHeart(event, '${b.id}')" data-id="${b.id}">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <span class="heart-count" data-count="${b.id}">0</span>
+                </button>
+                <div class="brewery-name-en">${b.nameEn}</div>
+                <div class="brewery-name-zh">${b.nameZh}</div>
+                <div class="location">
+                    <span class="country-flag">${b.country.split(' ')[0]}</span>
+                    <span class="location-icon">📍</span>
+                    <span>${b.location}</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="tag-row">
+                    ${b.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+                    <span class="tag highlight">${b.highlight}</span>
+                </div>
+                
+                <div class="section-title">创始人</div>
+                <div class="founder-box">
+                    <div class="founder-name">${b.founder}</div>
+                    <div class="founder-desc">${b.founderDesc}</div>
+                </div>
+                
+                <div class="section-title">故事梗概</div>
+                <p class="story-text">${b.shortStory}</p>
+            </div>
+            <div class="card-footer">
+                <span class="year-badge">${getBreweryAge(b.founded)}</span>
+                <span class="detail-btn">查看详情 →</span>
+            </div>
+        </div>
+    `).join('');
+}
+
+function openModal(id) {
+    const b = breweries.find(x => x.id === id);
+    if (!b) return;
+    
+    const story = b.fullStory;
+    
+    let tab1Content = `
+        <div class="section-title">命名由来</div>
+        <p class="story-text">${story.nameOrigin}</p>
+        
+        <div class="section-title">创始人历程</div>
+        <div class="timeline">
+            ${story.founderJourney.map(item => `
+                <div class="timeline-item">
+                    <div class="timeline-year">${item.year}</div>
+                    <div class="timeline-text">${item.text}</div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+    
+    if (story.familyLegacy) {
+        tab1Content += `
+            <div class="section-title">家族传承</div>
+            <p class="story-text">${story.familyLegacy}</p>
+        `;
+    }
+    
+    if (story.teamDynamic) {
+        tab1Content += `
+            <div class="section-title">团队动态</div>
+            <p class="story-text">${story.teamDynamic}</p>
+        `;
+    }
+    
+    let tab2Content = `
+        <div class="section-title">酿造哲学</div>
+        <p class="story-text">${story.philosophy}</p>
+    `;
+    
+    if (story.taproom) {
+        tab2Content += `
+            <div class="section-title">品酒室特色</div>
+            <p class="story-text">${story.taproom}</p>
+        `;
+    }
+    
+    if (story.ahaMoment) {
+        tab2Content += `
+            <div class="section-title">顿悟时刻</div>
+            <p class="story-text">${story.ahaMoment}</p>
+        `;
+    }
+    
+    if (story.metalTheme) {
+        tab2Content += `
+            <div class="section-title">重金属主题</div>
+            <p class="story-text">${story.metalTheme}</p>
+        `;
+    }
+    
+    if (story.oaklandScene) {
+        tab2Content += `
+            <div class="section-title">奥克兰啤酒场景</div>
+            <p class="story-text">${story.oaklandScene}</p>
+        `;
+    }
+    
+    const tab3Content = `
+        <ul class="awards-list">
+            ${story.awards.map(a => `<li>${a}</li>`).join('')}
+        </ul>
+    `;
+    
+    const tab4Content = `
+        <div class="beer-grid">
+            ${story.beers.map(beer => `
+                <div class="beer-card">
+                    <div class="beer-name">${beer.name}</div>
+                    <div class="beer-meta">
+                        <span>${beer.style}</span>
+                        <span>ABV ${beer.abv}</span>
+                        ${beer.ibu !== 'N/A' ? `<span>IBU ${beer.ibu}</span>` : ''}
+                        <span class="rating">${beer.rating}</span>
+                    </div>
+                    <div class="beer-desc">
+                        <p><span class="label">酒花：</span>${beer.hops}</p>
+                        <p><span class="label">工艺：</span>${beer.process}</p>
+                        <p><span class="label">风味：</span>${beer.flavor}</p>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+    
+    const content = `
+        <div class="modal-header">
+            <span style="font-size:2rem">${b.country.split(' ')[0]}</span>
+            <h2 style="font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--accent-gold);margin-top:8px">${b.nameEn}</h2>
+            <p style="color:var(--text-secondary);font-size:1.1rem">${b.nameZh} · ${b.location}</p>
+        </div>
+        <div class="tabs-nav">
+            <button class="tab-btn active" onclick="switchTab(0)">代表酒款</button>
+            <button class="tab-btn" onclick="switchTab(1)">酒厂故事</button>
+            <button class="tab-btn" onclick="switchTab(2)">酿造哲学</button>
+            <button class="tab-btn" onclick="switchTab(3)">荣誉奖项</button>
+        </div>
+        <div class="tab-panel active" data-tab="0">${tab4Content}</div>
+        <div class="tab-panel" data-tab="1">${tab1Content}</div>
+        <div class="tab-panel" data-tab="2">${tab2Content}</div>
+        <div class="tab-panel" data-tab="3">${tab3Content}</div>
+    `;
+    
+    document.getElementById('modalContent').innerHTML = content;
+    document.getElementById('modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function switchTab(index) {
+    document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+    });
+    document.querySelectorAll('.tab-panel').forEach((panel, i) => {
+        panel.classList.toggle('active', i === index);
+    });
+}
+
+function closeModal(event) {
+    if (event && event.target !== event.currentTarget && event.target.className !== 'modal-close') return;
+    document.getElementById('modal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function filterBreweries(country) {
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    renderBreweries(country);
+}
+
+renderBreweries();
+try { initHearts(); } catch(e) { console.warn('Supabase init skipped:', e); }
+</script>
+</body>
+</html>
