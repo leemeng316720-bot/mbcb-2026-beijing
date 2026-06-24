@@ -1492,8 +1492,8 @@ function getBreweryAge(founded) {
 
 /* ================= Supabase REST API (直接调用，apikey 通过 URL 参数传递) ================= */
 
-const SUPABASE_URL = 'https://pzcyjjcgirhiwzipbtmn.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6Y3lqamNnaXJoaXd6aXBidG1uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzk2ODAsImV4cCI6MjA5NjkxNTY4MH0.6DHCrdl5AyNgyvpKAHswD6W-WGUiQbXqkBoonBT3NPg';
+const SUPABASE_URL = 'https://izjtmafnvppjnqnvgdun.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml6anRtYWZudnBwam5xbnZnZHVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzc4NDQsImV4cCI6MjA5NjkxMzg0NH0.Fs-FLZqTgj9sB3xx6pkUknHuIp37SzVnu3o3gWaGZ-M';
 
 async function sbSelect(table, id) {
     let url = SUPABASE_URL + '/rest/v1/' + table + '?select=*&apikey=' + encodeURIComponent(SUPABASE_KEY);
