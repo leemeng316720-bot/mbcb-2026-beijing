@@ -1,0 +1,63 @@
+{
+  "brewery_id": "human-robot",
+  "name": {
+    "english": "Human Robot",
+    "chinese": "人机之间"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "宾夕法尼亚州",
+    "state_en": "Pennsylvania",
+    "city": "Philadelphia（费城）Kensington区，1710 N 5th St",
+    "city_en": "Philadelphia, PA",
+    "address": "前身是St. Benjamin酒厂旧址；另有Jenkintown与South Philadelphia两家品酒室（2023年10月开业，主打Mliko奶泡拉格）"
+  },
+  "founded": "2020年1月开业",
+  "founded_en": "Opened January 2020",
+  "founder": {
+    "name": "Jake Atkinson, Chris Roller, Ken Correll",
+    "name_zh": "杰克·阿特金森、克里斯·罗勒、肯·科雷尔",
+    "head_brewer": "Andrew Foss（安德鲁·福斯）",
+    "name_origin": "Human Robot——'Human'代表经典、基础型传统啤酒，'Robot'代表现代新潮风格，两条路线并行。"
+  },
+  "history": {
+    "opening": "2020年1月在费城Kensington区开业（原St. Benjamin酒厂址）。共同所有人Chris Roller曾是小企业银行家，人称'Robo Wonka'，是活音乐百科——酒厂IPA的怪趣酒名大多出自他手。",
+    "head_brewer": "首席酿酒师Andrew Foss是酒吧侍者出身：因为给工作的酒吧打电话找管道清洁工，意外结识酿酒师Scott Morrison（Barren Hill Tavern），从此跟着师傅入行六七年。他的酿造哲学是把传统风格做出新意——多数拉格是单一麦芽单一酒花，靠糖化温度、煮沸时长、 decoction（煮出法）等工艺参数变化来创造风格：'我们的捷克10°从来没有两次配方完全相同。'",
+    "lager_revival": "Human Robot是美国捷克式拉格复兴的旗帜：侧拉龙头（side-pull faucet）出杯，讲究泡沫结构与Mliko奶泡倒法。Czech 10°在2023年Breweries in PA读者选择奖中获拉格类第三。",
+    "growth": "五年内开出三家品酒室，UNTAPPD积累9万+评分、综合均分超4.0，宾州排名第一。"
+  },
+  "specialty": {
+    "primary": "捷克/欧洲拉格（淡色、琥珀、深色），兼做浑浊IPA与果味酸啤",
+    "styles": ["Czech Pale Lager (Světlé)", "Czech Amber (Polotmavé)", "Czech Dark (Tmavé)", "German Pilsner", "Hazy / Double IPA", "Fruited Sour"],
+    "philosophy": "'Human'线：传统欧洲拉格——单麦芽单酒花、煮出法、侧拉龙头侍酒，追求泡沫结构与发酵个性的保留；'Robot'线：浑浊IPA、果味酸啤等现代风格。"
+  },
+  "awards": [
+    "UNTAPPD美式琥珀拉格、捷克琥珀拉格风格世界排名TOP1（MBCB官方）",
+    "UNTAPPD2025社区奖20金13银9铜，美国宾夕法尼亚州TOP1",
+    "Hop Culture 2024年度最佳酒厂之一",
+    "Czech 10°获2023 Breweries in PA读者选择奖第3名",
+    "酒厂UNTAPPD综合均分4.0+（9万+评分）"
+  ],
+  "notable_beers": [
+    "Czech 10° - 捷克淡色拉格 4.2%，UNTAPPD 4.04，'从来没有两次配方完全相同'的旗舰",
+    "Tmavy 13° - 捷克深色拉格 5.3%，UNTAPPD 4.15",
+    "Polotmavy 12° - 捷克琥珀拉格 5%，UNTAPPD 4.04",
+    "Hallertau Pils - 德式皮尔森 5.2%，UNTAPPD 4.01",
+    "Sedlec 12° - 捷克皮尔森，UNTAPPD 3.97，宾州捷克皮尔森第一",
+    "Content Therapy - 多汁浑浊双倍IPA",
+    "Dreams of Orgonon - 浑浊IPA 6.6%，UNTAPPD 4.1"
+  ],
+  "sources": [
+    "https://breweriesinpa.com/meet-the-brewer-andrew-foss-of-human-robot-beer/",
+    "https://mybartender.com/beers/top-30-breweries-in-pennsylvania/",
+    "https://www.inquirer.com/food/human-robot-beer-brewing-kensington-poes-sandwich-joint-20200206.html",
+    "https://www.phillyvoice.com/human-robot-south-philly-brewery-taproom-milk-pour/",
+    "https://untappd.com/HumanRobot/beer",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，全美顶级拉格酿造者之一"
+  }
+}

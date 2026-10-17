@@ -1,0 +1,64 @@
+{
+  "brewery_id": "lua",
+  "name": {
+    "english": "Lua Brewing",
+    "chinese": "路亚"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "爱荷华州",
+    "state_en": "Iowa",
+    "city": "Des Moines（得梅因）Sherman Hill区，1525 High St",
+    "city_en": "Des Moines, IA",
+    "address": "6200平方英尺，室内120座+户外100座宠物友好露台；西侧Valley Junction另有家庭友好餐厅Either/Or"
+  },
+  "founded": "2019年11月26日开业",
+  "founded_en": "Opened November 26, 2019",
+  "founder": {
+    "name": "Scott & Whitney Selix（夫妇）",
+    "name_zh": "斯科特·赛历克斯 & 惠特尼·赛历克斯",
+    "co_founder": "Zack Dunbar（首席酿酒师，前Forager Brewing）与两位沉默投资人",
+    "name_origin": "Lua来自赛历克斯夫妇养的一只性格憨厚的斯塔福郡斗牛梗。"
+  },
+  "history": {
+    "origin": "Scott与Whitney在爱荷华大学相识，一起在North Liberty的Reds Alehouse打工，从此相爱并爱上精酿——两人合计拥有20年行业经验。Scott曾赴明尼阿波利斯做律师，但'离不开啤酒'，先后成为Big Grove等酒厂的酿酒师，并于2019-2023年担任爱荷华酿酒师公会主席。夫妇决定回家乡得梅因开酒厂，选址历史街区Sherman Hill。",
+    "opening": "2019年11月开业，与好友Zack Dunbar（前Forager Brewing）共同创立。主厨James Arbaugh出自加州米其林一星Plumed Horse（及芝加哥、湾区名店），让Lua同时成为得梅因顶级餐厅。Whitney在创业期边哺乳边面试员工，'孩子们在酒厂里长大'。",
+    "rise": "开业仅18个月就进入UNTAPPD全球酒厂评分TOP50，成为爱荷华州评分最高的酒厂（综合4.22）。2025年获USA Today 10Best读者选择奖'全美第一Brewpub'，被Hop Culture列入'2025年最值得关注的酒厂'。",
+    "innovation": "2023年与邻居Big Grove（其得梅因店距Lua不到一个街区）合作推出爱荷华州首个THC/CBD社交饮品品牌Climbing Kites；2023年9月Big Grove收购其51%股份。Lua笑称自己是'Sherman Hill最老的微酒厂'。"
+  },
+  "specialty": {
+    "primary": "几乎全风格：德式皮尔森/小麦、浑浊IPA/双倍、柏林酸小麦、smoothie酸、世涛、赛松、Doppelbock",
+    "styles": ["German Pilsner", "Hefeweizen", "Hazy IPA", "Double Hazy IPA", "Berliner Weisse", "Smoothie Sour", "Oatmeal Stout", "Imperial Stout", "Doppelbock", "Saison"],
+    "philosophy": "'传统风格做扎实，风味实验推到极致'。开业五年留下400+款酒、13.9万次打卡记录——从德式皮尔森到三倍浑浊都拿社区奖金牌的全能型brewpub。酒名常从儿童动画（Bluey）等日常灵感中诞生。"
+  },
+  "awards": [
+    "USA Today 10Best『2025年全美第一Best Brewpub』",
+    "UNTAPPD爱荷华州评分第一酒厂（综合4.22），全球BrewPub级酒厂TOP4",
+    "UNTAPPD2025社区奖22金15银6铜（MBCB官方数据）；上一届社区奖33枚奖牌含12金（UNTAPPD官方，含德式皮尔森、柏林酸小麦、smoothie酸、世涛、小麦、Doppelbock、赛松、DIPA、三倍浑浊等类别）",
+    "开业18个月进入UNTAPPD全球酒厂评分TOP50",
+    "Hop Culture『2025年最值得关注的酒厂』"
+  ],
+  "notable_beers": [
+    "All (2025) - 帝国世涛，UNTAPPD 4.5（656评）",
+    "Cosmic Giggle - 浑浊淡色艾尔，UNTAPPD 4.2（464评）",
+    "Dancer - 浑浊双倍IPA，UNTAPPD 4.2（261评）",
+    "Limest - 美式淡爽拉格，UNTAPPD 3.9（446评）",
+    "Tulpa - 西海岸皮尔森",
+    "Loud as Hope - 德式小麦",
+    "Frail - 英式深色淡味艾尔",
+    "Dance Mode - 灵感来自动画片Bluey的piña colada酸啤"
+  ],
+  "sources": [
+    "https://www.hopculture.com/lua-brewing/",
+    "https://www.desmoinesregister.com/story/entertainment/dining/2019/11/26/lua-brewing-company-opens-craft-brewery-restaurant-in-sherman-hill-des-moines/4270709002/",
+    "https://www.kcci.com/article/new-craft-brewery-to-settle-in-sherman-hills-late-this-year/28511305",
+    "https://www.craftbeer.com/full-pour/from-bottles-to-beer-how-three-mothers-are-shaping-craft-culture",
+    "https://x.com/untappd/status/1830999752604787013",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，全美2025年度第一Brewpub，首次中国亮相"
+  }
+}

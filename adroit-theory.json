@@ -1,0 +1,55 @@
+{
+  "brewery_id": "adroit-theory",
+  "name": {
+    "english": "Adroit Theory Brewing Company",
+    "chinese": "灵敏理论"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "弗吉尼亚州",
+    "state_en": "Virginia",
+    "city": "Purcellville（珀塞尔维尔），404 Browning Ct Unit C",
+    "city_en": "Purcellville, VA"
+  },
+  "founded": "2014年1月",
+  "founder_en": "January 2014",
+  "founder": {
+    "name": "Mark Osborne（创始人）",
+    "name_zh": "马克·奥斯本",
+    "name_origin": "Adroit Theory意为'灵巧/熟练的理论'。品牌口号'CONSUME LIFE / DRINK ART'，自称'全美最METAL的啤酒厂'（We make the most METAL beers in America）。",
+    "ghost_system": "Ghost编号体系：每个新批次或新风味赋予独立'Ghost'编号（如Ghost 625），官网当前已延续至Ghost 1700+；每款限量标注'1 of 3000'式序号。EBK系列酒标还配有武士主题俳句。"
+  },
+  "history": {
+    "founding": "2014年1月在弗吉尼亚州珀塞尔维尔开业，以重金属与暗黑视觉为鲜明品牌元素。",
+    "style": "不设固定经典款，持续推出实验性作品：三倍IPA、smoothie酸啤、甜品世涛（用芝士蛋糕、Nilla威化、Heath巧克力棒等'布丁级'辅料）；同时擅长多汁新英格兰浑浊IPA，也涉猎西海岸IPA与拉格。2025年起在波特兰Function PDX做长期pop-up。",
+    "literary": "酒名与酒标是完整的暗黑叙事工程：AK系列（法老武士传奇，分genesis warrior/dissident等章节）、EBK系列（日本武士斩首叙事配俳句）、克苏鲁之死（俄罗斯帝国世涛）、缓慢文明之死……每款酒都是一个短篇。"
+  },
+  "specialty": {
+    "primary": "高酒精度实验酒：三倍IPA、甜品世涛、桶陈大麦烈酒、比利时烈性艾尔",
+    "styles": ["Triple IPA", "NE Style Imperial IPA", "Pastry Stout", "Barrel-Aged Barleywine", "Belgian Quad / Tripel", "Smoothie Sour"],
+    "philosophy": "'为消费者中极少数人酿造'（Craft Beer for the Select Few）：暗黑艺术+高酒精+限量编号，酒即收藏品。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖11金6银8铜"
+  ],
+  "notable_beers": [
+    "AK [genesis warrior edition] - 新英格兰帝国IPA 8.3% / 27 IBU，Ghost 625，法老武士叙事第一章",
+    "EBK [open your eyes edition] - 三倍IPA 10.5% / 70 IBU，Ghost 560，武士俳句酒标",
+    "Don't Believe The Hype - 美式IPA 10.6% / 105 IBU，致敬Public Enemy，'迄今最酒花的一款'",
+    "Now I Am Death, Destroyer of Worlds - 三倍IPA 10% / 124 IBU（名字借自奥本海默引用的薄伽梵歌）",
+    "The Death of Cthulhu - 俄罗斯帝国世涛 12%，Ghost 507",
+    "Day of the Dead - 双倍世涛 13%（含波本桶版，Catoct Creek桶）",
+    "Tenebris - 波本桶陈大麦烈酒 11%（Jos. A. Magnus桶）"
+  ],
+  "sources": [
+    "https://www.adroit-theory.com/",
+    "https://newschoolbeer.com/home/2025/3/function-pdx-taprooms-2025-brewery-pop-ups",
+    "https://dayonedistro.com/2021/06/24/adroit-theory-brewing/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，精酿与METAL的完美结合"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "brewery_id": "ruse",
+  "name": {
+    "english": "Ruse Brewing",
+    "chinese": "巧计"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "俄勒冈州",
+    "state_en": "Oregon",
+    "city": "Portland（波特兰）Brooklyn/Sellwood区，4784 SE 17th Ave",
+    "city_en": "Portland, OR",
+    "address": "Iron Fireman Collective老工业建筑；另有Slabtown与华盛顿州Vancouver waterfront分店（Crust Collective底特律披萨）"
+  },
+  "founded": "2015年底（Culmination合营起步），2018年7月自有酒厂开业",
+  "founder_en": "Founded late 2015 (alternating proprietorship); own taproom July 2018",
+  "founder": {
+    "name": "Shaun Kalis & Devin Benware",
+    "name_zh": "肖恩·卡利斯 & 德文·本威尔",
+    "name_origin": "Ruse——'巧计/妙策'，也呼应他们对酵母的策略性运用。两人因共同喜爱Brett农舍啤酒而结缘。",
+    "background": "Kalis 2002年开始家酿，曾在Old Market Pub & Brewery和McMenamins受训，后任Culmination酿酒师；Benware是Brannon's Brew Pub前首席酿酒师。讽刺的是两人2011年曾在同一家Old Market Pub前后脚工作却未曾相识，直到Culmination才碰头——'哦你就是Devin！'"
+  },
+  "history": {
+    "origin": "2015年底以alternating proprietorship模式借用Culmination的设备起步，前四款发布全是桶陈Brett赛松——与本地实验室Imperial共同培育了定制Brett菌株'Stargazer'与'Suburban Brett'。",
+    "shift": "2018年凭Interpreter DIPA拿下俄勒冈啤酒奖（OBA）浑浊酒花类金牌（战胜Great Notion与Oakshire）——市场用投票告诉两人：IPA与赛松同台上架时销量10:1。此后逐步淡出桶陈计划，转型以IPA为核心的全风格酒厂。",
+    "taproom": "2018年7月14日自有taproom开业：6000平方英尺老厂房，30英尺黄铜吧台，10桶三器糖化系统+定制大木桶（foeder）索莱拉系统；现场音乐是基因（Kalis本人就是音乐人）。",
+    "rise": "2019年获The Oregonian/OregonLive『年度啤酒厂』——'无论是德式Helles、浑浊还是明亮IPA，这里倒出的每一杯都是这座啤酒之城最好的之一'；与Fort George 3-Way、Cloudburst、Ale Apothecary、Modern Times等名厂合酿。"
+  },
+  "specialty": {
+    "primary": "IPA双雄：枕头般浑浊IPA + 松针西海岸IPA；拉格与季节款",
+    "styles": ["Hazy IPA", "West Coast IPA", "Pilsner (Czech-style)", "Helles", "Farmhouse Ale（早期）", "Kolsch"],
+    "philosophy": "小批量、风味优先、灵活转身：'10桶系统的好处是趋势一变我们就能换'；与本地艺术家和音乐人联名做概念酒。"
+  },
+  "awards": [
+    "The Oregonian/OregonLive『2019年波特兰年度啤酒厂』",
+    "2018俄勒冈啤酒奖浑浊酒花类金牌（Interpreter DIPA）",
+    "多次俄勒冈啤酒奖（OBA）金牌",
+    "UNTAPPD2025社区奖5金3银2铜"
+  ],
+  "notable_beers": [
+    "Translator - 西北风格/西海岸IPA，常驻旗舰",
+    "Imaginary Lines - 浑浊IPA，'饱和果香但精确校准'",
+    "Mirror Maker - 西海岸IPA，两种大米片+皮尔森麦芽带来脆爽收口",
+    "Interpreter DIPA - 首款浑浊（2018 OBA金牌）：Citra+Mosaic双倍投放，8.2%",
+    "Ruse Pilsner - 捷克风格皮尔森",
+    "Evertide - Helles"
+  ],
+  "sources": [
+    "https://www.oregonlive.com/beer/2019/12/2019-portland-brewery-of-the-year-ruse-brewing-is-this-beer-citys-rising-star.html",
+    "https://www.beerandbrewing.com/breakout-brewery-ruse",
+    "https://newschoolbeer.com/nsb/2018/07/unlocking-ruse-brewings-new-taproom-brewery.html",
+    "https://www.rusebrewing.com/about-ruse/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，2019年波特兰最佳小型啤酒厂"
+  }
+}

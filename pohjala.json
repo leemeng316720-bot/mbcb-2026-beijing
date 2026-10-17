@@ -1,0 +1,60 @@
+{
+  "brewery_id": "pohjala",
+  "name": {
+    "english": "Põhjala Brewery",
+    "chinese": "珀亚拉"
+  },
+  "location": {
+    "country": "爱沙尼亚",
+    "country_en": "Estonia",
+    "city": "Tallinn（塔林）Noblessner老造船厂区",
+    "city_en": "Tallinn",
+    "address": "2014年首厂在Nõmme区；2018年底迁入海滨Noblessner百年潜艇工厂（投资490万欧元，月产能1200百升，24头Taproom）"
+  },
+  "founded": "2011年底",
+  "founded_en": "Founded late 2011",
+  "founder": {
+    "name": "Enn Parel, Peeter Keek, Gren Noormets 等四位爱沙尼亚好友",
+    "name_zh": "Enn Parel, Peeter Keek, Gren Noormets 等",
+    "head_brewer": "Chris Pilkington（苏格兰，前BrewDog）",
+    "name_origin": "Põhjala意为'北方之地'，来自芬兰-乌戈尔神话中遥远北方、与神秘和力量相关的国度——也呼应爱沙尼亚民族史诗《卡列维波埃格》。Enn Parel回忆：苏联占领时代结束后爱沙尼亚市场只有两大工业拉格厂，他们'有点天真地'决定开酒厂改变这一切。"
+  },
+  "history": {
+    "founding": "2011年底，四个热爱美食、啤酒和家酿的爱沙尼亚好友创立公司。当时本地市场被只产淡拉格的国际大厂垄断。几个月后，苏格兰酿酒师Chris Pilkington加入——他们在BrewDog位于Fraserburgh的创始酒厂实习时相识（当时Pilkington在BrewDog工作），他把爱沙尼亚当时几乎缺失的现代酿造技术带了过来。",
+    "first_beer": "首款酒Öö（'夜'）帝国波罗的海波特于2013年初发布，因尚无自有酒厂而在他厂代工；2014年4月Nõmme区酒厂建成（5个24百升发酵罐），两年内产能翻两番。",
+    "growth": "2018年底迁入Noblessner老造船厂/潜艇工厂区，投资近490万欧元，50百升糖化系统、月产能1200百升，附设24头Taproom与120座餐厅。主理TCBW塔林精酿周末啤酒节。",
+    "today": "波罗的海三国最大精酿酒厂，出口30多个国家；唯一进入RateBeer全球百佳榜单的波罗的海酒厂。与Boneyard、De Struise、Lervig、Stillwater、To Øl等名厂合酿。"
+  },
+  "specialty": {
+    "primary": "波特与世涛（桶陈Cellar Series为核心）、爱沙尼亚森林原料（桦木、杜松子等）",
+    "styles": ["Imperial Baltic Porter", "Barrel-Aged Imperial Stout", "Barleywine", "IPA", "Gose", "Sour"],
+    "philosophy": "'北方之地'的寒冷气候塑造审美：酒必须'强到足以熬过爱沙尼亚的冬天'。以波特、桶陈与爱沙尼亚森林原料为特色，兼顾当代风格。"
+  },
+  "awards": [
+    "唯一进入RateBeer全球百佳的波罗的海酒厂",
+    "波罗的海三国最大精酿酒厂，出口30+国家",
+    "UNTAPPD爱沙尼亚酒厂排名TOP3",
+    "UNTAPPD2025社区奖20金9银15铜",
+    "Odravein Bourbon BA获BeerAdvocate 93分；Pime Öö PX、Enn Barrel-Aged等Cellar Series酒款UNTAPPD 4.2；『As Good As It Gets (Cellar Series)』居UNTAPPD爱沙尼亚榜首"
+  ],
+  "notable_beers": [
+    "Öö - 帝国波罗的海波特 10.5% / 60 IBU，首款酒，黑如爱沙尼亚冬夜：浓缩咖啡酸度与焦糖太妃平衡，红醋栗与黑巧克力",
+    "Pime Öö PX - PX雪莉桶陈帝国世涛 13-14%，UNTAPPD 4.2：葡萄干、无花果、枣蜜饯与椰子",
+    "Enn Barrel-Aged - 桶陈帝国世涛（Cellar Series），UNTAPPD 4.2",
+    "Odravein Bourbon BA - 波本桶陈大麦酒风格烈性黑啤，BeerAdvocate 93分",
+    "Cellar Series - 桶陈系列：Whisky、Cognac、红酒桶轮换",
+    "Winter Smooth - 为哥本哈根KIHOSKH冬季节酿的干邑桶大麦酒 12%"
+  ],
+  "sources": [
+    "https://www.pohjalabeer.com/about",
+    "https://www.hopculture.com/pohjala/",
+    "https://beerconnoisseur.com/articles/pohjala-brewery-leads-quiet-revolution-estonian-beer/",
+    "https://www.sheltonbrothers.com/breweries/pohjala/",
+    "https://shipleytriangle.com/products/pohjala-oo-10-5-imperial-baltic-porter-330ml-bottle-1",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，爱沙尼亚精酿之父"
+  }
+}

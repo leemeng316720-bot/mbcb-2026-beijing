@@ -1,0 +1,61 @@
+{
+  "brewery_id": "green-cheek",
+  "name": {
+    "english": "Green Cheek Beer Co.",
+    "chinese": "绿颊鹦鹉"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "加利福尼亚州",
+    "state_en": "California",
+    "city": "Orange（橘郡），四家门店：Orange旗舰/Costa Mesa/Sunset Beach/Oceanside",
+    "city_en": "Orange, CA",
+    "address": "2017年接手倒闭的Valiant酒厂设备与场地；2024年收购Bagby Beer Co并迎来传奇酿酒师Jeff Bagby强化拉格线"
+  },
+  "founded": "2017年6月23日开业",
+  "founder_en": "Opened June 23, 2017",
+  "founder": {
+    "name": "Evan Price（首席酿酒师）& Brian Rauso（CEO）",
+    "name_zh": "埃文·普莱斯 & 布莱恩·劳索",
+    "name_origin": "Green Cheek来自南加州橘郡本地定居的绿颊锥尾鹦鹉——没人知道这种鸟何时来此定居，创始人希望自己的酒厂也能这样自然地融入社区。四只吉祥物鹦鹉叫Cheeky、Pierre、Kee Wee和Matt。",
+    "background": "两人都来自Noble Ale Works：Price任首席酿酒师五年（2016年带领Noble拿下WBC年度最佳小型酒厂及年度酿酒师），Rauso任CEO——因与股东不和先后离开，联手创业。"
+  },
+  "history": {
+    "noble_era": "Price的履历：TAPS Fish House两年半（师承Victor Novak，2010-2011连续GABF年度brewpub团队）→ Noble Ale Works首席酿酒师：把一家穷困的小厂做成奥兰治郡最热门酒厂——2015 GABF铜（Nose Candy）、2016 GABF银（Nobility帝国IPA），2016 WBC金（I Love It! IPA）+银（Gose，'击败了发明Gose的莱比锡酒厂'）+铜（Nobility），荣膺WBC年度小型酒厂与年度酿酒师。",
+    "launch": "2017年4月接手Valiant酒厂的设备与场地，6月23日开业——开业首发Sink & Swim IPA几乎售罄。'我没有旗舰款：重复做同样的事永远不会让我快乐。'",
+    "expansion": "2019年收购Barley Forge资产开出Costa Mesa brewpub；2024年收购Bagby Beer Co开出Oceanside店，Jeff Bagby加盟带来传奇Baltic Porter配方。如今4店、员工超100人，UNTAPPD综合4.14（32.6万+评分）、累计821款酒。",
+    "awards_rush": "截至2026年WBC累计12枚奖牌、GABF累计10枚奖牌；2023 WBC独揽4奖（与10 Barrel、Fat Head's并列当届最多）；Craft Beer & Brewing杂志读者票选2022-2025连续4年小型酒厂组第1名。"
+  },
+  "specialty": {
+    "primary": "西海岸IPA（DDH）与浑浊IPA，拉格、世涛、古斯全风格顶尖",
+    "styles": ["West Coast IPA", "DDH IPA / DIPA", "Hazy IPA / TIPA", "Lager", "Stout", "Gose"],
+    "philosophy": "'走钢丝式的平衡，永远瞄准古老的易饮性'：通过持续品鉴和调整配方不断提升品质——'从酒花皮尔森到浑浊IPA，从德式拉格到柏林酸小麦，我绝不原地踏步'。"
+  },
+  "awards": [
+    "WBC累计12枚奖牌（含2023年4枚：Juicy/Hazy IPA金、英式棕色艾尔金等）",
+    "GABF累计10枚奖牌",
+    "《Craft Beer & Brewing》读者票选小型酒厂组第1名（2022-2025连续四年）",
+    "UNTAPPD2025社区奖19枚奖牌",
+    "UNTAPPD综合4.14（32.6万+评分）"
+  ],
+  "notable_beers": [
+    "DDH Radiant Beauty - DDH西海岸IPA 6.7%（GABF获奖作）",
+    "Chance Favors The Prepared Mind - DDH西海岸双倍IPA 8.6%",
+    "Wherever You Go - 2023 WBC金奖（Juicy/Hazy IPA）",
+    "Shhhhhh… This Is Ryan's Award Winning Brown Ale - 2023 WBC金奖（英式棕色艾尔）",
+    "The Clouds Just Hung Around - DDH浑浊三倍IPA"
+  ],
+  "sources": [
+    "https://www.forbes.com/sites/kennygould/2020/01/10/evan-price-of-green-cheek-beer-co-turns-his-attention-to-food/",
+    "https://www.beerandbrewing.com/breakout-brewer-green-cheek-just-brews-the-ipas-that-evan-price-wants-to",
+    "https://orangecoast.com/2017/bird-hand-green-cheek-beer-company/",
+    "https://thefullpint.com/beer-news/green-cheek-acquires-barley-forge-brewing-in-going-concern-sale/",
+    "https://rihobeer.com/zh/green-cheek-beer-co-zh/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "重磅酒厂揭秘，世界顶级酒厂"
+  }
+}

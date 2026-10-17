@@ -1,0 +1,60 @@
+{
+  "brewery_id": "brewski",
+  "name": {
+    "english": "Brewski",
+    "chinese": "滑雪佬"
+  },
+  "location": {
+    "country": "瑞典",
+    "country_en": "Sweden",
+    "region": "斯科纳省",
+    "region_en": "Skåne",
+    "city": "Helsingborg（赫尔辛堡，Cindersgatan 8，旧屠宰场改造）",
+    "city_en": "Helsingborg",
+    "address": "Barski品酒室：赫尔辛堡、奥斯陆、赫尔辛基三家"
+  },
+  "founded": "2014年（2013年起在Höganäs Bryggeri置放自酿设备）",
+  "founded_en": "Founded 2014; first kit placed at Höganäs Bryggeri in 2013",
+  "founder": {
+    "name": "Marcus Hjalmarsson",
+    "name_zh": "马库斯·亚尔马松",
+    "name_origin": "Brewski是加拿大英语里'啤酒'的俚语——1996年Marcus去温哥华看望哥哥，在一家微酿酒吧里第一次从酒保口中听到这个词，从此印象深刻。他原本是酿酒师（曾在Highnose Brew工作），2013年参加荷兰De Molen的Borefts啤酒节后决心以此为业。"
+  },
+  "history": {
+    "origin": "2013年，Marcus获准把自己的糖化设备安置在Höganäs Bryggeri，开始实验。当时小酒厂在瑞典很难买到优质美国酒花——他买的酒花品质太差，于是干脆把芒果、百香果等真实水果加入IPA和Pale Ale发酵，用水果还原美式酒花的热带风味。Mangofeber（'芒果热'）双倍IPA由此诞生，成为酒厂成功的基础，也让Brewski成为欧洲最早用真实水果发酵酿造啤酒的酒厂之一。",
+    "own_facility": "2014年迁入赫尔辛堡旧屠宰场厂房。如今约80%的酒款使用浆果或水果。",
+    "brewskival": "2016年起创办Brewskival啤酒节——瑞典最大的精酿啤酒节之一，每年吸引欧美约50家酒厂参加。",
+    "today": "家族企业，出口35+国家；赫尔辛堡、奥斯陆、赫尔辛基三家Barski酒吧；酒款不过滤、不巴氏杀菌。"
+  },
+  "specialty": {
+    "primary": "水果IPA、柏林酸小麦/酸啤、甜品酸与世涛（'蛋糕啤酒'灵感）",
+    "styles": ["Fruited IPA", "Kettle Sour", "Berliner Weisse", "Pastry Sour / Stout", "Hazy IPA", "Lager"],
+    "philosophy": "明快果香、易辨识配方与持续实验——从料理与烘焙中汲取灵感（Triple Berry Pie、BFF等'蛋糕啤酒'）。"
+  },
+  "awards": [
+    "UNTAPPD瑞典酒厂排名TOP19",
+    "UNTAPPD2025社区奖6金4银6铜",
+    "Brewskival：瑞典最大精酿啤酒节之一（2016年创办）",
+    "欧洲真实水果发酵啤酒的先驱之一"
+  ],
+  "notable_beers": [
+    "Mangofeber - 首款酒：芒果双倍IPA 8%，Brewski的发家之作",
+    "Pango IPA - 最畅销款：芒果+百香果+菠萝",
+    "Triple Berry Pie - 酸啤：蓝莓+树莓+黑加仑，'浆果派'",
+    "BFF (Blueberry Fluff Forever) - 酸啤：蓝莓+棉花糖'满满的爱'",
+    "Lilo GF - 无麸质IPA 3.5%",
+    "Ponyo Red IPA - 6%"
+  ],
+  "sources": [
+    "https://sccj.org/news/member-introduction-brewski-a-craft-beer-brewer-from-helsingborg",
+    "https://brill.se/ol/ipa/lilo-gf-3-5-33-cl",
+    "https://beerbay.es/countries/sweden/",
+    "https://www.beer52.com/ferment/article/1822/brewski-awards",
+    "https://dig-the-line-store.com/en/collections/brewski",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，瑞典柏林酸小麦风格代表酒厂"
+  }
+}

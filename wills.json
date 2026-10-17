@@ -1,0 +1,52 @@
+{
+  "brewery_id": "wills",
+  "name": {
+    "english": "WILLS Beer",
+    "chinese": "本愿"
+  },
+  "location": {
+    "country": "加拿大",
+    "country_en": "Canada",
+    "province": "魁北克省",
+    "province_en": "Quebec",
+    "city": "Montreal（蒙特利尔）Mile-Ex区，6729 avenue de l'Esplanade",
+    "city_en": "Montreal",
+    "address": "前身是Alexandraplatz酒吧与Brasserie Du Vieux Montréal；酒厂+酒吧+活动场地多功能空间，设计师是Ethan的伴侣Annika Krausz"
+  },
+  "founded": "2023年7月开始酿造",
+  "founder_en": "Production began July 2023",
+  "founder": {
+    "name": "Ethan Wills & Alexander Wills（表兄弟）",
+    "name_zh": "伊森·威尔斯 & 亚历克斯·威尔斯",
+    "name_origin": "WILLS即创始人家族姓氏。Ethan是创意型（曾是Lawrence、Larrys、Boucherie Lawrence餐厅的合伙人），Alex是理性实践型（曾在石油行业）——'啤酒和化石燃料有惊人的相似：都是流经管道进入罐体的流体'，他开玩笑道。'这是一场真正的家族事业。'"
+  },
+  "history": {
+    "founding": "表兄弟俩长期梦想一起做个长期项目。2023年7月在蒙特利尔Mile-Ex区的前Alexandraplatz场地开始酿酒——工业车库改造的明亮艺术空间（水磨石大吧台、定制红色吊灯、Peter Krausz的画作、从Agrikol餐厅回收的音响系统）。",
+    "philosophy": "'无论何种风格，WILLS的啤酒都追求平衡、精确、易接近且令人满意'——产品线覆盖拉格、淡色艾尔、IPA与深色啤酒。品牌也强调创意表达与社区连接，常办DJ活动到深夜。"
+  },
+  "specialty": {
+    "primary": "拉格、淡色艾尔、IPA与深色啤酒的平衡表达",
+    "styles": ["Lager", "Pale Ale", "IPA", "Dark Beer"],
+    "philosophy": "'平衡'是核心方向：既保持清晰的风格表达，也具备较好的易饮性；通过酒厂与酒吧空间建立更开放的社区体验。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖2银",
+    "UNTAPPD加拿大Micro Brewery级酒厂TOP19",
+    "UNTAPPD加拿大酒厂排名TOP34"
+  ],
+  "notable_beers": [
+    "拉格系列 - 平衡易饮的基石",
+    "淡色艾尔与IPA - 清晰风格表达",
+    "深色啤酒 - 冬季限定方向"
+  ],
+  "sources": [
+    "https://tastet.ca/en/reviews/bar-wills-modern-microbrewery-mile-ex/",
+    "https://montreal.eater.com/2022/5/30/23147325/mile-ex-new-bar-wills-beer-alexandraplatz-opening-montreal",
+    "https://lambertetfils.com/lanterne/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，专注'平衡'易饮的多元风格"
+  }
+}

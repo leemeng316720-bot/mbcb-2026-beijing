@@ -1,0 +1,63 @@
+{
+  "brewery_id": "outer-range",
+  "name": {
+    "english": "Outer Range Brewing Co.",
+    "chinese": "外场"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "科罗拉多州",
+    "state_en": "Colorado",
+    "city": "Frisco（弗里斯科，海拔约9100英尺/2770米，I-70公路旁）",
+    "city_en": "Frisco, CO",
+    "address": "182 Lusher Ct；2023年11月在法国阿尔卑斯山Sallanches（勃朗峰脚下）开设第二家酒厂"
+  },
+  "founded": "2016年12月（圣诞日开业）",
+  "founded_en": "Opened December 2016 (Christmas Day)",
+  "founder": {
+    "name": "Lee & Emily Cleghorn（夫妇）",
+    "name_zh": "李·克莱格霍恩 & 艾米丽·克莱格霍恩",
+    "name_origin": "Outer Range得名于吉卜林（Rudyard Kipling）的诗《The Explorer》——'外域'，呼应人们奔赴山野的精神；座右铭'Leave the life below'（把山下的人生留在身后）。"
+  },
+  "history": {
+    "army": "Lee曾是陆军第5特种作战群（空降）分遣队指挥官，少年时随父亲驻防布鲁塞尔，被比利时啤酒'震碎了味觉'；回美国上大学后买不到好酒，开始自己酿。两人在科罗拉多斯普林斯的一场家酿聚会上相识——四个月后订婚。此后随军队辗转、长期分居，女儿出生后不久Lee第三次海外部署（阿富汗）。",
+    "epiphany": "Lee在阿富汗的山地间产生了顿悟：'我到底还在这里干什么？我得继续我的人生。'——回国后夫妇决定立刻追梦：两人同读哥伦比亚商学院MBA（2014-2016），Lee再赴American Brewers Guild深造，并在布鲁克林Other Half无偿实习（'每周洗5000个酒桶'，向Jesse Ferguson偷师IPA）。",
+    "opening": "2016年圣诞日在Frisco开业——只酿两类酒：浑浊IPA与比利时风格。头一年在1桶试验系统上酿了100多个试验批次。Emily锯开自家冷库后门的传说是酒厂创业史的注脚。",
+    "rise": "2017年即获Craft Beer & Brewing评论家最佳新酒厂、BeerAdvocate最佳新酒厂与USA Today好评；被《Craft Beer & Brewing Magazine》评为'全美第一小型酒厂'，并成为Vail Resorts科州滑雪场官方啤酒合作伙伴。2019年扩至三倍大。",
+    "french_alps": "2023年11月，与哥伦比亚商学院 orientation 第一天认识的法国好友夫妇Kate & Charles Saksik合作，在勃朗峰脚下的Sallanches开出Outer Range French Alps——欧洲批发销量已比美国高出三分之一。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA（双倍/三倍）与比利时风格双主线",
+    "styles": ["Hazy IPA", "Double Hazy IPA", "West Coast IPA", "Saison", "Belgian"],
+    "philosophy": "工艺偏执：极早干投（生物转化）、每罐浑浊IPA都用新鲜酵母——'浑浊与酒花缺一不可'。只酿两类酒，但酒单常年十余款各不相同。高山社区生活方式品牌：'我们的酒是提醒你与亲友共享山间时光的载体。'"
+  },
+  "awards": [
+    "《Craft Beer & Brewing Magazine》『全美第一小型酒厂』",
+    "USA Today 2018『全美第二新锐酒厂』",
+    "2024澳洲国际啤酒大赛（AIBA）冠军",
+    "In the Steep获『科罗拉多第一啤酒』（酒厂官网）",
+    "Vail Resorts官方啤酒合作伙伴；UNTAPPD2025社区奖1金3银3铜"
+  ],
+  "notable_beers": [
+    "In the Steep - 浑浊IPA 6.7%，UNTAPPD 4.09，酒厂第一款灌装酒、现最畅销款，获'科罗拉多第一啤酒'",
+    "Steezy DDH - 双倍干投浑浊IPA 7.2%，UNTAPPD 4.14",
+    "Blocks of Light - DDH浑浊IPA 6.2%（Galaxy+Mosaic），UNTAPPD 4.04",
+    "Pastels - 浑浊IPA 6.9%，UNTAPPD 4.1",
+    "In the Deep Steep - 9%加强版（2026年以西海岸风格回归）",
+    "Final Summit - 法式赛松，比利时主线代表作",
+    "Cloud 9 - 三倍干投浑浊IPA 6.8%（Krush、Citra Cryo、Motueka、Simcoe Cryo、Nelson Hop Kief）"
+  ],
+  "sources": [
+    "https://outerrange.com/",
+    "https://www.hopculture.com/interview-emily-lee-cleghorn-outer-range-colorado/",
+    "https://www.beerandbrewing.com/breakout-brewer-outer-range-brewing-co",
+    "https://www.craftbeer.com/full-pour/french-twist-colorados-outer-range-opens-outpost-in-alps",
+    "https://untappd.com/OuterRangeBrewingCo/beer",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，啤酒重镇（海拔9100英尺）波特兰潜力新星"
+  }
+}

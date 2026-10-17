@@ -1,0 +1,55 @@
+{
+  "brewery_id": "mount-holly",
+  "name": {
+    "english": "Mount Holly Beer",
+    "chinese": "霍利山"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "佛蒙特州",
+    "state_en": "Vermont",
+    "city": "Mount Holly（创始人Dan Tilly的家乡小镇）",
+    "city_en": "Mount Holly, VT",
+    "address": "无自有酒厂：委托佛蒙特州两家酒厂按Dan提供的原料与配方酿造，自有冷藏车队全程冷链配送"
+  },
+  "founded": "2020年（12月卖出第一箱酒）",
+  "founder_en": "2020 (first case December 2020)",
+  "founder": {
+    "name": "Dan Tilly",
+    "name_zh": "丹·蒂利",
+    "partner": "Mike Shannahan（销售与物流合伙人）",
+    "name_origin": "以佛蒙特州的家乡小镇Mount Holly命名。Dan曾就职伦敦银行业，'做你爱的事'这句箴言促使他辞职，把旅行、发酵与家乡热爱融为一体。"
+  },
+  "history": {
+    "founding": "Dan Tilly辞去伦敦银行工作后回乡创业。没有自建厂房的负担，他反向操作：周游美国与欧洲拜访农民和生产者，亲自筛选特定的谷物、酒花、麦芽与酵母，再把原料和配方交给佛蒙特两家合作酒厂酿造，最后用自有冷藏卡车把成酒拉回Mount Holly仓库配送。'我的职责是保持新鲜与冷链，把品质一致的好酒送进商店。'",
+    "approach": "'酿酒师式的拉格酿造'——单一产地拉格不模仿历史风格，而是展示特定大麦品种与种植地区的风土；每年酿一款新鲜酒花啤酒庆祝收获；常去本地农场（如Champlain Valley Hops）直接采购。",
+    "range": "现代低度IPA、芳香IPA、单一产地拉格、低干预西打与白葡萄酒（如加州长相思+黑皮诺与纽约Helles拉格混酿的Italian Grape Ale风格产品）。"
+  },
+  "specialty": {
+    "primary": "单一产地拉格（风土表达）与芳香低度IPA",
+    "styles": ["Single-Origin Lager", "Helles（单一煮出）", "Hazy IPA", "Soft IPA", "Fresh Hop Beer", "低干预西打"],
+    "philosophy": "'酿酒师式拉格'：每款酒突出一批特定谷物或酒花，干净、纯粹地表达原料——通过不同配方呈现本地农业原料的特点。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖1银1铜"
+  ],
+  "notable_beers": [
+    "Mount Holly Lager系列 - 以佛蒙特州当地种植的大麦与啤酒花为原料，通过不同配方呈现本地风土",
+    "Green Stand - 喝起来像拉格、溢出佛蒙特IPA多汁风味的招牌",
+    "Green Mountain Gold - 浑浊IPA，带菠萝与葡萄汁气息",
+    "Camper Van Soft IPA / Belmont Lager - 畅饮型夏日酒",
+    "单一煮出单一产地Helles - 4.8%，梨与蓬松面包风味",
+    "Supertubos - 5.5%单一IPA"
+  ],
+  "sources": [
+    "https://ediblevermont.ediblecommunities.com/drink/drink-mount-holly-beer-belmont/",
+    "https://www.burlingtonfreepress.com/story/life/2020/12/22/new-vermont-breweries-made-2020-better/3922072001/",
+    "https://www.linkedin.com/in/dantilly",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，本地风土表达"
+  }
+}

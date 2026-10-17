@@ -1,0 +1,57 @@
+{
+  "brewery_id": "to-ol",
+  "name": {
+    "english": "To Øl",
+    "chinese": "图乐"
+  },
+  "location": {
+    "country": "丹麦",
+    "country_en": "Denmark",
+    "city": "Svinninge（西兰岛西部）To Øl City；BRUS brewpub位于哥本哈根Nørrebro",
+    "city_en": "Svinninge / Copenhagen"
+  },
+  "founded": "2010年（源头可溯至2005年高中厨房实验）",
+  "founded_en": "Founded 2010; roots in a 2005 high-school kitchen",
+  "founder": {
+    "name": "Tore Gynther & Tobias Emil Jensen",
+    "name_zh": "托雷·金特 & 托比亚斯·埃米尔·詹森",
+    "name_origin": "To Øl在丹麦语中意为'两杯啤酒'——两位高中好友的名字缩写。视觉设计出自同窗平面设计师Kasper Ledet之手。2017年初Tobias离开，酒厂现由Tore全资拥有。",
+    "teacher": "两人的物理老师正是Mikkeller创始人Mikkel Borg Bjergsø——To Øl与Mikkeller是同门师兄弟。"
+  },
+  "history": {
+    "high_school": "2005年，哥本哈根Nørrebro区实行直接民主制的Det Fri Gymnasium高中：Tore与Tobias向全校提案购买酿酒设备并获得通过，在物理老师Mikkel Borg Bjergsø指导下，把学校厨房'劫持'成酿酒实验室，为校派对酿酒。",
+    "founding": "2010年创立To Øl，首支商业酒Overall IPA——是Mikkel听说两个学生的计划后坚持合作的合酿酒。此后十年以'吉普赛酿造'（他们自称Beer Architects）模式，主要借用比利时De Proef等酒厂产能。2012年进入RateBeer全球百佳，2014年获评世界第九佳酒厂。",
+    "brus": "2016年在母校旁的Nørrebro区开设BRUS brewpub（酒吧+餐厅+自有小酒厂，产品以To Øl CPH名义发售）；2017年第二家BRUS在奥斯陆开业。",
+    "to-ol_city": "2019年收购西兰岛Svinninge一座废弃的Beauvais番茄酱工厂（占地15万平方米、建筑面积2.66万平方米），2020年投产：80百升糖化系统，集酿造、桶陈、实验室、蒸馏与其他精酿饮品（苹果酒、康普茶、朗姆）于一体的'To Øl City'创意产业园，结束了完全依赖外部生产的时代。产品出口31个以上国家。"
+  },
+  "specialty": {
+    "primary": "拉格、酒花型啤酒、酸啤及烈性桶陈酒款的全风格覆盖",
+    "styles": ["IPA / Hazy IPA", "Pilsner / Lager", "Sour", "Imperial Stout", "Barleywine"],
+    "philosophy": "'受够了丹麦酒厂只会吹嘘自己的百年历史而不是味道'——只酿自己想喝的酒，不跟风、不设限：用最好的原料，永不向口味妥协。"
+  },
+  "awards": [
+    "RateBeer 2014世界最佳酒厂第9名",
+    "RateBeer 2012全球百强酒厂",
+    "UNTAPPD2025社区奖7金5银4铜",
+    "To Øl City：欧洲最具雄心的精酿饮品产业园之一"
+  ],
+  "notable_beers": [
+    "Overall IPA - 2010年首支商业酒（与Mikkeller合酿），酒厂起点",
+    "Whirl Domination - 6.2% IPA，新酒厂投产后第一款IPA，'酒花推到极限'",
+    "45 Days Organic Pilsner - 4.7%有机皮尔森，-1°C窖藏45天",
+    "Liquid Confidence - 15.1%帝国辣椒世涛：Ancho与Guajillo辣椒+朗姆桶陈10个月",
+    "Dangerously Close to Stupid - 高度数代表作，TasteAtlas高分",
+    "City Session IPA - 4.5%新英格兰风格畅饮IPA"
+  ],
+  "sources": [
+    "https://toolbeer.dk/da/pages/about-us",
+    "https://beerbay.es/shop/to-ol/",
+    "https://www.beertime.bg/en/product/whirl-domination/",
+    "https://www.tasteatlas.com/to-ol",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，早期吉普赛酿造代表"
+  }
+}

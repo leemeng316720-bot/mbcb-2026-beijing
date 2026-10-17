@@ -1,0 +1,61 @@
+{
+  "brewery_id": "samata",
+  "name": {
+    "english": "Samata Brewing",
+    "chinese": "萨玛塔"
+  },
+  "location": {
+    "country": "泰国",
+    "country_en": "Thailand",
+    "city": "Bangkok（曼谷）Saimai区",
+    "city_en": "Bangkok",
+    "address": "2024年夏天把生产从新加坡迁回曼谷，建立自有酒厂；早期曾委托新加坡Brewlander代工出口泰国"
+  },
+  "founded": "2017年创立，2022年首次商业发售",
+  "founded_en": "Founded 2017, first commercial release 2022",
+  "founder": {
+    "name": "Supachote “Chote” Chantanasuksilpa（苏帕措·占塔那素西帕）",
+    "name_zh": "Chote",
+    "name_origin": "Chote毕业于旧金山艺术学院，多年从事平面设计（从Tony Jaa动作电影到iTunes广告）。2018年前后他想为设计寻找新的载体，转而投身精酿——酒标是他亲手打造的艺术品。"
+  },
+  "history": {
+    "design_to_beer": "Chote以设计起家，因想给自己的平面设计找'新画布'而进入精酿。早期酿造浑浊IPA与淡色艾尔，酒标走字体与新纪元精准风。",
+    "gypsy_era": "由于泰国法规使海外生产更经济可行，Samata长期以'布谷鸟酿造'模式委托新加坡名厂Brewlander生产再出口泰国。",
+    "sour_pivot": "转向酸啤有两个原因：一是酸啤不使用啤酒花，在泰国可获得与西打/蜂蜜酒同类的宽松执照，得以回国大幅扩产；二是酸啤给了他更大的创作画布去融入泰国本地食材与甜点。酒标风格随之转向柔和、奇幻、多彩，并邀请多位泰国艺术家为酒款创作拟人形象。",
+    "homecoming": "2024年夏天把生产迁回曼谷Saimai区，建立自有设施。截至2024年5月已推出180+款酒。",
+    "global": "Mango Sticky Rice入选Craft Beer & Brewing 2025年度十大啤酒，并登上了2026年Mikkeller Beer Celebration哥本哈根站的舞台——随后又来到MBCB北京。"
+  },
+  "specialty": {
+    "primary": "低度水果酸啤（session fruit sour），把泰国水果与甜点转译成啤酒",
+    "styles": ["Sour - Fruited", "Sour - Smoothie / Pastry", "Hazy IPA / Pale Ale（早期）"],
+    "philosophy": "'每一口都是一段泰国历史之旅。'用真实水果和泰式甜点原料酿造：芒果糯米飯、巧克力莓果、香兰粉条芝士蛋糕、菠萝柚子豆蔻……酒吧常用冰沙机打成果泥冰沙供应。"
+  },
+  "awards": [
+    "UNTAPPD泰国酒厂排名TOP1",
+    "UNTAPPD2025社区奖：水果酸艾尔组金、银、铜包揽（Mango Sticky Rice获泰国区水果酸啤金奖）",
+    "Craft Beer & Brewing『2025年度十大啤酒』——Mango Sticky Rice",
+    "2025亚洲啤酒大奖赛（Asia Beer Championship）主席精选：水果啤酒 Mango Sticky Rice、增味啤酒 Choco Berry",
+    "Choco Berry获UNTAPPD泰国水果酸啤第一（2023）、ABC银奖",
+    "UNTAPPD泰国啤酒评分总榜TOP5占4席、包揽前2名（MBCB官方）"
+  ],
+  "notable_beers": [
+    "Mango Sticky Rice - 芒果糯米饭酸啤 4.0%，Nam Dok Mai芒果+椰奶+盐（致敬200年泰国配方），UNTAPPD 4.2（1064评）",
+    "Choco Berry - 巧克力莓果酸啤，UNTAPPD泰国水果酸啤第一（2023）",
+    "Fruity Party Sour - 4.0%，百香果+草莓+菠萝+粉红番石榴+香草",
+    "Raspberry Cheesecake Sour - 树莓芝士蛋糕酸啤",
+    "Strawberry Shortcake / Strawberry Lemon Sorbet - 草莓季限定",
+    "SIAM × Bad Seed - 与丹麦Bad Seed合酿（MBCB同场酒厂联动）；Sago Pudding × Vault City - 与英国Vault City合酿"
+  ],
+  "sources": [
+    "https://samatabrew.com/",
+    "https://criticaldrinking.substack.com/p/behind-the-label-with-samata",
+    "https://88bamboo.co/blogs/craft-beer/two-from-thailands-samata-brewing-raspberry-cheesecake-sour-fruity-party-sour",
+    "https://untappd.com/b/samata-brewing-company-mango-sticky-rice/5963416",
+    "https://www.bkmagazine.com/nightlife/10-bangkok-brewers-and-beer-brands-shaping-bangkok-scene-and-changing-your-neighborhood/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，UNTAPPD泰国评分第一酒厂，首次中国亮相"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "brewery_id": "off-script",
+  "name": {
+    "english": "Off Script Brewing",
+    "chinese": "脱稿"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "科罗拉多州",
+    "state_en": "Colorado",
+    "city": "Thornton（桑顿，丹佛都会区）",
+    "city_en": "Thornton, CO",
+    "address": "2722 E 132nd Pl, Thornton, CO 80241（生产型酒厂，部分酒款在丹佛 Milieu Fermentation 上枪）"
+  },
+  "founded": "2020年代中期开业（具体开业年份未见公开报道；UNTAPPD酒厂页面2024年已上线）",
+  "founded_en": "Mid-2020s (exact year unreported; Untappd page live since at least 2024)",
+  "founder": {
+    "name": "Ryan Sather",
+    "name_zh": "瑞恩·萨瑟",
+    "name_origin": "Off Script原意为'偏离剧本/脱稿'——酒厂全部酒款以电影台词命名（《春天不是读书天》《墓碑镇》《几近成名》《黑客帝国》等），把'片场梗'贯彻到底"
+  },
+  "history": {
+    "overview": "Off Script是科罗拉多州Thornton的一家生产型（contract/production）小酒厂，不设常规品酒室，偶尔在丹佛的Milieu Fermentation上枪。专注现代浑浊IPA，以大量使用新西兰及美国顶级酒花著称，酒款UNTAPPD长期保持极高评分。",
+    "rise": "凭借小批量、高分、难抢的策略（Instagram原话：'It is hard to get your hands on Off Script Brewing'），酒厂均分稳定在4.5上下，在UNTAPPD全球酒厂排名中升至世界第三，同规模（Nano）酒厂中排名世界第二，成为近年美国最受关注的新生代IPA酒厂之一。",
+    "collabs": "与美国佛蒙特州Waterbury等地的酒厂合酿（Waterbury为The Alchemist、Fiddlehead等名厂所在地）。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA、双倍/三倍浑浊IPA、新鲜酒花IPA",
+    "styles": ["Hazy IPA", "Double Hazy IPA", "Triple Hazy IPA", "Fresh Hop IPA", "American Pale Ale"],
+    "philosophy": "浓郁热带水果香气、饱满酒体与极高酒花表现力。使用Eggers、Freestyle等酒农的顶级新西兰酒花（Nelson Sauvin、Riwaka、Rakau、Motueka及酒花Kief），部分酒款达到'双倍（接近三倍）'的投放强度。"
+  },
+  "awards": [
+    "UNTAPPD酒厂排名世界TOP3",
+    "UNTAPPD同规模（Nano）酒厂排名世界TOP2",
+    "UNTAPPD2025社区奖4金4银2铜",
+    "UNTAPPD酒厂综合均分约4.5（57款酒、5600+评分）；BeerAdvocate均分4.43"
+  ],
+  "notable_beers": [
+    "Skin That Smoke Wagon - 浑浊帝国IPA（名字来自电影《墓碑镇》台词），8.5%",
+    "This Is Me At My Most Masochistic - 浑浊双倍IPA（名字来自《几近成名》）",
+    "Sausage King of Chicago - 美式淡色艾尔（名字来自《春天不是读书天》），5.2%",
+    "Red Pill / Blue Pill - 三倍浑浊IPA 对款（名字来自《黑客帝国》），仅生啤",
+    "Bine Cutter Fresh Hop IPA - 新鲜酒花IPA，使用新鲜庄园Comet与CGX Nuvo Comet酒花，7.0% ABV",
+    "I Still Believe - 8.4% ABV"
+  ],
+  "sources": [
+    "https://untappd.com/OffScriptBrewing/beer",
+    "https://www.beeradvocate.com/beer/profile/69359/",
+    "https://www.coloradobrewerylist.com/brewery/off-script-brewing/",
+    "https://www.instagram.com/offscriptbrewing/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，UNTAPPD酒厂排名全球第三，首次中国亮相"
+  }
+}

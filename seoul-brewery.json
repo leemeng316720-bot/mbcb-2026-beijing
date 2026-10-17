@@ -1,0 +1,50 @@
+{
+  "brewery_id": "seoul-brewery",
+  "name": {
+    "english": "Seoul Brewery (서울브루어리)",
+    "chinese": "首尔酿造"
+  },
+  "location": {
+    "country": "韩国",
+    "country_en": "South Korea",
+    "city": "Seoul（首尔），城水洞与弘济洞设有空间",
+    "city_en": "Seoul"
+  },
+  "founded": "2010年代后期（2019-2020年已居UNTAPPD韩国评分第一）",
+  "founded_en": "Late 2010s (already Korea's #1 rated brewery in 2019-2020)",
+  "founder": {
+    "name": "主创团队信息未见英文公开报道",
+    "name_zh": "待补充",
+    "name_origin": "酒款命名极具文学/建筑气质：SALINGER（塞林格，黑麦IPA）、MODULOR（柯布西耶的'模度'，农舍艾尔）、APT、MAMA LOVES MANGO SOUR、NIGHT BLOOM GOSE。"
+  },
+  "history": {
+    "overview": "首尔酿造是韩国首都的精酿代表：在城水洞与弘济洞设有酿造/饮酒空间，强调不受传统风格限制，持续尝试不同的酿造方向。除麦芽、啤酒花与酵母等基础原料外，也使用各类时令食材，形成多样而富有变化的风味表达。",
+    "recognition": "2019、2020年连续两年UNTAPPD评分韩国第一；2025社区奖以3金4银1铜居韩国奖牌总数第一。"
+  },
+  "specialty": {
+    "primary": "全风格：西海岸IPA、黑麦IPA、农舍艾尔、古斯、芒果酸啤",
+    "styles": ["West Coast IPA", "Rye IPA", "Farmhouse Ale", "Gose", "Fruited Sour", "Hopfenweisse"],
+    "philosophy": "不受传统风格限制，常用时令食材与在地灵感（如木槿+黑樱桃的Night Bloom Gose）。"
+  },
+  "awards": [
+    "2019、2020年UNTAPPD评分韩国第一",
+    "UNTAPPD2025社区奖3金4银1铜，韩国奖牌总数第一",
+    "UNTAPPD韩国酒厂排名TOP13"
+  ],
+  "notable_beers": [
+    "SALINGER RYE IPA - 黑麦IPA，塞林格梗酒名，UNTAPPD热门",
+    "APT WEST COAST IPA - 西海岸IPA",
+    "MODULOR FARMHOUSE ALE - '模度'农舍艾尔（柯布西耶梗），带Galaxy酒花 twist",
+    "NIGHT BLOOM GOSE - 木槿+黑樱桃+盐的古斯",
+    "MAMA LOVES MANGO SOUR - 芒果酸啤",
+    "MY FAVORITE HOPFENWEISSE - 酒花小麦"
+  ],
+  "sources": [
+    "https://untappd.com/SeoulBrewery",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，UNTAPPD社区奖韩国奖牌总数第一"
+  }
+}

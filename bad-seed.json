@@ -1,0 +1,58 @@
+{
+  "brewery_id": "bad-seed",
+  "name": {
+    "english": "Bad Seed Brewing",
+    "chinese": "坏种子"
+  },
+  "location": {
+    "country": "丹麦",
+    "country_en": "Denmark",
+    "region": "北日德兰大区",
+    "region_en": "North Jutland",
+    "city": "Storvorde / Gudumholm（奥尔堡以北约20公里）",
+    "city_en": "Storvorde, North Jutland",
+    "address": "接手历史悠久的Land Kær（Landkær）旧厂址"
+  },
+  "founded": "2013年创立（吉普赛酿造起步），2018年接管Land Kær厂址",
+  "founded_en": "Founded 2013 as a gypsy/phantom brewer; took over Land Kær premises in 2018",
+  "founder": {
+    "name": "Fredrik Hector Schmidt",
+    "name_zh": "弗雷德里克·赫克托·施密特",
+    "name_origin": "名字致敬Fredrik喜爱的乐队——Nick Cave的The Bad Seeds。他是前家酿爱好者与IT顾问，2013年辞职转型。"
+  },
+  "history": {
+    "gypsy_years": "2013年起，Fredrik以吉普赛/幽灵酿酒师（phantom brewer）模式创业——租用其他酒厂的设备酿酒，再把酒卖给酒吧。",
+    "land_kaer": "2018年10月，他正式接管北日德兰的历史厂址Land Kær，结束长期依赖外部生产的历史。酒厂如今只有三名员工，年产约8-9万升。",
+    "lager_focus": "坏种子以拉格与经典风格见长——从多特蒙德出口拉格到意大利皮尔森——'尊重传统但不受传统限制'。",
+    "beer_fest": "自2019年起举办自己的『Bad Seed Beer Fest』啤酒节。",
+    "honors": "2022年获丹麦啤酒博主大奖'Danmarks Bedste Bryggeri'；2025年12月2日被丹麦啤酒爱好者协会（Dansk Ølentusiaster）评为'Årets Danske Bryggeri 2025'年度最佳啤酒厂。"
+  },
+  "specialty": {
+    "primary": "拉格：多特蒙德出口拉格、意大利皮尔森、经典欧洲风格",
+    "styles": ["Dortmunder Export", "Italian Pilsner", "Lager", "Classic European Styles"],
+    "philosophy": "现代创意啤酒与传统酿造艺术结合，年产仅8-9万升的小而精路线。"
+  },
+  "awards": [
+    "丹麦啤酒爱好者协会『2025年度最佳啤酒厂』（Årets Danske Bryggeri 2025）",
+    "丹麦啤酒博主大奖『2022年丹麦最佳啤酒厂』",
+    "UNTAPPD丹麦酒厂排名TOP16",
+    "UNTAPPD丹麦Micro Brewery级酒厂排名TOP7",
+    "UNTAPPD2025社区奖11金12银4铜，其中Uno Pils（意大利皮尔森）获金奖"
+  ],
+  "notable_beers": [
+    "Uno Pils - 意大利皮尔森，UNTAPPD2025社区奖金奖（3.46）",
+    "Export - 多特蒙德出口拉格 5.2% / 24 IBU，UNTAPPD 3.6（282评）",
+    "Land Kær经典拉格系列 - 在百年历史厂址延续的传统风格"
+  ],
+  "sources": [
+    "https://via.ritzau.dk/pressemeddelelse/14701326/bad-seed-brewing-karet-som-arets-danske-bryggeri-2025",
+    "https://www.opdagdanmark.dk/en/discover/bad-seed-brewing/",
+    "https://hoptimal.de/en/collections/bad-seed-brewing",
+    "https://untappd.com/BadSeedBrewing",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，丹麦2025年度最佳啤酒厂"
+  }
+}

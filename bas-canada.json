@@ -1,0 +1,58 @@
+{
+  "brewery_id": "bas-canada",
+  "name": {
+    "english": "Brasserie du Bas-Canada",
+    "chinese": "顺流而下"
+  },
+  "location": {
+    "country": "加拿大",
+    "country_en": "Canada",
+    "province": "魁北克省",
+    "province_en": "Quebec",
+    "city": "Gatineau（加蒂诺，渥太华对岸，Outaouais地区）",
+    "city_en": "Gatineau, QC",
+    "address": "455 Boulevard de la Gappe；另有Hautes-Plaines品酒室"
+  },
+  "founded": "2017年11月17日",
+  "founded_en": "November 17, 2017",
+  "founder": {
+    "name": "Gabriel Girard-Bernier & Marc-André Cordeiro-Lima",
+    "name_zh": "加布里埃尔·吉拉德-贝尼耶 & 马克-安德烈·科代罗-利马",
+    "name_origin": "Bas-Canada（'下加拿大'）是魁北克地区的历史名称，致敬当地酿造传统；两人是家酿好友，抱怨本地区（曾是魁北克人均微酒厂最少的地区）没有像样的精酿场所，索性自己开。开业前众筹1.8万加元预热。"
+  },
+  "history": {
+    "founding": "两位创始人长期在家酿酒，因不满所在地区缺乏精酿场所而立项。近两年筹备后于2017年11月17日开业——保守预估需求，结果两个月后的2018年1月，Los Tabarnacos（芒果奶昔IPA）和HYPA系列第2款就引爆市场，'零售商一天就把我们的酒卖光'。",
+    "hype": "HYPA系列是酒厂标志——名字取自hype（ hype ）与IPA的合写，以浑浊、果香、双倍干投著称；如今约70%产能投入IPA，另一半则是 decadent 的帝国世涛与大麦烈酒。",
+    "today": "UNTAPPD综合均分4.29（380款酒、40万+打卡），居加拿大第二；获Hop Culture『2026年最值得关注的19家酒厂』。"
+  },
+  "specialty": {
+    "primary": "HYPA系列浑浊双倍干投IPA、奶昔IPA、帝国世涛与大麦烈酒",
+    "styles": ["Hazy IPA / HYPA", "Milkshake IPA", "Imperial Stout", "Barleywine", "Kellerbier", "Belgian Tripel"],
+    "philosophy": "大胆香气、技术精度与持续实验：把魁北克本地酿造传统与现代风格结合，'让魁北克酿酒文化发光'。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖10金6银4铜",
+    "UNTAPPD加拿大Micro Brewery级酒厂TOP1",
+    "UNTAPPD全球Micro级酒厂TOP19",
+    "2024 UNTAPPD社区奖21枚奖牌含11金（横扫帝国奶昔世涛与淡色艾尔两个类别）",
+    "Hop Culture『2026年最值得关注的19家酒厂』",
+    "UNTAPPD综合均分4.29，加拿大第二"
+  ],
+  "notable_beers": [
+    "HYPA系列 - 浑浊双倍干投IPA，酒厂图腾（hype+IPA）",
+    "Los Tabarnacos - 芒果奶昔IPA，2018年1月出道的成名作",
+    "Bank Hotel - 帝国世涛代表作",
+    "Ouest - 与英国Track Brewing合酿的西海岸IPA（Nelson Sauvin、Riwaka、Nectaron、Motueka）"
+  ],
+  "sources": [
+    "https://tourduquebec.ca/a-boire/brasserie-du-bas-canada-lascension-par-le-houblon/",
+    "https://www.hopculture.com/best-breweries-to-watch-in-2026/",
+    "https://www.themain.com/gatineau/brewery/brasserie-du-bas-canada",
+    "https://www.tasteatlas.com/best-rated-beers-in-quebec",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，UNTAPPD加拿大Micro级第一"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "brewery_id": "wunderkammer",
+  "name": {
+    "english": "Wunderkammer Biermanufaktur",
+    "chinese": "珍奇博物馆"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "佛蒙特州",
+    "state_en": "Vermont",
+    "city": "Albany（奥尔巴尼，Northeast Kingdom），原Bonnieview Farm奶油厂",
+    "city_en": "Albany, VT",
+    "address": "前奶酪窖改造的地下15英尺啤酒洞；奶酪槽改装的糖化桶（冬季兼作coolship）；火箭炉式直火铜锅烧本地碎木"
+  },
+  "founded": "2016年创立（Hill Farmstead厂内副业），2021年独立复产",
+  "founder_en": "Founded 2016 (side project at Hill Farmstead); independent since 2021",
+  "founder": {
+    "name": "Vasilios Gletsos",
+    "name_zh": "瓦西里奥斯·格列索斯",
+    "name_origin": "Wunderkammer是德语'珍奇柜/好奇屋'——一个收藏记忆、自然之物与拾得物的微型博物馆，正如每款酒都是一杯' Vermont 风景'。Gletsos亲自绘制所有酒标。",
+    "background": "前Hill Farmstead首席酿酒师兼生产经理。1990年代为Bread and Puppet木偶剧团来佛蒙特；缅因艺术学校毕业后赴俄勒冈酿酒（Laurelwood等），2005年结识Shaun Hill，2015年1月加入Hill Farmstead；2020年1月离职（一年竞业禁止），2021年在奥尔巴尼的前奶油厂重启为Wunderkammer Biermanufaktur。"
+  },
+  "history": {
+    "side_project": "在Hill Farmstead全职酿酒五年后，'如果不踩踩刹车抬起头，一晃又是五年'——2016年起在Hill Farmstead小系统上酿造个人品牌，前店只在Hill Farmstead瓶店与Hunger Mountain合作社发售。",
+    "rebirth": "2021年凭Pete's Greens农场基金的3万美元贷款复活：租用朋友的前Bonnieview Farm奶油厂，亲手改造——奶酪槽变糖化桶（冬天当coolship用）、地下15英尺的奶酪窖变啤酒洞、按火箭炉原理设计的直火铜锅烧废木。年产仅一两百桶，从酿造到贴标全一人完成，还兼着给Pete's Greens送菜。",
+    "foraging": "酿酒前先在佛蒙特的森林里散步，让捡到的原料决定酒：漆树、蓍草、秋麒麟草、地衣、蘑菇、常绿嫩枝、桦褐孔菌（chaga）、野玫瑰花瓣……'赫拉克利特说人不能两次踏入同一条河——每款Wunderkammer都独一无二。'"
+  },
+  "specialty": {
+    "primary": "混合发酵艾尔、野菌啤酒、农舍艾尔——本地采集植物与蜂蜜入酿",
+    "styles": ["Mixed-Culture Ale", "Farmhouse Ale", "Wild Ale", "Kveik Beer", "Smoked Primitive Beer"],
+    "philosophy": "原始而手作：直火铜锅、无严格温控发酵、Brett混合菌种、本地麦芽（Peterson Quality Malts）与啤酒花（Whitefield Hops），酒糟还田喂牛——'庆祝并反映佛蒙特东北王国的地貌与农业'。也常用kveik酵母：'它有蜜饯橙子的特征，而且絮凝性强。'"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖2金3铜",
+    "VinePair『全美最佳酒厂』酿酒师评选上榜",
+    "Hill Farmstead首席酿酒师创立（世界顶尖酒厂背书）"
+  ],
+  "notable_beers": [
+    "Memento Mori - 桦褐孔菌chaga+混合发酵+野玫瑰花瓣陈酿",
+    "From the Ruins of a Subterranean Feasting Hall (Vol.12) - 雪松/云杉/冷杉/松针混合发酵，橡木桶陈6%",
+    "Ordinary Diadems (Vol.16) - 本地秋麒麟草，柠檬黄色泽",
+    "Hyla Crucifer (Vol.17) - 地衣+蘑菇+'一些树枝和树叶'",
+    "Fertility Statues and Symbols (Vol.6) - 蓍草增味",
+    "Sumac Wheat（Found Object 3 / Amidst and Among）- 采集漆树籽的小麦啤酒",
+    "Embroidered Bird Motif - 蓍草桶陈 savory 之作"
+  ],
+  "sources": [
+    "https://punchdrink.com/articles/quiet-genius-wunderkammer-bier-hill-farmstead-brewery/",
+    "https://www.sevendaysvt.com/food-drink/wunderkammer-biermanufaktur-rises-again-in-albany-32239987/",
+    "https://www.sevendaysvt.com/arts-culture/qa-wunderkammer-biermanufaktur-brews-rare-beer-in-the-northeast-kingdom/",
+    "https://www.vtfarmfund.org/borrowers/wunderkammer-biermanufaktur",
+    "https://www.beerandbrewing.com/podcast-episode-323-vasili-gletsos-of-wunderkammer-beer",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，农舍艾尔风格的顶级小众酒厂"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "brewery_id": "bakes",
+  "name": {
+    "english": "Bakes Brewing Company",
+    "chinese": "贝克斯"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "新泽西州",
+    "state_en": "New Jersey",
+    "city": "Wall Township（沃尔镇），1718 Highway 71",
+    "city_en": "Wall, NJ"
+  },
+  "founded": "车库家酿始于2013年，酒厂在十余年打磨后开业（约2023-2024年；各来源开业年份记载不一）",
+  "founded_en": "Garage brewing since 2013; taproom opened mid-2020s (sources vary)",
+  "founder": {
+    "name": "Jeff “Bakes” Baker",
+    "name_zh": "杰夫·'贝克斯'·贝克",
+    "name_origin": "Bakes来自创始人的昵称。2011年一次外地酒厂之旅让他惊觉啤酒可以如此出色；2013年因祖父Bob去世立志'为家人做点有意义的事'——当时他还从未酿过一批酒，就先下决心开酒厂。酒款命名大量借用棒球术语（Back-to-Back、Ground Rule Triple、Throwing Gas、Home Run Trot）。"
+  },
+  "history": {
+    "garage_decade": "此后十余年，Jeff在新泽西Wall镇的车库里酿了400多批次，只为酿出最好的浑浊IPA。期间拿下数十枚州级、地区级和全国家酿比赛奖牌，并考取Brewing Science & Engineering文凭（American Brewers Guild）、Certified Cicerone认证与国家认证啤酒评审资格。",
+    "opening": "车库成了试验场：今天发布的每一款酒都能追溯到那些小批量实验。酒厂以浑浊IPA专长立足，多房间tap house成为泽西海岸的IPA朝圣地。",
+    "today": "规模不大但出品稳定鲜明，UNTAPDD全球Micro级酒厂TOP23（MBCB官方数据），与RAR等东海岸酒厂合酿。"
+  },
+  "specialty": {
+    "primary": "现代美式酒花风格：浑浊IPA/双倍/三倍为主，兼顾拉格与世涛",
+    "styles": ["Hazy IPA", "Hazy DIPA", "Hazy TIPA", "Pilsner", "Lager", "Stout"],
+    "philosophy": "'酿出尽可能最好的酒'——重视新鲜度、酒花表现与酿造细节；大量使用Nelson Sauvin、Citra、Motueka、Riwaka等新西兰与美国顶级酒花及浓缩酒花制品（Hyperboost、Amplifire、SubZero Hop Kief）。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖1金2银1铜",
+    "UNTAPDD全球Micro Brewery级酒厂排名TOP23",
+    "数十枚州/地区/全国家酿比赛奖牌（创业期）"
+  ],
+  "notable_beers": [
+    "Wait For Nobody - 浑浊三倍IPA 11%：Nelson T-90+Nelson Amplifire、Galaxy、Citra、Citra Hyperboost",
+    "Winners Circle系列 - 浑浊双倍IPA 8.8%（II: Citra/Southern Cross/Riwaka/Maui Nelson kief；IV: Citra/Strata Cryo/Nelson Bliss/Rakau；V: Motueka/Riwaka kief/Superdelic/Nelson/Citra）",
+    "Wreck Pond - 双倍干投浑浊双倍IPA 9.1%（Nelson Sauvin+Citra）",
+    "2nd Anniversary - 浑浊帝国IPA 12%（BeerAdvocate 4.44）",
+    "Back-to-Back / Ground Rule Triple / Throwing Gas - 棒球梗系列双倍/三倍IPA"
+  ],
+  "sources": [
+    "https://www.bakesbrewing.com/about-us",
+    "https://baseballismy.life/baseball-beer/bakes-brewing-co/",
+    "https://thenewjerseybreweryblaze.com/2024/11/03/bakes-brewing-company-wall-new-jersey-monmouth-county/",
+    "https://brewyork.substack.com/p/selling-out-in-a-good-way",
+    "https://www.beermenus.com/breweries/36335-bakes-brewing",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，美国新泽西精酿新锐"
+  }
+}

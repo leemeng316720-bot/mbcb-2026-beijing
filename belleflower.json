@@ -1,0 +1,58 @@
+{
+  "brewery_id": "belleflower",
+  "name": {
+    "english": "Belleflower Brewing Company",
+    "chinese": "风铃草"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "缅因州",
+    "state_en": "Maine",
+    "city": "Portland（波特兰）East Bayside，66 Cove Street",
+    "city_en": "Portland, ME",
+    "address": "前身是倒闭的比利时风格酒厂Brewery Extrava"
+  },
+  "founded": "2020年11月拿到钥匙，2021年3月底开业",
+  "founded_en": "Keys in November 2020, opened end of March 2021",
+  "founder": {
+    "name": "Zach Page & Melissa Page（夫妇）, Nick Bonadies & Katie Bonadies（夫妇）",
+    "name_zh": "扎克·佩奇 & 梅丽莎·佩奇；尼克·博纳迪斯 & 凯蒂·博纳迪斯",
+    "name_origin": "Belleflower来自Nick家族在新罕布什尔州的200年家族农场：他曾曾祖父种下的一棵苹果树开花时垂下铃铛般的花朵，被称为'Belleflower树'。树倒后树干被做成谷仓的装饰横梁。酒厂Logo采用宾州德裔谷仓符（barn hex）——大门上方的意思是'家庭成员之间的爱'。"
+  },
+  "history": {
+    "trillium_origins": "2012年，家酿爱好者Zach Page与Nick Bonadies报名做志愿者，帮助JC Tetreault搭建即将开业的波士顿延龄草（Trillium）酒厂，从此相识。2013年延龄草开业，Zach放弃布朗大学研究生学业，在首任主酿Adam Goodwin手下开始职业酿造，后来主导了延龄草经典的'街道系列'IPA（Congress Street、Summer Street、Melcher Street等），2016年成为主酿/酿造运营总监。Nick当时还在广告公司做IT总监——2014年他曾买下发酵罐、在康涅狄格租好场地准备自己开厂，因妻子攻读研究生而忍痛卖设备退租；之后回到延龄草担任开发总监，主导了Canton大厂、Fenway酒吧等扩张项目。",
+    "reunion": "2018年Zach携家人移居缅因州波特兰，在Lone Pine酒厂帮助其扩张。2020年4月Nick在疫情期间被延龄草裁员，在麻州酿酒师公会论坛上看到波特兰一家倒闭酒厂Brewery Extrava待售——他立刻给Zach发短信：'你想开家酒厂吗？'Zach秒回：'今晚就见。'",
+    "opening": "2020年11月四人拿到钥匙，2021年3月底开业。Zach任首席酿酒师，Nick负责营销、命名与管理，Melissa（注册营养师）管理餐饮项目，Katie（作家）负责品牌创意。开业头一年推出25款酒，首发的Scrugsy浑浊IPA被描述为'菠萝汁与棉花糖香气'。",
+    "rise": "在酒厂密度全美顶尖的波特兰East Bayside发酵区站稳脚跟，被Hop Culture评为2023年度最佳酒厂。与Messorem（MBCB同场的加拿大酒厂）等合酿。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA/双倍浑浊IPA、帝国世涛、水果酸啤",
+    "styles": ["Hazy IPA", "Double Hazy IPA", "Imperial Stout", "Fruited Sour"],
+    "philosophy": "小批量、常用本地原料（Blue Ox麦芽厂、Backwoods Bee Farm蜂蜜）。Zach的酿酒语言被描述为'延龄草般的丝滑酒体+孤松的大柑橘调'但自成一派；热衷冒险和创新，每款酒名都藏着一段记忆或故事。"
+  },
+  "awards": [
+    "Hop Culture『2023年度最佳酒厂』",
+    "UNTAPPD2025社区奖6金6银7铜"
+  ],
+  "notable_beers": [
+    "Scrugsy - 首发浑浊IPA 7.1%（后推出Galaxy版本），菠萝汁与棉花糖香气",
+    "Barn Hex - 招牌浑浊双倍IPA 8.5%，多个酒花版本（Mosaic/Strata/El Dorado；Rakau/Moutere/Nelson Sauvin）， mango、白葡萄、葡萄柚",
+    "Secret Clubhouse - 帝国世涛（香草可可/咖啡肉桂版本），被Hop Culture评为年度最佳世涛之一",
+    "Beach Bloom Dreamsicle - 橙皮、蜜柑与马达加斯加香草的双倍IPA",
+    "Folk Magic - 加本地蜂蜜的IPA 7.6%",
+    "Faerie Offering - 黑莓/李子/大黄水果酸"
+  ],
+  "sources": [
+    "https://www.belleflowerbrewing.com/ourstory",
+    "https://www.themainemag.com/welcome-to-the-neighborhood-belleflower-brewing/",
+    "https://www.hopculture.com/belleflower-brewing/",
+    "https://firstkey.com/how-closures-are-creating-expansion-opportunities-for-breweries/",
+    "https://www.portlandfoodmap.com/post_tag/burger-o-rama/page/267/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，延龄草前核心团队创办的波特兰潜力新星"
+  }
+}

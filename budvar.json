@@ -1,0 +1,57 @@
+{
+  "brewery_id": "budvar",
+  "name": {
+    "english": "Budějovický Budvar",
+    "chinese": "百德福"
+  },
+  "location": {
+    "country": "捷克",
+    "country_en": "Czechia",
+    "region": "南波西米亚州",
+    "region_en": "South Bohemia",
+    "city": "České Budějovice（捷克布杰约维采，德语名Budweis）",
+    "city_en": "České Budějovice"
+  },
+  "founded": "1895年10月7日（首批酿造）",
+  "founder_en": "First batch October 7, 1895",
+  "founder": {
+    "name": "August Zátka 等捷克酿酒师（捷克股份制酒厂）",
+    "name_zh": "奥古斯特·扎特卡等",
+    "name_origin": "Budweiser源自城市德语名Budweis；1930年注册Budvar商标，1936年酒厂更名为Budvar。 České Budějovice的酿酒史始于1265年普热米斯尔·奥托卡二世授予酿酒权。"
+  },
+  "history": {
+    "founding": "1895年，面对德国Měšťanský Pivovar（市民酒厂）的主导地位，以August Zátka为首的捷克民族酿酒师联合成立'捷克股份制酒厂'——1895年10月7日酿出第一批酒，直接承继该市13世纪以来的酿酒传统。",
+    "budweiser_war": "1875-1876年，德裔移民Adolphus Busch从进口商Carl Conrad处购得'Budweiser'名称权，在美国酿制同名啤酒——其本人在法庭证词中承认是借捷克酒厂与 Budweis 啤酒的声誉。这场跨越百年的商标大战绵延至今：1939年Budvar让出美国市场（因而在美国以Czechvar之名销售），2010年欧盟法院判决Anheuser-Busch败诉，美式Budweiser在欧盟只能叫'Bud'。",
+    "state_owned": "二战后酒厂被纳粹政权接管，1948年国有化；天鹅绒革命后多数啤酒厂私有化，唯独Budvar因捷克民族的文化认同被保留为国家所有——至今仍是捷克唯一国有啤酒厂。作为国营企业，它甚至向微酒厂分享自家酵母。",
+    "craft": "传统双料煮出法（double decoction）、自流井水、摩拉维亚大麦与Žatec（萨兹）酒花——一切按'České pivo'欧盟地理标志的标准慢酿：主发酵后仍在酒窖中熟成整整90天，远超工业拉格。"
+  },
+  "specialty": {
+    "primary": "捷克拉格：Original淡色拉格、Dark深色拉格",
+    "styles": ["Czech Pale Lager", "Czech Dark Lager (Tmavý)"],
+    "philosophy": "捷克酿造传统的守护者：软水、摩拉维亚大麦、萨兹酒花、90天窖藏——用慢对抗工业化的快。"
+  },
+  "awards": [
+    "捷克共和国所有（国宝级品牌）",
+    "WBC 2006波西米亚皮尔森组银牌",
+    "U.S. Open Beer Championship 2014铜牌",
+    "Great International Beer and Cider Competition 2015金牌",
+    "Českobudějovické pivo欧盟地理标志（PGI）持有者"
+  ],
+  "notable_beers": [
+    "Budweiser Budvar Original - 旗舰淡色拉格约5%，自流井水+摩拉维亚大麦+萨兹酒花，90天窖藏",
+    "Budvar Dark - 深色拉格 4.7%",
+    "Czechvar - 美国等市场的名称"
+  ],
+  "sources": [
+    "https://english.radio.cz/130-years-czech-beer-story-budweiser-budvar-8848095",
+    "https://www.atlasobscura.com/places/budweiser-budvar-brewery",
+    "https://www.lexology.com/library/detail.aspx?g=b3305419-390d-47d6-9dd9-3f84a1ef7a8b",
+    "https://www.whoownsmybeer.com/beer/czechvar/",
+    "https://www.livemint.com/mint-lounge/czechia-bohemia-beer-culture-breweries-travel-11763714836874.html",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "MBCB参展，捷克国宝级啤酒品牌"
+  }
+}

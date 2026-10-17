@@ -1,0 +1,55 @@
+{
+  "brewery_id": "finback",
+  "name": {
+    "english": "Finback Brewery",
+    "chinese": "长须鲸"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "纽约州",
+    "state_en": "New York",
+    "city": "Queens（皇后区Glendale）+ Brooklyn（Gowanus）+ Long Island City 三店",
+    "city_en": "New York City",
+    "address": "2014年首厂设于皇后区Glendale（78-01 77th Ave）；2019年Brooklyn Gowanus分店加入蒸馏（Halftone Spirits）、咖啡（Invisible Force）与李妈妈的中式饺子店（Dumpling Up）"
+  },
+  "founded": "2011年创立，2014年1月首批酒下线",
+  "founder_en": "Founded 2011; first beer January 2014",
+  "founder": {
+    "name": "Basil Lee（建筑师）& Kevin Stafford（平面设计师）",
+    "name_zh": "巴兹尔·李 & 凯文·斯塔福德",
+    "name_origin": "原名'Narwhal'（一角鲸），因Sierra Nevada抢先注册同名商标而被迫改名——正当两人觉得'像一头搁浅的鲸鱼'（找不到场地、付不起租金、商标纠纷缠身）时，一头长须鲸（Finback）搁浅在皇后区Breezy Point海滩：'又可怕又美丽，我们当场决定用它'。'鲸'（whale）后来成了精酿圈的稀缺酒代称——'我们从没计划过这个'。"
+  },
+  "history": {
+    "origin": "两人都是新英格兰人，家酿八年，想把欧洲那种朦胧IPA的记忆带进纽约——'啤酒从设计到出品只要两六周，不满意就再做一个，比建筑纯粹多了'。找场地花了两年：'我们扫过后街、运河、桥洞和工业无人区，顶着塌屋顶和纸箱丛林'。最终在皇后区Glendale找到13,000平方英尺仓库，SBA担保贷款65万美元+30多万美元家人资金。",
+    "rise": "以极简美学与全风格实力成为纽约精酿复兴的中坚（与Other Half、Threes并列被Edible Brooklyn点名'扭转了纽约平庸的啤酒局面'）；排队的罐装发售日成为常态。",
+    "expansion": "2019年Gowanus'饮品工作室'：5桶小系统专注'更激进的实验与小批量whale酒'，配蒸馏厂、咖啡烘焙和李妈妈的饺子店（家族四十年中餐根基）。",
+    "today": "2026年纽约州精酿啤酒大赛美式IPA金奖；三家门店+FFARM农业与乡村发展项目。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA、桶陈帝国世涛、酸啤、皮尔森——全风格创作",
+    "styles": ["Hazy IPA", "Barrel-Aged Imperial Stout", "Sour", "Pilsner", "DDH DIPA"],
+    "philosophy": "'创造力+热情'：从 humble 经典到现代 hype 款，没有Finback不敢碰的风格——酒标即艺术（两位创始人轮流设计，极简+亮色+几何图案）。"
+  },
+  "awards": [
+    "2026 New York State Craft Beer Competition美式IPA金奖",
+    "UNTAPPD2025社区奖3金3银1铜",
+    "Thrillist『全美12家最佳新酒厂』"
+  ],
+  "notable_beers": [
+    "BQE - 波本桶陈帝国世涛（名字来自布鲁克林-皇后区高速）：布鲁克林烘焙咖啡+皇后区巧克力",
+    "Oscillation - 旗舰浑浊IPA系列",
+    "Kinda Brooklyn / Sorta Queens - DDH双倍IPA双子款"
+  ],
+  "sources": [
+    "https://finbackbrewery.com/finback-home",
+    "https://www.hopculture.com/interview-founders-finback-brewery-basil-lee-and-kevin-stafford/",
+    "https://ediblebrooklyn.com/2019/queens-finback-is-opening-a-new-brewery-in-gowanus-with-a-distillery-coffee-roaster-and-dumpling-shop/",
+    "https://www.thecreativefactor.co/articles/how-two-unlikely-beer-entrepreneurs-launched-finback-brewery",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，以酒标艺术家闻名的纽约创意酒厂"
+  }
+}

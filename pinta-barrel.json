@@ -1,0 +1,61 @@
+{
+  "brewery_id": "pinta-barrel",
+  "name": {
+    "english": "PINTA Barrel Brewing",
+    "chinese": "拼拼橡木"
+  },
+  "location": {
+    "country": "波兰",
+    "country_en": "Poland",
+    "voivodeship": "小波兰省",
+    "voivodeship_en": "Lesser Poland",
+    "city": "Wieprz（瓦多维采县），紧邻Browar Pinta主厂",
+    "city_en": "Wieprz",
+    "address": "Ul. Przemysłowa 4, 34-382 Wieprz；1200升糖化系统的独立桶陈酒厂，带coolship开放式冷却池与野菌发酵区"
+  },
+  "founded": "2019年立项（公司注册于2019年4月2日），2021年投产",
+  "founder_en": "Founded 2019 as Browar Pinta's barrel-aged project; opened 2021",
+  "founder": {
+    "name": "Browar Pinta 团队（波兰精酿革命开创者）",
+    "name_zh": "Pinta团队（Marek, Grzesiek, Ziemek）",
+    "name_origin": "PINTA意为'一品脱'。母公司Browar Pinta 2011年创立，其Atak Chmielu IPA的发布日被公认为'波兰精酿革命的开端'。'好东西需要时间'（Dobre rzeczy wymagają czasu）是PINTA Barrel的核心理念。",
+    "crowdfunding": "2019年5月发起众筹：1329位投资者参与，筹得近415万波兰兹罗提。"
+  },
+  "history": {
+    "origin": "PINTA从吉普赛酿造时期（2016年起）就开始试验桶陈——2013年的Imperator Bałtycki帝国波罗的海波特是波兰市场的 breakthrough（当时全国最烈、酒花最重的深色拉格）。2019年5月，在主厂（Wieprz新厂2019年夏才酿出第一锅Atak Chmielu）尚未投产时就宣布为桶陈项目众筹。",
+    "facility": "酒厂2021年投产：不是简单的桶库，而是拥有1200升糖化系统、多个发酵罐与成排橡木桶的独立微酒厂；野菌区设有coolship浅池让麦汁自然接种发酵。",
+    "two_tracks": "两条路线：深色桶陈（帝国世涛/波特/大麦烈酒，在Willett、Buffalo Trace、Heaven Hill、Rittenhouse黑麦、Weller、PX雪莉等桶中陈14-30个月）与Wild Ale野菌发酵（自发发酵、真实水果、季节表达，如3年陈的Enology雷司令葡萄野菌艾尔）。"
+  },
+  "specialty": {
+    "primary": "深色桶陈帝国世涛/波特/大麦烈酒 + 自发发酵野菌艾尔",
+    "styles": ["Barrel-Aged Imperial Stout", "Barrel-Aged Porter", "Barleywine", "Wild Ale / Spontaneous", "Braggot", "Wild Grodziskie"],
+    "philosophy": "'好东西需要时间'：重视基础酒体、木桶选择与天然添加物的搭配；野菌线强调自发发酵、真实水果与季节性表达。"
+  },
+  "awards": [
+    "2024与2025波兰精酿啤酒大赛（Polish Craft Beer Competition）世涛与波特类年度冠军",
+    "2023波兰精酿啤酒大赛野菌酒类年度冠军",
+    "UNTAPPD2025社区奖9金13银6铜",
+    "母公司PINTA的Imperator Bałtycki：RateBeer Best Awards 2014-2016三连、2019波兰年度啤酒"
+  ],
+  "notable_beers": [
+    "Liberty - 帝国世涛 13%：香草+椰子+咖啡，Willett与Heaven Hill波本桶陈20个月（UNTAPPD 1933评）",
+    "Immensity - 帝国世涛 13%：枫糖波本桶+枫糖浆+香草+咖啡，18个月（1271评）",
+    "Affection - 帝国世涛 13%：椰子+咖啡+可可豆+香草，Rittenhouse黑麦/Buffalo Trace/Willett桶20个月（1247评）",
+    "Substance - 帝国世涛 13%：Weller与Heaven Hill波本桶24个月，无辅料特调混酿",
+    "Patience - 帝国世涛 14%：Willett桶陈30个月（'耐心的回报'）",
+    "Grandeur - 帝国波特 13%：黑麦桶+George Dickel+PX雪莉桶14个月",
+    "Enology (Riesling) - 3年陈野菌艾尔+波兰西里西亚雷司令葡萄5个月",
+    "Scarlet - 红醋栗野菌艾尔 5.5%"
+  ],
+  "sources": [
+    "https://craftbeernomads.com/craft-beer-in-poland-browar-pinta-and-pinta-barrel-brewing/",
+    "https://untappd.com/PINTABarrelBrewing/beer",
+    "https://balticporterday.com/en/layouts/pinta_en/",
+    "https://tracxn.com/d/legal-entities/poland/pinta-barrel-brewing-spolka-akcyjna",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，波兰桶陈与野菌发酵代表"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "brewery_id": "vault-city",
+  "name": {
+    "english": "Vault City Brewing",
+    "chinese": "地下城"
+  },
+  "location": {
+    "country": "英国",
+    "country_en": "UK",
+    "region": "苏格兰",
+    "region_en": "Scotland",
+    "city": "Edinburgh（爱丁堡）Portobello（海滨区）",
+    "city_en": "Edinburgh",
+    "address": "新酒厂位于Portobello海滩旁；另在Haymarket经营The Wee Vault品酒室与瓶装店，市内两家酒吧"
+  },
+  "founded": "2018年",
+  "founded_en": "Founded 2018",
+  "founder": {
+    "name": "Steven Smith-Hay",
+    "name_zh": "史蒂文·史密斯-海",
+    "co_founder": "Jonathan Horn（前酿酒师）与Steven的伴侣Adele",
+    "name_origin": "Vault City——名字灵感来自爱丁堡老城的地下拱顶酒窖（underground vaults）。Steven曾是在BT和TSG工作的IT顾问。"
+  },
+  "history": {
+    "kitchen_origin": "2018年，痴迷家酿的Steven在爱丁堡Murrayfield的自家厨房开始酿造现代酸啤——'一个酿得太多喝不完、开始幻想把厨房变成商业场所的家酿狂'。他成为极少数在狭小的两居室公寓次卧里拥有HMRC注册税务仓库的人。最初一批400升，手工装瓶手工贴标，首批酒Elderflower Sour与Mango Sour在亲友和苏格兰啤酒圈收获好评。",
+    "launch": "2018年底在BrewDog酒吧以tap takeover形式正式亮相，Steven辞去IT顾问工作全力投入。",
+    "dundee": "第一年内搬到邓迪，借用71 Brewing的仓库与设备，把单批产量从400升提升到4000升。",
+    "growth": "此后迁回爱丁堡，在Portobello海边建成5000平方英尺的新酒厂，年产能达140万升（2023年数据，当年营业额预计450万英镑），员工约30人，是苏格兰最大的酸啤酒厂，产品进入英国四大连锁超市，出口丹麦、瑞典、挪威、法国、新加坡、泰国等地。",
+    "workplace": "2021年4月起分阶段试行、2022年1月正式成为英国第一家全员四天工作制的商业啤酒厂（每周35小时，不减薪）。2024年8月承诺支付爱丁堡生活工资（时薪13.15英镑，高于英国实际生活工资1.15英镑）。"
+  },
+  "specialty": {
+    "primary": "现代酸啤（Modern Sour Beer）：重水果增味混合发酵酸啤",
+    "styles": ["Sour - Fruited", "Sour - Other", "Imperial Pastry Sour", "Fruited Gose", "Barrel Aged Sour"],
+    "philosophy": "只酿混合发酵酸啤——乳酸菌与酿酒酵母共同发酵（与多数酸啤厂的后酸化路线不同），带来更复杂的层次与顺滑的酸度 profile。'现代酸啤'的定位是让酸啤变得accessible：大果味、酸甜平衡、偶尔扔进一个荒唐的创意。风味灵感取自苏格兰本地农场与 beyond 的成吨新鲜水果，以及Iron Brew汽水、柠檬汽水、大黄蛋奶糊等英伦怀旧味道。"
+  },
+  "awards": [
+    "英国现代酸啤领军品牌（自称并公认：Modern Sour Beer品类的定义者）",
+    "英国首家四天工作制商业啤酒厂（2022年）",
+    "UNTAPPD苏格兰地区酒厂排名TOP2",
+    "UNTAPPD2025社区奖11金8银9铜",
+    "Hop Culture『2025年最值得关注的17家酒厂』之一（UNTAPPD近百万次打卡，均分3.97，酸啤类多次横扫）"
+  ],
+  "notable_beers": [
+    "Triple Fruited Mango - 三倍芒果酸啤（阿方索芒果），最畅销核心款，6.2%版UNTAPPD 3.73（2万+打卡），2022年起另有4.8%畅饮版",
+    "Strawberry Sundae - 草莓圣代酸啤 5%，UNTAPPD 3.9",
+    "Cloudy Lemonade (Citra & Nelson Sauvin) - 浑浊柠檬汽水酸啤 4.2%，UNTAPPD 3.72",
+    "Iron Brew - 苏格兰国民汽水风味酸啤 4.8%，UNTAPPD 3.74",
+    "Blackcurrant Kir Royale - 黑加仑基尔皇家酸啤 11.3%，UNTAPPD 4.33（1388评）",
+    "DDH Hard Lemonade - 双倍干投高度柠檬汽水 9.5%，UNTAPPD 4.17（2822评）",
+    "Bruichladdich Barrel Aged Whisky Sour - 布赫拉迪桶陈威士忌酸 11%，UNTAPPD 4.02（2149评）"
+  ],
+  "sources": [
+    "https://uk.entrepreneur.com/entrepreneurs/brewing-success-the-vault-city-story/486490",
+    "https://www.bdaily.co.uk/articles/2023/09/20/vault-city-brewing-from-brewing-sour-beer-in-his-kitchen-to-1-4m-litres-per-year",
+    "https://www.insider.co.uk/news/vault-city-becomes-first-brewery-26223961",
+    "https://edinburgh.org/meet-edinburghs-makers/vault-city-brewing/",
+    "https://untappd.com/VaultCityBrewing/beer",
+    "https://www.hopculture.com/best-breweries-to-watch-in-2025/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，英国现代酸啤领军品牌，首次中国亮相"
+  }
+}

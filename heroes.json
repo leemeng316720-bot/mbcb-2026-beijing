@@ -1,0 +1,51 @@
+{
+  "brewery_id": "heroes",
+  "name": {
+    "english": "Heroes Beer Co.",
+    "chinese": "英雄"
+  },
+  "location": {
+    "country": "中国香港",
+    "country_en": "Hong Kong",
+    "city": "香港（油塘酒厂）",
+    "city_en": "Hong Kong (Yau Tong)"
+  },
+  "founded": "2017年",
+  "founder_en": "2017",
+  "founder": {
+    "name": "Christopher Wong（创办人兼首席酿酒师）与 Jason、Angus",
+    "name_zh": "克里斯托弗·黄 等三人",
+    "name_origin": "Heroes相信每个人都可以成为英雄——酒厂不只做酿酒，更是一个'啤酒英雄平台'：每酿一款新酒就邀请一位啤酒迷担任主角，深度访谈其背景、价值观与对啤酒的热爱，然后创作出反映主角性格的味道、包装设计与英雄故事。'喝一口Heroes，你就品尝到这位啤酒英雄的超能力和故事。'"
+  },
+  "history": {
+    "founding": "2017年创立，以'啤酒英雄平台'概念颠覆传统酒厂与消费者的关系——每罐啤酒背后都有专属的'英雄角色'与故事，由内到外充满惊喜。",
+    "recognition": "多次在亚太地区赛事获奖：全球最大啤酒比赛AIBA金牌、亚洲啤酒杯（ABC）金牌、RateBeer.com『2019香港最佳啤酒厂』。",
+    "export": "产品出口至中国大陆、中国台湾、新加坡、马来西亚、澳大利亚、奥地利等地；酿造风格多样，并融入亚洲在地食材与文化元素。"
+  },
+  "specialty": {
+    "primary": "全风格精酿：每款酒都是一个'啤酒英雄'的故事",
+    "styles": ["全风格轮换", "本土食材融合"],
+    "philosophy": "'啤酒英雄平台'：让消费者成为产品故事的主角；鲜明的品牌视觉与产品表达。"
+  },
+  "awards": [
+    "澳洲国际啤酒大奖赛（AIBA）金牌",
+    "亚洲啤酒杯（ABC）金牌",
+    "RateBeer.com『2019香港最佳啤酒厂』",
+    "UNTAPPD2025社区奖2银1铜",
+    "UNTAPPD香港酒厂排名TOP4"
+  ],
+  "notable_beers": [
+    "啤酒英雄系列 - 每款对应一位真实啤酒迷的故事与性格",
+    "亚洲在地食材融合酒款"
+  ],
+  "sources": [
+    "https://www.heroesbeerco.com/",
+    "https://www.hk01.com/職場/98004/",
+    "https://chingstylehk.com/手工啤-啤酒節-中環海濱/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，中国香港地区代表酒厂之一"
+  }
+}

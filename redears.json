@@ -1,0 +1,53 @@
+{
+  "brewery_id": "redears",
+  "name": {
+    "english": "REDEARS Brewing",
+    "chinese": "赤耳"
+  },
+  "location": {
+    "country": "中国",
+    "country_en": "China",
+    "city": "北京（总部），浙江自有酿造工厂",
+    "city_en": "Beijing / Zhejiang brewery"
+  },
+  "founded": "2019年12月成立，2020年6月首款产品上市",
+  "founder_en": "Founded December 2019; first beer June 2020",
+  "founder": {
+    "name": "杜鸿博、陈镱（三位不同专业背景的创始人）",
+    "name_zh": "杜鸿博 & 陈镱 等",
+    "name_origin": "品牌名源自'面红耳赤之后，请继续向前'的精神理念——鼓励人们在面对挑战时保持热情与勇气。"
+  },
+  "history": {
+    "founding": "三位创始人在精酿行业打磨多年后于2019年底创立赤耳。2019年末讨论首款产品风味时，多番考量选择了绿豆——2020年6月，赤耳首创的中国第一款绿豆风味精酿啤酒上市，迅速获市场认可，开创了'绿豆啤酒'这一中式精酿全新品类，引来众多品牌的模仿与再创造。",
+    "philosophy_growth": "品牌始终坚持'中国啤酒'定位：从开创性的绿豆啤酒系列，到重塑传统风味的'本地制造'企划、融入大地谷物风味的'地粮拉格系'——'风物有源'。希望用酿造的啤酒让人与人、人与生活发生奇妙的连接。'好喝，好玩儿'是始终贯穿的理念。"
+  },
+  "specialty": {
+    "primary": "绿豆啤酒开创者、中式风味精酿（茉莉、谷物、本土食材）",
+    "styles": ["绿豆淡色艾尔", "增味艾尔", "拉格（地粮系）", "Cider"],
+    "philosophy": "'在中国广袤的地域里寻找一切作为灵感'——用精酿表达中国的传统文化与现代精神，传递温暖与善意。"
+  },
+  "awards": [
+    "2020 CBC中国国际啤酒挑战赛中式啤酒组一星天禄奖（绿豆啤酒）",
+    "2020 CCBA中国精酿啤酒大奖赛艾尔创新组铜奖",
+    "2025澳大利亚国际啤酒大奖赛（AIBA）1金3银",
+    "CBC中国国际啤酒挑战赛一星天禄与三星天禄",
+    "CCBA中国啤酒大赛金、银、铜奖",
+    "2026世界啤酒大奖赛（WBA）铜牌"
+  ],
+  "notable_beers": [
+    "绿豆啤酒 - 中国第一款绿豆风味精酿（淡色艾尔），品类开创者",
+    "东方茉莉 - 茉莉花茶风味",
+    "地粮拉格系 - 大地谷物风味",
+    "草场地 / 白桃Cider / 忧伤的老板 / 查理的秘密"
+  ],
+  "sources": [
+    "https://finance.sina.com.cn/jjxw/2025-04-28/doc-ineusxku9044177.shtml",
+    "http://www.bjbrew.com/exDetail.aspx?exid=98",
+    "https://www.xiaoyuzhoufm.com/episode/601b33a6a58c1dd0adfd6401",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，从中国市井传统中汲取灵感，绿豆啤酒开创者"
+  }
+}

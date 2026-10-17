@@ -1,0 +1,61 @@
+{
+  "brewery_id": "ism",
+  "name": {
+    "english": "ISM Brewing & Kitchen",
+    "chinese": "ISM"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "加利福尼亚州",
+    "state_en": "California",
+    "city": "Long Beach（长滩）市中心Promenade（Broadway与3rd街之间）",
+    "city_en": "Long Beach, CA",
+    "address": "接管了传奇酒厂Beachwood的DTLB原厂址（含酿造车间与taproom）"
+  },
+  "founded": "2023年12月开业",
+  "founder_en": "Opened December 2023",
+  "founder": {
+    "name": "Ian McCall（酿酒师/所有人）",
+    "name_zh": "伊恩·麦考尔",
+    "head_brewer": "Gene Wagoner（首席酿酒师）",
+    "name_origin": "'ISM'是创始人名字的首字母（Ian S. McCall），在英文中也常作为各种'主义'的后缀——借此表达品牌保持开放与包容的想法：不局限于单一风格，而是持续探索不同类型的啤酒。",
+    "background": "McCall曾任Riip Beer首席酿酒师（2018-2023，任内7枚GABF奖牌，含Belgian特色艾尔Tangible Passion金牌）；此前在Beachwood Brewing（DTLB）做助理酿酒师五年——'回家酿酒'：ISM接手的正是老东家Beachwood的旧址。"
+  },
+  "history": {
+    "opening": "2023年12月在长滩市中心开业，现代brewpub定位（美式餐酒+大家庭友好露台）。开业头几个月就拿下世界级关注。",
+    "debut": "2024年啤酒世界杯（WBC）：两金一铜——Western Standard Time（西海岸IPA，该届参赛酒款最多的类别）与Calf Fiend（咖啡啤酒）夺金，Plough & Harrow（经典赛松）摘铜。'从酿酒师角度看，Russian River拿金、Firestone Walker拿铜，能夹在两者之间太不可思议了。'",
+    "2025": "WBC 2025再获2银1铜：Plough & Harrow赛松银牌（同类别夹在Russian River金牌与Firestone Walker铜牌之间）；California Craft Brewers Cup加身。",
+    "craft": "西海岸IPA技术细节（McCall播客自述）：更瘦的麦芽配方、小麦增加酒体不影响干爽、控制氯化物、'苦味要来得快去得快'、发酵中干投推果香、热侧酒花构建复杂度——'连获奖配方也要持续打磨'。"
+  },
+  "specialty": {
+    "primary": "西海岸IPA、赛松、咖啡啤酒——兼做全风格易饮作品",
+    "styles": ["West Coast IPA", "Classic Saison", "Coffee Brown Ale", "Ales & Lagers全风格"],
+    "philosophy": "开业早期以基础风格和易饮型作品为主，但酿造幕后始终探索新风味——'创新+社区'双驱动。"
+  },
+  "awards": [
+    "WBC 2024：2金1铜（Western Standard Time西海岸IPA金、Calf Fiend咖啡啤酒金、Plough & Harrow经典赛松铜）",
+    "WBC 2025：2银1铜",
+    "California Craft Brewers Cup",
+    "UNTAPPD美国BrewPub级酒厂TOP41",
+    "UNTAPPD2025社区奖1金"
+  ],
+  "notable_beers": [
+    "Western Standard Time - 西海岸IPA，WBC 2024金牌（参赛最多的类别夺金）",
+    "Calf Fiend - 咖啡棕色艾尔，WBC 2024金牌",
+    "Plough & Harrow - 经典赛松，WBC 2024铜牌、2025银牌",
+    "Chepedelic - GABF金牌（长滩唯一获奖酒厂）"
+  ],
+  "sources": [
+    "https://ism.beer/",
+    "https://longbeachize.com/articles/ism-brewing-scores-three-trademark-one-medal-at-the-prestigious-world-beer-cup/",
+    "https://www.beerandbrewing.com/podcast-episode-372-ian-mccall-of-ism-brewing",
+    "https://www.visitlongbeach.com/directory/ism-brewing-kitchen/",
+    "https://patch.com/california/longbeach-ca/long-beach-brewery-wins-2-medals-world-beer-cup",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，WBC奖牌收割机"
+  }
+}

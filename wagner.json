@@ -1,0 +1,54 @@
+{
+  "brewery_id": "wagner",
+  "name": {
+    "english": "Brauerei Wagner Merkendorf",
+    "chinese": "韦格纳"
+  },
+  "location": {
+    "country": "德国",
+    "country_en": "Germany",
+    "region": "巴伐利亚州上弗兰肯地区",
+    "region_en": "Upper Franconia, Bavaria",
+    "city": "Merkendorf（班贝格附近，约900人的村庄——村里竟有两家酒厂：Wagner与Hummel）",
+    "city_en": "Merkendorf, near Bamberg",
+    "address": "与酒厂相连的传统啤酒馆及啤酒花园；年产约17,000百升"
+  },
+  "founded": "酿造历史可追溯至1797年（另有来源记为1861年，详见备注）；1919年起由Wagner家族经营",
+  "founder_en": "Brewing traces to 1797 (some sources 1861); Wagner family since 1919",
+  "founder": {
+    "name": "Wagner家族（1919年起）",
+    "name_zh": "Wagner家族",
+    "name_origin": "校勘说明：村内土地上的酿酒记载始于1797年，但有资料认为酒厂实际开业于1861年（可能1797年为建房年份）；Wagner家族1919年接手时的酒厂原名已不可考。酒馆墙上挂着Wagner家族的酿酒文凭。",
+    "signature": "招牌Ungespundetes Lagerbier——'不加压'贮酒（部分在开放容器发酵），碳酸较柔和，是班贝格及周边地区代表性的传统啤酒类型。"
+  },
+  "history": {
+    "overview": "Wagner是班贝格地区享有'崇拜地位'的传统乡村酒厂——弗兰肯人从四面八方涌向Merkendorf，为Wagner的好酒和配酒的家常菜。自1919年起由Wagner家族持续经营，至今保留着与酒厂相连的传统啤酒馆及啤酒花园。",
+    "range": "五款常规生啤：Ungespundetes Lagerbier 5.3%（招牌）、Richard Wagner Dunkel 5.5%、Weisse 5.3%、Märzen 5.4%、Pils 4.9%；季节款：Festbier 5.7%（复活节/圣灵降临节/圣诞节/教堂节）与Bock Hell/Dunkel 7.5%（11-12月）。长期专注德国传统拉格酿造。"
+  },
+  "specialty": {
+    "primary": "传统弗兰肯拉格：Ungespund（不加压拉格）、Helles、Pils、Märzen",
+    "styles": ["Ungespundetes Lagerbier", "Dunkel", "Pils", "Märzen", "Weisse", "Bock"],
+    "philosophy": "经典德国拉格的保守主义精品：在竞争激烈的淡色拉格类别中屡次获得评审认可。"
+  },
+  "awards": [
+    "2025年欧洲之星（European Beer Star）德国淡色拉格组金牌",
+    "2016年欧洲之星波西米亚皮尔森组银牌",
+    "2017、2018年欧洲之星波西米亚皮尔森组铜牌"
+  ],
+  "notable_beers": [
+    "Ungespundetes Lagerbier - 5.3%不加压拉格：开放容器部分发酵，碳酸柔和",
+    "Richard Wagner Dunkel - 5.5%深色拉格",
+    "Märzen - 5.4%（传统三月酿造、秋季供应的琥珀色酒）",
+    "Bockbier Hell / Dunkel - 7.5%（11-12月季节款）"
+  ],
+  "sources": [
+    "https://beervisits.beer/pub-bar-visit/pub-visit-germany/129-pv-bayern-bavaria/703-merkendorf-bayern-bavaria-brauerei-wagner",
+    "https://bierothek.com/brauereien/brauerei-wagner-merkendorf",
+    "https://www.beerwanderers.com/brauerei-wagner/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "MBCB参展，百年历史传承，多次欧洲之星奖牌"
+  }
+}

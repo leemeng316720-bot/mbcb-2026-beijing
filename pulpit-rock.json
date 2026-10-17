@@ -1,0 +1,61 @@
+{
+  "brewery_id": "pulpit-rock",
+  "name": {
+    "english": "Pulpit Rock Brewing Company",
+    "chinese": "布道石"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "爱荷华州",
+    "state_en": "Iowa",
+    "city": "Decorah（德科拉，人口约1万的大学城），207 College Dr",
+    "city_en": "Decorah, IA",
+    "address": "旧乳品厂建筑改造（最初隔壁就是自助洗衣房），800平方英尺酿酒间塞下7桶系统"
+  },
+  "founded": "2015年夏",
+  "founder_en": "Summer 2015",
+  "founder": {
+    "name": "Pete Espinosa 等四位路德学院（Luther College）校友",
+    "name_zh": "皮特·埃斯皮诺萨等四位校友",
+    "head_brewer": "Robert Slack & Justin Teff（联合首席酿酒师，均为Toppling Goliath老兵）",
+    "name_origin": "Pulpit Rock（布道石）得名于挪威斯塔万格附近的Preikestolen悬崖——创始人Pete的母亲家族来自崖下的Holta村；而爱荷华州德科拉本地的Will Baker公园也有一块同名岩石地标。'用这样一个标志性景观命名酒厂，顺理成章。'"
+  },
+  "history": {
+    "founding": "Pete与Kari Espinosa 2013年回德科拉定居，2014年买下College Drive上的Bottle Tree自助洗衣房。2015年，Pete与几位家人朋友（含三位路德学院校友亲家）开出Pulpit Rock——'我甚至不喝酒，开业时也没有任何说得通的财务计划，但我们想为德科拉做点好事'。首席酿酒师Slack与Teff都来自镇上巨头Toppling Goliath：'老做同一批旗舰酒太乏味了，我们想做点不一样的——我们甚至讨厌'旗舰'这个词。'",
+    "craft": "800平方英尺的酿酒间里塞着7桶糖化系统、四个7桶发酵罐与多个储酒罐；快速轮换的酒单让常客也无法预料今天上枪什么。隔壁收购的原干洗店变成混合发酵与木陈玩的'游乐场'。",
+    "norwegian": "挪威血统深刻影响酒款：实验传统挪威原料与工艺——kveik酵母、挪威圣诞啤酒（juleøl）、酒名用挪威语（Saftig意为'多汁'）。",
+    "today": "UNTAPPD综合4.21（22.6万+评分）；2024社区奖以31枚奖牌（含11金）居爱荷华州所有酒厂之首——金牌含帝国甜品世涛、美式大麦烈酒、美式IPA。受邀参加哥本哈根Mikkeller啤酒节。'我们从不追求大规模分销或出口，只做最好的酒。'"
+  },
+  "specialty": {
+    "primary": "实验性全风格：IPA、帝国世涛、甜品酸、挪威风格（kveik/juleøl）",
+    "styles": ["American IPA", "Imperial Stout / Pastry Stout", "Barleywine", "Fruited Sour", "Norwegian Kveik beers", "Juleøl"],
+    "philosophy": "'品质高于产量'：大部分酒只在本地品酒室与有限周边渠道销售；故意在酿造周期里给创造力留出空间——'有些批次做一次就再也不会做了'。"
+  },
+  "awards": [
+    "UNTAPPD2024社区奖31枚奖牌（含11金），爱荷华州奖牌数第一",
+    "UNTAPPD2025社区奖9金9银7铜",
+    "UNTAPPD全球Micro级酒厂TOP40",
+    "UNTAPPD综合4.21（22.6万+评分）",
+    "受邀Mikkeller Beer Festival（哥本哈根）"
+  ],
+  "notable_beers": [
+    "Saftig - 挪威语'多汁'：Citra+Mosaic IPA",
+    "Oh Joy - 帝国世涛",
+    "Smarshmallow - 草莓+棉花糖甜品酸",
+    "Mango Milkshake - 与Untitled Art（Funk Factory×Octopi）合酿的浑浊IPA",
+    "Juleøl - 挪威圣诞啤酒传统配方",
+    "Kveik系列 - 挪威农场酵母实验"
+  ],
+  "sources": [
+    "https://larsidar.substack.com/p/a-brewery-with-roots-in-norway-and",
+    "https://www.hopculture.com/best-breweries-to-visit-in-iowa/",
+    "https://www.beerandbrewing.com/breakout-brewer-pulpit-rock-brewing-co",
+    "https://www.pulpitrockbrewing.net/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，爱荷华州实力酒厂"
+  }
+}

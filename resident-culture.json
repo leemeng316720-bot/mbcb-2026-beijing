@@ -1,0 +1,58 @@
+{
+  "brewery_id": "resident-culture",
+  "name": {
+    "english": "Resident Culture Brewing Co.",
+    "chinese": "荒邻"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "北卡罗来纳州",
+    "state_en": "North Carolina",
+    "city": "Charlotte（夏洛特）Plaza Midwood区，2101 Central Ave",
+    "city_en": "Charlotte, NC",
+    "address": "父亲1982年买下的老印刷厂建筑改造；另有7th Street Market等三家门店"
+  },
+  "founded": "2017年9月2日",
+  "founder_en": "September 2, 2017",
+  "founder": {
+    "name": "Phillip & Amanda McLamb（夫妇）与 Chris Tropeano",
+    "name_zh": "菲利普与阿曼达·麦克兰姆 & 克里斯·特罗皮亚诺",
+    "name_origin": "Resident Culture——一语双关：既指酒厂的'社区文化'使命（呈现Plaza Midwood街区的气质），也指啤酒里的'酵母菌群'（用本地酵母做真正属于这片土地的酒）。",
+    "background": "McLamb夫妇刚从金融业脱身，想在家族房产上开酒厂——'商业计划的第一步是说服我爸搬出去'：Ed McLamb1982年买下这栋楼开印刷厂，最终不仅搬走还投了资。酿酒师Tropeano来自Russian River（在Beatification基酒的酿造中积累了野菌经验），毕业于维克森林大学，渴望回北卡。"
+  },
+  "history": {
+    "opening": "2017年9月在Plaza Midwood开业。最初规划是拉格、混合发酵与西海岸IPA，结果意外以浑浊IPA成名——'我从没在西海岸酿过浑浊，这反而是优势：没有先入之见，更愿意学习新工艺'。",
+    "process": "为酿出Laelaps（浑浊IPA）与Human Potential（浑浊三倍IPA），Tropeano试了多种酵母、把水质调整至高氯化物；干投纪律苛刻：'我们从不直接干投开封的酒花袋，用之前必须先闻——有时意味着放弃很贵的酒花，但我们吃过亏'。",
+    "coolship": "北卡夏洛特第一个coolship（开放式冷却池）——在Russian River酿Beatification基酒的经验；taproom大窗可以直接看到。还有Brett拉格与' funky fermentor '实验。",
+    "community": "'我有个不成文的规矩：不跟手机里没号码的人合酿'——与Perennial、Southern Grist、Outer Range（MBCB同场）等名厂联动；员工Maryssa Pickett的手绘插画构成独特视觉；'开业一年半零人员流失，这是我们最骄傲的事之一'。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA（旗舰）、拉格、混合发酵与桶陈探索",
+    "styles": ["Hazy IPA / TIPA", "Italian Pilsner", "Mexican Lager", "Brett Lager", "Mixed Fermentation", "Coolship Wild Ale"],
+    "philosophy": "'做真正属于这个地方的产品'——本地水果、本地酵母、街区气质；浑浊之外的拉格与野菌是酿酒师的自尊心。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖1金2银3铜",
+    "Forbes疫情转型商业案例报道",
+    "夏洛特最炙手可热的酒厂之一"
+  ],
+  "notable_beers": [
+    "Lightning Drops - 旗舰浑浊IPA",
+    "Laelaps - 浑浊IPA（严谨干投纪律的代表）",
+    "Human Potential - 浑浊三倍IPA",
+    "Riding For the Feeling - 意大利皮尔森",
+    "Island Time - 墨西哥拉格"
+  ],
+  "sources": [
+    "https://www.beerandbrewing.com/breakout-brewery-resident-culture-brewing-co",
+    "https://www.axios.com/local/charlotte/2017/08/29/resident-culture-charlottes-newest-brewery-opens-saturday-september-2-plaza-midwood-102010",
+    "https://www.forbes.com/sites/kennygould/2020/03/20/how-to-pivot-a-business-lesson-during-coronavirus-from-resident-culture-brewing-company/",
+    "https://www.craftbrewingbusiness.com/featured/people-news-charlottes-resident-culture-brewing-names-erin-jordan-as-head-brewer-moves-from-partake-fort-point-and-more/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，美国东南部先锋酒厂"
+  }
+}

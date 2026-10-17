@@ -1,0 +1,54 @@
+{
+  "brewery_id": "folkingebrew",
+  "name": {
+    "english": "Folkingebrew",
+    "chinese": "后院"
+  },
+  "location": {
+    "country": "荷兰",
+    "country_en": "Netherlands",
+    "city": "Groningen（格罗宁根）Boterdiep 75",
+    "city_en": "Groningen",
+    "address": "2025年启用自有酒厂+The Pub品酒室（16个酒头，吧后就是小型酿酒设备）"
+  },
+  "founded": "2017年",
+  "founded_en": "Founded 2017",
+  "founder": {
+    "name": "五位格罗宁根好友（创始团队）",
+    "name_zh": "五位好友",
+    "name_origin": "Folkinge来自Folkingestraat街——五人在街上有家叫Just in Beer的啤酒专卖店的后间开始酿酒；brew则点出启发他们的美式精酿范儿。"
+  },
+  "history": {
+    "origin": "2017年，五个格罗宁根好友在Folkingestraat街上啤酒专卖店Just in Beer的后间，纯粹为了好玩开始酿酒。第一锅酒从这里流出，名字也在这里诞生。",
+    "rise": "从后间走向全欧洲：八年后的2025年，他们在格罗宁根Boterdiep建成自有酒厂和The Pub——16个酒头轮换自家酒款与小批量独家，厨房配汉堡、那不勒斯披萨与烤肋排。",
+    "today": "以美式风格的高分浑浊IPA闻名，产品销往全球，UNTAPPD上收获数十万条好评。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA/双倍/三倍，兼顾经典拉格",
+    "styles": ["Hazy IPA", "Double Hazy IPA", "Triple Hazy IPA", "Lager"],
+    "philosophy": "'充满性格、胆量与冒险'——每款酒都是酿酒师自己也爱喝的样子，浓郁果香与饱满酒体。"
+  },
+  "awards": [
+    "UNTAPPD荷兰Nano级酒厂排名TOP9",
+    "UNTAPPD双倍浑浊IPA风格荷兰TOP50榜单占39席",
+    "UNTAPPD三倍浑浊IPA风格荷兰TOP50榜单占21席"
+  ],
+  "notable_beers": [
+    "Backyard DIPA - 浑浊双倍IPA，UNTAPPD 4.3（877评），酒厂命名同源的招牌",
+    "Submersion - 浑浊双倍IPA，UNTAPPD 4.0（4473评）",
+    "Hop Heaven - 浑浊双倍IPA，UNTAPPD 4.1（1937评）",
+    "Planet Hopper - 浑浊三倍IPA 10%，UNTAPPD 4.2（2085评）",
+    "Around The World - 与De Grote Podcastlas播客合酿的浑浊双倍IPA 8.5%，UNTAPPD 4.0"
+  ],
+  "sources": [
+    "https://www.folkingebrew.nl/",
+    "https://www.visitgroningen.nl/en/blogs/drink-at-the-brewery",
+    "https://sikkom.nl/grunngids/dit-zijn-de-elf-leukste-nieuwe-zaken-die-groningen-er-dit-jaar-bij-kreeg-48176327.html",
+    "https://untappd.com/Folkingebrew/beer",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，荷兰浑浊IPA绝对顶流"
+  }
+}

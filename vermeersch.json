@@ -1,0 +1,53 @@
+{
+  "brewery_id": "vermeersch",
+  "name": {
+    "english": "Vermeersch Bier",
+    "chinese": "弗摩什"
+  },
+  "location": {
+    "country": "比利时",
+    "country_en": "Belgium",
+    "city": "Maldegem（马尔德海姆，东佛兰德）",
+    "city_en": "Maldegem",
+    "address": "Karreweg 31, 9990 Maldegem"
+  },
+  "founded": "源于2008年前后的私人酿造，后发展为专业混酿工坊",
+  "founded_en": "Home blending from around 2008; later professionalized",
+  "founder": {
+    "name": "Mathieu Vermeersch",
+    "name_zh": "马蒂厄·弗摩什",
+    "name_origin": "酒款全部以家族成员命名：Marie、Lisa、Jan、Lieve、Alice、Alfons、Charlotte、Françoise……酒标即家谱。",
+    "note": "勘误：MBCB官方文章称其为'位于Ruddervoorde、由Luc Vermeersch创立'——经Untappd与lambic.info核实，Ruddervoorde与Luc Vermeersch属于另一家酒厂De Leite；Vermeersch Bier实为Mathieu Vermeersch在Maldegem创立的独立兰比克混酿工坊。"
+  },
+  "history": {
+    "overview": "Vermeersch是比利时兰比克世界里的独立混酿工坊（blendery）：不自酿麦汁，而是从不同酒厂采购兰比克进行实验性混酿，并大量使用本地水果。全部酒款以家庭成员命名。",
+    "character": "强调个性、艺术表达与地方价值；小规模手工运作，重视社区联系、与地方生产者合作及可持续发展。"
+  },
+  "specialty": {
+    "primary": "兰比克混酿：水果兰比克与贵兹",
+    "styles": ["Lambic blend", "Fruit Lambic", "Gueuze"],
+    "philosophy": "实验性混酿+本地水果；把家族记忆装进瓶子里。"
+  },
+  "awards": [
+    "UNTAPPD比利时酒厂排名TOP11",
+    "比利时兰比克新星（MBCB官方文章称'比利时兰比克新星'）"
+  ],
+  "notable_beers": [
+    "Marie - 水果兰比克（BeerAdvocate收录）",
+    "Lisa系列 - Lisa、Lisa Fortuna、Lisa Présidente、Lisa Reine Claude",
+    "Jan与Jan x Lieve - 混酿款",
+    "Cuvée A3 I / III、Cuvée Pappie II - 贵兹风格混酿",
+    "Looney Tunes、Vanananas等实验款"
+  ],
+  "sources": [
+    "https://www.lambic.info/Vermeersch",
+    "https://untappd.com/Vermeersch",
+    "https://www.instagram.com/vermeersch.bier/",
+    "https://www.beeradvocate.com/beer/profile/63125/769560/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，比利时兰比克新星"
+  }
+}

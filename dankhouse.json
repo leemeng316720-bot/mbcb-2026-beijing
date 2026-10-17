@@ -1,0 +1,59 @@
+{
+  "brewery_id": "dankhouse",
+  "name": {
+    "english": "DankHouse Brewing Company",
+    "chinese": "当家"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "俄亥俄州",
+    "state_en": "Ohio",
+    "city": "Newark（纽瓦克）",
+    "city_en": "Newark, OH",
+    "address": "161 Forry St, Newark, OH 43055"
+  },
+  "founded": "2017年11月开业（车库家酿起步）",
+  "founded_en": "Opened November 2017, garage homebrew roots",
+  "founder": {
+    "name": "Heather & Josh Lange",
+    "name_zh": "希瑟·兰格 & 乔什·兰格",
+    "name_origin": "DankHouse——'Dank'是酒花型啤酒的标志性风味词汇（阴湿、浓郁、树脂感），加上'House'，直言'酒花浓度爆表之家'。酒厂气质也如其名：'where the atmosphere is as dope as the beers'（氛围和酒一样带劲），酒款名大量引用嘻哈与流行文化（Wu-Tang Clan的RZA、Crooklyn、《星球大战》）。"
+  },
+  "history": {
+    "garage_origin": "DankHouse从兰格夫妇的车库家酿起步。旗舰'Super Fantastic'是他们在车库创作的第二个配方，也是至今仍在酿造的唯一原始配方——UNTAPPD上留下4000+评分。",
+    "opening": "2017年11月在纽瓦克开业，使用10桶（10bbl）系统小批量酿造。",
+    "breakout": "2018年入选Hop Culture'全美12家最佳新酒厂'，同年成为该媒体哥伦布啤酒节的观众最爱。2019年获Craft Beer & Brewing Magazine'New Brewery Spotlight'专题报道，Fruited Sour'Feeling Berry Good'获得该杂志盛赞。",
+    "growth": "短短几年分销范围扩展到俄亥俄全州、欧洲、英国及亚利桑那州，成为俄亥俄州最具代表性的新生代酒厂之一。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA、双倍IPA、水果酸艾尔、世涛",
+    "styles": ["Hazy IPA", "Double Hazy IPA", "Triple Hazy IPA", "American IPA", "Fruited Kettle Sour", "Stout", "Black IPA"],
+    "philosophy": "专攻IPA、世涛与水果 kettle 酸。酒花表现走'dank+多汁'路线，同时使用大量水果增味的酸啤——规模不大，但风格辨识度极高。"
+  },
+  "awards": [
+    "Hop Culture「Top 12 New Breweries of 2018」",
+    "2019年Craft Beer & Brewing Magazine「New Brewery Spotlight」专题报道",
+    "UNTAPPD2025社区奖5金10银7铜",
+    "2018年Hop Culture哥伦布啤酒节观众最爱"
+  ],
+  "notable_beers": [
+    "Super Fantastic - 美式IPA，7% ABV / 60 IBU，车库时期仅存的原始配方，UNTAPPD 4351评",
+    "DDH Couch Kush'n - 双倍干投浑浊双倍IPA，8.3% ABV，UNTAPPD 1697评，'dank得恰如其名'",
+    "Digi Digi Digi - 三倍浑浊IPA，10% ABV（名字致敬Wu-Tang Clan的RZA）",
+    "Dank Skywalka - 浑浊IPA 7%，2019年12月《星球大战：天行者崛起》上映纪念酒",
+    "Ocean Spray Paint - 7%浑浊IPA，Nelson Sauvin、Nelson Bliss、Nectaron加Nelson冷萃酒花",
+    "Dank & Dutchies - 黑色IPA，与荷兰名厂De Molen合酿"
+  ],
+  "sources": [
+    "https://dankhousebrewing.com/",
+    "https://www.hopculture.com/women-craft-beer-breweries-to-support-right-now/",
+    "https://www.hopculture.com/best-craft-breweries-cleveland-ohio/",
+    "https://untappd.com/DankHouseBrewingCompany/beer",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，全美最佳新锐酒厂"
+  }
+}

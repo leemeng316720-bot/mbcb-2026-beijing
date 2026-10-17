@@ -1,0 +1,56 @@
+{
+  "brewery_id": "young-master",
+  "name": {
+    "english": "Young Master Brewery",
+    "chinese": "少爷"
+  },
+  "location": {
+    "country": "中国香港",
+    "country_en": "Hong Kong",
+    "city": "香港鸭脷洲（2013年首厂）与黄竹坑（2016年二厂），另在香港及新加坡经营精酿餐吧",
+    "city_en": "Hong Kong (Ap Lei Chau & Wong Chuk Hang)",
+    "address": "两厂各超13300平方英尺；设全亚洲最大木桶陈酿室+比利时风格混合发酵酸啤专用橡木桶；黄竹坑厂为40吨系统（装瓶装罐线），鸭脷洲厂为10吨小批量系统"
+  },
+  "founded": "2013年12月",
+  "founder_en": "December 2013",
+  "founder": {
+    "name": "Rohit Dugar",
+    "name_zh": "罗希特·杜加尔",
+    "name_origin": "'少爷'（siu yeh，粤语）的灵感来自一部1963年的香港电影与旧香港'工厂少爷'的成长故事——既体现俏皮精神，又体现白手起家的强烈职业道德。酒厂特意设厂于60年代的老工业中心黄竹坑与鸭脷洲，秉承'胼手胝足'的老香港精神，让'香港制造'推广至全亚洲。"
+  },
+  "history": {
+    "founding": "家酿爱好者Rohit Dugar为寻找更好的啤酒，2013年12月在鸭脷洲创立少爷——真正开创了香港本地精酿的先河。首厂2013年11月落成，毗邻鸭脷洲社区。",
+    "expansion": "2016年8月黄竹坑二厂投产（40吨系统），产量大增并增设装瓶装罐线，使少爷跻身亚洲最大啤酒厂之一；鸭脷洲厂则专注小批量限量版。团队超30人，多人持Cicerone与BJCP评审资质。",
+    "ecosystem": "建立了独特的精酿'生态系统'：亚洲最大木桶陈酿室、混合发酵技术、城中多家精酿餐吧、自办啤酒节；客户包括文华东方、四季、香格里拉等标志性酒店；冷链分销至香港、中国内地、新加坡、马来西亚、日本、美国。"
+  },
+  "specialty": {
+    "primary": "从经典风格到桶陈/酸啤/野生发酵的全矩阵：皮尔森、IPA、Gose、桶陈野菌",
+    "styles": ["Pilsner", "Pale Ale / IPA", "Gose（咸柠啤）", "Barrel-Aged", "Sour / Wild Ale", "Smoked Beer"],
+    "philosophy": "原创思维+大胆口味+系统化酿酒技术：'从日常饮用的经典风格，到桶陈、酸啤与混合发酵项目，在传统风格与本地表达之间持续探索'——如茶餐厅灵感的'咸柠啤'（Cha Chaan Teng Gose）。"
+  },
+  "awards": [
+    "全香港规模最大、评分最高的精酿啤酒厂（自称与业界公认）",
+    "UNTAPPD香港酒厂排名TOP5",
+    "UNTAPPD2025社区奖2金1银3铜",
+    "多项国际大奖（亚洲获奖最多的酒厂之一）"
+  ],
+  "notable_beers": [
+    "1842 IPA - 帝国IPA（纪念香港开埠年份）",
+    "Cha Chaan Teng Gose 咸柠啤 - 茶餐厅咸柠檬风味古斯",
+    "Jade Scorpion - 皮尔森",
+    "Fake Juice - 浑浊IPA",
+    "柚子山椒小麦酸啤 - 日式居酒屋风味柏林酸",
+    "Rye on Wood - 桶陈黑麦酒"
+  ],
+  "sources": [
+    "https://youngmasterales.com/pages/who-is-young-master",
+    "https://www.keykeg.com/news/young-master-brewery-happy-to-provide-keykeg-as-a-new-reseller-from-hong-kong/",
+    "https://untappd.com/YoungMasterAles",
+    "https://www.sohu.com/a/335396595_715580",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，香港精酿酒厂鼻祖之一"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "brewery_id": "garage-project",
+  "name": {
+    "english": "Garage Project",
+    "chinese": "车库计划"
+  },
+  "location": {
+    "country": "新西兰",
+    "country_en": "New Zealand",
+    "city": "Wellington（惠灵顿）Aro Valley，91 Aro Street",
+    "city_en": "Wellington",
+    "address": "废弃加油站起家；现有惠灵顿Cellar Door与奥克兰Kingsland两家taproom、Wild Workshop混合发酵工坊；与Freestyle Hops合作酒花研究项目"
+  },
+  "founded": "2011年1月",
+  "founded_en": "January 2011",
+  "founder": {
+    "name": "Pete Gillespie, Jos Ruffell, Ian Gillespie",
+    "name_zh": "皮特·吉莱斯皮、乔斯·拉菲尔、伊恩·吉莱斯皮",
+    "name_origin": "'Garage'=车库精神：就地取材、动手折腾、跳出框架——即bière de garage（车库啤酒）；'Project'=酒厂永远是一个进行中的实验项目。Pete和Jos是发小（两家相距五栋房子，Pete还给Jos当过临时保姆）；Ian是Pete的弟弟。"
+  },
+  "history": {
+    "origin": "Pete曾赴英国与澳大利亚酿酒，在澳洲尝试自己开厂却被 bureaucracy 撞得头破血流。2011年初他卖房、辞职、携家人回到惠灵顿。三人在Aro Valley找到一座被铁丝网围住、满是涂鸦和老鼠粪的废弃加油站——以打扫换第一年低租金。用一台50升的Sabco BrewMagic家用级设备起步。",
+    "24_24": "开业挑战'24/24'：24周酿24款完全不同的酒，每周二拿到Hashigo Zake酒吧让公众试喝点评（ feedback 写在杯垫上）。24款中的Aro Noir、Pernicious Weed、Hāpi Daze、Cockswain's Courage等成为至今仍在酿的经典。灵感部分来自西班牙名厨Ferran Adrià：'小酒厂反而能频繁试错'。",
+    "growth": "13年间推出640+款酒：从辣椒可可拉格、海藻啤酒到浑浊IPA、野菌桶陈；2015年登顶德勤新西兰Fast 50增长榜；多次获新西兰啤酒大奖Champion Large Brewery；2025再获新西兰啤酒大奖Champion New Zealand Large Brewery，并在2026年为新西兰拿下史上首枚啤酒世界杯（WBC）金牌。",
+    "today": "如今是新西兰最多元全面的酒厂：惠灵顿与奥克兰taproom、Wild Workshop、无醇啤酒与葡萄酒线，并与Freestyle Hops共建酒花研究项目。"
+  },
+  "specialty": {
+    "primary": "全风格实验：浑浊/西海岸IPA、拉格、酸啤、野菌桶陈、增味实验",
+    "styles": ["Hazy IPA", "West Coast IPA", "NZ Pale Ale", "Lager", "Sour", "Barrel-Aged Wild Ale", "Stout"],
+    "philosophy": "'车库精神'：小批量=试错成本极低；不追求固定产品线，永远把酒厂当作进行中的项目，用实验突破风格边界、重新诠释啤酒。"
+  },
+  "awards": [
+    "2025新西兰啤酒大奖Champion New Zealand Large Brewery（2021/2022亦获Champion Large Brewery）",
+    "2026年啤酒世界杯（WBC）金牌——新西兰史上首枚WBC金牌",
+    "UNTAPPD2025社区奖17金24银16铜，新西兰第一",
+    "2015年德勤新西兰Fast 50增长榜榜首",
+    "多次登顶Hottest 100 Kiwi Craft Beers民意榜"
+  ],
+  "notable_beers": [
+    "Pernicious Weed - 旗舰双倍IPA（8%），'让惠灵顿精酿登上地图的酒'，大胆树脂感",
+    "Hāpi Daze - 新西兰淡色艾尔 4.6%：Motueka、Wai-iti、Riwaka、Nelson Sauvin四款本土酒花（Hāpi是毛利语'酒花'）",
+    "Aro Noir - 黑啤酒，24/24系列的幸存者之一",
+    "Garagista - 意式风格皮尔森，系列幸存款",
+    "Cockswain's Courage - 英式大麦烈酒风格，幸存款"
+  ],
+  "sources": [
+    "https://www.hopculture.com/garage-project/",
+    "https://japanbeertimes.com/2015/07/garage-project/",
+    "https://www.consultclarity.org/post/leaders-brewing-australia-new-zealand",
+    "https://shop.nz/products/garage-project-pernicious-weed",
+    "https://www.gulpbeer.co/products/hapi-daze",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，新西兰第一精酿酒厂"
+  }
+}

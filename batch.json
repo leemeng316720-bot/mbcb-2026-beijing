@@ -1,0 +1,57 @@
+{
+  "brewery_id": "batch",
+  "name": {
+    "english": "Batch Craft Beer & Kolaches",
+    "chinese": "原乡"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "得克萨斯州",
+    "state_en": "Texas",
+    "city": "Austin（奥斯汀）Manor路，东区",
+    "city_en": "Austin, TX",
+    "address": "3220 Manor Rd（kolache烘焙坊+酒吧，2017年）与220 Manor Rd（隔壁酒厂，2019年）"
+  },
+  "founded": "2017年8月（酒吧）；2019年11月（自有酒厂）",
+  "founder_en": "Bar Aug 2017; brewery Nov 2019",
+  "founder": {
+    "name": "Noah Lit & Josh Lit（兄弟），父亲Mark Lit为共同所有人",
+    "name_zh": "诺亚·利特 & 乔什·利特",
+    "head_brewer": "John Snyder（前Jester King，主理桶陈酸啤与混合发酵）；Heath Shuford（主理清亮IPA）",
+    "name_origin": "Batch——'一批/一炉'，呼应烘焙 batches 的 kolache 与一批批小批量精酿；也可能是德克萨斯'原乡'感的直白命名。"
+  },
+  "history": {
+    "kolache_first": "2016年底起，Lit兄弟在本地酒厂做pop-up卖kolache（捷克移民点心，在德州演化出咸口版本如熏牛胸肉馅）熬过了漫长的装修期。2017年8月，奥斯汀第一家kolache主题酒吧开业：烘焙坊（糕点师Jasmine Jones主理）+咖啡店+12个酒头的精酿吧+400多款瓶装自选，2000平方英尺的啤酒花园对狗友好。",
+    "brewery_born": "兄弟俩本来没想过开酒厂——直到自家试营业之夜喝到常客John Snyder（前Jester King员工）自酿的法兰德斯红艾尔。'我们尝过他的酒，当场决定把计划提前一年半。'2019年4月发起Kickstarter众筹，11月酒厂在隔壁开业：3.5桶电加热糖化系统，'BugRoom'（虫子房）桶陈室里六个开放式puncheon大桶+二手grundy罐。",
+    "cuisine_beer": "Snyder用厨师思维酿酒：Sjofen草莓农舍艾尔、加赤霞珠葡萄/薰衣草/木槿/玫瑰果的'Galaxies Collide'啤酒-葡萄酒混合款、Urwagwa非洲香蕉啤酒（香蕉泥+高粱+小米+香蕉皮提供野生酵母，无麸质，官方形容'像梅斯卡尔遇上清酒遇上香蕉'，酒标由Noah的妻子Laura绘制）、茉莉brett淡色艾尔；Shuford则保持浑浊IPA（Cottonmouth）常在。",
+    "philosophy_quote": "'我们是咖啡店+烘焙坊，所以应该酿茶啤、水果啤、葡萄酒啤——和厨房里做的东西相配的酒。'"
+  },
+  "specialty": {
+    "primary": "料理灵感酸啤与混合发酵、浑浊IPA、农舍艾尔、啤酒-葡萄酒混合",
+    "styles": ["Fruited Farmhouse Ale", "Mixed Culture Sour", "Hazy IPA", "Beer-Wine Hybrid", "Table Beer", "无麸质啤酒"],
+    "philosophy": "把奥斯汀开放多元的饮食文化融入啤酒：与kolache厨房共生的'餐酒一体'实验。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖2铜",
+    "奥斯汀第一家kolache主题精酿酒吧（2017）"
+  ],
+  "notable_beers": [
+    "Urwagwa - 非洲香蕉啤酒（高粱+小米+香蕉皮野生酵母，无麸质）",
+    "Sjofen - 草莓农舍艾尔，'看起来像冰沙喝起来很干'",
+    "Galaxies Collide - 赤霞珠葡萄+薰衣草+木槿+玫瑰果的啤酒葡萄酒混合系列",
+    "Cottonmouth - 浑浊IPA",
+    "茉莉 Brett 淡色艾尔"
+  ],
+  "sources": [
+    "https://www.statesman.com/story/entertainment/dining/2019/11/12/new-east-austin-brewery-at-batch-launches-with-funky-fruity-focus/2299923007/",
+    "https://austin.culturemap.com/news/restaurants-bars/08-24-17-batch-beer-kolaches-first-look/",
+    "https://austin.eater.com/2019/4/15/18311361/batch-kolache-beer-new-brewery-kickstarter-buc-ees-alabama",
+    "https://craftbeeraustin.com/batch-craft-beer-kolaches-debuts-brewery",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，啤酒+面包的独特组合"
+  }
+}

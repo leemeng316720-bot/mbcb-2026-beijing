@@ -1,0 +1,57 @@
+{
+  "brewery_id": "fast-fashion",
+  "name": {
+    "english": "Fast Fashion Brewing",
+    "chinese": "潮汐"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "华盛顿州",
+    "state_en": "Washington",
+    "city": "Seattle（西雅图）SoDo区（一街，T-Mobile公园附近）+ Lower Queen Anne（Roy街）",
+    "city_en": "Seattle, WA"
+  },
+  "founded": "2020年（首酒Hot Pizza于2020年10月发售）",
+  "founded_en": "2020 (first beer October 2020)",
+  "founder": {
+    "name": "Matt Storm & Brian Strumke",
+    "name_zh": "马特·斯托姆 & 布莱恩·斯特鲁姆克",
+    "name_origin": "名字借自Strumke 2018年为Stillwater出的一款同名IPA——快时尚服装'时髦但一次性'，正如他们眼中的浑浊IPA：拥抱'喝掉即消失'的drops文化，与旗舰酒款文化彻底决裂。",
+    "background": "Matt Storm是西雅图The Masonry（木火披萨+精酿酒吧）老板；Brian Strumke是传奇吉普赛酒厂Stillwater Artisanal创始人（前DJ/电子音乐人，2010年创立，五大洲酿酒）。"
+  },
+  "history": {
+    "pandemic_birth": "2018年艺术项目把Strumke带到西雅图，结识Matt Storm。2020年疫情让Strumke的游牧生活停摆，他投身Storm的酿酒构想。同年9月宣布项目，10月首酒Hot Pizza发售——零媒体宣传、纯靠Masonry粉丝，迅速售罄。",
+    "anchovy_hop": "差异化战略：包下Segal Ranch（Yakima谷三代家族酒花农场）一英亩的实验酒花24B-05，命名为'Anchovy'（凤尾鱼）——配Hot Pizza就像'最荒谬的披萨 topping'。Segal Ranch老板John Segal曾吐槽'你怎么不直接叫它Shit'。Anchovy酒花风味是西瓜硬糖+柑橘+松脂。",
+    "gypsy_to_home": "最初以alternating proprietorship模式在Snoqualmie的No Brewing酿酒；2023年初开出Queen Anne品酒室，随后在SoDo（原Ebbits Field Flannels厂房）建成自有酒厂。",
+    "identity": "前48款酒中43款是IPA的某种变体——'开一家浑浊IPA酒厂就像开披萨店：底做好，换topping（酒花）就行'。如今扩展到西海岸IPA、拉格、农舍艾尔；与西雅图体育传奇Shawn Kemp和Gary Payton合酿；每月卡拉OK之夜与黑胶舞会。首任酿酒师Sean Lindorfer，现首席酿酒师Stefano Annicchiarico。"
+  },
+  "specialty": {
+    "primary": "小批量新鲜浑浊IPA（周抛式drops文化），兼做西海岸IPA、拉格、农舍艾尔",
+    "styles": ["Hazy IPA", "West Coast IPA", "Lager", "Farmhouse Ale", "Pilsner"],
+    "philosophy": "'拥抱新鲜、快速迭代'——酒款喝完即消失，酒名与酒标玩流行文化梗（Hot Pizza、Tinned Fish、Ranch Cups）；自有专属酒花Anchovy。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖2银2铜",
+    "New School Beer『2021年最佳新晋外州品牌』（俄勒冈评选）",
+    "与Stillwater Artisanal创始人联名的明星项目"
+  ],
+  "notable_beers": [
+    "Hot Pizza - 首酒（2020年10月）：100%浑浊IPA，配专属酒花Anchovy，西瓜硬糖风味",
+    "Gyoshō - 6.3% DDH IPA，与West Coast Brewing合酿（Freestyle NZ Cascade、Segal Ranch Anchovy、Strata）",
+    "Tinned Fish / Ranch Cups -  drops文化代表作",
+    "与Shawn Kemp/Gary Payton的体育明星合酿系列"
+  ],
+  "sources": [
+    "https://dcbeer.com/2022/06/01/little-fish-big-tale-how-fast-fashion-caught-its-own-hop/",
+    "https://vinepair.com/articles/anchovy-hops-explained/",
+    "https://newschoolbeer.com/home/2021/2/fast-fashion-beer-hot-pizza-anchovy-hops",
+    "https://themasonryseattle.com/fast-fashion/",
+    "https://www.bockbar.com/fastfashion",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，酒花快闪实验室"
+  }
+}

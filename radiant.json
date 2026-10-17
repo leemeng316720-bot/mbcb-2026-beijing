@@ -1,0 +1,55 @@
+{
+  "brewery_id": "radiant",
+  "name": {
+    "english": "Radiant Beer Co.",
+    "chinese": "辉光"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "加利福尼亚州",
+    "state_en": "California",
+    "city": "Anaheim（安纳海姆，近迪士尼与会展中心），1566 W. Lincoln Ave",
+    "city_en": "Anaheim, CA",
+    "address": "20个轮换酒头+Radiant Kitchen；分销覆盖洛杉矶与橙县"
+  },
+  "founded": "2020年12月试营业，2021年1月首酒发布",
+  "founder_en": "Soft-opened December 2020; first brew January 2021",
+  "founder": {
+    "name": "Jonas Nemura（总裁）, Andrew Bell（酿酒总监）, Cambria Griffith（市场总监）",
+    "name_zh": "乔纳斯·内村、安德鲁·贝尔、坎布里亚·格里菲斯",
+    "name_origin": "Radiant——'光芒'，口号'Sending Out Light 7 days a week'。三位创始人都来自The Bruery：Jonas是Bruery首批员工（2008年入职，从酿酒与分销经理做到运营高级总监），Bell在Bruery做了六年实验酿造，Griffith主理市场。",
+    "background": "Jonas康奈尔毕业后做律师助理，后赴新西兰一年在cask艾尔啤酒屋从最底层学起，回国后经Left Coast进入精酿；2018年离开Bruery后短暂加盟Chapman Crafted，最终三人重聚创立Radiant。"
+  },
+  "history": {
+    "founding": "疫情中试营业（2020年12月），先做外卖再扩展户外空间——'限制反而让服务模型以较慢的节奏跑起来'。2021年1月发布首酒，次月taproom开放。",
+    "rise": "把在The Bruery积累的酿造与研发经验带入自己的产品线：酒花啤酒与拉格为主，整体风格强调干爽、干净与易饮——'在保留啤酒本身风味的基础上控制复杂度，形成较为直接的产品表达'。",
+    "awards_rush": "2021年即获GABF『年度最佳小型啤酒厂』（1-250桶组）；2022年拿下Alpha King Challenge全美冠军（酒花啤酒最高荣誉）；GABF金牌Second That Emotion（5.4%浑浊淡色艾尔）。"
+  },
+  "specialty": {
+    "primary": "酒花啤酒（浑浊淡色/IPA）与拉格",
+    "styles": ["Hazy Pale Ale", "IPA", "Lager", "West Coast styles"],
+    "philosophy": "冠军级干净直接的酒花表达：少即是多，易饮性至上。"
+  },
+  "awards": [
+    "2021 GABF『年度最佳小型啤酒厂』（1-250桶组）",
+    "2022 Alpha King Challenge全美冠军",
+    "GABF金牌：Second That Emotion（浑浊淡色艾尔 5.4%）"
+  ],
+  "notable_beers": [
+    "Second That Emotion - 5.4%浑浊淡色艾尔，GABF金牌",
+    "A Dark in the Light - GABF铜奖酒款",
+    "酒花与拉格轮换矩阵 - 20头taproom的直接表达"
+  ],
+  "sources": [
+    "https://www.radiantbeer.com/",
+    "https://hopped.com/places/radiant-beer-co",
+    "https://beerpaperla.com/category/the-oc-beat/",
+    "https://www.greatamericanbeerfestival.com/the-competition/winners/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，全美冠军酒厂"
+  }
+}

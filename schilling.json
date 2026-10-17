@@ -1,0 +1,58 @@
+{
+  "brewery_id": "schilling",
+  "name": {
+    "english": "Schilling Beer Co.",
+    "chinese": "席林"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "新罕布什尔州",
+    "state_en": "New Hampshire",
+    "city": "Littleton（利特尔顿，怀特山区，Ammonoosuc河畔）",
+    "city_en": "Littleton, NH",
+    "address": "1797年老磨坊改造的酒馆（2013年）+ 2018年增建的斯堪的纳维亚农舍风格生产酒厂与品鉴室；全年开放的啤酒花园（含冬季取暖小屋）"
+  },
+  "founded": "2013年9月26日",
+  "founder_en": "September 26, 2013",
+  "founder": {
+    "name": "Cozzens 三兄弟（Jeff, Matt, Stuart）与终生好友 John Lenzini",
+    "name_zh": "杰夫、马特、斯图尔特·科曾斯 & 约翰·伦齐尼",
+    "name_origin": "Schilling纪念Cozzens兄弟敬爱的已故曾祖父Dr. R.J. Schilling——'也想呼应我们酿造的大陆欧洲风格拉格'。家族史还有惊喜：他们的曾曾祖父Wilhelm Fink曾是德国中部Auerhahn酒厂的酿酒师。",
+    "background": "Lenzini是化学家（印第安纳大学德语+化学双学位，曾赴汉堡大学留学），在奥地利生活十年；Jeff曾做反恐工作；Stu放弃了博士学位。三人在一次带着家酿酒桶的飞钓之旅上敲定开厂计划。"
+  },
+  "history": {
+    "founding": "密歇根Traverse City长大的Cozzens兄弟与发小Lenzini，在欧洲啤酒中完成了'味觉觉醒'，回到美国只酿得出低酒精、精工制作的拉格。2012年起找场地，2013年9月26日在利特尔顿开业——把一座约1797年的老磨坊改造成pub：'你复制不了我们拥有的这一切：这栋楼、这些山、这条河'。",
+    "alexandr": "旗舰Alexandr（5%捷克皮尔森）诞生在Lenzini家地下室，历经无数次迭代，直到能稳定从捷克摩拉维亚采购地板发芽皮尔森麦芽、并匹配当地水质。Lenzini坚持煮出法（decoction）：'这是获得美拉德反应细腻层次的最好方式'。捷克皮尔森、慕尼黑Helles各自使用对应的原料与水质——'这些酒是地域性的产物'。",
+    "resilience": "2015年酒厂创立Resilience Brewing副牌作为美式艾尔项目：Combover IPA（7%，Galaxy+Vic Secret）、Ponyhawk DIPA（Simcoe+Mosaic+Galaxy）等浑浊与西海岸实验。",
+    "today": "80%以上产量是拉格；Jeff曾任新罕布什尔酿酒师协会主席；每年啤酒花园持续扩建，冬季配取暖小屋——'我们卖的是记忆：人们征服完最后一座山，把这里当作旅程的巅峰'。"
+  },
+  "specialty": {
+    "primary": "大陆欧洲风格拉格（捷克皮尔森、Helles、深色拉格）+ 混合发酵艾尔",
+    "styles": ["Czech Pilsner", "Munich Helles", "Czech Dark Lager", "Mixed-Fermentation Ale", "Hazy IPA（Resilience副牌）"],
+    "philosophy": "现代欧洲灵感小批量酒厂：以家庭、社区与卓越为中心——在所有人都追逐干投与桶陈的浓烈表达时，专注平衡、细腻、易饮的传统风格。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖27金13银15铜，新罕布什尔州TOP1",
+    "UNTAPPD捷克深色拉格风格全球TOP50榜单占10席",
+    "USA Today '10BEST Readers' Choice Awards'",
+    "旗舰Alexandr被视为美国最杰出的捷克皮尔森之一"
+  ],
+  "notable_beers": [
+    "Alexandr - 5%捷克皮尔森：摩拉维亚地板麦芽+捷克水质+煮出法，'低酒精却有趣是最难的'",
+    "Resilience系列 - Combover IPA（7%，Galaxy+Vic Secret）、Ponyhawk DIPA（Simcoe+Mosaic+Galaxy）",
+    "Helles与捷克深色拉格 - 传统欧洲风格全线",
+    "混合发酵艾尔 - foudre陈酿"
+  ],
+  "sources": [
+    "https://www.goodbeerhunting.com/blog/2022/4/19/a-certain-space-schilling-beer-company-in-littleton-new-hampshire",
+    "https://schillingbeer.com/our-story/",
+    "https://www.beerandbrewing.com/breakout-brewer-schilling-beer",
+    "https://www.hopculture.com/schilling-oktoberfest/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，全美顶级拉格酿造者之一"
+  }
+}

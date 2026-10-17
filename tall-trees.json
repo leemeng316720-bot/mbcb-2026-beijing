@@ -1,0 +1,57 @@
+{
+  "brewery_id": "tall-trees",
+  "name": {
+    "english": "Tall Trees Brew Lab",
+    "chinese": "乔•酿造"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "俄勒冈州",
+    "state_en": "Oregon",
+    "city": "Hillsboro（希尔斯伯勒，波特兰都会区）",
+    "city_en": "Hillsboro, OR",
+    "address": "Tall Trees Taphouse"
+  },
+  "founded": "约2021年（Untappd酒厂页2021年2月上线）",
+  "founded_en": "Circa 2021 (Untappd page live February 2021)",
+  "founder": {
+    "name": "Dan & Nate（创始 duo，公开姓氏未见报道）",
+    "name_zh": "丹与内特",
+    "name_origin": "Tall Trees——'高耸的树'，太平洋西北海岸针叶林的故乡意象；Brew Lab点出实验小厂定位。"
+  },
+  "history": {
+    "overview": "Tall Trees Brew Lab是俄勒冈州希尔斯伯勒一家以现代酒花风格为主要方向的纳米/微型实验酒厂，作品以浑浊IPA最受关注——经常使用新西兰与美国酒花（Nelson Sauvin、Riwaka、Peacharine等），强调饱满酒体与热带水果香气。",
+    "recognition": "UNTAPPD酒厂全球排名TOP43、全球Nano级TOP15，是近年来受到关注的新生代IPA酒厂。2021年，Tall Trees的配方赢得Reuben's Brews主办的Hop Idol家酿大赛，由Reuben's以'Temple of the Stars'名义商业化酿造（Citra+Galaxy新英格兰IPA）。",
+    "collabs": "活跃的国际合酿者：与Fort George（Cryo新鲜酒花西海岸皮尔森'Trail Names'）、Ruse、Lyric、RaR Brewing、Conscious Ales、Mecca Grade Estate Malt、Brujos等均有合酿。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA/双倍/三倍，兼做西海岸与农舍合酿",
+    "styles": ["Hazy IPA", "Hazy DIPA", "Hazy TIPA", "West Coast Pilsner"],
+    "philosophy": "饱满酒体与热带水果香气的高饱和浑浊表达；小批次快速迭代。"
+  },
+  "awards": [
+    "UNTAPPD全球酒厂排名TOP43",
+    "UNTAPPD全球Nano级酒厂排名TOP15",
+    "Hop Idol 2021家酿大赛冠军（配方由Reuben's Brews商业化）",
+    "UNTAPPD2025社区奖1银"
+  ],
+  "notable_beers": [
+    "Into the Murk - 浑浊双倍IPA",
+    "Lucent Grove - 浑浊IPA",
+    "Astral Canopy - 浑浊三倍IPA 10.3%",
+    "Forest Fog - 浑浊IPA",
+    "Controlled Chaos - 6.6%浑浊IPA（与Foreland合酿）",
+    "Temple of the Stars（Reuben's Brews酿造）- Hop Idol 2021冠军配方的Citra+Galaxy新英格兰IPA"
+  ],
+  "sources": [
+    "https://untappd.com/TallTreesBrewLab",
+    "https://reubensbrews.com/beer/temple-of-the-stars-hop-idol-2021-winner/",
+    "https://untappd.com/TallTreesBrewLab/collaborations",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，UNTAPPD全球Nano级TOP15"
+  }
+}

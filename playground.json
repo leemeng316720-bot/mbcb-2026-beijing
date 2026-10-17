@@ -1,0 +1,54 @@
+{
+  "brewery_id": "playground",
+  "name": {
+    "english": "Playground Brewery",
+    "chinese": "游境"
+  },
+  "location": {
+    "country": "韩国",
+    "country_en": "South Korea",
+    "city": "Goyang（高阳市）Ilsan区，京畿道",
+    "city_en": "Goyang, Gyeonggi-do",
+    "address": "246-11 Isanpo-gil, Ilsanseo-gu（一山tap house；在松岛等地亦见罐装）"
+  },
+  "founded": "2015年2月创立（Time Out记载为2016年1月正式运营）",
+  "founded_en": "Established February 2015; launched operations 2015-2016",
+  "founder": {
+    "name": "Chun Soon-bong（全顺奉）",
+    "name_zh": "Chun Soon-bong",
+    "co_founder": "酿酒师Richard Kim、创意总监Keunha Kim三人组",
+    "name_origin": "以'Drink Better, Play Better'为理念。酒标大量重新诠释韩国传统河回假面（hahoetal），把游乐场Logo的童年记忆与韩国传统文化结合，形成鲜明品牌辨识度。"
+  },
+  "history": {
+    "founding": "CEO Chun Soon-bong在饮料行业深耕多年，与酿酒师Richard Kim、创意总监Keunha Kim组队。多年制度性障碍拖延了酒厂的落地——韩国精酿法规曾长期限制小型酿造。",
+    "local_ingredients": "意识到在韩国使用进口原料的局限后，团队决定尽可能改用国产原料，酿出' distinctly Korean '的啤酒：季节性Ruby Saison使用Ilsan本地种植的覆盆子（bokbunja，韩国黑树莓）。",
+    "today": "位于首尔以外的高阳市，却是韩国精酿行业热议的名字；愿景是为国内精酿行业创造可持续的R&D与投融资环境。"
+  },
+  "specialty": {
+    "primary": "IPA、淡色艾尔、拉格、赛松、酸啤等多风格",
+    "styles": ["American IPA", "Hazy IPA", "Pale Ale", "Lager", "Saison", "Fruited Sour"],
+    "philosophy": "用韩国本地原料表达'韩国风土'：本土水果（覆盆子bokbunja）入酿；酒标艺术化地重新诠释河回假面等传统元素。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖1金",
+    "UNTAPPD韩国酒厂排名TOP31",
+    "韩国精酿行业代表酒厂之一（Time Out Seoul推荐）"
+  ],
+  "notable_beers": [
+    "Tropical Nest - 水果酸啤，UNTAPPD 4.0（151评）",
+    "Hop Coaster IPA - 美式IPA，UNTAPPD 3.7（114评）",
+    "Hopsplash - 浑浊IPA（季节版），UNTAPPD 3.6",
+    "Ruby Saison - 以Ilsan本地覆盆子（bokbunja）增味的季节赛松",
+    "See-Saw Pale Ale - 美式淡色艾尔"
+  ],
+  "sources": [
+    "https://www.timeout.com/seoul/bars/playground-brewery",
+    "https://www.tripadvisor.com/Restaurant_Review-g2024865-d15293025-Reviews-Playground_Brewery-Goyang_Gyeonggi_do.html",
+    "https://untappd.com/PlaygroundBrewery/beer",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，韩国精酿行业代表酒厂"
+  }
+}

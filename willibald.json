@@ -1,0 +1,58 @@
+{
+  "brewery_id": "willibald",
+  "name": {
+    "english": "Willibald Farm Distillery & Brewery",
+    "chinese": "威利巴尔德"
+  },
+  "location": {
+    "country": "加拿大",
+    "country_en": "Canada",
+    "province": "安大略省",
+    "province_en": "Ontario",
+    "city": "Ayr（艾尔镇），1271 Reidsville Rd，Vanderheyden家族100英亩农场",
+    "city_en": "Ayr, ON"
+  },
+  "founded": "2017年（2013年动念，筹备4年）",
+  "founded_en": "Opened 2017 (concept 2013, 4 years of planning)",
+  "founder": {
+    "name": "Cameron Formica & Jordan, Nolan Vanderheyden（兄弟）",
+    "name_zh": "卡梅隆·福米卡 & 乔丹、诺兰·范德海登",
+    "name_origin": "Willibald是Vanderheyden兄弟祖父的中间名——'他从来没多喜欢这个名字，但慢慢接受了，现在还穿着品牌T恤'。三人大学时相识：两兄弟读滑铁卢大学（商科/工程），Cam读Lakehead（环境科学），管理桌集齐商业、工程与环境科学。"
+  },
+  "history": {
+    "origin": "2013年夏天，三人在农场喝威士忌时自问：'自己蒸馏威士忌是不是很酷？'——当时安大略蒸馏业几乎空白（只有Dillon's和Still Waters两家）。在Vanderheyden家族100英亩农场上筹建，用百年老谷仓的原材料建新厂房，田里种谷物、薰衣草，还养蜜蜂。光是许可和分区变更就花了数年（蒸馏被视为工业流程）。",
+    "gin_first": "2017年开业时卖的不是威士忌而是金酒：首款Barrel Gin在新橡木桶中陈酿4-10个月——'金酒怎么会是棕色的？'——横跨金酒与威士忌的边界；随后推出加自家蜂蜜的Pink Gin、草莓大黄与姜饼季节金酒，成为安大略金酒革命的旗手。",
+    "expansion": "2018年加开farm-to-table餐厅（食材来自Little Fields Farm、Ayrsyde Farms等邻里农场，Feast On认证），2019年增设啤酒厂与季节性啤酒花园。Cam总结：'我们把自己看作一家风味公司，而不是酒厂+餐厅+酒厂。'",
+    "beer": "啤酒线以Hell Lager（地狱拉格/Helles）为旗舰，另有Full Tilt双倍IPA、City Slicker IPA、Ill Gotten Gains DIPA、Vesterboro大麦烈酒（与Prolog咖啡合酿）、创意硬苏打（紫葡萄伏特加苏打、蜂蜜金酒菲士）。"
+  },
+  "specialty": {
+    "primary": "桶陈金酒、农场拉格、IPA/双倍IPA、大麦烈酒、创意苏打",
+    "styles": ["Barrel-Aged Gin", "Helles Lager", "IPA / DIPA", "Barleywine", "Hard Seltzer"],
+    "philosophy": "'第一代农场型蒸馏厂与精酿酒厂'——尊重传统但不受传统限制，从农场到餐桌与酒杯的完整体验：自己种谷物、养蜂取蜜、邻里农场供餐。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖3铜",
+    "UNTAPPD加拿大Micro Brewery级酒厂TOP24",
+    "安大略金酒革命的先行者（LCBO首款桶陈金酒）"
+  ],
+  "notable_beers": [
+    "Hell Lager / Hell Helles - 旗舰拉格",
+    "Full Tilt - 双倍IPA",
+    "City Slicker - IPA",
+    "Ill Gotten Gains - 双倍IPA",
+    "Vesterboro Barleywine - 与Prolog Coffee合酿的大麦烈酒",
+    "Barrel Gin - 开业成名作：新橡木桶陈4-10个月的'棕色金酒'"
+  ],
+  "sources": [
+    "https://foodism.ca/eat-drink/bars-restaurants/willibald-farm-distillery-brewery/",
+    "https://eatdrink.ca/taking-it-slow-willibald-farm-distillery-in-ayr/",
+    "https://craftgintrail.com/distilleries/willibald-farm-distillery-brewery-ayr/",
+    "https://www.ontarioculinary.com/6-unique-flavours-to-enjoy-in-waterloo-region/",
+    "https://www.baospodcast.com/blog/episode-178-hooked-on-purple-with-cameron-formica-and-gordo-jones-of-willibald-farm-distillery-brewery-adjunct-series",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，第一代农场型精酿酒厂"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "brewery_id": "wild-west",
+  "name": {
+    "english": "Wild West Brewing Co.",
+    "chinese": "美西啤酒"
+  },
+  "location": {
+    "country": "中国",
+    "country_en": "China",
+    "city": "四川成都邛崃（酒厂+自营酒吧），成都锦里有直营品酒室",
+    "city_en": "Chengdu, Sichuan"
+  },
+  "founded": "2016年",
+  "founder_en": "2016",
+  "founder": {
+    "name": "Scott & Carol Hunt（夫妇）",
+    "name_zh": "司高特·亨特 & 卡罗尔",
+    "name_origin": "'美西'源自两位创始人的故乡——Scott来自美国狂野西部的犹他州，Carol来自中国狂野西部的四川。",
+    "background": "Scott是拥有20年家酿经验的前半导体工程师，具备BJCP啤酒裁判资质；家酿生涯最后5年拿下大大小小28个酿造比赛奖牌，2012年被盐湖城Epic Brewing选为GABF Pro-Am合酿搭档。电子工程学士+EMBA。"
+  },
+  "history": {
+    "founding": "2016年，跨越半个地球的夫妻档在成都邛崃建厂——用好当地优质水源，结合进口优质麦芽、酒花、酵母与美式前沿酿造技术。'生产出品质最好、最新鲜的本土啤酒'。",
+    "rise": "凭借创新的配方设计和稳定的品质，不仅受到广大精酿爱好者认可，更在国内外赛事屡获最高荣誉——2024年'宇宙双倍浑浊IPA'摘得亚洲啤酒锦标赛（ABC）'亚洲最佳IPA'；2025年获ABC中国年度最佳酒厂，成为亚洲最具活力的小而美酒厂代表之一。",
+    "taprooms": "邛崃酒厂旁的自营酒吧+成都锦里古街直营品酒室。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA、西海岸IPA、冷IPA、小麦啤——西方工艺×四川风味的平衡表达",
+    "styles": ["Hazy IPA", "Hazy DIPA", "American IPA", "Cold IPA", "Witbier（四川柑橘）", "Porter"],
+    "philosophy": "'严谨的西方酿酒工艺与当地风味有机结合，口感稳定、干净、平衡，并拥有独特的风味特征'——如'中国白'在比利时小麦基底中加入四川新鲜柑橘。"
+  },
+  "awards": [
+    "2025亚洲啤酒锦标赛（ABC）中国年度最佳酒厂",
+    "2023-2025 ABC共获14项大奖以及2枚金牌",
+    "2024 ABC'亚洲最佳IPA'——宇宙双倍浑浊IPA",
+    "自建厂以来国内外多项最高荣誉"
+  ],
+  "notable_beers": [
+    "宇宙双倍 Cosmic Thing - 双倍浑浊IPA 8.5%，2024亚洲最佳IPA",
+    "九重天 Cloud 9 IPA - 浑浊IPA 7% / 45 IBU，UNTAPPD 572评",
+    "石林 Stone Forest IPA - 美式IPA 6.5% / 60 IBU，六种酒花",
+    "中国白 China White - 比利时小麦 5.4%，加四川新鲜柑橘",
+    "不妥协冷IPA - 6.8% / 55 IBU：拉格酵母低温发酵+大米+地层/马赛克/阿玛里洛",
+    "双雄 FV9 Project - Citra+Nectaron浑浊双倍"
+  ],
+  "sources": [
+    "https://www.jiuhuar.com/news/5f3f5b418ba5b0fa628b4568.html",
+    "https://untappd.com/Wild_West_Brewing/beer",
+    "https://baike.baidu.com/item/亚洲啤酒锦标赛/67547777",
+    "https://zhuanlan.zhihu.com/p/1910381622148203522",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "亚洲啤酒锦标赛中国年度最佳酒厂"
+  }
+}

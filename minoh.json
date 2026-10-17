@@ -1,0 +1,61 @@
+{
+  "brewery_id": "minoh",
+  "name": {
+    "english": "Minoh Beer (A.J.I. Beer Inc.)",
+    "chinese": "箕面"
+  },
+  "location": {
+    "country": "日本",
+    "country_en": "Japan",
+    "prefecture": "大阪府",
+    "prefecture_en": "Osaka",
+    "city": "箕面市（Minoh，大阪西北郊）",
+    "city_en": "Minoh, Osaka",
+    "address": "箕面市住宅街区，2015年10月开设Minoh Beer Warehouse品酒室（10个酒头）"
+  },
+  "founded": "1996年取得许可创立，1997年首款酒Pilsner上市",
+  "founded_en": "Founded 1996, first beer (Pilsner) released 1997",
+  "founder": {
+    "name": "Masaji Oshita（大下正治）",
+    "name_zh": "大下正治",
+    "name_origin": "以城市命名：箕面市以箕面瀑布、红叶和野生猴子（Osaru）闻名——酒标就是一只喝啤酒的猴子。酒厂注册名A.J.I. Beer Inc.。注：MBCB官方文章写作'大下正司'，经核实正确汉字为大下正治（Oshita Masaji）。",
+    "successors": "三姐妹共同经营：长女大下香緒里（Kaori，社长/酿酒师——创业时还是大学生，是日本最早的女性酿酒师之一）、次女Mayuko（2000年加入，其丈夫经营大阪三家Beer Belly酒吧）、三女Nozomi Katsumi（2010年加入负责办公）；母亲Itsuko用酿造副产物制作柚子ponzu和果酱"
+  },
+  "history": {
+    "founding": "大下正治是吹田市的酒类商店店主。1994年日本酒税法修订，把啤酒生产最低年产量要求从200万升降至6万升，'精酿啤酒解禁'。他立刻寻找场地，1996年创立酒厂，并任命还在上大学的长女香緒里为酿酒师——几乎没有受过正规训练，边干边学，曾受伊势角屋（Ise Kadoya）指点。",
+    "struggle": "创业初期面临300多家新微酿厂的竞争，加上当年多数精酿品质不佳引发的市场恶感，箕面选择深耕酒类商店渠道而非餐饮渠道，渡过行业低谷，甚至一度考虑关张。",
+    "breakthrough": "2009年，Minoh Stout获World Beer Awards世界最佳干世涛——大下正治亲自陪女儿飞伦敦领奖。此后年年获奖：W-IPA四连霸亚洲最佳帝国IPA（2011-2014），柚子白啤获2012年亚洲最佳水果小麦啤酒。年产能提升至45万升。",
+    "masaji_passing": "2012年12月15日大下正治因脑溢血在工作中倒下后去世。2013年3月，11家精酿厂联合发起'Masaji Beer Project'纪念这位业界前辈，此后每年12月前后仍有限量纪念酒推出（如Masaji Beer SEYA!）。酒厂由三姐妹接棒。",
+    "today": "不过滤、不做热杀菌，全程冷链保鲜销售。除酒厂外还在大阪经营三家Beer Belly酒吧。是日本精酿运动第一代代表酒厂之一，也是许多海外消费者认识日本精酿的入口。"
+  },
+  "specialty": {
+    "primary": "世涛（世界冠军级）、皮尔森、浑浊/帝国IPA、柚子白啤等水果啤酒",
+    "styles": ["Dry Stout", "Imperial Stout", "Pilsner", "IPA / W-IPA", "Weizen", "Yuzu White Ale"],
+    "philosophy": "以平衡、易饮且完成度极高的日常经典风格著称——不追逐潮流，把基础风格做到极致。'清爽中带一点微甜'的日式审美。"
+  },
+  "awards": [
+    "WBC啤酒世界杯：2016年爱尔兰干世涛组金牌、2025年爱尔兰干世涛组金牌、2026年爱尔兰干世涛组银牌、2012年水果小麦组金牌、2024/2025年波西米亚皮尔森组铜牌",
+    "World Beer Awards：2009世界最佳干世涛、2014世界最佳世涛、2011-2014亚洲最佳帝国IPA四连霸",
+    "2013 International Brewing Awards铜奖",
+    "近二十年持续国际获奖，被评为日本最具国际影响力的精酿代表"
+  ],
+  "notable_beers": [
+    "Minoh Stout - 干世涛 5.5% / 33 IBU，UNTAPPD 3.7，2009 WBA世界最佳干世涛、2014世界最佳世涛、2016/2025 WBC金牌",
+    "Minoh W-IPA - 帝国IPA 9% / 75 IBU，UNTAPPD 3.76，亚洲最佳帝国IPA四连霸",
+    "Osaru IPA（おさるIPA）- 6~6.5%，以箕面野猴命名，柚子/柑橘香美式IPA",
+    "Rockin' Osaru IPA - 双倍IPA 8.5%，Centennial、Cascade、Citra、Simcoe、Amarillo五酒花，UNTAPPD 3.8（225评）",
+    "Yuzu White（ゆずホワイト）- 柚子白啤，母亲手切柚皮入酿，获WBA亚洲最佳水果小麦啤酒"
+  ],
+  "sources": [
+    "https://www.minoh-beer.jp/",
+    "https://www.japantimes.co.jp/life/2018/11/03/food/minoh-beer-fathers-dream-daughters-reality/",
+    "https://thirstmag.com/people/Minoh-Brewery",
+    "https://www.worldbeerawards.com/winner-beer/japans-best-stout-world-beer-awards-2016",
+    "https://untappd.com/MinohBeer/beer",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，日本精酿代表酒厂"
+  }
+}

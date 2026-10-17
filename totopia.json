@@ -1,0 +1,62 @@
+{
+  "brewery_id": "totopia",
+  "name": {
+    "english": "Totopia Brewery",
+    "chinese": "托托比亚"
+  },
+  "location": {
+    "country": "日本",
+    "country_en": "Japan",
+    "prefecture": "爱知县",
+    "prefecture_en": "Aichi",
+    "city": "长久手市（名古屋旁，近吉卜力公园与IKEA）",
+    "city_en": "Nagakute, Aichi",
+    "address": "〒480-1325 爱知县长久手市杁掛795-1"
+  },
+  "founded": "2022年10月开业",
+  "founded_en": "Opened October 2022",
+  "founder": {
+    "name": "Junya Morita（森田純矢）",
+    "name_zh": "森田纯矢",
+    "co_founder": "妻子Akiko（明子）",
+    "brewer": "开业初期在美国酿酒师协助下投产",
+    "name_origin": "Totopia = Toto + Utopia。长久手所在的濑户地区是日本昔日'陶都'（とと/Toto），森田希望这里成为精酿爱好者的'乌托邦'（Utopia），两者结合成'Totopia'。"
+  },
+  "history": {
+    "morita_background": "森田曾从事餐饮行业。出于对精酿啤酒的热爱，他每年赴美国走访各地酒厂，学习酿造工艺与文化，2017年开始进口美国精酿啤酒并做批发，期间与众多美国酒厂建立联系。他还是名古屋精酿圈的意见领袖，自费出版介绍名古屋酒厂的双月刊，并经营过名为'Used Like New Beer'的瓶装啤酒店。",
+    "decision": "到2020年，森田意识到'唯一剩下的路就是自己开酒厂'。几经波折选定长久手的场地——房东本人经营酒类商店，非常支持酒厂计划。",
+    "opening": "2022年10月Totopia Brewery开业，在美国酿酒师帮助下开始酿酒，很快成为当地新打卡点与日本精酿爱好者圣地。",
+    "local_ties": "酒厂大量使用当地蔬果酿酒，将酿酒麦糟赠与当地农民作肥料，并把一片废弃农田改造成啤酒花与香草农场，计划未来用自种酒花酿酒并举办收获节。",
+    "collabs": "与Far Yeast Brewing（2022静冈精酿展结缘）、美国Von Ebert Brewing（合酿Gose 'Halophile'）等海内外酒厂合作，目标是'酿造世界认可的啤酒，做让本地人骄傲的品牌'。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA/新英格兰IPA为主，兼做果泥酸IPA、西海岸DIPA、桶陈与增味实验",
+    "styles": ["Hazy IPA", "Double Hazy IPA", "Triple Hazy IPA", "West Coast DIPA", "Fruited Sour IPA", "Belgian Tripel"],
+    "philosophy": "以ophobia（恐惧症）系列命名酒款，酒花用量媲美美国顶级酒厂。麦芽选自加拿大与德国，酒花选自美国与新西兰，水源为当地长久手之水；以四种酒花为基础，定期更换酒花与酵母组合探索新风味。"
+  },
+  "awards": [
+    "UNTAPPD日本地区酒厂排名TOP3",
+    "UNTAPPD2025社区奖3金3银5铜",
+    "被日本精酿界视为'有望成为下一个世界级酒厂'的新势力"
+  ],
+  "notable_beers": [
+    "Kenophobia - 浑浊双倍IPA，Citra Cryo、Citra、Nelson Sauvin、Galaxy，7.9%",
+    "Nyctophobia - 浑浊三倍IPA，Citra Cryo、Idaho 7、Galaxy、Citra，10%",
+    "Heliophobia - 浑浊IPA，Citra、Nelson Sauvin、Talus，6.5%",
+    "Neophobia - 浑浊IPA，Galaxy与Strata煮沸+干投，7.1%",
+    "Jellyphobia - 西海岸双倍IPA",
+    "Frogphobia - 10.5%比利时三料，加入可可豆、开心果与香草豆",
+    "Multiphobia - 水果增味酸IPA"
+  ],
+  "sources": [
+    "https://88bamboo.co/blogs/craft-beer/enter-the-world-of-totopia",
+    "https://beertengoku.com/2024/04/12/totopia-brewery-information/",
+    "https://faryeast.com/en/blogs/news/23800",
+    "https://untappd.com/w/totopia-brewery/529988",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，日本精酿界不可忽视的新势力"
+  }
+}

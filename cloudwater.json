@@ -1,0 +1,61 @@
+{
+  "brewery_id": "cloudwater",
+  "name": {
+    "english": "Cloudwater Brew Co.",
+    "chinese": "云水"
+  },
+  "location": {
+    "country": "英国",
+    "country_en": "UK",
+    "city": "Manchester（曼彻斯特）",
+    "city_en": "Manchester",
+    "address": "Piccadilly Trading Estate（皮卡迪利贸易园区），曼彻斯特市中心"
+  },
+  "founded": "2014年创立，2015年2月14日酿造首批啤酒",
+  "founded_en": "Founded 2014, first beers brewed February 14, 2015",
+  "founder": {
+    "name": "Paul Jones",
+    "name_zh": "保罗·琼斯",
+    "co_founder": "James Campbell（詹姆斯·坎贝尔，前Marble酒厂首席酿酒师）",
+    "co_founder_zh": "James Campbell",
+    "name_origin": "Cloudwater由两个简单的英文单词组合而成；同时是禅宗术语'云水'（日语unsui）的英译，源自一首描写云游僧人的中国古诗。创始人Paul Jones是佛教徒，寓意无形无态、随缘而行的修行内核。Logo极简设计灵感来自葡萄酒品牌，刻意避开当时酒行业硬朗的'男子汉'风格，Logo颜色随季节与酒款系列一同更换。"
+  },
+  "history": {
+    "founding": "2014年，没有任何酿酒行业经验的Paul Jones与在曼彻斯特传奇酒厂Marble任职13年首席酿酒师的James Campbell联合创立Cloudwater。两人在Piccadilly Trading Estate拿下场地，安装了一套从美国进口的20美桶（约合14.3英桶）糖化设备——对英国新酒厂来说规模相当大，因而在英国啤酒界引发大量关注，也招来'步子太大'的质疑。",
+    "early_team": "Jones回应质疑时指出，创始团队自带60-70年的零售与行业经验。酒厂2015年2月14日投下第一批酒，开业两年即位列RateBeer全球最佳酒厂榜单。",
+    "pioneer": "Cloudwater把在美国西海岸（Jones先后走访100-120家酒厂）喝到的浑浊啤酒与双倍IPA带回英国，是当时英国市场上几乎无人涉足的方向。他们曾同时在18个发酵罐中使用18种不同酵母进行实验；Campbell在任期内参与了约500个配方的酿造。'你不会找到另一家每年生产比我们更多风格的欧洲酒厂。'",
+    "campbell_departure": "2018年，James Campbell离开Cloudwater（后于2022年创办Sureshot Brewing，距Cloudwater品酒室仅十分钟步行路程）。Jones没有另聘首席酿酒师，以团队模式继续前行。",
+    "scale": "酒厂现配备24hL Premier Stainless糖化系统、18个发酵罐共840hL的发酵能力，以及5°C以下恒温冷库和罐装线，最大限度锁住新鲜风味。2026年推出'Supercharged'工艺：从干投到装罐不足24小时。"
+  },
+  "specialty": {
+    "primary": "现代英式精酿全风格：浑浊IPA/DIPA先锋、时令酿造、无固定核心产品线",
+    "styles": ["Hazy IPA", "Double IPA", "New Zealand Pale Ale", "Lager", "Sour", "Stout", "Session Pale Ale"],
+    "philosophy": "时令酿造是云水的核心特色：坚持选用当季原料，依季节更迭打造小批量限量酒款，Logo颜色随之更换。以'初学者思维'突破创作局限，兼顾经典复刻与创意创新，通过与世界顶尖酒厂合酿不断打磨技艺。全程5°C以下恒温运输与储存，因此形成小众、限量、新鲜的出品特点。"
+  },
+  "awards": [
+    "RateBeer 2016年度全球最佳酒厂TOP5（迄今唯一进入该榜单前十的英国酒厂）",
+    "RateBeer 2017年度全球最佳酒厂TOP2",
+    "RateBeer 2019年度全球最佳酒厂TOP8（当年全球十佳中唯一非美国品牌）",
+    "2016年RateBeer颁奖礼共获11项奖，含曼彻斯特最佳啤酒（DIPA v9）、全球百佳啤酒（DIPA v3）",
+    "UNTAPPD 2025社区奖7金8银9铜"
+  ],
+  "notable_beers": [
+    "NW DIPA Citra - 西北双倍IPA，使用曼彻斯特老牌酒厂JW Lees的传奇酵母（第4792代）搭配Citra与Simcoe，9.0% ABV，UNTAPPD 4.26（4866评）",
+    "Proper DIPA Citra - 单一Citra酒花西北DIPA，8% ABV，UNTAPPD 4.20",
+    "A Wave In the Marlborough Sounds - 新西兰淡色艾尔，精选Rakau与Waimea酒花双倍干投，灵感来自马尔堡峡湾之旅，5.0% ABV，UNTAPPD 3.9（4572评）",
+    "SoCal - 西海岸风格代表作，Jones'走访上百家美国酒厂后的易饮浑浊之作",
+    "DIPA系列（v1-v19+） - 酒厂成名系列，DIPA v3曾入选全球百佳"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cloudwater_Brew_Co",
+    "https://www.goodbeerhunting.com/blog/2016/1/18/humulone-for-the-soul-cloudwater-brew-co-in-manchester-uk",
+    "https://www.manchestereveningnews.co.uk/whats-on/food-drink-news/cloudwater-brewery-co-manchester-interview--12662804",
+    "https://www.hopculture.com/travel-guide-manchester-england/",
+    "https://www.beerxchange.com/beer/2054736",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，英国精酿先锋品牌"
+  }
+}

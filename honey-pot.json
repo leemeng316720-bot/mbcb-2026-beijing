@@ -1,0 +1,61 @@
+{
+  "brewery_id": "honey-pot",
+  "name": {
+    "english": "Honey Pot Meadery",
+    "chinese": "蜜罐"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "加利福尼亚州",
+    "state_en": "California",
+    "city": "Anaheim（安纳海姆）",
+    "city_en": "Anaheim, CA",
+    "address": "5120 E. La Palma Ave #104, Anaheim, CA 92807"
+  },
+  "founded": "2014年中期开始筹备，2016年开始商业化生产，2018年2月品酒室开业",
+  "founded_en": "Dream started mid-2014, commercial production 2016, tasting room opened February 2018",
+  "founder": {
+    "name": "Alex Gonzales",
+    "name_zh": "亚历克斯·冈萨雷斯",
+    "role": "Owner & Mead Maker",
+    "name_origin": "Honey Pot——'蜜罐'，直白传达蜂蜜酒（Mead）的核心原料与甜蜜形象"
+  },
+  "history": {
+    "origin": "2010年，创始团队偶然接触到蜂蜜酒，当时南加州市场上的蜂蜜酒选择极为有限，精酿啤酒场景刚刚起步。为满足自己对蜂蜜酒的渴望，他们开始在家自酿，并与亲友分享。",
+    "dream": "2014年中期，Honey Pot作为一个梦想启动——希望把对蜂蜜酒的热爱分享给更多人。",
+    "first_batch": "约一年后（2015年），他们在加州Oceanside的Golden Coast Mead帮助下投下了第一批蜂蜜酒并订购首批橡木桶。最初计划只做一款酒，但当桶陈机会出现时，决定扩展产品线。",
+    "first_meads": "头六个月推出了三款酒：传统橙花蜜酒'Prelude'，以及两款桶陈版本'OBB'和'Orange in the Rye'。三款全部获奖，其中'Orange in the Rye'夺得2017年丹佛Orpheus蜂蜜酒节最佳酒款（Best in Show）。",
+    "production_2016": "2016年取得啤酒与葡萄酒分销许可，正式开始商业化生产之路，是Golden Coast Mead扶持孵化的25家蜂蜜酒厂之一。",
+    "tasting_room": "2017年签下品酒室租约，品酒室于2018年2月开业，首个周年庆在2019年2月9日举办。"
+  },
+  "specialty": {
+    "primary": "现代蜂蜜酒（Mead）：从干爽清新到浓郁甜品风格的完整谱系",
+    "styles": ["Traditional Mead", "Melomel（水果蜂蜜酒）", "Metheglin（香料蜂蜜酒）", "Barrel-Aged Mead", "Bochet"],
+    "philosophy": "蜂蜜酒拥有千变万化的风味、颜色与甜度，Honey Pot希望把尽可能多的变化带给社区。产品常融合水果、枫糖浆、咖啡、香草等元素，在保留蜂蜜特色的同时展现丰富层次。"
+  },
+  "awards": [
+    "2017年Orpheus蜂蜜酒节（丹佛）最佳酒款Best in Show——Orange in the Rye",
+    "首批三款酒（Prelude、OBB、Orange in the Rye）全部获奖",
+    "UNTAPPD蜂蜜酒厂排名美国TOP12",
+    "UNTAPPD蜂蜜酒厂排名全球TOP20"
+  ],
+  "notable_beers": [
+    "Blueberry Banana Crepe (Batch 3) - 水果蜂蜜酒Melomel，蓝莓+香蕉+肉桂，UNTAPPD 4.6（227评）",
+    "Superstar - 14% ABV，星蓟蜜男孩森莓+烤椰子+金桔，UNTAPPD 4.48（85评）",
+    "BBA BBC - 波本桶陈，香蕉+肉桂+可可豆，UNTAPPD 4.3（103评）",
+    "Orange in the Rye - 黑麦桶陈橙花蜜酒，2017 Orpheus蜂蜜酒节Best in Show",
+    "Bananas Foster风格蜂蜜酒 - Meadowfoam蜂蜜+香蕉+香草+焦糖，波本橡木桶陈"
+  ],
+  "sources": [
+    "https://www.honeypotmeadery.com/",
+    "https://www.goldencoastmead.com/cross-pollination-work",
+    "https://untappd.com/HoneyPotMeadery/beer",
+    "https://www.beertasting.com/en/brewery/honey-pot-meadery",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，世界级蜂蜜酒厂"
+  }
+}

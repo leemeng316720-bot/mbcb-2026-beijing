@@ -1,0 +1,59 @@
+{
+  "brewery_id": "bofkont",
+  "name": {
+    "english": "Bofkont",
+    "chinese": "行运者"
+  },
+  "location": {
+    "country": "比利时",
+    "country_en": "Belgium",
+    "city": "Kontich（康蒂奇，安特卫普与布鲁塞尔之间）",
+    "city_en": "Kontich, Antwerp Province"
+  },
+  "founded": "2012年起步为爱好项目，2016年购入首批兰比克，2018年正式成立混酿工坊",
+  "founded_en": "Passion project 2012, first lambics purchased 2016, blendery founded 2018",
+  "founder": {
+    "name": "Sam Hellemans",
+    "name_zh": "萨姆·海勒曼斯",
+    "born": "1992年2月生（2018年创立时26岁）",
+    "name_origin": "Bofkont在佛兰德语中意为'幸运狗/行运者'，来自Sam童年的一只同名玩具狗，寓意他与兰比克结缘的幸运与偶然。"
+  },
+  "history": {
+    "origin": "Sam Hellemans是一位兰比克狂热爱好者。2012年他在Kontich以爱好项目起步——在接触到传统兰比克与自然酒（natural wine）之后深陷其中；2016年购入首批兰比克，在自家厨房试验水果浸渍，随后改用酒窖橡木桶进行稍具规模的混酿。",
+    "founded": "2018年正式创立Bofkont混酿工坊（blendery）——不自酿麦汁，而是从比利时知名兰比克酒厂采购年轻兰比克，经橡木桶陈化、混酿与水果增味后装瓶。",
+    "rise": "凭借小批量手工混酿、超高浓度水果增味与木桶陈酿，尤其香气极具爆发力的杏子与樱桃兰比克迅速崛起。被业内同行誉为'继Bokke之后极具潜力的新晋混酿明星'。",
+    "style": "酒款命名天马行空：007系列（Dr. No、From Canada With Love、The Living Daylights）、蓝精灵系列（Smulsmurf、Smurfenjam）、葡萄兰比克系列（Zibibbo Bianco、Barbera、Nebbiolo、Pinot Noir）以及'沉默的羔羊'（Silence of the Lambic）等电影梗。",
+    "today": "产品聚焦比利时、欧洲与亚洲的精选酒吧与餐厅，曾两度登陆法罗群岛米其林级餐厅ROKS做啤酒配餐晚宴。"
+  },
+  "specialty": {
+    "primary": "兰比克混酿：克里克（樱桃）、杏子兰比克、葡萄兰比克、贵兹",
+    "styles": ["Lambic - Kriek", "Fruit Lambic", "Grape Lambic", "Gueuze", "Herbed/Spiced Lambic"],
+    "philosophy": "小批量手工混酿，以超高浓度水果增味与橡木桶陈酿著称。既展现坚实的兰比克底蕴与丰富果香层次，又融合传统野菌气息与现代水果啤酒的奔放果味，整体均衡、余韵悠长。"
+  },
+  "awards": [
+    "UNTAPPD全球克里克兰比克TOP50：旗下5款克里克中3款上榜——Kriek B-225 (2019)、Bourbon Kriek (2022)、Kriek B-228 (2019)",
+    "UNTAPPD全球Nano级酒厂排名TOP36",
+    "UNTAPPD比利时酒厂排名TOP6",
+    "UNTAPPD2025社区奖2金1铜",
+    "Zibibbo Bianco葡萄兰比克UNTAPPD 4.6"
+  ],
+  "notable_beers": [
+    "Kriek B-225 (2019) - 1-2-3年兰比克+Gorsem与Noordkrieken樱桃，225升波尔多桶浸渍一年以上，6% ABV，UNTAPPD 4.44（463评）",
+    "Bourbon Kriek (2022) - 1/2/3年兰比克+Gingelom Gorsem樱桃，190升美国老波本桶陈酿，6% ABV，UNTAPPD 4.3（1159评）",
+    "Kriek B-228 (2019) - 228升勃艮第桶版本，6% ABV",
+    "Zibibbo Bianco - 白泽比波葡萄兰比克，UNTAPPD 4.6",
+    "Abrikoos系列 - 高浓度杏子增味兰比克（如Abrikoos-Kaneel杏子肉桂）"
+  ],
+  "sources": [
+    "https://www.lambic.info/Bofkont",
+    "https://untappd.com/b/bofkont-kriek-b-225-2019/4189183",
+    "https://untappd.com/b/bofkont-bourbon-kriek-2022-b2/6026863",
+    "https://www.tasteatlas.com/bofkont",
+    "https://drinkbelgianbeer.com/events/gebrande-winnings-circus-edition-beer-festival-lambic-beer-heaven",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，全球瞩目的比利时兰比克混酿新星，首次中国亮相"
+  }
+}

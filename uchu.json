@@ -1,0 +1,61 @@
+{
+  "brewery_id": "uchu",
+  "name": {
+    "english": "UCHU Brewing",
+    "chinese": "宇宙"
+  },
+  "location": {
+    "country": "日本",
+    "country_en": "Japan",
+    "prefecture": "山梨县",
+    "prefecture_en": "Yamanashi",
+    "city": "北杜市（小渊泽），2025年春于东京虎之门开设直营Taproom",
+    "city_en": "Hokuto, Yamanashi"
+  },
+  "founded": "2017年开始DIY建设酒厂，约一年后取得酿造许可正式投产",
+  "founded_en": "DIY construction began 2017; licensed and brewing circa 2018",
+  "founder": {
+    "name": "Masahiro Kusunose（楠瀬正紘）",
+    "name_zh": "楠濑正纮",
+    "co_founder": "Rumiko Suzuki（铃木留美子）",
+    "name_origin": "UCHU（うちゅう）意为'宇宙'。两人相信'地球上的一切活动——从人类到微生物——都是宇宙的表达'，自称'宇宙农夫（Space Farmers）'。核心理念：'Everything is made of particles'（万物皆粒子）。"
+  },
+  "history": {
+    "before_beer": "两人在高知县因设计工作相识，约15年前搬到北杜市。他们以无农药方式种植农作物，制作味噌、米曲等发酵食品，投身环保活动。楠濑高中辍学成为硬核朋克乐队贝斯手，2016年才开始喝精酿啤酒。",
+    "portland_shock": "2016年，两人到访美国俄勒冈州波特兰的一家brewpub，被香气浓烈、风格各异的美式精酿震撼，立志要酿出能与美国啤酒匹敌的作品。回国后第一件事是种啤酒花——随后惊讶地发现北杜市曾是日本主要的啤酒花产区之一。铃木觉得这是命运。",
+    "diy_brewery": "楠濑2017年在甲府的Outsider Brewing跟随丹羽聪学习了两个月，随后两人从用重型机械整地开始，DIY建设酒厂：浇筑混凝土、组装二手钢架、盖屋顶、做保温、布线，设备从国外工厂直接采购进口组装。约一年后取得发泡酒酿造许可，开始酿酒。酒厂的啤酒花田就在旁边，'走几步就能摘到新鲜酒花'。",
+    "online_first": "最初只做网络销售、不在酒厂设店。楠濑研发的鸡尾酒般风味与铃木设计的黑底奇幻酒标（酒款名如浮世绘、浪人、Big Bang、Star Dust）迅速走红，订单主要来自东京圈。",
+    "today": "2021年在北杜市小渊泽开设旗舰店，2025年春在东京虎之门开设直营Taproom。每年推出约150款啤酒、约100万罐，产品出口多个国家，与英国Beak等海外酒厂合酿。疫情期间向医疗捐赠，并向能登半岛地震灾区捐款。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA/双倍干投浑浊IPA，水果增味酸啤与桶陈实验",
+    "styles": ["Hazy IPA", "DDH Hazy IPA", "Fruited Sour IPA", "Milkshake IPA", "Barrel-Aged Strong Beer"],
+    "philosophy": "'用麦与啤酒花酿造的啤酒让人与人发酵，酿出幸福'。以宇宙、量子、未来为主题命名酒款，浓烈的热带水果香气与柔和酒体'媲美美国顶级酒厂'；同时使用自种啤酒花与世界顶级进口原料，追求微生物与人类共创的独酿酒款。"
+  },
+  "awards": [
+    "2025年啤酒世界杯（WBC）Juicy/Hazy Pale Ale组金牌——Uchu Relax",
+    "2022年世界啤酒大奖（WBA）IPA风格世界第一",
+    "UNTAPPD日本地区酒厂排名TOP2",
+    "UNTAPPD2025社区奖6金8银2铜，奖牌总数日本地区TOP2"
+  ],
+  "notable_beers": [
+    "Uchu Relax - 2025 WBC浑浊淡色艾尔组金牌酒款",
+    "BIG BANG IPA - 浑浊IPA，UNTAPPD 4.0（1140评）",
+    "Shooting Star IPA - 浑浊IPA，UNTAPPD 3.9（750评）",
+    "Milky Way (#308) - 7%浑浊IPA，加入乳糖（奶昔IPA），以Nelson Sauvin为主角",
+    "Labyrinth - 波本桶陈谷物发酵酒：23个月Heaven Hill桶+18个月多种波本桶",
+    "Space Pop Mosaic - 浑浊IPA，UNTAPPD 3.9（202评）"
+  ],
+  "sources": [
+    "https://uchubrewing.com/",
+    "https://japannews.yomiuri.co.jp/features/delicious/20251005-284238/",
+    "https://drinkmedirty.com/beer-reviews/uchu-brewing-milky-way-308-hazy-ipa/",
+    "https://untappd.com/UchuBrewing/beer",
+    "https://beertengoku.com/2019/01/01/uchu-star-dust-ipa-by-uchu-brewing/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，UNTAPPD日本地区TOP2酒厂，首次中国亮相"
+  }
+}

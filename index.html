@@ -148,13 +148,6 @@
             line-height: 1;
         }
 
-        .card-heart {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 2;
-        }
-
         .brewery-name-en {
             font-family: 'Playfair Display', serif;
             font-size: 1.6rem;
@@ -266,77 +259,6 @@
         }
 
         .detail-btn:hover { color: var(--accent-gold-light); }
-
-        .heart-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            cursor: pointer;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            padding: 10px 16px;
-            border-radius: 24px;
-            font-family: 'Noto Sans SC', sans-serif;
-            outline: none;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .heart-btn:hover {
-            color: var(--accent-gold);
-            background: rgba(201, 169, 110, 0.15);
-            border-color: rgba(201, 169, 110, 0.3);
-            transform: scale(1.08);
-        }
-
-        .heart-btn:active {
-            transform: scale(0.92);
-        }
-
-        .heart-btn svg {
-            width: 24px;
-            height: 24px;
-            fill: none;
-            stroke: currentColor;
-            stroke-width: 2;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .heart-btn.liked {
-            color: #e74c3c;
-            background: rgba(231, 76, 60, 0.12);
-            border-color: rgba(231, 76, 60, 0.25);
-            animation: heartPulse 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .heart-btn.liked svg {
-            fill: #e74c3c;
-            stroke: #e74c3c;
-            transform: scale(1.15);
-        }
-
-        @keyframes heartPulse {
-            0% { transform: scale(1); }
-            25% { transform: scale(1.2); }
-            50% { transform: scale(0.95); }
-            75% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-
-        .heart-btn .heart-count {
-            font-family: 'Playfair Display', serif;
-            font-size: 0.95rem;
-            font-weight: 700;
-            min-width: 16px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .heart-btn.liked .heart-count {
-            color: #e74c3c;
-        }
 
         /* Modal */
         .modal-overlay {
@@ -656,7 +578,6 @@
         .brewery-card:nth-child(4) { animation-delay: 0.4s; }
         .brewery-card:nth-child(5) { animation-delay: 0.5s; }
     </style>
-    <!-- Supabase REST API (无 CDN 依赖) -->
 </head>
 <body>
 
@@ -667,12 +588,12 @@
         
         <div class="stats-bar">
             <div class="stat-item">
-                <div class="stat-number">10</div>
+                <div class="stat-number">72</div>
                 <div class="stat-label">酒厂</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">4</div>
-                <div class="stat-label">国家</div>
+                <div class="stat-number">21</div>
+                <div class="stat-label">国家/地区</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">2026</div>
@@ -682,11 +603,28 @@
     </header>
 
     <div class="filters">
-        <button class="filter-btn active" onclick="filterBreweries('all')">全部</button>
-        <button class="filter-btn" onclick="filterBreweries('usa')">🇺🇸 美国</button>
+        <button class="filter-btn" onclick="filterBreweries('all')">全部</button>
+        <button class="filter-btn active" onclick="filterBreweries('usa')">🇺🇸 美国</button>
         <button class="filter-btn" onclick="filterBreweries('canada')">🇨🇦 加拿大</button>
         <button class="filter-btn" onclick="filterBreweries('spain')">🇪🇸 西班牙</button>
         <button class="filter-btn" onclick="filterBreweries('denmark')">🇩🇰 丹麦</button>
+        <button class="filter-btn" onclick="filterBreweries('uk')">🇬🇧 英国</button>
+        <button class="filter-btn" onclick="filterBreweries('australia')">🇦🇺 澳大利亚</button>
+        <button class="filter-btn" onclick="filterBreweries('japan')">🇯🇵 日本</button>
+        <button class="filter-btn" onclick="filterBreweries('belgium')">🇧🇪 比利时</button>
+        <button class="filter-btn" onclick="filterBreweries('estonia')">🇪🇪 爱沙尼亚</button>
+        <button class="filter-btn" onclick="filterBreweries('thailand')">🇹🇭 泰国</button>
+        <button class="filter-btn" onclick="filterBreweries('poland')">🇵🇱 波兰</button>
+        <button class="filter-btn" onclick="filterBreweries('sweden')">🇸🇪 瑞典</button>
+        <button class="filter-btn" onclick="filterBreweries('netherlands')">🇳🇱 荷兰</button>
+        <button class="filter-btn" onclick="filterBreweries('southkorea')">🇰🇷 韩国</button>
+        <button class="filter-btn" onclick="filterBreweries('newzealand')">🇳🇿 新西兰</button>
+        <button class="filter-btn" onclick="filterBreweries('latvia')">🇱🇻 拉脱维亚</button>
+        <button class="filter-btn" onclick="filterBreweries('czechia')">🇨🇿 捷克</button>
+        <button class="filter-btn" onclick="filterBreweries('philippines')">🇵🇭 菲律宾</button>
+        <button class="filter-btn" onclick="filterBreweries('china')">🇨🇳 中国</button>
+        <button class="filter-btn" onclick="filterBreweries('hongkong')">🇭🇰 中国香港</button>
+        <button class="filter-btn" onclick="filterBreweries('germany')">🇩🇪 德国</button>
     </div>
 
     <div class="container">
@@ -702,7 +640,7 @@
 
     <footer class="footer">
         <p>数据来源：MBCB 官方文章 + 网络补充研究</p>
-        <p style="margin-top:8px">最后更新：2025年7月 | 档案存储于本地工作区</p>
+        <p style="margin-top:8px">最后更新：2026年10月 | 档案存储于本地工作区</p>
     </footer>
 
 <script>
@@ -1479,6 +1417,3781 @@ const breweries = [
                 }
             ]
         }
+    },
+    {
+        id: "shelton",
+        nameEn: "Shelton Brewing",
+        nameZh: "谢尔顿",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Beaumont, Texas（暂借设施酿造，长期计划落户休斯顿）",
+        founded: "2025年3月",
+        founder: "Chris Shelton",
+        founderDesc: "20年职业酿造履历：击倒巨人、首尔The Booth、休斯顿全食超市首席酿酒师，2025年自立门户",
+        tags: ["浑浊IPA", "Hopzy Ales", "酒花饱和", "超级新锐"],
+        highlight: "UNTAPPD全球微型酒厂TOP1",
+        shortStory: "Chris Shelton把在全食超市酿酒厂练就的'Hopzy Ales'带上台面——2025年3月开业，数月内冲上UNTAPPD全球微型酒厂第一。",
+        fullStory: {
+            nameOrigin: "Shelton来自创始人Chris Shelton的姓氏。他把自己标志性的高酒花饱和度浑浊/酒花类作品称为'Hopzy Ales'——追求'lupulin-lingering velocity'（酒花树脂久久不散的速度感）。",
+            founderJourney: [
+                { year: "职业生涯早期", text: "Chris Shelton拥有超过20年职业精酿经验，曾在爱荷华州击倒巨人(Toppling Goliath)酿酒（Pseudo Sue成名之前），并赴韩国首尔The Booth Brewing等海外酒厂工作" },
+                { year: "2020-2023", text: "担任休斯顿全食超市(Whole Foods) Post Oak门店酿酒厂首席酿酒师，发布50余款酒花啤酒，UNTAPPD综合均分4.40。Gotta Have My Hops被Hop Culture评为'2023年我们喝到的最佳啤酒'之一（全榜仅23款）" },
+                { year: "2024", text: "花一整年筹划自己的酒厂" },
+                { year: "2025年3月", text: "Shelton Brewing正式运营，借用德州Beaumont的酿造设施生产，长期计划在休斯顿建立自己的酒厂" },
+                { year: "2025-2026", text: "开业即4.3+均分，酒款在二级市场常年最抢手，数月内冲上UNTAPPD全球Micro Brewery（微型酒厂）排名TOP1，在欧洲和亚洲积累大量拥趸" }
+            ],
+            philosophy: "极致酒花饱和度与新鲜度。大量使用新西兰（Nectaron、Nelson Sauvin、Riwaka、Motueka）与美国顶级酒花，What the Klaus?等酒款每桶投放20磅以上酒花。",
+            awards: [
+                "UNTAPPD全球Micro Brewery（微型酒厂）排名TOP1",
+                "Hop Culture 2025年度最佳新酒厂之一（The Best 9）",
+                "VinePair 2025年度26家最佳新酒厂",
+                "UNTAPPD首届社区奖德州浑浊IPA单/双/三倍三类金奖（Chris Shelton旗下酒款）"
+            ],
+            beers: [
+                {
+                    name: "We'll Carry On",
+                    style: "IPA - Triple New England / Hazy",
+                    abv: "10.25%",
+                    ibu: "25",
+                    rating: "UNTAPPD 4.61 / 233评",
+                    hops: "N/A",
+                    process: "与Lyric Brewing、BreakThru Brewing合酿的三倍浑浊IPA，UNTAPPD描述为'insane Triple IPA'，绝对饱和的酒花投放。",
+                    flavor: "饱满酒体搭配饱和热带水果香气，收口温暖绵长，三倍酒精度却依然保持易饮性。"
+                },
+                {
+                    name: "Jabber Time",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.5 / 249评",
+                    hops: "N/A",
+                    process: "高酒花饱和度浑浊IPA（Hopzy Ale）。",
+                    flavor: "典型的高饱和浑浊风格：浓郁热带水果与柑橘香气，酒体绵密多汁。"
+                },
+                {
+                    name: "Econ Don",
+                    style: "IPA - New England / Hazy",
+                    abv: "6.8%",
+                    ibu: "25",
+                    rating: "UNTAPPD 4.3 / 352评",
+                    hops: "Simcoe, Nectaron, Motueka Hop Kief",
+                    process: "'new school meets old school'的浑浊IPA——Simcoe与Nectaron带来大胆的柑橘与热带水果，Motueka酒花kief增加层次。",
+                    flavor: "香气：柑橘、热带水果。口感：果汁感十足，新旧酒花风格交融，收口干净。"
+                },
+                {
+                    name: "Defiant",
+                    style: "Pilsner - Other",
+                    abv: "5.4%",
+                    ibu: "35",
+                    rating: "UNTAPPD 4.26 / 77评",
+                    hops: "N/A",
+                    process: "传统皮尔森，酒花酒厂对经典风格的致敬之作。",
+                    flavor: "香气：清爽的草本与花香。口感：干爽清脆，传统皮尔森的干净收口。"
+                }
+            ]
+        }
+    },
+    {
+        id: "honey-pot",
+        nameEn: "Honey Pot Meadery",
+        nameZh: "蜜罐",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Anaheim, California（南加州安纳海姆）",
+        founded: "2016年（商业化生产）",
+        founder: "Alex Gonzales",
+        founderDesc: "Owner & Mead Maker，在家酿了10年以上蜂蜜酒；2010年偶然接触蜂蜜酒，南加州市场空白催生创业",
+        tags: ["蜂蜜酒", "Mead", "桶陈", "甜品酒"],
+        highlight: "UNTAPPD全球蜂蜜酒厂TOP20",
+        shortStory: "2010年偶然喝到蜂蜜酒后一发不可收拾，从家酿走向商业生产，Orange in the Rye拿下2017年Orpheus蜂蜜酒节全场最佳。",
+        fullStory: {
+            nameOrigin: "Honey Pot——'蜜罐'，直白点出蜂蜜酒的核心。酒厂2014年中从'一个梦想'启动：把对蜂蜜酒的热爱分享给尽可能多的人。",
+            founderJourney: [
+                { year: "2010", text: "创始团队偶然接触蜂蜜酒，当时南加州蜂蜜酒选择极少、精酿场景刚起步，于是开始在家自酿" },
+                { year: "2014-2015", text: "Honey Pot作为梦想立项；约一年后投下第一批酒、订购首批橡木桶，在Oceanside的Golden Coast Mead帮助下完成首批生产。原计划只做一款，桶陈机会出现后扩展成三款" },
+                { year: "2016", text: "取得啤酒与葡萄酒分销许可，正式开始商业化生产，成为Golden Coast Mead扶持孵化的25家蜂蜜酒厂之一" },
+                { year: "2017", text: "首批三款酒（Prelude、OBB、Orange in the Rye）全部获奖；Orange in the Rye夺得丹佛Orpheus蜂蜜酒节Best in Show" },
+                { year: "2018-2019", text: "签下品酒室租约，2018年2月开业，2019年2月9日举办首个周年庆" }
+            ],
+            philosophy: "蜂蜜酒拥有千变万化的风味、颜色与甜度，从干爽清新到浓郁甜品风格，Honey Pot希望把尽可能多的变化带给社区。产品常融合水果、枫糖浆、咖啡、香草，在保留蜂蜜特色的同时展现丰富层次。",
+            awards: [
+                "2017年Orpheus蜂蜜酒节（丹佛）最佳酒款Best in Show——Orange in the Rye",
+                "UNTAPPD蜂蜜酒厂排名美国TOP12",
+                "UNTAPPD蜂蜜酒厂排名全球TOP20",
+                "UNTAPPD全部198款酒中多款4.3+高分"
+            ],
+            beers: [
+                {
+                    name: "Blueberry Banana Crepe (Batch 3)",
+                    style: "Mead - Melomel",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.6 / 227评",
+                    hops: "N/A",
+                    process: "蓝莓+香蕉+肉桂的水果蜂蜜酒（Melomel）。",
+                    flavor: "香气：蓝莓、香蕉与温暖肉桂。口感：如可丽饼般的甜品感，蜂蜜底色托住浓郁果味。"
+                },
+                {
+                    name: "Superstar",
+                    style: "Mead - Melomel",
+                    abv: "14%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.48 / 85评",
+                    hops: "N/A",
+                    process: "Starthistle蜂蜜为基底的男孩森莓蜂蜜酒，加入烤椰子与金桔。",
+                    flavor: "香气：浆果、烤椰子、金桔的明亮果香。口感：14度酒体饱满，蜂蜜甜感与浆果酸甜平衡。"
+                },
+                {
+                    name: "BBA BBC",
+                    style: "Mead - Melomel (Barrel-Aged)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.3 / 103评",
+                    hops: "N/A",
+                    process: "波本桶陈，香蕉+肉桂+可可豆增味。",
+                    flavor: "香气：波本桶的香草与木质、香蕉可可。口感：桶陈带来醇厚层次，甜品感突出。"
+                },
+                {
+                    name: "Orange in the Rye",
+                    style: "Mead - Traditional (Barrel-Aged)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "2017 Orpheus Best in Show",
+                    hops: "N/A",
+                    process: "黑麦桶陈的橙花蜜传统蜂蜜酒，酒厂首批三款之一。",
+                    flavor: "香气：橙花蜜的 floral 香气与黑麦桶的辛香。口感：蜂蜜的圆润甜感与桶陈的复杂交织。"
+                }
+            ]
+        }
+    },
+    {
+        id: "cloudwater",
+        nameEn: "Cloudwater Brew Co.",
+        nameZh: "云水",
+        country: "🇬🇧 英国",
+        countryCode: "uk",
+        location: "Manchester（曼彻斯特）Piccadilly Trading Estate",
+        founded: "2015年2月14日（首批酿造）",
+        founder: "Paul Jones & James Campbell",
+        founderDesc: "佛教徒Jones毫无酿酒经验但有零售功底，搭档是Marble酒厂13年老牌首席酿酒师Campbell",
+        tags: ["浑浊IPA先锋", "时令酿造", "冷链接力", "英国标杆"],
+        highlight: "RateBeer全球最佳酒厂TOP2（2017）",
+        shortStory: "2014年两个'简单英文单词'拼出的名字，却是禅语'云水'的英译。开业两年冲进RateBeer全球前五，2017年位列全球第二——迄今唯一进前十的英国酒厂。",
+        fullStory: {
+            nameOrigin: "Cloudwater由两个简单英文单词组合，同时是禅宗术语'云水'（日语unsui）的英译，源自一首描写云游僧人的中国古诗——创始人Paul Jones是佛教徒，取无形无态、随缘而行之意。极简Logo灵感来自葡萄酒品牌，刻意避开当年酒行业硬朗的'男子汉' imagery，Logo颜色随季节酒款更换。",
+            founderJourney: [
+                { year: "2014", text: "无酿酒经验的Paul Jones与Marble酒厂前首席酿酒师James Campbell在曼彻斯特Piccadilly Trading Estate创立酒厂，安装美国进口的20美桶糖化设备——规模之大引来英国酒圈'靴子太大'的质疑，Jones回应：创始团队自带60-70年零售与行业经验" },
+                { year: "2015年2月14日", text: "投下第一批啤酒。次年即获RateBeer全球最佳酒厂TOP5（迄今唯一进前十的英国酒厂），颁奖礼共获11项奖" },
+                { year: "2017", text: "爬升至RateBeer全球最佳酒厂TOP2。曾同时在18个发酵罐中使用18种酵母实验；Campbell任内参与约500个配方。同年一款酒在伦敦酒吧卖到13英镑/品脱引发全国讨论" },
+                { year: "2018", text: "James Campbell离开（2022年创办Sureshot Brewing），Jones以团队模式继续前行不设首席酿酒师" },
+                { year: "2019", text: "位列RateBeer全球TOP8，是当年全球十佳中唯一的非美国品牌；同时推出无酒精'Adult Soda'" },
+                { year: "2026", text: "推出'Supercharged'工艺：从干投到装罐不足24小时；UNTAPPD 2025社区奖7金8银9铜" }
+            ],
+            philosophy: "时令酿造是核心：坚持当季原料、小批量限量出品，Logo随季节更换。以'初学者思维'不拘泥传统，兼顾经典复刻与创意创新——Jones走访过100-120家美国西海岸酒厂，把浑浊与双倍IPA带回英国。全程5°C以下恒温储存运输，因此小众限量、只喝新鲜。",
+            awards: [
+                "RateBeer 2016年度全球最佳酒厂TOP5（迄今唯一前十的英国酒厂）",
+                "RateBeer 2017年度全球最佳酒厂TOP2",
+                "RateBeer 2019年度全球最佳酒厂TOP8（当年十佳唯一非美国品牌）",
+                "2016年RateBeer颁奖礼11项奖：曼彻斯特最佳啤酒（DIPA v9）、全球百佳（DIPA v3）",
+                "UNTAPPD 2025社区奖7金8银9铜"
+            ],
+            beers: [
+                {
+                    name: "NW DIPA Citra",
+                    style: "IPA - Imperial / Double",
+                    abv: "9.0%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.26 / 4866评",
+                    hops: "Citra, Simcoe",
+                    process: "'西北双倍IPA'开创之作：使用曼彻斯特老牌酒厂JW Lees的传奇酵母（第4792代），Citra领衔、Simcoe辅佐。",
+                    flavor: "香气：柑橘、热带水果、松脂。口感：酒体饱满多汁，苦甜平衡，本地酵母带来独特的水果酯香。"
+                },
+                {
+                    name: "Proper DIPA Citra",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "8%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.20",
+                    hops: "Citra（单一酒花）",
+                    process: "单一Citra酒花，同样基于JW Lees西北酵母，2017年原始配方的延续。",
+                    flavor: "香气：浓郁的热带柑橘与dank气息。口感：多汁、 bold、酒花表现直接。"
+                },
+                {
+                    name: "A Wave In the Marlborough Sounds",
+                    style: "Pale Ale - New Zealand",
+                    abv: "5.0%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 3.9 / 4572评",
+                    hops: "Rakau, Waimea（双倍干投）",
+                    process: "新西兰淡色艾尔，精选Rakau与Waimea双倍干投——灵感来自穿越马尔堡峡湾与库克海峡的航行。",
+                    flavor: "香气：柑橘、热带风情、一丝茶感。口感：风味紧凑如峡湾的浪，一阵阵拍打舌面。"
+                }
+            ]
+        }
+    },
+    {
+        id: "one-drop",
+        nameEn: "One Drop Brewing Co.",
+        nameZh: "一滴",
+        country: "🇦🇺 澳大利亚",
+        countryCode: "australia",
+        location: "Botany, Sydney（悉尼Botany区，邮编2019）",
+        founded: "2019年1月",
+        founder: "Meg Barbic & Clay Grant",
+        founderDesc: "夫妻档卖掉房子创业；首席酿酒师Nick Calder-Scholes是在克罗地亚度假时'捡'来的新西兰人",
+        tags: ["果泥酸啤", "雷鬼", "社区酒厂", "甜品酸"],
+        highlight: "澳洲甜品酸艾尔TOP50占49席",
+        shortStory: "雷鬼节拍One Drop命名，卖房创业的夫妻档，COVID期间靠双倍香草煎饼奶昔IPA杀出重围，成为澳大利亚厚果泥酸啤的公认先驱。",
+        fullStory: {
+            nameOrigin: "One Drop得名于雷鬼音乐的标志性'One Drop'节奏（Bob Marley推广的节拍，预期的第一拍被省略）。Clay是'永远的雷鬼狂热者'；更深寓意是水滴入水的涟漪——'触及家庭、社区，一种涟漪效应'。",
+            founderJourney: [
+                { year: "2015", text: "Clay Grant（新西兰Masterton人，原为父亲做电力线路工作）转行做上门烤全猪烤全羊的餐饮，服务悉尼内西区酒厂，由此萌生'Botany也该有自己的酒厂'的想法。妻子Meg Barbic是Botany土生土长的软件创业者" },
+                { year: "2017", text: "无人愿意投资这对从未酿过酒的夫妻，他们卖掉房子筹资，举家去克罗地亚旅行——Meg父母的故乡" },
+                { year: "度假奇遇", text: "回程前两天，Clay在萨格勒布参观The Garden酒厂，发现酿酒师Nick Calder-Scholes也是新西兰人（曾在伦敦Fourpure酿酒）。Clay对Meg说：'我遇到了我们的首席酿酒师，他还不知道而已。'签下15年仓库租约后发出邀请，Nick于2018年9月加入" },
+                { year: "2019年1月", text: "开业——'2019'恰好是Botany的邮编。开业头三个月拿下三枚AIBA金奖。此前联邦政府把区域划为'仅限港口用途'，酒厂差点胎死腹中，申诉后获特批" },
+                { year: "2020", text: "COVID封锁差点压垮一岁的酒厂。Clay：'管他呢，做点疯狂的东西'——双倍香草奶油氮气煎饼奶昔IPA意外引爆网络销售，被迫加速走上厚 smoothie 酸啤之路" },
+                { year: "2021-2026", text: "以每升420克水果的厚果泥酸啤、高酒精冰沙等'受控的混乱'成为澳洲果泥之王，五年内推300+款酒，拿下GABS澳洲精酿榜酸啤首个前十，日本是最老的出口市场" }
+            ],
+            philosophy: "Meg（爱酸啤）出天马行空的创意——甚至想要灰色的'混凝土'啤酒；Clay（爱酒花）补充方向；大厨型酿酒师Nick负责把一切组装成型。水果用量最高420克/升。拉格系列把水处理成中性后按世界名产地的矿物 profile 重建——巴塞罗那河流做西班牙拉格，捷克/意大利/牙买加（'Wah Gwan'）同理。酒厂定义自己是'by the community, for the community'，每周轮换餐车招待本地居民。",
+            awards: [
+                "2019年AIBA开业首三个月三枚金奖（含Botany Bay Lager、XPA）",
+                "UNTAPPD澳大利亚水果酸艾尔风格TOP50占26席",
+                "UNTAPPD澳大利亚甜品酸艾尔风格TOP50占49席",
+                "UNTAPPD2025社区奖6金7银6铜，奖牌总数澳大利亚地区TOP1",
+                "GABS Hottest 100澳洲精酿榜——首个进入前十的酸啤"
+            ],
+            beers: [
+                {
+                    name: "WE FLY*",
+                    style: "Sour - Smoothie / Pastry",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.3 / 419评",
+                    hops: "N/A",
+                    process: "厚 smoothie 酸啤，果泥之王代表作之一。",
+                    flavor: "香气：浓郁成熟水果。口感：厚重果泥质地，酸甜饱满如液体甜品。"
+                },
+                {
+                    name: "LIQUID CHOCOLATE CREME",
+                    style: "Sour - Smoothie / Pastry",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.4 / 291评",
+                    hops: "N/A",
+                    process: "'液体巧克力奶油'——甜品酸啤思路的极致表达。",
+                    flavor: "香气：巧克力、奶油。口感：酸啤的清爽骨架承载甜品般的浓郁。"
+                },
+                {
+                    name: "RASPBERRY + CREAM DOUBLE TAKE*",
+                    style: "Sour - Smoothie / Pastry",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.4 / 109评",
+                    hops: "N/A",
+                    process: "树莓+奶油增味 smoothie 酸啤。",
+                    flavor: "香气：新鲜树莓。口感：奶油般的顺滑与浆果酸甜交织。"
+                },
+                {
+                    name: "Botany Bay Lager",
+                    style: "Lager",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "开业数月获AIBA金奖，最畅销旗舰",
+                    hops: "N/A",
+                    process: "以家乡海湾命名的旗舰拉格，'人民的啤酒'。",
+                    flavor: "香气：清爽麦芽与酒花。口感：干脆易饮，社区酒馆的定番。"
+                }
+            ]
+        }
+    },
+    {
+        id: "totopia",
+        nameEn: "Totopia Brewery",
+        nameZh: "托托比亚",
+        country: "🇯🇵 日本",
+        countryCode: "japan",
+        location: "Nagakute, Aichi（爱知县长久手市，名古屋旁）",
+        founded: "2022年10月",
+        founder: "Junya Morita（森田純矢）与妻子Akiko",
+        founderDesc: "餐饮出身的森田2017年起进口美国精酿，每年赴美走访酒厂，自费出版名古屋酒厂双月刊",
+        tags: ["浑浊IPA", "ophobia系列", "在地原料", "日本新势力"],
+        highlight: "UNTAPPD日本地区酒厂TOP3",
+        shortStory: "名字=陶都(Toto)+乌托邦(Utopia)。2022年开业即成为日本精酿新圣地，酒花用量媲美美国顶级酒厂，麦糟送给农民、荒地改成啤酒花田。",
+        fullStory: {
+            nameOrigin: "Totopia = Toto + Utopia。长久手所在的濑户地区是日本昔日'陶都'，森田希望这里成为精酿爱好者的'乌托邦'——一家酒厂就能让人们慕名而来，并让本地人引以为豪。",
+            founderJourney: [
+                { year: "餐饮与进口时期", text: "森田純矢（Junya Morita）曾从事餐饮，每年赴美国走访酒厂，2017年开始进口批发美国精酿啤酒，与众多美国酒厂建立联系；自费出版介绍名古屋酒厂的双月刊，还经营过瓶装啤酒店'Used Like New Beer'" },
+                { year: "2020", text: "'唯一剩下的路就是自己开酒厂'。几经波折选定长久手的场地——房东本人经营酒类商店，非常支持" },
+                { year: "2022年10月", text: "Totopia Brewery开业，在美国酿酒师协助下投产，迅速成为当地打卡点与日本精酿爱好者圣地" },
+                { year: "2023-2026", text: "UNTAPPD实时排名升至日本精酿酒厂第3；与Far Yeast、Von Ebert等海内外酒厂合酿；把废弃农田改造成啤酒花与香草农场" }
+            ],
+            philosophy: "酿造'世界认可、本地人骄傲'的啤酒。麦芽来自加拿大与德国，酒花来自美国与新西兰，用当地长久手之水；以ophobia（恐惧症）系列探索酒花与酵母组合，大量使用本地蔬果，麦糟赠与农民作肥料，强调与在地社区的联结。",
+            awards: [
+                "UNTAPPD日本地区酒厂排名TOP3",
+                "UNTAPPD2025社区奖3金3银5铜",
+                "日本精酿界公认的'下一个世界级酒厂'候选"
+            ],
+            beers: [
+                {
+                    name: "Kenophobia",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "7.9%",
+                    ibu: "N/A",
+                    rating: "ophobia系列代表作",
+                    hops: "Citra Cryo, Citra, Nelson Sauvin, Galaxy",
+                    process: "浑浊双倍IPA，四种酒花组合。",
+                    flavor: "香气：柑橘、白葡萄、热带水果。口感：饱满多汁，酒花表现力对标美国顶级浑浊。"
+                },
+                {
+                    name: "Nyctophobia",
+                    style: "IPA - Triple New England / Hazy",
+                    abv: "10%",
+                    ibu: "N/A",
+                    rating: "ophobia系列高酒精代表作",
+                    hops: "Citra Cryo, Idaho 7, Galaxy, Citra",
+                    process: "浑浊三倍IPA，四种酒花双重形态投放。",
+                    flavor: "香气：浓烈热带水果与酒花树脂。口感：10度的饱满酒体，香气爆炸。"
+                },
+                {
+                    name: "Heliophobia",
+                    style: "IPA - New England / Hazy",
+                    abv: "6.5%",
+                    ibu: "N/A",
+                    rating: "ophobia系列常规浑浊",
+                    hops: "Citra, Nelson Sauvin, Talus",
+                    process: "浑浊IPA，经典酒花三角组合。",
+                    flavor: "香气：柑橘、白葡萄、松木。口感：柔顺易饮，热带果香主导。"
+                }
+            ]
+        }
+    },
+    {
+        id: "off-script",
+        nameEn: "Off Script Brewing",
+        nameZh: "脱稿",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Thornton, Colorado（丹佛都会区）",
+        founded: "2020年代中期（开业年份未见公开报道）",
+        founder: "Ryan Sather",
+        founderDesc: "科罗拉多生产型小酒厂，不设常规品酒室，偶在丹佛Milieu Fermentation上枪，小批量高分一票难求",
+        tags: ["浑浊IPA", "Nano酒厂", "电影台词酒名", "一票难求"],
+        highlight: "UNTAPPD全球酒厂TOP3",
+        shortStory: "UNTAPPD全球第三的酒厂，却只有57款酒——全部酒款用电影台词命名，从《春天不是读书天》到《黑客帝国》，产能小到什么程度？'很难搞到手'。",
+        fullStory: {
+            nameOrigin: "Off Script原意'偏离剧本/脱稿'。酒款名全部是电影梗：Sausage King of Chicago（《春天不是读书天》）、Skin That Smoke Wagon（《墓碑镇》）、This Is Me At My Most Masochistic（《几近成名》）、Red Pill/Blue Pill（《黑客帝国》）。",
+            founderJourney: [
+                { year: "创立", text: "Ryan Sather在科罗拉多州Thornton创立Off Script，采用生产型（contract/production）模式，不设常规品酒室" },
+                { year: "酒花路线", text: "大量使用Eggers、Freestyle等酒农的顶级新西兰酒花——Nelson Sauvin、Riwaka、Rakau、Motueka及酒花Kief，部分酒款达到'双倍（接近三倍）'投放强度" },
+                { year: "成名", text: "凭借57款小批量酒款冲上UNTAPPD全球酒厂排名TOP3、同规模Nano酒厂世界TOP2，酒厂综合均分约4.5，酒款在二级市场常年抢手，在欧洲与亚洲也有粉丝" },
+                { year: "2025", text: "UNTAPPD首届社区奖拿下4金4银2铜" }
+            ],
+            philosophy: "浓郁热带水果香气、饱满酒体与极高酒花表现力。不求产量，只求每一批都是'Hop saturated'的标杆。",
+            awards: [
+                "UNTAPPD酒厂排名世界TOP3",
+                "UNTAPPD同规模（Nano）酒厂排名世界TOP2",
+                "UNTAPPD2025社区奖4金4银2铜",
+                "酒厂综合均分约4.5（57款酒、5600+评分）；BeerAdvocate均分4.43"
+            ],
+            beers: [
+                {
+                    name: "Skin That Smoke Wagon",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "8.5%",
+                    ibu: "N/A",
+                    rating: "高分小批量（酒厂均分约4.5）",
+                    hops: "N/A",
+                    process: "浑浊帝国IPA，名字来自西部片《墓碑镇》经典台词。",
+                    flavor: "香气：饱和热带水果。口感：饱满酒体，酒花表现力拉满。"
+                },
+                {
+                    name: "Sausage King of Chicago",
+                    style: "American Pale Ale",
+                    abv: "5.2%",
+                    ibu: "N/A",
+                    rating: "高分小批量（酒厂均分约4.5）",
+                    hops: "N/A",
+                    process: "美式淡色艾尔，名字来自《春天不是读书天》。",
+                    flavor: "香气：柑橘、花香。口感：易饮与浓郁兼得。"
+                },
+                {
+                    name: "Bine Cutter",
+                    style: "IPA - Fresh Hop",
+                    abv: "7.0%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD高分新鲜酒花IPA",
+                    hops: "Fresh Estate Comet, CGX Nuvo Comet",
+                    process: "新鲜酒花IPA：使用新鲜庄园Comet酒花与CGX Nuvo Comet，酿完直接上枪。",
+                    flavor: "香气：新鲜酒花独有的青草与柑橘。口感：干净利落，新鲜度极高。"
+                }
+            ]
+        }
+    },
+    {
+        id: "dankhouse",
+        nameEn: "DankHouse Brewing Company",
+        nameZh: "当家",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Newark, Ohio（俄亥俄州纽瓦克）",
+        founded: "2017年11月",
+        founder: "Heather & Josh Lange",
+        founderDesc: "夫妻档从车库家酿起步，卖掉'第二个配方'至今仍在酿的Super Fantastic，酒厂名就是酒花风味的宣言",
+        tags: ["浑浊IPA", "水果酸", "嘻哈文化", "车库起步"],
+        highlight: "Hop Culture 2018全美12佳新酒厂",
+        shortStory: "Dank=dank酒花的Dank。兰格夫妇的车库家酿第二个配方Super Fantastic一直酿到今天，酒款名从RZA到星球大战，嘻哈浓度与酒花浓度一样高。",
+        fullStory: {
+            nameOrigin: "DankHouse——'Dank'（阴湿浓郁、树脂感爆棚的酒花风味）+ 'House'。官方自我介绍：'DankHouse is where the atmosphere is as dope as the beers'（氛围和酒一样带劲）。",
+            founderJourney: [
+                { year: "车库时期", text: "Heather与Josh Lange在车库家酿。Super Fantastic是他们在车库创作的第二个配方，也是至今仍在酿造的唯一原始配方" },
+                { year: "2017年11月", text: "在俄亥俄州纽瓦克开业，10桶系统小批量酿造" },
+                { year: "2018", text: "入选Hop Culture'全美12家最佳新酒厂'，同年成为该媒体哥伦布啤酒节观众最爱" },
+                { year: "2019", text: "获Craft Beer & Brewing Magazine'New Brewery Spotlight'专题报道，水果酸Feeling Berry Good获盛赞；12月推出星战主题Dank Skywalka蹭《天行者崛起》上映" },
+                { year: "2020-2026", text: "分销扩展至俄亥俄全州、欧洲、英国与亚利桑那；UNTAPPD 2025社区奖5金10银7铜" }
+            ],
+            philosophy: "专攻IPA、世涛与水果kettle酸——'pretty dank and extremely juicy'。酒款命名大量引用嘻哈与流行文化：Digi Digi Digi致敬Wu-Tang Clan的RZA，Crooklyn In the House与老友厂合酿，Dank & Dutchies与荷兰De Molen合酿黑色IPA。",
+            awards: [
+                "Hop Culture「Top 12 New Breweries of 2018」",
+                "2019年Craft Beer & Brewing Magazine「New Brewery Spotlight」",
+                "UNTAPPD2025社区奖5金10银7铜"
+            ],
+            beers: [
+                {
+                    name: "Super Fantastic",
+                    style: "IPA - American",
+                    abv: "7%",
+                    ibu: "60",
+                    rating: "UNTAPPD 4351评（车库仅存的原始配方）",
+                    hops: "N/A",
+                    process: "酒厂OG——车库家酿时期的第二个配方，唯一延续至今的原始酒款，干投酒花。",
+                    flavor: "香气：柑橘、树脂。口感：西海岸骨架的饱满美式IPA。"
+                },
+                {
+                    name: "DDH Couch Kush'n",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "8.3%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 1697评",
+                    hops: "N/A",
+                    process: "双倍干投浑浊双倍IPA，酒厂成名作之一。",
+                    flavor: "香气：dank草本与热带水果。口感：顺滑饱满，酒花轰炸收尾。"
+                },
+                {
+                    name: "Digi Digi Digi",
+                    style: "IPA - Triple New England / Hazy",
+                    abv: "10%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 1396评",
+                    hops: "N/A",
+                    process: "三倍浑浊IPA，酒名引用RZA歌词'Hoppy Hoppy Hoppy, Digi Digi Digi'。",
+                    flavor: "香气：爆炸性热带水果。口感：10度的厚重酒体，甜度与苦度并驾齐驱。"
+                }
+            ]
+        }
+    },
+    {
+        id: "bofkont",
+        nameEn: "Bofkont",
+        nameZh: "行运者",
+        country: "🇧🇪 比利时",
+        countryCode: "belgium",
+        location: "Kontich（安特卫普省，安特卫普与布鲁塞尔之间）",
+        founded: "2018年（爱好项目始于2012年）",
+        founder: "Sam Hellemans",
+        founderDesc: "90后兰比克狂热粉，2016年在厨房试验水果浸渍，2018年开出混酿工坊——不自酿麦汁，专买名厂年轻兰比克做混酿",
+        tags: ["兰比克", "混酿工坊", "克里克", "超高水果浓度"],
+        highlight: "全球克里克TOP50占3席",
+        shortStory: "Bofkont是佛兰德语'幸运狗'，来自创始人童年的玩具狗。厨房起步的90后混酿师，如今5款克里克里3款打进UNTAPPD全球TOP50。",
+        fullStory: {
+            nameOrigin: "Bofkont——佛兰德语'幸运狗/行运者'，源自Sam Hellemans童年的一只同名玩具狗，寓意他与兰比克结缘的幸运与偶然。",
+            founderJourney: [
+                { year: "2012", text: "Sam Hellemans（1992年生）在Kontich以爱好项目起步——接触传统兰比克与自然酒后深陷其中" },
+                { year: "2016", text: "购入首批兰比克，在自家厨房试验水果浸渍，随后改用酒窖橡木桶做稍具规模的混酿" },
+                { year: "2018", text: "正式创立Bofkont混酿工坊：从知名兰比克酒厂采购年轻兰比克，经橡木桶陈化、混酿与超高浓度水果增味后装瓶" },
+                { year: "近年", text: "被业内誉为'继Bokke之后最具潜力的新晋混酿明星'，两度登陆法罗群岛米其林级餐厅ROKS做配餐晚宴；酒款命名横跨007、蓝精灵与葡萄兰比克宇宙" }
+            ],
+            philosophy: "小批量手工混酿，超高浓度水果增味+橡木桶陈酿。既坚守兰比克底蕴与野菌气息，又拥抱现代水果啤酒的奔放果味——'传统兰比克+自然酒'的双重审美。",
+            awards: [
+                "UNTAPPD全球克里克兰比克TOP50：5款克里克中3款上榜（Kriek B-225 2019、Bourbon Kriek 2022、Kriek B-228 2019）",
+                "UNTAPPD全球Nano级酒厂排名TOP36",
+                "UNTAPPD比利时酒厂排名TOP6",
+                "UNTAPPD2025社区奖2金1铜"
+            ],
+            beers: [
+                {
+                    name: "Kriek B-225 (2019)",
+                    style: "Lambic - Kriek",
+                    abv: "6%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.44 / 463评",
+                    hops: "N/A",
+                    process: "1-2-3年兰比克混合Gorsem与Noordkrieken樱桃，在225升波尔多桶中浸渍超过一年。",
+                    flavor: "香气：多汁樱桃与混合浆果。口感：酸爽易饮，桶香与果香交织，收口干净。"
+                },
+                {
+                    name: "Bourbon Kriek (2022)",
+                    style: "Lambic - Kriek",
+                    abv: "6%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.3 / 1159评",
+                    hops: "N/A",
+                    process: "1/2/3年兰比克混合Gingelom产Gorsem樱桃，在190升美国老波本桶中陈酿。",
+                    flavor: "香气：波本桶的香草与木质气息包裹樱桃。口感：樱桃酸甜与波本辛香平衡，余韵悠长。"
+                },
+                {
+                    name: "Zibibbo Bianco",
+                    style: "Lambic - Grape (Muscat)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.6",
+                    hops: "N/A",
+                    process: "白泽比波（Muscat）葡萄兰比克——'啤酒+自然酒'路线的代表作。",
+                    flavor: "香气：麝香葡萄的芬芳与野菌气息。口感：葡萄酒般的层次与兰比克的骨架并存。"
+                }
+            ]
+        }
+    },
+    {
+        id: "vault-city",
+        nameEn: "Vault City Brewing",
+        nameZh: "地下城",
+        country: "🇬🇧 英国",
+        countryCode: "uk",
+        location: "Edinburgh, Scotland（爱丁堡Portobello海滨区）",
+        founded: "2018年",
+        founder: "Steven Smith-Hay",
+        founderDesc: "前BT/TSG的IT顾问，在自家厨房酿酸啤酿到拥有全英国罕见的'公寓次卧税务仓库'，与Jonathan Horn和伴侣Adele共同创立",
+        tags: ["现代酸啤", "重水果增味", "四天工作制", "苏格兰最大"],
+        highlight: "英国现代酸啤领军品牌",
+        shortStory: "从两居室公寓的厨房与次卧 HMRC 仓库，到年产能140万升、进英国四大超市——Vault City把'现代酸啤'做成了国民饮品，还成了英国第一家四天工作制啤酒厂。",
+        fullStory: {
+            nameOrigin: "Vault City——灵感来自爱丁堡老城的地下拱顶酒窖（underground vaults）。",
+            founderJourney: [
+                { year: "2018", text: "前IT顾问Steven Smith-Hay在爱丁堡Murrayfield的厨房开始酿酸啤，与Jonathan Horn和伴侣Adele共同创立。首批400升手工装瓶贴标，成为极少数在公寓次卧拥有HMRC注册税务仓库的人；首批Elderflower Sour与Mango Sour收获好评，年底在BrewDog酒吧以tap takeover正式亮相" },
+                { year: "第一年", text: "搬到邓迪借用71 Brewing的仓库，单批产量从400升提升到4000升" },
+                { year: "2022", text: "成为英国第一家全员四天工作制的商业啤酒厂（35小时/周不减薪）；迁回爱丁堡Portobello海边新酒厂" },
+                { year: "2023", text: "年产能140万升、营业额450万英镑，产品进入英国四大连锁超市，出口欧洲与亚洲多国" },
+                { year: "2024-2026", text: "承诺支付爱丁堡生活工资（时薪13.15英镑）；UNTAPPD 2025社区奖11金8银9铜，稳居苏格兰第一" }
+            ],
+            philosophy: "只酿混合发酵酸啤——乳酸菌与酿酒酵母共同发酵（区别于多数厂的后酸化路线），带来复杂层次与顺滑酸度。风味来自苏格兰农场成吨的新鲜水果与英伦怀旧味道（Iron Brew汽水、柠檬汽水、大黄蛋奶糊）。定位'Modern Sour Beer'：让酸啤 approachable。",
+            awards: [
+                "苏格兰最大酸啤酒厂，英国现代酸啤品类的定义者",
+                "英国首家四天工作制商业啤酒厂（2022年）",
+                "UNTAPPD苏格兰地区酒厂排名TOP2",
+                "UNTAPPD2025社区奖11金8银9铜",
+                "Hop Culture『2025年最值得关注的17家酒厂』之一（UNTAPPD近百万打卡）"
+            ],
+            beers: [
+                {
+                    name: "Triple Fruited Mango",
+                    style: "Sour - Fruited",
+                    abv: "6.2%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 3.73（2万+打卡，最畅销核心款；2022年起另有4.8%畅饮版）",
+                    hops: "N/A",
+                    process: "三倍阿方索芒果投料的混合发酵酸啤，搭配招牌混合发酵基酒。",
+                    flavor: "香气：熟透芒果的甜香。口感：果汁般饱满，酸甜平衡，像一杯含酒精的芒果冰沙。"
+                },
+                {
+                    name: "Blackcurrant Kir Royale",
+                    style: "Sour - Fruited",
+                    abv: "11.3%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.33 / 1388评",
+                    hops: "N/A",
+                    process: "黑加仑'基尔皇家'鸡尾酒灵感的高度数酸啤。",
+                    flavor: "香气：黑加仑与浆果。口感：11.3度的酒体浓郁饱满，甜酸交织如香槟鸡尾酒。"
+                },
+                {
+                    name: "Cloudy Lemonade (Citra & Nelson Sauvin)",
+                    style: "Sour - Fruited",
+                    abv: "4.2%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 3.72",
+                    hops: "Citra, Nelson Sauvin",
+                    process: "'浑浊柠檬汽水'——Citra与Nelson Sauvin酒花增香的低度酸啤。",
+                    flavor: "香气：柠檬与酒花柑橘香。口感：清爽碳酸感，像含酒精的柠檬汽水。"
+                }
+            ]
+        }
+    },
+    {
+        id: "uchu",
+        nameEn: "UCHU Brewing",
+        nameZh: "宇宙",
+        country: "🇯🇵 日本",
+        countryCode: "japan",
+        location: "Hokuto, Yamanashi（山梨县北杜市）",
+        founded: "2017年筹建，约2018年投产",
+        founder: "楠瀬正紘（Masahiro Kusunose）与铃木（Rumiko Suzuki）",
+        founderDesc: "高知县相识的设计师组合：一个高中辍学的硬核朋克贝斯手，一个9/11后逃离都市的农人，自称'宇宙农夫'",
+        tags: ["浑浊IPA", "宇宙主题", "自种酒花", "DIY建厂"],
+        highlight: "WBC2025浑浊淡色艾尔金牌",
+        shortStory: "'万物皆粒子，地球的一切都是宇宙的表达。'两个'宇宙农夫'从整地、浇混凝土、搭钢架开始DIY建起酒厂，把北杜市——曾经的日本酒花大产区——重新种上啤酒花。",
+        fullStory: {
+            nameOrigin: "UCHU（うちゅう）=宇宙。两人相信'从人类到微生物，地球上的一切活动都是宇宙的表达'，因此自称'宇宙农夫'。核心理念'Everything is made of particles'（万物皆粒子），酒款以Big Bang、Star Dust、Milky Way、Dark Matter命名。",
+            founderJourney: [
+                { year: "相遇", text: "楠瀬正紘与铃木留美子在高知县因设计工作相识。楠濑高中辍学成为硬核朋克乐队贝斯手；铃木在9/11后离开大阪都市生活移居高知务农" },
+                { year: "宇宙农夫时期", text: "约15年前搬到北杜市，无农药种植农作物，制作味噌与米曲，投身环保活动。2016年波特兰brewpub之旅被美式精酿震撼——回国后第一件事是种啤酒花，随后发现北杜市曾是日本主要酒花产区之一" },
+                { year: "2017-2018", text: "楠濑在甲府Outsider Brewing师从丹羽聪两个月；两人从用重型机械整地开始DIY建厂——浇混凝土、组装二手钢架、做保温布线，约一年后取得酿造许可。酒厂旁就是自己的啤酒花田" },
+                { year: "走红", text: "起初只做网络销售：楠濑的鸡尾酒般风味+铃木的黑底奇幻酒标迅速走红东京圈。2021年小渊泽旗舰店开业，2025年春东京虎之门直营Taproom开业" },
+                { year: "近年", text: "每年约150款酒、约100万罐；WBA 2022 IPA世界第一，WBC 2025浑浊淡色艾尔金牌（Uchu Relax）；UNTAPPD日本地区TOP2；向疫情医疗与能登地震灾区捐款" }
+            ],
+            philosophy: "'用麦与啤酒花酿成的啤酒让人与人发酵，酿出幸福。'自种酒花+世界顶尖进口原料，追求'微生物与人类共创'的独一无二酒款；浓烈热带果香与柔和酒体媲美美国顶级酒厂。",
+            awards: [
+                "2025年啤酒世界杯（WBC）Juicy/Hazy Pale Ale组金牌——Uchu Relax",
+                "2022年世界啤酒大奖（WBA）IPA风格世界第一",
+                "UNTAPPD日本地区酒厂排名TOP2",
+                "UNTAPPD2025社区奖6金8银2铜（日本奖牌数TOP2）"
+            ],
+            beers: [
+                {
+                    name: "Uchu Relax",
+                    style: "Pale Ale - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "2025 WBC金牌酒款",
+                    hops: "N/A",
+                    process: "旗舰浑浊淡色艾尔：以浓郁酒花香气与浑浊酒体拿下2025年啤酒世界杯金牌。",
+                    flavor: "香气：热带水果、柑橘。口感：柔和易饮，香气表现超越酒精度的轻盈酒体。"
+                },
+                {
+                    name: "BIG BANG IPA",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.0 / 1140评",
+                    hops: "N/A",
+                    process: "'宇宙大爆炸'浑浊IPA，酒厂评分最高的人气款之一。",
+                    flavor: "香气：爆炸性热带水果。口感：多汁饱满，经典的日式高分浑浊。"
+                },
+                {
+                    name: "Milky Way (#308)",
+                    style: "IPA - New England / Hazy (Milkshake)",
+                    abv: "7%",
+                    ibu: "N/A",
+                    rating: "国际评测高分",
+                    hops: "Nelson Sauvin（主角）",
+                    process: "加入乳糖的奶昔浑浊IPA，批次#308以新西兰Nelson Sauvin为主角。",
+                    flavor: "香气：白葡萄、热带水果、奶香。口感：乳糖的丝滑甜感包裹酒花香气。"
+                }
+            ]
+        }
+    },
+    {
+        id: "minoh",
+        nameEn: "Minoh Beer",
+        nameZh: "箕面",
+        country: "🇯🇵 日本",
+        countryCode: "japan",
+        location: "Minoh, Osaka（大阪府箕面市）",
+        founded: "1996年创立，1997年首款酒上市",
+        founder: "大下正治（Masaji Oshita）",
+        founderDesc: "酒类商店店主出身的他把酒厂交给还在上大学的女儿——长女香緒里成为日本最早的女性酿酒师之一；父亲2012年去世后由三姐妹接棒",
+        tags: ["日本第一代精酿", "姐妹经营", "冠军世涛", "不过滤不杀菌"],
+        highlight: "WBC五枚奖牌的世涛名门",
+        shortStory: "1994年日本酒税法解禁精酿，大下正治立刻开店并让大学在读的长女当酿酒师。Stout两度拿下WBC金牌，父亲去世后三姐妹把家族酒厂经营成日本精酿的国民名片。",
+        fullStory: {
+            nameOrigin: "以箕面市命名——当地以瀑布、红叶和野生猴子（Osaru）闻名，酒标就是一只喝啤酒的猴子。酒厂注册名A.J.I. Beer Inc.。注：MBCB官方文章将创始人写作'大下正司'，经官网及多方核实应为'大下正治'（Oshita Masaji）。",
+            founderJourney: [
+                { year: "1994", text: "日本酒税法修订：啤酒生产最低年产量从200万升降到6万升，'精酿解禁'。酒类店主大下正治立刻寻找场地" },
+                { year: "1996-1997", text: "创立酒厂，任命还在读大学的长女香緒里为酿酒师——她几乎没受过正规训练，边干边学（受伊势角屋指点），成为日本最早的女性酿酒师之一。首款酒Pilsner于1997年上市" },
+                { year: "2009", text: "Minoh Stout获World Beer Awards世界最佳干世涛——父亲亲自陪女儿飞伦敦领奖，此后酒厂年年获奖，W-IPA更实现亚洲最佳帝国IPA四连霸（2011-2014）" },
+                { year: "2012年12月15日", text: "大下正治在酒厂工作时因脑溢血倒下去世。次年3月，11家精酿厂联合发起'Masaji Beer Project'纪念这位业界前辈，此后每年12月仍有限量纪念酒" },
+                { year: "2013-2015", text: "年产能扩至45万升；2015年10月开设Minoh Beer Warehouse品酒室（10个酒头）。二妹Mayuko（2000年加入，丈夫经营大阪三家Beer Belly酒吧）、三妹Nozomi（2010年加入）与母亲Itsuko（用酿造副产物做柚子ponzu与果酱）全员参与" },
+                { year: "2025", text: "WBC再夺爱尔兰干世涛金牌+波西米亚皮尔森铜牌——姐妹把经典风格做成了世界级" }
+            ],
+            philosophy: "不过滤、不热杀菌，全程冷链——'新鲜度就是生命'。不追逐潮流，把世涛、皮尔森这些基础风格做到极致：平衡、易饮、完成度极高。",
+            awards: [
+                "WBC：2016/2025爱尔兰干世涛金牌、2026银牌、2012水果小麦金牌、2024/2025波西米亚皮尔森铜牌",
+                "World Beer Awards：2009世界最佳干世涛、2014世界最佳世涛、2011-2014亚洲最佳帝国IPA四连霸",
+                "2013 International Brewing Awards铜奖"
+            ],
+            beers: [
+                {
+                    name: "Minoh Stout",
+                    style: "Stout / Irish Dry Stout",
+                    abv: "5.5%",
+                    ibu: "33",
+                    rating: "UNTAPPD 3.7；MyBeer 4.2；BeerAdvocate 85/100",
+                    hops: "N/A",
+                    process: "不过滤不杀菌的干世涛：咖啡与苦巧克力的香醇、顺滑口感与干爽收口的平衡。",
+                    flavor: "香气：咖啡、烘焙麦芽、黑巧克力。口感：轻盈酒体却风味饱满，'辛口'的干爽收口让它可以一杯接一杯。"
+                },
+                {
+                    name: "Minoh W-IPA",
+                    style: "IPA - Imperial / Double",
+                    abv: "9%",
+                    ibu: "75",
+                    rating: "UNTAPPD 3.76；WBA亚洲最佳帝国IPA四连霸",
+                    hops: "N/A",
+                    process: "酒厂获奖最多的帝国IPA。",
+                    flavor: "香气：浓烈酒花与热带水果。口感：高酒精度下的力量感与日式平衡感并存。"
+                },
+                {
+                    name: "Osaru IPA（おさるIPA）",
+                    style: "IPA - American",
+                    abv: "6~6.5%",
+                    ibu: "N/A",
+                    rating: "经典常规款，2023年推出双倍版Rockin' Osaru（8.5%，五酒花，UNTAPPD 3.8）",
+                    hops: "Centennial, Cascade, Citra, Simcoe, Amarillo（双倍版）",
+                    process: "以箕面野猴命名的招牌IPA，双倍版'Rockin Osaru'用五种美国酒花。",
+                    flavor: "香气：柑橘、松脂、热带水果。口感：西海岸骨架的苦度与麦芽平衡，Rockin版更加饱满浓烈。"
+                }
+            ]
+        }
+    },
+    {
+        id: "belleflower",
+        nameEn: "Belleflower Brewing Company",
+        nameZh: "风铃草",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Portland, Maine（缅因州波特兰East Bayside，66 Cove Street）",
+        founded: "2021年3月底",
+        founder: "Zach Page & Melissa Page, Nick Bonadies & Katie Bonadies",
+        founderDesc: "延龄草最早期的两位志愿者：前主酿Zach（酿造运营总监）与前开发总监Nick，被疫情裁员后联手，各带妻子四人共创",
+        tags: ["延龄草血统", "浑浊IPA", "农场命名", "家庭经营"],
+        highlight: "Hop Culture 2023年度最佳酒厂",
+        shortStory: "2012年两个家酿爱好者报名志愿者帮延龄草搬砖相识；八年后Nick一条'你想开酒厂吗？'的短信，让四人在缅因州波特兰开出Belleflower——谷仓符logo的意思是'家庭成员之间的爱'。",
+        fullStory: {
+            nameOrigin: "Belleflower来自Nick家在新罕布什尔州的200年家族农场：他曾曾祖父种的苹果树开花时垂着铃铛般的花朵，被叫作'Belleflower树'；树干如今是谷仓横梁。Logo是宾州德裔谷仓符（barn hex），大门上方的意思是'家庭成员之间的爱'。",
+            founderJourney: [
+                { year: "2012", text: "家酿爱好者Zach Page与Nick Bonadies报名做志愿者，帮助JC Tetreault搭建波士顿延龄草（Trillium）酒厂" },
+                { year: "2013-2018", text: "Zach放弃布朗大学研究生学业加入延龄草，后主导经典的'街道系列'IPA（Congress Street、Summer Street、Melcher Street），2016年成为主酿/酿造运营总监；Nick曾在2014年买下设备租好场地准备开厂，因妻子求学忍痛放弃，回延龄草任开发总监主导Canton大厂与Fenway酒吧等扩张" },
+                { year: "2018-2020", text: "Zach举家迁往缅因州波特兰，在Lone Pine酒厂帮助扩张；2020年4月Nick被延龄草裁员" },
+                { year: "2020-2021", text: "Nick在麻州酿酒师公会论坛发现倒闭的Brewery Extrava待售，8月给Zach发短信'你想开酒厂吗？'，11月拿钥匙，2021年3月底开业。四人分工：Zach酿酒、Nick营销、Melissa（注册营养师）管餐饮、Katie（作家）管品牌" },
+                { year: "2023", text: "被Hop Culture评为年度最佳酒厂；与Messorem等名厂合酿" }
+            ],
+            philosophy: "小批量、本地原料（Blue Ox麦芽、本地蜂蜜）。每款酒名都藏着一段记忆：Scrugsy、Barn Hex、Secret Clubhouse、Faerie Offering……Zach的酿酒语言被形容为'延龄草的丝滑+孤松的大柑橘'，但自成一派。",
+            awards: [
+                "Hop Culture『2023年度最佳酒厂』",
+                "UNTAPPD2025社区奖6金6银7铜"
+            ],
+            beers: [
+                {
+                    name: "Scrugsy",
+                    style: "IPA - New England / Hazy",
+                    abv: "7.1%",
+                    ibu: "N/A",
+                    rating: "首发酒款，后有Galaxy版本",
+                    hops: "N/A",
+                    process: "酒厂第一款酒，被描述为'菠萝汁与棉花糖香气'。",
+                    flavor: "香气：菠萝、棉花糖、热带水果。口感：丝滑奶油质感。"
+                },
+                {
+                    name: "Barn Hex",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "8.5%",
+                    ibu: "N/A",
+                    rating: "招牌双倍浑浊",
+                    hops: "Mosaic, Strata, El Dorado（另有Rakau/Moutere/Nelson Sauvin版本）",
+                    process: "以谷仓符命名的招牌DIPA，多酒花轮换版本。",
+                    flavor: "香气：芒果、桃子、白葡萄、葡萄柚。口感：饱满多汁带轻微矿物感收口。"
+                },
+                {
+                    name: "Secret Clubhouse",
+                    style: "Stout - Imperial",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "Hop Culture年度最佳世涛之一（花生酱可可版本）",
+                    hops: "N/A",
+                    process: "帝国世涛系列：香草可可/咖啡肉桂等版本，曾加入花生酱与烘焙可可豆。",
+                    flavor: "香气：深烘咖啡、巧克力、花生酱。口感：浓稠甜品级帝国世涛。"
+                }
+            ]
+        }
+    },
+    {
+        id: "lua",
+        nameEn: "Lua Brewing",
+        nameZh: "路亚",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Des Moines, Iowa（得梅因Sherman Hill区）",
+        founded: "2019年11月26日",
+        founder: "Scott & Whitney Selix（夫妇）",
+        founderDesc: "以自家斗牛梗命名的brewpub：律师出身的Scott与餐饮经理Whitney在爱荷华大学相识，加上前Forager首席酿酒师Zack Dunbar",
+        tags: ["全美第一Brewpub", "全风格", "家庭友好", "THC气泡水"],
+        highlight: "USA Today 2025全美第一Brewpub",
+        shortStory: "开业18个月就进UNTAPPD全球评分TOP50；从德式皮尔森到三倍浑浊拿了12个社区奖金牌；边上挨着大邻居Big Grove，干脆合伙做了爱荷华第一个THC气泡水。",
+        fullStory: {
+            nameOrigin: "Lua是赛历克斯夫妇养的性格憨厚的斯塔福郡斗牛梗。",
+            founderJourney: [
+                { year: "大学时代", text: "Scott与Whitney在爱荷华大学相识，在Reds Alehouse一起打工爱上精酿，合计20年行业经验。Scott曾做律师、在Big Grove等厂酿酒，2019-2023年任爱荷华酿酒师公会主席" },
+                { year: "2019年11月", text: "与好友Zack Dunbar（前Forager Brewing）在得梅因历史街区Sherman Hill开出6200平方英尺的Lua。主厨James Arbaugh出身加州米其林一星Plumed Horse——Lua同时成为得梅因顶级餐厅。Whitney边哺乳边面试员工" },
+                { year: "2021-2023", text: "开业18个月进入UNTAPPD全球酒厂评分TOP50；2023年与一街之隔的Big Grove推出爱荷华首个THC/CBD社交饮品Climbing Kites（Big Grove后收购51%）" },
+                { year: "2024-2025", text: "西侧开出家庭友好餐厅Either/Or；获USA Today 10Best『2025全美第一Brewpub』，UNTAPPD综合4.22为爱荷华第一（400+款酒、13.9万打卡）；社区奖33枚奖牌含12金（皮尔森、酸、世涛、小麦、DIPA等）" }
+            ],
+            philosophy: "'传统风格做扎实，风味实验推到极致'——一个从德式皮尔森到三倍浑浊都拿金牌的全能型brewpub。空间对家庭和狗友好，酒名从动画片Bluey里找灵感。",
+            awards: [
+                "USA Today 10Best『2025年全美第一Best Brewpub』",
+                "UNTAPPD爱荷华州第一酒厂（综合4.22），全球BrewPub级TOP4",
+                "UNTAPPD2025社区奖22金15银6铜（MBCB官方）；上一届33枚奖牌含12金",
+                "开业18个月进入UNTAPPD全球酒厂评分TOP50",
+                "Hop Culture『2025年最值得关注的酒厂』"
+            ],
+            beers: [
+                {
+                    name: "All (2025)",
+                    style: "Stout - Imperial / Double",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.5 / 656评",
+                    hops: "N/A",
+                    process: "年度帝国世涛。",
+                    flavor: "香气：深烘咖啡、黑巧克力。口感：浓稠饱满，收口温暖。"
+                },
+                {
+                    name: "Cosmic Giggle",
+                    style: "Pale Ale - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.2 / 464评",
+                    hops: "N/A",
+                    process: "浑浊淡色艾尔。",
+                    flavor: "香气：热带水果、柑橘。口感：轻盈易饮，果汁感十足。"
+                },
+                {
+                    name: "Dancer",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.2 / 261评",
+                    hops: "N/A",
+                    process: "浑浊双倍IPA。",
+                    flavor: "香气：饱和热带水果。口感：饱满顺滑，双倍酒精度依然平衡。"
+                }
+            ]
+        }
+    },
+    {
+        id: "pohjala",
+        nameEn: "Põhjala Brewery",
+        nameZh: "珀亚拉",
+        country: "🇪🇪 爱沙尼亚",
+        countryCode: "estonia",
+        location: "Tallinn（塔林）Noblessner老造船厂区",
+        founded: "2011年底",
+        founder: "Enn Parel, Peeter Keek, Gren Noormets 等四位好友",
+        founderDesc: "苏联时代只有两家工业拉格厂——四个爱沙尼亚吃货'有点天真地'决定改变这一切；苏格兰酿酒师Chris Pilkington（前BrewDog）随后加入",
+        tags: ["波罗的海霸主", "帝国波特", "桶陈Cellar系列", "森林原料"],
+        highlight: "唯一进RateBeer百佳的波罗的海酒厂",
+        shortStory: "'北方之地'Põhjala：第一款酒Öö（'夜'）就奠定了'强到足以熬过爱沙尼亚冬天'的审美，从四个好友的厨房实验到波罗的海最大精酿酒厂，Cellar桶陈系列享誉欧洲。",
+        fullStory: {
+            nameOrigin: "Põhjala意为'北方之地'，来自芬兰-乌戈尔神话中遥远北方的神秘国度，也呼应爱沙尼亚民族史诗《卡列维波埃格》——北境、森林与寒冬是全部酒款的底色。",
+            founderJourney: [
+                { year: "2011年底", text: "四个热爱美食、旅行和家酿的爱沙尼亚好友创立公司。联合创始人Peeter Keek是Vans鞋经销商，出差加州时在酒店大堂第一次喝到Stone IPA——'机会在敲门'" },
+                { year: "2012-2013", text: "赴BrewDog位于Fraserburgh的创始酒厂实习，结识在那里工作的苏格兰酿酒师Chris Pilkington——他随后带着爱沙尼亚当时几乎缺失的现代酿造技术加入。首款酒Öö帝国波罗的海波特2013年初发布（代工生产）" },
+                { year: "2014", text: "塔林Nõmme区酒厂建成（5个24百升发酵罐），两年内产能翻两番" },
+                { year: "2018", text: "迁入Noblessner百年老造船厂/潜艇工厂区：投资近490万欧元，50百升系统、月产能1200百升，附设24头Taproom" },
+                { year: "近年", text: "波罗的海三国最大精酿酒厂，出口30+国家；主办TCBW塔林精酿周末；与Boneyard、De Struise、Lervig、Stillwater、To Øl等合酿；唯一进入RateBeer全球百佳的波罗的海酒厂" }
+            ],
+            philosophy: "波特、桶陈与爱沙尼亚森林原料（桦木、杜松子等）是三大支柱——寒冷塑造审美，酒要'强到足以熬过爱沙尼亚的冬天，因此也足以熬过任何地方'。",
+            awards: [
+                "唯一进入RateBeer全球百佳的波罗的海酒厂",
+                "波罗的海三国最大精酿酒厂，出口30+国家",
+                "UNTAPPD爱沙尼亚酒厂排名TOP3",
+                "UNTAPPD2025社区奖20金9银15铜",
+                "Odravein Bourbon BA获BeerAdvocate 93分；Pime Öö PX、Enn桶陈等Cellar系列UNTAPPD 4.2；『As Good As It Gets (Cellar Series)』居UNTAPPD爱沙尼亚榜首"
+            ],
+            beers: [
+                {
+                    name: "Öö",
+                    style: "Porter - Imperial Baltic",
+                    abv: "10.5%",
+                    ibu: "60",
+                    rating: "酒厂开山之作",
+                    hops: "Magnum, Northern Brewer",
+                    process: "帝国波罗的海波特：'黑如爱沙尼亚冬夜'。麦芽含Special B、巧克力麦芽、Demerara糖。",
+                    flavor: "香气：焦糖、深色水果（李子、葡萄干、蔓越莓）、远处篝火般的烟熏。口感：浓缩咖啡般的酸度与焦糖太妃平衡，杯温升高后红醋栗与黑巧克力浮现。"
+                },
+                {
+                    name: "Pime Öö PX",
+                    style: "Stout - Imperial / Double (PX Barrel-Aged)",
+                    abv: "13~14%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.2",
+                    hops: "N/A",
+                    process: "PX雪莉桶陈帝国世涛（'更黑的夜'）。",
+                    flavor: "香气：烘焙麦芽、黑巧克力、PX桶的葡萄干无花果。口感：丝绒般浓稠，可可浓缩咖啡与雪莉甜感拉锯。"
+                },
+                {
+                    name: "Enn (Cellar Series)",
+                    style: "Stout - Imperial / Double (Barrel-Aged)",
+                    abv: "11.5~13%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.2（Cellar Series代表作）",
+                    hops: "N/A",
+                    process: "桶陈帝国世涛：长时间木桶熟成带来威士忌般的暖意。",
+                    flavor: "香气：烤麦芽、黑巧克力、浓缩咖啡、椰子皮革。口感：糖浆般丰腴，桶陈的香草与橡木贯穿始终。"
+                }
+            ]
+        }
+    },
+    {
+        id: "bad-seed",
+        nameEn: "Bad Seed Brewing",
+        nameZh: "坏种子",
+        country: "🇩🇰 丹麦",
+        countryCode: "denmark",
+        location: "Storvorde / Gudumholm（北日德兰，奥尔堡以北）",
+        founded: "2013年（2018年接管Land Kær厂址）",
+        founder: "Fredrik Hector Schmidt",
+        founderDesc: "前IT顾问、家酿爱好者，2013年辞职做吉普赛酿酒师，名字致敬Nick Cave的乐队The Bad Seeds",
+        tags: ["丹麦年度最佳", "拉格专家", "吉普赛起家", "小批量"],
+        highlight: "丹麦啤酒爱好者协会2025年度最佳酒厂",
+        shortStory: "从幽灵酿酒师到丹麦年度最佳：3名员工、年产8-9万升，Fredrik用Uno Pils和Export拉格证明小酒厂也能把经典风格做到极致。",
+        fullStory: {
+            nameOrigin: "Bad Seed致敬Fredrik喜爱的乐队——Nick Cave的The Bad Seeds（'坏种子'）。",
+            founderJourney: [
+                { year: "2013", text: "前家酿爱好者与IT顾问Fredrik Hector Schmidt辞职，以吉普赛/幽灵酿酒师模式创业——租用他人酒厂设备酿酒卖给酒吧" },
+                { year: "2018", text: "10月正式接管北日德兰历史悠久的Land Kær旧厂址，结束长期依赖外部生产" },
+                { year: "2019", text: "开始举办自己的Bad Seed Beer Fest啤酒节" },
+                { year: "2022", text: "获丹麦啤酒博主大奖'丹麦最佳啤酒厂'" },
+                { year: "2025", text: "12月2日被丹麦啤酒爱好者协会（Dansk Ølentusiaster）评为'年度最佳丹麦啤酒厂'（Årets Danske Bryggeri 2025）" }
+            ],
+            philosophy: "传统酿造艺术+现代创意的结合，以拉格与经典风格见长——'尊重传统但不受传统限制'。年产仅8-9万升的小而精路线。",
+            awards: [
+                "丹麦啤酒爱好者协会『2025年度最佳啤酒厂』",
+                "丹麦啤酒博主大奖『2022年丹麦最佳啤酒厂』",
+                "UNTAPPD丹麦酒厂排名TOP16 / Micro级TOP7",
+                "UNTAPPD2025社区奖11金12银4铜（Uno Pils获金奖）"
+            ],
+            beers: [
+                {
+                    name: "Uno Pils",
+                    style: "Pilsner - Italian",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD2025社区奖金酒（3.46）",
+                    hops: "N/A",
+                    process: "意大利皮尔森——当代拉格复兴风潮中的代表作。",
+                    flavor: "香气：细腻草本与花香。口感：干脆清爽，干投酒花带来现代感。"
+                },
+                {
+                    name: "Export",
+                    style: "Lager - Dortmunder",
+                    abv: "5.2%",
+                    ibu: "24",
+                    rating: "UNTAPPD 3.6 / 282评",
+                    hops: "N/A",
+                    process: "多特蒙德出口拉格，经典德式风格的丹麦演绎。",
+                    flavor: "香气：麦芽甜香与酒花平衡。口感：金黄饱满，收口干净。"
+                }
+            ]
+        }
+    },
+    {
+        id: "samata",
+        nameEn: "Samata Brewing",
+        nameZh: "萨玛塔",
+        country: "🇹🇭 泰国",
+        countryCode: "thailand",
+        location: "Bangkok（曼谷）Saimai区",
+        founded: "2017年创立，2022年首次商业发售",
+        founder: "Supachote “Chote” Chantanasuksilpa",
+        founderDesc: "旧金山艺术学院毕业的平面设计师（作品从Tony Jaa电影到iTunes广告），想找'新画布'而转行酿酒；曾长期委托新加坡Brewlander代工",
+        tags: ["泰国水果酸啤", "泰式甜点", "冰沙供应", "设计师酒厂"],
+        highlight: "UNTAPPD泰国评分第一酒厂",
+        shortStory: "设计师Chote把芒果糯米饭、香兰粉条芝士蛋糕酿成啤酒——酸啤不用啤酒花，恰好绕开了泰国最严苛的执照限制。Mango Sticky Rice入选Craft Beer & Brewing年度十大。",
+        fullStory: {
+            nameOrigin: "Samata（สมาธิ）在泰语中意为'专注、禅定'。创始人Chote毕业于旧金山艺术学院，多年从事平面设计——从Tony Jaa动作电影到iTunes广告。2018年前后，他想为设计寻找新的载体，转而投身精酿，酒标即他的艺术作品。",
+            founderJourney: [
+                { year: "2017-2022", text: "创立Samata，2022年首次商业发售。早期酿浑浊IPA与淡色艾尔；因泰国法规使海外生产更经济，长期以'布谷鸟酿造'模式委托新加坡名厂Brewlander生产再出口泰国" },
+                { year: "2019-2023", text: "转向酸啤：不使用啤酒花可获得与西打/蜂蜜酒同类的宽松执照，得以回国大幅扩产；酸啤也给了他更大的画布融入泰国本地食材。酒标随之转向柔和奇幻风，邀请泰国艺术家创作" },
+                { year: "2024", text: "夏天把生产迁回曼谷Saimai区建立自有酒厂；截至2024年5月已推出180+款酒" },
+                { year: "2025-2026", text: "Mango Sticky Rice入选Craft Beer & Brewing 2025年度十大啤酒，登上MBC哥本哈根2026的舞台，随后亮相MBCB北京" }
+            ],
+            philosophy: "'每一口都是一段泰国历史之旅。'用真实水果与泰式甜点原料（芒果糯米饭、香兰粉条、菠萝柚子豆蔻）酿造低度水果酸啤；酒吧常用冰沙机打成冰沙供应。",
+            awards: [
+                "UNTAPPD泰国酒厂排名TOP1",
+                "UNTAPPD2025社区奖：水果酸艾尔组金、银、铜包揽",
+                "Craft Beer & Brewing『2025年度十大啤酒』——Mango Sticky Rice",
+                "2025亚洲啤酒大奖赛主席精选×2（Mango Sticky Rice / Choco Berry）",
+                "UNTAPPD泰国评分总榜TOP5占4席、包揽前2名"
+            ],
+            beers: [
+                {
+                    name: "Mango Sticky Rice",
+                    style: "Sour - Fruited",
+                    abv: "4.0%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.2 / 1064评",
+                    hops: "N/A",
+                    process: "'暹罗瑰宝'：纯Nam Dok Mai芒果+椰奶+一撮盐，致敬200年历史的泰国国民甜点（含乳糖）。",
+                    flavor: "香气：成熟芒果与椰奶。口感：分层芒果冰沙般的甜美热带果香，酸度温柔，带一丝咸感收尾。"
+                },
+                {
+                    name: "Fruity Party Sour",
+                    style: "Sour - Fruited",
+                    abv: "4.0%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD高分水果酸",
+                    hops: "N/A",
+                    process: "海量百香果、草莓、菠萝、粉红番石榴加香草。",
+                    flavor: "香气：复合热带水果。口感：酒体饱满，酸甜派对。"
+                },
+                {
+                    name: "Raspberry Cheesecake Sour",
+                    style: "Sour - Pastry",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD高分甜品酸",
+                    hops: "N/A",
+                    process: "树莓+芝士蛋糕：甜品与酸啤平衡的口碑之作。",
+                    flavor: "香气：新鲜树莓。口感：奶油感与浆果酸甜交织，不腻口。"
+                }
+            ]
+        }
+    },
+    {
+        id: "to-ol",
+        nameEn: "To Øl",
+        nameZh: "图乐",
+        country: "🇩🇰 丹麦",
+        countryCode: "denmark",
+        location: "Svinninge, Zealand（To Øl City）",
+        founded: "2010年",
+        founder: "Tore Gynther & Tobias Emil Jensen",
+        founderDesc: "高中物理老师是Mikkeller创始人——两个'劫持'学校厨房酿酒的坏学生；名字在丹麦语中意为'两杯啤酒'",
+        tags: ["吉普赛酿造先驱", "啤酒建筑师", "番茄酱工厂", "全风格"],
+        highlight: "RateBeer 2014世界第九",
+        shortStory: "2005年两个高中生在民主制学校发起提案买酿酒设备，物理老师Mikkel Borg Bjergsø亲自指导；十年后成为吉普赛酿造的旗帜，最终把一座废弃番茄酱工厂改造成2.66万㎡的'图乐之城'。",
+        fullStory: {
+            nameOrigin: "To Øl在丹麦语中意为'两杯啤酒'——Tore与Tobias两位好友。他们自称Beer Architects（啤酒建筑师），视觉设计出自同窗Kasper Ledet。",
+            founderJourney: [
+                { year: "2005", text: "哥本哈根Nørrebro的Det Fri Gymnasium高中（直接民主制）：Tore与Tobias向全校提案买酿酒设备获通过，在物理老师Mikkel Borg Bjergsø指导下'劫持'学校厨房酿酒" },
+                { year: "2010", text: "创立To Øl；首支商业酒Overall IPA——Mikkel听说学生的计划后坚持合作的合酿" },
+                { year: "2012-2014", text: "进入RateBeer全球百佳（2012），2014年获评世界第九佳酒厂；此后十年以吉普赛模式主要借用比利时De Proef等酒厂产能" },
+                { year: "2016-2017", text: "在母校旁开BRUS brewpub（Nørrebro）；2017年Tobias离开，酒厂由Tore全资持有；奥斯陆BRUS开业" },
+                { year: "2019-2020", text: "收购西兰岛Svinninge一座废弃Beauvais番茄酱工厂（占地15万㎡、建筑2.66万㎡），建成80百升糖化系统的To Øl City——集酿造、桶陈、实验室、蒸馏与苹果酒/康普茶/朗姆工坊于一体的精酿饮品产业园，结束完全依赖外部生产的时代" }
+            ],
+            philosophy: "'受够了丹麦酒厂只会吹嘘百年历史而不是味道'——只酿自己想喝的酒：不跟风、不设限、永不向口味妥协。产品出口31个以上国家。",
+            awards: [
+                "RateBeer 2014世界最佳酒厂第9名",
+                "RateBeer 2012全球百强酒厂",
+                "UNTAPPD2025社区奖7金5银4铜"
+            ],
+            beers: [
+                {
+                    name: "Whirl Domination",
+                    style: "IPA - American",
+                    abv: "6.2%",
+                    ibu: "N/A",
+                    rating: "新酒厂第一锅IPA",
+                    hops: "N/A",
+                    process: "To Øl City投产后酿造的第一款IPA——'把酒花推到极限'。",
+                    flavor: "香气：新鲜酒花的饱和芳香。口感：干脆多汁，标志着'酒花世界统治'的新纪元。"
+                },
+                {
+                    name: "45 Days Organic Pilsner",
+                    style: "Pilsner - German (Organic)",
+                    abv: "4.7%",
+                    ibu: "N/A",
+                    rating: "核心拉格款",
+                    hops: "N/A",
+                    process: "有机皮尔森：-1°C窖藏45天的传统慢酿。",
+                    flavor: "香气：细腻酒花与麦芽。口感：清脆干净，教科书级的现代德式皮尔森。"
+                },
+                {
+                    name: "Liquid Confidence",
+                    style: "Stout - Imperial (Rum Barrel-Aged)",
+                    abv: "15.1%",
+                    ibu: "N/A",
+                    rating: "高度数代表作",
+                    hops: "N/A",
+                    process: "帝国辣椒世涛：Ancho与Guajillo辣椒+朗姆桶陈10个月。",
+                    flavor: "香气：辣椒的辛香与桶陈朗姆。口感：双重'后劲'——辣椒与酒精各来一脚。"
+                }
+            ]
+        }
+    },
+    {
+        id: "human-robot",
+        nameEn: "Human Robot",
+        nameZh: "人机之间",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Philadelphia, PA（费城Kensington区）",
+        founded: "2020年1月",
+        founder: "Jake Atkinson, Chris Roller, Ken Correll",
+        founderDesc: "首席酿酒师Andrew Foss是酒吧侍者出身——因给酒吧打电话找管道工意外结识师傅入行；拉格哲学是'单一麦芽单一酒花，靠工艺参数玩出花'",
+        tags: ["捷克拉格复兴", "侧拉龙头", "单一麦芽单一酒花", "宾州第一"],
+        highlight: "UNTAPPD宾州第一酒厂",
+        shortStory: "'Human'酿传统欧洲拉格，'Robot'酿现代新潮——费城这家酒厂用捷克侧拉龙头和Mliko奶泡倒法，把4.2%的Czech 10°做成了UNTAPPD 4.04的标杆。",
+        fullStory: {
+            nameOrigin: "Human Robot——'Human'代表经典、基础型传统啤酒，'Robot'代表现代新潮风格，两条路线并行。IPA的怪趣酒名多出自共同所有人Chris Roller（前银行家，人称Robo Wonka）。",
+            founderJourney: [
+                { year: "2020年1月", text: "在费城Kensington区开业（原St. Benjamin酒厂址）" },
+                { year: "酿酒师", text: "Andrew Foss从酒吧侍者入行：给工作的酒吧打电话找管道清洁工，意外结识酿酒师Scott Morrison（Barren Hill Tavern），从此跟着师傅干了六七年" },
+                { year: "工艺哲学", text: "多数拉格是单一麦芽单一酒花，靠糖化温度、decoction煮出法、发酵工艺变化创造风格——'我们的捷克10°从来没有两次配方完全相同'" },
+                { year: "2023-2025", text: "开出Jenkintown与South Philly两家品酒室（后者主打Mliko奶泡拉格）；UNTAPPD综合均分4.0+（9万+评分）居宾州第一；2025社区奖20金13银9铜" }
+            ],
+            philosophy: "捷克式拉格复兴的旗帜：侧拉龙头侍酒、讲究泡沫结构与发酵个性；'Robot'线则是浑浊IPA、果味酸啤等现代风格。",
+            awards: [
+                "UNTAPPD美式琥珀拉格、捷克琥珀拉格风格世界排名TOP1",
+                "UNTAPPD2025社区奖20金13银9铜，宾夕法尼亚州TOP1",
+                "Hop Culture 2024年度最佳酒厂之一",
+                "Czech 10°获2023 Breweries in PA读者选择奖第3名"
+            ],
+            beers: [
+                {
+                    name: "Czech 10°",
+                    style: "Lager - Světlé (Czech Pale)",
+                    abv: "4.2%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.04",
+                    hops: "单一酒花",
+                    process: "捷克淡色拉格：单麦芽单酒花，侧拉龙头出杯。",
+                    flavor: "香气：细腻麦芽与酒花草本香。口感：泡沫绵密如奶油，收口干脆。"
+                },
+                {
+                    name: "Tmavy 13°",
+                    style: "Lager - Tmavé (Czech Dark)",
+                    abv: "5.3%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.15",
+                    hops: "N/A",
+                    process: "捷克深色拉格（13度原麦汁）。",
+                    flavor: "香气：焦糖与烘焙麦芽。口感：深色却清爽，经典波西米亚风格。"
+                },
+                {
+                    name: "Hallertau Pils",
+                    style: "Pilsner - German",
+                    abv: "5.2%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.01",
+                    hops: "Hallertau",
+                    process: "德式皮尔森，Hallertau酒花。",
+                    flavor: "香气：草本花香。口感：干净利落的苦度与麦芽平衡。"
+                }
+            ]
+        }
+    },
+    {
+        id: "funky-fluid",
+        nameEn: "Funky Fluid",
+        nameZh: "放克流体",
+        country: "🇵🇱 波兰",
+        countryCode: "poland",
+        location: "Warsaw（华沙）",
+        founded: "2018年",
+        founder: "Michał Langier, Karol Mizielski, Grzegorz Korcz",
+        founderDesc: "三人组：酿酒老手+啤酒零售商+啤酒节组织者；合同酿造模式年产120+款酒，已购入地块筹建自有酒厂",
+        tags: ["波兰第一果泥", "Gelato系列", "合同酿造", "极限实验"],
+        highlight: "波兰甜品酸艾尔霸主",
+        shortStory: "2019年Gelato系列横空出世——'受意大利冰淇淋启发'的甜品酸啤让这家华沙小厂被RateBeer评为世界第三佳新酒厂；Xtreme款水果占比超40%，浓稠如冰沙。",
+        fullStory: {
+            nameOrigin: "Funky Fluid——'放克流体'：来自酒款的性格，绝不平庸，永远有点极端和实验性，酒花与水果都给得超量。视觉识别由Thirst.pl的Bartosz Łukasiewicz操刀。",
+            founderJourney: [
+                { year: "2018", text: "Michał（Langier Beer酿造履历）、Karol（资深啤酒零售）、Grzegorz（啤酒节组织）三人在华沙创立，成为波兰精酿'第二波'代表" },
+                { year: "2019", text: "Gelato系列推出即爆红，获RateBeer『2019年世界第三佳新酒厂』" },
+                { year: "2020-2024", text: "合同酿造模式（曾合作14家酒厂、后精简为6家）；年产120+款；约30%出口；产品进入波兰Lidl超市；疫情期间线上销售助推了北欧与荷比卢市场" },
+                { year: "近年", text: "购入华沙附近地块筹建自有酒厂；与澳大利亚One Drop（同为MBCB参展酒厂）等海外名厂合酿" }
+            ],
+            philosophy: "'没有实验就没有Funky Fluid'——从甜品与料理中汲取灵感，辅料大胆到番茄、大蒜与液体烟熏（与华沙White Crow合酿的番茄Gose）。既紧跟潮流，也制造潮流。",
+            awards: [
+                "RateBeer『2019年世界第三佳新酒厂』",
+                "UNTAPPD2025社区奖20金12银10铜，波兰第一",
+                "UNTAPPD波兰甜品酸艾尔风格TOP50占38席，包揽前10名",
+                "UNTAPPD波兰Contract Brewery级TOP2"
+            ],
+            beers: [
+                {
+                    name: "Gelato: Berries & Cream",
+                    style: "Sour - Smoothie / Pastry",
+                    abv: "5.5%",
+                    ibu: "N/A",
+                    rating: "Gelato系列经典款",
+                    hops: "N/A",
+                    process: "意大利冰淇淋灵感：树莓、黑加仑、蓝莓+乳糖与奶油感。",
+                    flavor: "香气：混合浆果。口感：奶昔般浓稠，酸甜如一颗浆果冰淇淋球。"
+                },
+                {
+                    name: "Gelato Xtreme: Mango Sticky Rice",
+                    style: "Sour - Smoothie / Pastry",
+                    abv: "8.0%",
+                    ibu: "N/A",
+                    rating: "Xtreme档代表（真实水果占比超40%）",
+                    hops: "N/A",
+                    process: "以泰国芒果糯米饭为灵感的'极致版'——超40%芒果+椰子。",
+                    flavor: "香气：爆炸芒果与椰香。口感：真正的啤酒冰沙，浓稠到几乎能当甜品吃。"
+                },
+                {
+                    name: "Moth",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "8.0%",
+                    ibu: "N/A",
+                    rating: "高分浑浊DIPA",
+                    hops: "Sabro, Vista, Vic Secret",
+                    process: "双倍浑浊IPA，酒名玩《沉默的羔羊》梗。",
+                    flavor: "香气：热带水果与椰子。口感：丝滑饱满，'柔美而无情'。"
+                }
+            ]
+        }
+    },
+    {
+        id: "brewski",
+        nameEn: "Brewski",
+        nameZh: "滑雪佬",
+        country: "🇸🇪 瑞典",
+        countryCode: "sweden",
+        location: "Helsingborg（赫尔辛堡，旧屠宰场改造）",
+        founded: "2014年",
+        founder: "Marcus Hjalmarsson",
+        founderDesc: "原是酿酒师，2013年在荷兰De Molen啤酒节下决心创业；买不到好酒花就用真实水果发酵——Mangofeber一炮而红",
+        tags: ["水果发酵先驱", "蛋糕啤酒", "Brewskival", "家族酒厂"],
+        highlight: "欧洲真实水果发酵先驱",
+        shortStory: "因为买不到优质美国酒花，Marcus把芒果和百香果直接丢进发酵罐——这个'绝望之举'让Brewski成为欧洲水果啤酒的鼻祖之一，约80%的酒款都带水果。",
+        fullStory: {
+            nameOrigin: "Brewski是加拿大俚语里的'啤酒'——1996年Marcus在温哥华一家微酿酒吧第一次从酒保口中听到，印象深刻至今。",
+            founderJourney: [
+                { year: "2013", text: "Marcus（曾在Highnose Brew工作）参加荷兰De Molen的Borefts啤酒节，决心把酿酒变成全职事业；获准把自己的设备安置在Höganäs Bryggeri实验" },
+                { year: "2014", text: "创立Brewski，迁入赫尔辛堡旧屠宰场。因买不到优质美国酒花，转而用真实水果（芒果、百香果）加入IPA发酵还原热带风味——Mangofeber双倍IPA（8%）诞生，成为欧洲最早用真实水果发酵酿酒者之一" },
+                { year: "2016", text: "创办Brewskival啤酒节——瑞典最大精酿节之一，每年约50家欧美酒厂参加" },
+                { year: "近年", text: "家族企业出口35+国家；Barski酒吧开进赫尔辛堡、奥斯陆、赫尔辛基；约80%酒款使用浆果或水果" }
+            ],
+            philosophy: "明快果香、易辨识配方与持续实验——从烘焙甜点中汲取灵感（Triple Berry Pie、BFF棉花糖蓝莓）。酒款不过滤、不巴氏杀菌。",
+            awards: [
+                "UNTAPPD瑞典酒厂排名TOP19",
+                "UNTAPPD2025社区奖6金4银6铜",
+                "Brewskival：瑞典最大精酿啤酒节之一",
+                "欧洲真实水果发酵啤酒的先驱"
+            ],
+            beers: [
+                {
+                    name: "Mangofeber",
+                    style: "IPA - Imperial / Double (Fruited)",
+                    abv: "8%",
+                    ibu: "N/A",
+                    rating: "酒厂第一款酒与发家之作",
+                    hops: "N/A",
+                    process: "'芒果热'：水果双倍IPA，一切传奇的起点。",
+                    flavor: "香气：浓郁芒果。口感：双倍IPA骨架上叠加热带果香。"
+                },
+                {
+                    name: "Pango IPA",
+                    style: "IPA - Fruited",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "当前最畅销款",
+                    hops: "N/A",
+                    process: "芒果+百香果+菠萝的招牌组合。",
+                    flavor: "香气：三重热带水果。口感：果汁感与酒花香并存。"
+                },
+                {
+                    name: "Triple Berry Pie",
+                    style: "Sour - Kettle",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "最畅销酸啤之一",
+                    hops: "N/A",
+                    process: "酸啤：蓝莓+树莓+黑加仑，灵感来自浆果派。",
+                    flavor: "香气：混合浆果的酸甜。口感：清爽kettle sour，收口干净。"
+                }
+            ]
+        }
+    },
+    {
+        id: "folkingebrew",
+        nameEn: "Folkingebrew",
+        nameZh: "后院",
+        country: "🇳🇱 荷兰",
+        countryCode: "netherlands",
+        location: "Groningen（格罗宁根）Boterdiep 75",
+        founded: "2017年",
+        founder: "五位格罗宁根好友",
+        founderDesc: "在Folkingestraat街上啤酒专卖店Just in Beer的后间，纯粹为了好玩开始酿酒——八年后建起自有酒厂与The Pub",
+        tags: ["荷兰浑浊顶流", "后间起步", "高分DIPA"],
+        highlight: "荷兰双倍浑浊TOP50占39席",
+        shortStory: "五个好友在啤酒店后间酿酒玩出了荷兰最顶的浑浊IPA——Folkinge是那条街的名字，brew是美式精酿的范儿。",
+        fullStory: {
+            nameOrigin: "Folkinge来自Folkingestraat街（酒厂起点就在这条街上Just in Beer啤酒专卖店的后间），brew点出启发他们的美式精酿气质。",
+            founderJourney: [
+                { year: "2017", text: "五位格罗宁根好友在啤酒店Just in Beer的后间开始酿酒——第一锅酒从这里流出，名字也在这里诞生" },
+                { year: "2017-2024", text: "从后间走向全欧洲，以美式风格的高分浑浊IPA闻名，产品销往全球" },
+                { year: "2025", text: "在格罗宁根Boterdiep 75建成自有酒厂与The Pub：16个酒头轮换自家酒款与小批量独家，吧后就是小型酿酒设备" }
+            ],
+            philosophy: "'充满性格、胆量与冒险'——每款酒都是酿酒师自己也爱喝的样子：浓郁果香、饱满酒体。",
+            awards: [
+                "UNTAPPD荷兰Nano级酒厂排名TOP9",
+                "UNTAPPD双倍浑浊IPA风格荷兰TOP50榜单占39席",
+                "UNTAPPD三倍浑浊IPA风格荷兰TOP50榜单占21席"
+            ],
+            beers: [
+                {
+                    name: "Backyard DIPA",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.3 / 877评",
+                    hops: "N/A",
+                    process: "与酒厂同名的招牌浑浊双倍IPA。",
+                    flavor: "香气：饱和热带水果。口感：饱满多汁，酒花表现力强。"
+                },
+                {
+                    name: "Submersion",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.0 / 4473评",
+                    hops: "N/A",
+                    process: "酒厂评分人数最多的浑浊双倍IPA之一。",
+                    flavor: "香气：柑橘、热带水果。口感：经典NE DIPA的丝滑与浓郁。"
+                },
+                {
+                    name: "Planet Hopper",
+                    style: "IPA - Triple New England / Hazy",
+                    abv: "10%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.2 / 2085评",
+                    hops: "N/A",
+                    process: "浑浊三倍IPA。",
+                    flavor: "香气：爆炸性酒花香气。口感：10度的厚重酒体与果汁感并存。"
+                }
+            ]
+        }
+    },
+    {
+        id: "playground",
+        nameEn: "Playground Brewery",
+        nameZh: "游境",
+        country: "🇰🇷 韩国",
+        countryCode: "southkorea",
+        location: "Goyang（高阳市）Ilsan区，京畿道",
+        founded: "2015年2月",
+        founder: "Chun Soon-bong（CEO）",
+        founderDesc: "饮料行业老兵+酿酒师Richard Kim+创意总监Keunha Kim三人组；因韩国制度障碍推迟多年才落地",
+        tags: ["韩国代表", "本地原料", "河回假面酒标"],
+        highlight: "韩国精酿行业代表酒厂",
+        shortStory: "当别家都在用进口原料时，Playground改用韩国本土食材——季节性Ruby Saison用一山本地覆盆子酿造；酒标上重新诠释的河回假面讲述韩国故事。",
+        fullStory: {
+            nameOrigin: "以'Drink Better, Play Better'为理念——游乐场Logo唤起童年记忆与玩心的精酿精神；各酒款的河回假面（hahoetal）设计则讲述韩国传统故事。",
+            founderJourney: [
+                { year: "2015", text: "Chun Soon-bong（饮料行业多年）与酿酒师Richard Kim、创意总监Keunha Kim组队，在高阳市创立Playground（制度性障碍使落地筹备多年）" },
+                { year: "近年", text: "意识到进口原料的局限，改用国产原料：Ruby Saison使用Ilsan本地种植的覆盆子（bokbunja）" },
+                { year: "今天", text: "成为韩国精酿代表酒厂之一；Chun的愿景是为国内精酿行业创造可持续的R&D与投融资环境" }
+            ],
+            philosophy: "用韩国本地原料表达韩国风土；假面艺术+游乐场精神的品牌双重辨识度。",
+            awards: [
+                "UNTAPPD2025社区奖1金",
+                "UNTAPPD韩国酒厂排名TOP31"
+            ],
+            beers: [
+                {
+                    name: "Tropical Nest",
+                    style: "Sour - Fruited",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.0 / 151评",
+                    hops: "N/A",
+                    process: "水果酸啤。",
+                    flavor: "香气：热带水果。口感：酸甜清爽。"
+                },
+                {
+                    name: "Hop Coaster IPA",
+                    style: "IPA - American",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 3.7 / 114评",
+                    hops: "N/A",
+                    process: "美式IPA。",
+                    flavor: "香气：柑橘、松脂。口感：标准美式IPA的苦香平衡。"
+                },
+                {
+                    name: "Ruby Saison",
+                    style: "Farmhouse Ale - Saison",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "季节性代表作",
+                    hops: "N/A",
+                    process: "以Ilsan本地覆盆子（bokbunja，韩国黑树莓）增味的季节赛松。",
+                    flavor: "香气： delicate 浆果与赛松辛香。口感：干爽，本地风土表达。"
+                }
+            ]
+        }
+    },
+    {
+        id: "bakes",
+        nameEn: "Bakes Brewing Company",
+        nameZh: "贝克斯",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Wall Township, New Jersey（泽西海岸）",
+        founded: "2020年代中期开业（车库家酿始于2013年）",
+        founder: "Jeff “Bakes” Baker",
+        founderDesc: "先立志开酒厂才学酿酒：2013年因祖父去世下决心，在车库酿了400多批次、拿下数十枚家酿奖牌后才开业",
+        tags: ["浑浊专长", "棒球梗酒名", "车库磨练", "新泽西新锐"],
+        highlight: "UNTAPPD全球Micro级TOP23",
+        shortStory: "车库十年磨一剑：Jeff Baker在Wall镇的车库里酿了400多批、拿下数十枚家酿奖牌、考下Cicerone和啤酒评审，才开出这家浑浊IPA specialists——酒名全是棒球术语。",
+        fullStory: {
+            nameOrigin: "Bakes是创始人Jeff Baker的昵称。酒款命名大量借用棒球术语：Back-to-Back、Ground Rule Triple、Throwing Gas、Home Run Trot。",
+            founderJourney: [
+                { year: "2011", text: "一次外州酒厂之旅让Jeff惊觉啤酒可以如此出色，从此一头扎进精酿" },
+                { year: "2013", text: "祖父Bob去世，他决心'为家人做点有意义的事'——当时他还从未酿过一批酒，就先立志开酒厂" },
+                { year: "2013-2023", text: "车库实验：400多批次、数十枚州/地区/全国家酿比赛奖牌，考取Brewing Science & Engineering文凭、Certified Cicerone与国家认证啤酒评审" },
+                { year: "2020年代中期", text: "酒厂开业：以浑浊IPA专长立足，多房间tap house成为泽西海岸IPA朝圣地，与RAR等东海岸酒厂合酿" }
+            ],
+            philosophy: "'酿出尽可能最好的酒'——重视新鲜度、酒花表现与酿造细节；大量使用Nelson Sauvin、Citra、Motueka等顶级酒花及浓缩酒花制品。",
+            awards: [
+                "UNTAPPD2025社区奖1金2银1铜",
+                "UNTAPPD全球Micro Brewery级排名TOP23",
+                "数十枚州/地区/全国家酿比赛奖牌"
+            ],
+            beers: [
+                {
+                    name: "Wait For Nobody",
+                    style: "IPA - Triple New England / Hazy",
+                    abv: "11%",
+                    ibu: "N/A",
+                    rating: "招牌三倍浑浊",
+                    hops: "Nelson T-90, Nelson Amplifire, Galaxy, Citra, Citra Hyperboost",
+                    process: "三倍浑浊IPA，Nelson双形态+Galaxy+Citra双形态。",
+                    flavor: "香气：白葡萄与热带水果的饱和轰炸。口感：11度的厚重多汁。"
+                },
+                {
+                    name: "Winners Circle V",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "8.8%",
+                    ibu: "N/A",
+                    rating: " recurring DIPA系列",
+                    hops: "Motueka T-90, Motueka SubZero Hop Kief, Riwaka SubZero Hop Kief, Superdelic, Nelson, Citra",
+                    process: "Winner's Circle系列第五代，全新西兰酒花阵容。",
+                    flavor: "香气：青柠、热带水果。口感：丝滑饱满。"
+                },
+                {
+                    name: "Wreck Pond",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "9.1%",
+                    ibu: "N/A",
+                    rating: "双倍干投DIPA",
+                    hops: "Nelson Sauvin, Citra",
+                    process: "双倍干投，Nelson+Citra经典组合。",
+                    flavor: "香气：白葡萄、柑橘。口感：9.1度的浓郁多汁。"
+                }
+            ]
+        }
+    },
+    {
+        id: "outer-range",
+        nameEn: "Outer Range Brewing Co.",
+        nameZh: "外场",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Frisco, Colorado（海拔9100英尺）",
+        founded: "2016年12月（圣诞日开业）",
+        founder: "Lee & Emily Cleghorn（夫妇）",
+        founderDesc: "陆军特种部队退役军人夫妇：丈夫在阿富汗山地顿悟人生，双双读完哥大MBA后进山开酒厂",
+        tags: ["高海拔酒厂", "浑浊IPA标杆", "特种兵创业", "法国阿尔卑斯分店"],
+        highlight: "『全美第一小型酒厂』",
+        shortStory: "特种部队指挥官Lee在阿富汗看着群山顿悟'得换个活法'——夫妇俩拿下哥大MBA、在Other Half洗了5000个酒桶学艺，最终把酒厂开在科罗拉多9100英尺的雪山上，只酿浑浊IPA和比利时风格。",
+        fullStory: {
+            nameOrigin: "Outer Range来自吉卜林的诗《The Explorer》——'外域'，象征驱使人们奔赴山野的精神；座右铭'Leave the life below'（把山下的人生留在身后）。",
+            founderJourney: [
+                { year: "少年", text: "Lee随父亲驻防布鲁塞尔，被比利时啤酒'震碎味觉'；回美国上大学买不到好酒，开始自酿" },
+                { year: "军旅", text: "与Emily在科罗拉多斯普林斯的一场家酿聚会上相识，四个月后订婚；Lee任第5特种作战群（空降）分遣队指挥官" },
+                { year: "阿富汗", text: "海外部署期间在山地间顿悟：'我到底还在这里干什么？我得继续人生'——女儿出生、错过她所有第一次的遗憾让夫妇决定立刻追梦" },
+                { year: "2014-2016", text: "同读哥伦比亚商学院MBA；Lee再赴American Brewers Guild，并在Other Half无偿实习——'每周洗5000个酒桶'，向Jesse Ferguson偷师IPA" },
+                { year: "2016圣诞日", text: "在Frisco开业，只酿两类酒：浑浊IPA+比利时风格；头一年在1桶试验系统上酿了100多个试验批次" },
+                { year: "2023-2026", text: "获'全美第一小型酒厂'，成为Vail Resorts官方啤酒伙伴；与哥大orientation认识的法国好友在勃朗峰脚下开出Outer Range French Alps，欧洲销量超美国三分之一" }
+            ],
+            philosophy: "工艺偏执：极早干投（生物转化）、每罐浑浊IPA都用新鲜酵母；高山社区生活方式品牌——'我们的酒提醒你与亲友共享山间时光'。",
+            awards: [
+                "《Craft Beer & Brewing Magazine》『全美第一小型酒厂』",
+                "USA Today 2018『全美第二新锐酒厂』",
+                "2024澳洲国际啤酒大赛（AIBA）冠军",
+                "In the Steep获『科罗拉多第一啤酒』",
+                "Vail Resorts官方啤酒合作伙伴；UNTAPPD2025社区奖1金3银3铜"
+            ],
+            beers: [
+                {
+                    name: "In the Steep",
+                    style: "IPA - New England / Hazy",
+                    abv: "6.7%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.09；获『科罗拉多第一啤酒』",
+                    hops: "N/A",
+                    process: "酒厂第一款灌装酒、现最畅销款。",
+                    flavor: "香气：热带水果、松脂。口感：多汁丝滑，高海拔酿造的标杆浑浊。"
+                },
+                {
+                    name: "Steezy DDH",
+                    style: "IPA - New England / Hazy",
+                    abv: "7.2%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.14",
+                    hops: "N/A",
+                    process: "双倍干投浑浊IPA。",
+                    flavor: "香气：加倍的热带果香。口感：饱满顺滑。"
+                },
+                {
+                    name: "Blocks of Light",
+                    style: "IPA - New England / Hazy (DDH)",
+                    abv: "6.2%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 4.04",
+                    hops: "Galaxy, Mosaic",
+                    process: "双倍干投浑浊IPA，Galaxy+Mosaic。",
+                    flavor: "香气：芒果、浆果。口感：多汁易饮。"
+                }
+            ]
+        }
+    },
+    {
+        id: "garage-project",
+        nameEn: "Garage Project",
+        nameZh: "车库计划",
+        country: "🇳🇿 新西兰",
+        countryCode: "newzealand",
+        location: "Wellington（惠灵顿）Aro Valley",
+        founded: "2011年1月",
+        founder: "Pete Gillespie, Jos Ruffell, Ian Gillespie",
+        founderDesc: "卖掉房子、清理老鼠粪成山的废弃加油站，用50升家用设备挑战'24周24款酒'",
+        tags: ["车库精神", "24/24传奇", "新西兰第一", "全风格实验"],
+        highlight: "新西兰史上首枚WBC金牌",
+        shortStory: "'车库计划'真是从车库开始的：2011年三个好友在惠灵顿一个满是涂鸦和老鼠粪的废弃加油站，用50升设备一年推出24款完全不同的酒——13年后成为新西兰最多元的超级酒厂。",
+        fullStory: {
+            nameOrigin: "'Garage'=车库精神：就地取材、动手折腾、跳出框架（bière de garage）；'Project'=酒厂永远是一个进行中的实验项目。Pete和Jos是发小（两家相距五栋房子），Ian是Pete的弟弟。",
+            founderJourney: [
+                { year: "2011年前", text: "Pete赴英国与澳洲酿酒，在澳洲开厂梦碎于 bureaucracy；2011年初卖房、辞职、携家人回惠灵顿" },
+                { year: "2011", text: "三人在Aro Valley找到一座被铁丝网围住、满是涂鸦和老鼠粪的废弃加油站——以打扫换第一年低租金；用50升Sabco BrewMagic设备发起'24/24'：24周酿24款完全不同的酒，每周二拿到Hashigo Zake酒吧让公众试喝（反馈写在杯垫上）" },
+                { year: "2011至今", text: "24/24幸存者Aro Noir、Pernicious Weed、Hāpi Daze等成为经典；13年间推出640+款酒：辣椒可可拉格、海藻啤酒、野菌桶陈、无醇与葡萄酒线" },
+                { year: "2015-2026", text: "2015年登顶德勤新西兰Fast 50增长榜；多次获新西兰啤酒大奖Champion Large Brewery；与Freestyle Hops共建酒花研究项目；2025再获全国冠军酒厂，2026年为新西兰拿下史上首枚WBC金牌" }
+            ],
+            philosophy: "'小批量=试错成本极低'——不追求固定产品线，永远把酒厂当作进行中的项目：车库精神即创造力不设限。",
+            awards: [
+                "2025新西兰啤酒大奖Champion New Zealand Large Brewery（2021/2022亦获冠军）",
+                "2026年WBC金牌——新西兰史上首枚",
+                "UNTAPPD2025社区奖17金24银16铜，新西兰第一",
+                "2015年德勤新西兰Fast 50增长榜榜首"
+            ],
+            beers: [
+                {
+                    name: "Pernicious Weed",
+                    style: "IPA - Imperial / Double",
+                    abv: "8%",
+                    ibu: "N/A",
+                    rating: "旗舰双倍IPA，'让惠灵顿精酿登上地图的酒'",
+                    hops: "N/A",
+                    process: "24/24幸存者，大胆树脂感的双倍IPA。",
+                    flavor: "香气：树脂、热带水果。口感：强烈而平衡，新西兰酒花表现力。"
+                },
+                {
+                    name: "Hāpi Daze",
+                    style: "Pale Ale - New Zealand",
+                    abv: "4.6%",
+                    ibu: "N/A",
+                    rating: "核心常规款（Hāpi为毛利语'酒花'）",
+                    hops: "Motueka, Wai-iti, Riwaka, Nelson Sauvin",
+                    process: "新西兰大麦+四款本土酒花的太平洋淡色艾尔。",
+                    flavor: "香气：柑橘、热带水果。口感： assertive 酒花香却异常易饮。"
+                },
+                {
+                    name: "Aro Noir",
+                    style: "Stout / Dark Ale",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "24/24系列幸存者",
+                    hops: "N/A",
+                    process: "以Aro Valley命名的黑啤酒。",
+                    flavor: "香气：烘焙麦芽、咖啡。口感：干爽深色艾尔。"
+                }
+            ]
+        }
+    },
+    {
+        id: "3-fonteinen",
+        nameEn: "Brouwerij 3 Fonteinen",
+        nameZh: "三泉",
+        country: "🇧🇪 比利时",
+        countryCode: "belgium",
+        location: "Beersel（贝尔塞尔，Pajottenland）",
+        founded: "1882年",
+        founder: "Jacobus Vanderlinden（创始）；Debelder家族（1953年接手）",
+        founderDesc: "Armand Debelder——90年代贵兹最暗淡时的孤独守护者：从采购麦汁混酿到1998年亲自开酿，2009年爆瓶灾难后涅槃重生",
+        tags: ["百年兰比克", "活文化遗产", "贵兹宗师", "自然发酵"],
+        highlight: "比利时活文化遗产企业",
+        shortStory: "1882年的一间酒馆，三只流出兰比克、法柔与克里克的瓷质手压泵——'三泉'。Armand Debelder在贵兹濒临消亡的年代固执坚守，让这家酒厂成为活着的比利时啤酒遗产。",
+        fullStory: {
+            nameOrigin: "3 Fonteinen意为'三个喷泉'——一说来自早年前台上流出兰比克、法柔与克里克三种酒的三个瓷质手压泵，一说来自村中村民取水的三口水井。",
+            founderJourney: [
+                { year: "1882", text: "Jacobus Vanderlinden与妻子Joanna在Beersel开酒馆并开始混酿贵兹" },
+                { year: "1953", text: "Gaston Debelder与妻子接手（原是农民，迅速掌握混酿技术）；1961年搬到教堂广场，Gaston亲手在地下挖出陈酿酒窖；60-70年代，作家艺术家'Mijol俱乐部'以这里为据点" },
+                { year: "1990年代", text: "贵兹跌至谷底，比利时只剩三家混酿坊；Armand 1993年获奖后重燃信念，发起HORAL推广贵兹，1998年开始自酿兰比克" },
+                { year: "2009", text: "温控事故导致大量瓶装贵兹爆瓶，几乎拖垮Armand；在助理Michaël Blancquaert帮助下，2012年恢复酿造，涅槃重生" },
+                { year: "今天", text: "原料来自Pajot有机农场，2019年赠送周边家庭120棵樱桃树，Vintage系列酒标用画家Felix De Boeck作品，与说唱歌手Zwangere Guy合酿葡萄兰比克" }
+            ],
+            philosophy: "100%自然发酵：coolship开放冷却承接Pajottenland空气中的野生微生物，橡木桶陈化至少三年——风土、手工与本地社区是全部信条。",
+            awards: [
+                "比利时'活文化遗产企业'认证",
+                "UNTAPPD比利时酒厂排名TOP15",
+                "UNTAPPD贵兹风格全球TOP50榜单占25席",
+                "国际啤酒挑战赛金奖"
+            ],
+            beers: [
+                {
+                    name: "Oude Geuze Cuvée Armand & Gaston",
+                    style: "Gueuze",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "旗舰贵兹",
+                    hops: "陈年啤酒花（防腐用）",
+                    process: "混酿1-2-3年兰比克，瓶中二次发酵。",
+                    flavor: "香气：野菌、柠檬、干草。口感：复杂酸度与气泡感，余韵悠长。"
+                },
+                {
+                    name: "Oude Kriek",
+                    style: "Lambic - Kriek",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "经典老克里克",
+                    hops: "陈年啤酒花",
+                    process: "整颗酸樱桃在年轻兰比克中浸渍至少数月。",
+                    flavor: "香气：酸樱桃与杏仁（果核）。口感：果香与野菌骨架平衡。"
+                },
+                {
+                    name: "Vintage系列",
+                    style: "Gueuze (Vintage)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "年份贵兹",
+                    hops: "陈年啤酒花",
+                    process: "单一年份兰比克混酿，Felix De Boeck画作战标。",
+                    flavor: "香气：年份带来的深邃野菌气息。口感：随陈放持续演变。"
+                }
+            ]
+        }
+    },
+    {
+        id: "vermeersch",
+        nameEn: "Vermeersch Bier",
+        nameZh: "弗摩什",
+        country: "🇧🇪 比利时",
+        countryCode: "belgium",
+        location: "Maldegem（马尔德海姆，东佛兰德）",
+        founded: "约2008年私人酿造起步",
+        founder: "Mathieu Vermeersch",
+        founderDesc: "独立兰比克混酿工坊——全部酒款以家族成员命名，酒标即家谱",
+        tags: ["兰比克混酿", "家族酒名", "本地水果", "小批量"],
+        highlight: "UNTAPPD比利时酒厂TOP11",
+        shortStory: "在Maldegem的独立混酿工坊：从各家酒厂采购兰比克实验性混酿，用本地水果增味——Marie、Lisa、Jan、Lieve……每瓶酒都是家族成员的名字。",
+        fullStory: {
+            nameOrigin: "酒款全部以家族成员命名：Marie、Lisa、Jan、Lieve、Alice、Alfons、Charlotte……酒标即家谱。（勘误：MBCB文章所载'Ruddervoorde/Luc Vermeersch'实为De Leite酒厂信息，本工坊创始人Mathieu Vermeersch，位于Maldegem。）",
+            founderJourney: [
+                { year: "2008前后", text: "Mathieu Vermeersch开始私人酿造/混酿实验" },
+                { year: "近年", text: "发展为专业独立混酿工坊：采购不同酒厂的兰比克进行实验性混酿，大量使用本地水果；小规模手工运作，重视社区联系与可持续发展" }
+            ],
+            philosophy: "实验性混酿+本地水果；把家族记忆装进瓶子里——个性、艺术表达与地方价值。",
+            awards: [
+                "UNTAPPD比利时酒厂排名TOP11",
+                "比利时兰比克新星（MBCB官方）"
+            ],
+            beers: [
+                {
+                    name: "Marie",
+                    style: "Lambic - Fruit",
+                    abv: "6%",
+                    ibu: "N/A",
+                    rating: "BeerAdvocate收录",
+                    hops: "陈年啤酒花",
+                    process: "以家族成员命名的水果兰比克。",
+                    flavor: "香气：水果与野菌。口感：传统混酿风格。"
+                },
+                {
+                    name: "Lisa系列",
+                    style: "Lambic / Blends",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "家族命名系列",
+                    hops: "陈年啤酒花",
+                    process: "Lisa、Lisa Fortuna、Lisa Présidente、Lisa Reine Claude等多款。",
+                    flavor: "香气：随版本而变的水果与野菌层次。"
+                },
+                {
+                    name: "Cuvée A3 / Cuvée Pappie",
+                    style: "Gueuze-style blends",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "贵兹风格混酿",
+                    hops: "陈年啤酒花",
+                    process: "Cuvée A3 I/III、Cuvée Pappie II等贵兹风格作品。",
+                    flavor: "香气：柠檬、干草、野菌。口感：复杂气泡酸度。"
+                }
+            ]
+        }
+    },
+    {
+        id: "seoul-brewery",
+        nameEn: "Seoul Brewery (서울브루어리)",
+        nameZh: "首尔酿造",
+        country: "🇰🇷 韩国",
+        countryCode: "southkorea",
+        location: "Seoul（首尔），城水洞与弘济洞",
+        founded: "2010年代后期",
+        founder: "主创团队（待补充）",
+        founderDesc: "酒款命名满是文学与建筑梗：SALINGER黑麦IPA、MODULOR农舍艾尔（柯布西耶'模度'）",
+        tags: ["韩国奖牌第一", "文学梗酒名", "时令食材"],
+        highlight: "UNTAPPD韩国奖牌总数第一",
+        shortStory: "首尔的酿酒诗：塞林格黑麦IPA、柯布西耶'模度'农舍艾尔、木槿黑樱桃古斯——2019、2020连续两年UNTAPPD评分韩国第一。",
+        fullStory: {
+            nameOrigin: "酒款命名极具文学/建筑气质：SALINGER（塞林格）、MODULOR（柯布西耶的'模度'理论）、APT、MAMA LOVES MANGO SOUR。",
+            founderJourney: [
+                { year: "2010年代后期", text: "在首尔城水洞与弘济洞设立酿造/饮酒空间，强调不受传统风格限制" },
+                { year: "2019-2020", text: "连续两年UNTAPPD评分韩国第一" },
+                { year: "2025", text: "社区奖3金4银1铜，韩国奖牌总数第一" }
+            ],
+            philosophy: "不受传统风格限制，常用时令食材与在地灵感。",
+            awards: [
+                "2019、2020年UNTAPPD评分韩国第一",
+                "UNTAPPD2025社区奖3金4银1铜，韩国奖牌总数第一",
+                "UNTAPPD韩国酒厂排名TOP13"
+            ],
+            beers: [
+                {
+                    name: "SALINGER RYE IPA",
+                    style: "IPA - Rye",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD热门款",
+                    hops: "N/A",
+                    process: "以塞林格命名的黑麦IPA。",
+                    flavor: "香气：黑麦的辛香与柑橘。口感：清爽带微苦。"
+                },
+                {
+                    name: "MODULOR FARMHOUSE ALE",
+                    style: "Farmhouse Ale",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD热门款",
+                    hops: "Galaxy 等",
+                    process: "以柯布西耶'模度'命名的农舍艾尔，带澳洲酒花 twist。",
+                    flavor: "香气：农舍酵母与热带水果。口感：干爽微润。"
+                },
+                {
+                    name: "NIGHT BLOOM GOSE",
+                    style: "Gose",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "季节代表款",
+                    hops: "N/A",
+                    process: "木槿+黑樱桃+盐的古斯。",
+                    flavor: "香气：木槿花香与樱桃。口感：微咸酸爽，夏日绝配。"
+                }
+            ]
+        }
+    },
+    {
+        id: "bas-canada",
+        nameEn: "Brasserie du Bas-Canada",
+        nameZh: "顺流而下",
+        country: "🇨🇦 加拿大",
+        countryCode: "canada",
+        location: "Gatineau, Quebec（加蒂诺，渥太华对岸）",
+        founded: "2017年11月17日",
+        founder: "Gabriel Girard-Bernier & Marc-André Cordeiro-Lima",
+        founderDesc: "两位家酿好友因不满本地区（曾是魁北克人均微酒厂最少地区）没有精酿场所而创业，开业前众筹1.8万加元",
+        tags: ["HYPA系列", "奶昔IPA", "帝国世涛", "魁北克之光"],
+        highlight: "UNTAPPD加拿大Micro级第一",
+        shortStory: "开业两个月就靠Los Tabarnacos芒果奶昔IPA引爆市场——'零售商一天就卖光我们的酒'。如今UNTAPPD综合4.29居加拿大第二，70%产能投入IPA。",
+        fullStory: {
+            nameOrigin: "Bas-Canada（'下加拿大'）是魁北克地区的历史名称，致敬当地酿造传统。",
+            founderJourney: [
+                { year: "2015-2017", text: "家酿好友Gabriel与Marc-André抱怨所在地区缺乏精酿场所，用两年筹备+1.8万加元众筹，2017年11月17日在加蒂诺开业" },
+                { year: "2018", text: "开业两个月推出Los Tabarnacos（芒果奶昔IPA）与HYPA系列第2款——需求爆炸，'缺货缺到外带都停'；HYPA（hype+IPA）成为酒厂图腾" },
+                { year: "2024-2026", text: "UNTAPPD综合4.29（380款酒、40万+打卡）居加拿大第二；2024社区奖21枚奖牌含11金；获Hop Culture『2026年最值得关注的19家酒厂』" }
+            ],
+            philosophy: "大胆香气、技术精度与持续实验：约70%产能给IPA，另一半是 decadent 的帝国世涛与大麦烈酒。",
+            awards: [
+                "UNTAPPD加拿大Micro Brewery级酒厂TOP1",
+                "UNTAPPD全球Micro级TOP19",
+                "UNTAPPD2025社区奖10金6银4铜",
+                "2024社区奖21枚奖牌含11金（横扫帝国奶昔世涛与淡色艾尔两类）",
+                "Hop Culture『2026年最值得关注的19家酒厂』"
+            ],
+            beers: [
+                {
+                    name: "HYPA系列",
+                    style: "Hazy IPA (DDH)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "酒厂图腾系列",
+                    hops: "N/A",
+                    process: "hype+IPA合写命名，浑浊、果香、双倍干投。",
+                    flavor: "香气：热带水果轰炸。口感：饱满多汁。"
+                },
+                {
+                    name: "Los Tabarnacos",
+                    style: "Milkshake IPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "2018年成名作",
+                    hops: "N/A",
+                    process: "芒果奶昔IPA——两款引爆市场的出道作之一。",
+                    flavor: "香气：芒果与乳糖。口感：奶昔般顺滑。"
+                },
+                {
+                    name: "Bank Hotel",
+                    style: "Stout - Imperial",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "帝国世涛代表作",
+                    hops: "N/A",
+                    process: "酒厂深色主线代表作。",
+                    flavor: "香气：烘焙麦芽、巧克力。口感：浓稠丰腴。"
+                }
+            ]
+        }
+    },
+    {
+        id: "willibald",
+        nameEn: "Willibald Farm Distillery & Brewery",
+        nameZh: "威利巴尔德",
+        country: "🇨🇦 加拿大",
+        countryCode: "canada",
+        location: "Ayr, Ontario（安大略省艾尔镇，100英亩家族农场）",
+        founded: "2017年（2013年动念，筹备4年）",
+        founder: "Cameron Formica & Jordan, Nolan Vanderheyden（兄弟）",
+        founderDesc: "三人在农场喝威士忌时自问'自己蒸馏是不是很酷'——用祖父的中间名Willibald命名；商科+工程+环境科学的管理组合",
+        tags: ["农场酒厂", "桶陈金酒", "Distillery先行", "风味公司"],
+        highlight: "桶陈金酒革命先行者",
+        shortStory: "100英亩农场上的'风味公司'：2017年开业时卖的不是啤酒而是'棕色金酒'——在新橡木桶陈4-10个月的Barrel Gin轰动了LCBO；2019年才加上啤酒线。",
+        fullStory: {
+            nameOrigin: "Willibald是Vanderheyden兄弟祖父的中间名——'他从来没多喜欢这个名字，但慢慢接受了，现在还穿着品牌T恤'。",
+            founderJourney: [
+                { year: "2013", text: "三人在家族农场喝威士忌时动念：'自己蒸馏威士忌是不是很酷？'——当时安大略只有两家蒸馏厂" },
+                { year: "2013-2017", text: "四年筹备：许可与分区变更（蒸馏被视为工业流程）、赴美学艺、近100个配方迭代" },
+                { year: "2017", text: "开业——卖的不是威士忌而是金酒：Barrel Gin在新橡木桶陈4-10个月，'金酒怎么会是棕色的？'横跨金酒与威士忌边界；Pink Gin加自家蜂蜜" },
+                { year: "2018-2019", text: "加开farm-to-table餐厅与啤酒厂：Hell Lager成为旗舰，外加Full Tilt DIPA、Vesterboro大麦烈酒与创意硬苏打" },
+                { year: "今天", text: "Cam总结：'我们把自己看作一家风味公司。'Feast On本地食材认证，谷物自种、蜂蜜自产" }
+            ],
+            philosophy: "'第一代农场型蒸馏厂与精酿酒厂'——从农场到餐桌与酒杯的完整体验：自己种谷物、养蜂取蜜、邻里农场供餐。",
+            awards: [
+                "UNTAPPD2025社区奖3铜",
+                "UNTAPPD加拿大Micro Brewery级TOP24",
+                "LCBO首款桶陈金酒"
+            ],
+            beers: [
+                {
+                    name: "Hell Lager / Hell Helles",
+                    style: "Lager - Helles",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "旗舰拉格",
+                    hops: "N/A",
+                    process: "农场啤酒线旗舰。",
+                    flavor: "香气：干净麦芽。口感：清爽易饮的德式Helles。"
+                },
+                {
+                    name: "Ill Gotten Gains",
+                    style: "IPA - Imperial / Double",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "高分双倍IPA",
+                    hops: "N/A",
+                    process: "双倍IPA。",
+                    flavor: "香气：热带水果。口感：饱满多汁。"
+                },
+                {
+                    name: "Vesterboro Barleywine",
+                    style: "Barleywine",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "与Prolog Coffee合酿",
+                    hops: "N/A",
+                    process: "与咖啡烘焙商Prolog合酿的大麦烈酒。",
+                    flavor: "香气：焦糖与咖啡。口感：浓郁温暖。"
+                }
+            ]
+        }
+    },
+    {
+        id: "arpus",
+        nameEn: "Ārpus Brewing Co.",
+        nameZh: "盒子思维",
+        country: "🇱🇻 拉脱维亚",
+        countryCode: "latvia",
+        location: "Stapriņi（里加近郊）",
+        founded: "2017年（2019年自有酒厂投产）",
+        founder: "Girts Tihomirovs 等拉脱维亚精酿极客",
+        founderDesc: "'Ārpus'在拉脱维亚语中意为'外面/之外'——为敢于走出舒适区的人酿酒",
+        tags: ["波罗的海第一", "三倍干投", "厚果泥", "国际合酿"],
+        highlight: "波罗的海UNTAPPD第一酒厂",
+        shortStory: "拉脱维亚语'Ārpus'意为'外面'——跳出框架、超越大众拉格。从里加郊外的20百升小厂出发，以三倍干投IPA和厚果泥酸啤拿下波罗的海UNTAPDD第一。",
+        fullStory: {
+            nameOrigin: "Ārpus是拉脱维亚语'外面/之外'——寓意突破局限：'为敢于走出舒适区的人酿造风味与香气 overwhelming 的酒'。",
+            founderJourney: [
+                { year: "2017", text: "由拉脱维亚精酿极客与家酿爱好者创立" },
+                { year: "2019", text: "在里加附近的Eimuri村建成自有酒厂（20hl系统）" },
+                { year: "近年", text: "被UNTAPPD用户投为波罗的海国家第一酒厂，总打卡量95万+；与澳洲Badlands、爱沙尼亚Põhjala、瑞典Duckpond等名厂合酿；规划桶陈帝国世涛与野菌发酵" }
+            ],
+            philosophy: "浓郁风味与饱满口感——多汁酒花艾尔、水果酸啤与 bold 帝国世涛。",
+            awards: [
+                "UNTAPPD波罗的海国家第一酒厂",
+                "UNTAPPD拉脱维亚第一；2025社区奖13金12银8铜",
+                "包揽UNTAPPD拉脱维亚TOP50榜单"
+            ],
+            beers: [
+                {
+                    name: "TDH Australia",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "8%",
+                    ibu: "N/A",
+                    rating: "招牌三倍干投",
+                    hops: "Galaxy, Enigma, Vic Secret（100%澳洲酒花）",
+                    process: "三倍干投双倍IPA，全部使用当年新产澳洲酒花。",
+                    flavor: "香气：桃子、热带水果、柑橘。口感：饱满饱和。"
+                },
+                {
+                    name: "Triple Berry Gose",
+                    style: "Gose",
+                    abv: "6.8%",
+                    ibu: "N/A",
+                    rating: "厚果泥代表",
+                    hops: "N/A",
+                    process: "粉红喜马拉雅盐+黑加仑+树莓+黑莓。",
+                    flavor: "香气：三重浆果。口感：浓稠酸甜带盐感。"
+                },
+                {
+                    name: "Ārpus × Badlands QDH QIPA",
+                    style: "IPA - Quadruple",
+                    abv: "11%",
+                    ibu: "N/A",
+                    rating: "国际合酿代表作",
+                    hops: "Cryo Mosaic, Cryo Citra, Riwaka, Nelson Sauvin",
+                    process: "与澳洲Badlands合酿的四倍干投四倍IPA。",
+                    flavor: "香气：极端酒花饱和。口感：11度的酒体却依然果汁感。"
+                }
+            ]
+        }
+    },
+    {
+        id: "mikkeller",
+        nameEn: "Mikkeller",
+        nameZh: "美奇乐",
+        country: "🇩🇰 丹麦",
+        countryCode: "denmark",
+        location: "Copenhagen（哥本哈根）",
+        founded: "2006年",
+        founder: "Mikkel Borg Bjergsø & Kristian Klarup Keller",
+        founderDesc: "高中数学/物理老师在自家厨房酿酒起家——'吉普赛酿造教父'；名字是Mikkel+Keller的合写",
+        tags: ["吉普赛酿造教父", "MBC主办方", "1000+款酒", "Henry和Sally"],
+        highlight: "MBCB主办方·丹麦第一",
+        shortStory: "2006年，哥本哈根的一个物理老师在厨房里加法压咖啡酿出了Beer Geek Breakfast，RateBeer论坛票选第一世涛——二十年后，他的Mikkeller把啤酒节开到了北京，就是MBCB。",
+        fullStory: {
+            nameOrigin: "Mikkeller=Mikkel+Keller。Keith Shore创作的Henry与Sally形象是品牌视觉标识。孪生兄弟Jeppe开的啤酒店Ølbutikken曾是Mikkeller的第一销售渠道，后因嫌隙创立Evil Twin（'宿敌双子'）。",
+            founderJourney: [
+                { year: "2006", text: "物理老师Mikkel与记者Keller把厨房变成酒厂；Beer Geek Breakfast（燕麦世涛+法压咖啡）被RateBeer论坛票选第一世涛，一战成名" },
+                { year: "2007-2010", text: "Keller离开；Mikkeller以吉普赛模式（租用全球酒厂设备）持续推出实验酒，累计1000+款；2010年开出第一家Mikkeller Bar" },
+                { year: "2010s", text: "全球帝国：32家酒吧餐厅、Mikkeller Running Club（100+分会）、无醇线、拉面店；为Noma等顶尖餐厅做店酒" },
+                { year: "2015-2024", text: "收购美国AleSmith老厂（后关闭）；2024年嘉士伯收购20%股份（自私募基金Orkila与Mikkel手中），Mikkel保留控股权并继续任CEO" },
+                { year: "今天", text: "MBC（Mikkeller Beer Celebration）开遍全球——哥本哈根、北京（MBCB）等站；中国大陆首店落地北京西四（全球最大旗舰店）" }
+            ],
+            philosophy: "'啤酒无边界'——水果、香料、咖啡、巧克力皆可入酒；通过啤酒节、跑团、全球酒吧网络与跨界合作，把啤酒与设计、运动、艺术和餐饮融合。",
+            awards: [
+                "UNTAPPD2025社区奖21金23银25铜，丹麦第一",
+                "多次入选RateBeer世界TOP10酒厂",
+                "产品出口50个国家",
+                "MBC：全球顶级啤酒节IP"
+            ],
+            beers: [
+                {
+                    name: "Beer Geek Breakfast",
+                    style: "Stout - Oatmeal (Coffee)",
+                    abv: "7.5%",
+                    ibu: "N/A",
+                    rating: "成名作，RateBeer论坛票选第一世涛",
+                    hops: "N/A",
+                    process: "燕麦世涛加入法压壶咖啡。",
+                    flavor: "香气：咖啡、烘焙麦芽、燕麦的丝滑。口感：早餐世涛的开山标杆。"
+                },
+                {
+                    name: "Beer Geek系列",
+                    style: "Stout - Imperial (Barrel-Aged variations)",
+                    abv: "10%+",
+                    ibu: "N/A",
+                    rating: "帝国世涛家族",
+                    hops: "N/A",
+                    process: "波本桶等桶陈版本轮换。",
+                    flavor: "香气：深色水果、波本、巧克力。口感：浓稠如液体甜点。"
+                },
+                {
+                    name: "无醇啤酒线",
+                    style: "Non-Alcoholic (Hazy IPA / Sour)",
+                    abv: "0.3%以下",
+                    ibu: "N/A",
+                    rating: "欧洲最受好评的无醇精酿之一",
+                    hops: "N/A",
+                    process: "用Mikkeller的实验精神做无醇。",
+                    flavor: "香气：不因无醇而妥协的香气。口感：接近全酒的满足感。"
+                }
+            ]
+        }
+    },
+    {
+        id: "budvar",
+        nameEn: "Budějovický Budvar",
+        nameZh: "百德福",
+        country: "🇨🇿 捷克",
+        countryCode: "czechia",
+        location: "České Budějovice（捷克布杰约维采，德语Budweis）",
+        founded: "1895年10月7日（首批酿造）",
+        founder: "August Zátka 等捷克酿酒师",
+        founderDesc: "捷克唯一国有啤酒厂：1895年捷克酿酒师为对抗德资酒厂而联合创立；与美国Budweiser的百年商标大战至今未息",
+        tags: ["捷克国宝", "国有酒厂", "90天窖藏", "原始Budweiser"],
+        highlight: "捷克共和国所有",
+        shortStory: "这才是'正版'Budweiser：1895年由捷克酿酒师创立、国家所有、90天窖藏。在美国它只能叫Czechvar，在欧盟美式Budweiser只能叫'Bud'——一场打了一百多年的名字保卫战。",
+        fullStory: {
+            nameOrigin: "Budweiser源自城市德语名Budweis； České Budějovice的酿酒史始于1265年国王普热米斯尔·奥托卡二世授予酿酒权。1930年注册Budvar商标。",
+            founderJourney: [
+                { year: "1265", text: "České Budějovice（Budweis）获波西米亚国王授予酿酒权——城市酿酒传统开端" },
+                { year: "1875-1876", text: "Adolphus Busch从进口商Carl Conrad处购得'Budweiser'名称权在美国酿酒——其法庭证词承认借的是 Budweis 啤酒的声誉" },
+                { year: "1895", text: "面对德国Měšťanský Pivovar主导，August Zátka等捷克酿酒师成立'捷克股份制酒厂'，10月7日酿出第一批酒" },
+                { year: "1939", text: "Budvar让出美国市场（因而在美国以Czechvar之名销售）；1994年拒绝全球分权的提议；2010年欧盟法院判决Anheuser-Busch败诉——美式Budweiser在欧盟只能叫'Bud'" },
+                { year: "1948-今天", text: "国有化后天鹅绒革命时唯独Budvar因民族文化认同未被私有化——至今捷克唯一国有啤酒厂；双料煮出法、自流井水、摩拉维亚大麦、萨兹酒花、90天窖藏" }
+            ],
+            philosophy: "捷克酿造传统的守护者：软水、摩拉维亚大麦、萨兹酒花、90天窖藏——用慢对抗工业化的快。作为国营企业，还向微酒厂分享自家酵母。",
+            awards: [
+                "捷克共和国所有（国宝级品牌）",
+                "Českobudějovické pivo欧盟地理标志（PGI）持有者",
+                "WBC 2006波西米亚皮尔森组银牌",
+                "U.S. Open Beer Championship 2014铜牌",
+                "Great International Beer & Cider Competition 2015金牌"
+            ],
+            beers: [
+                {
+                    name: "Budweiser Budvar Original",
+                    style: "Lager - Czech Pale",
+                    abv: "5%",
+                    ibu: "N/A",
+                    rating: "旗舰，'České pivo'地理标志产品",
+                    hops: "Žatec (Saaz) 酒花",
+                    process: "自流井水+摩拉维亚大麦+双料煮出法，酒窖熟成90天。",
+                    flavor: "香气：麦芽甜香与萨兹酒花的草本花香。口感：饱满圆润，苦甜交响。"
+                },
+                {
+                    name: "Budvar Dark",
+                    style: "Lager - Tmavé (Czech Dark)",
+                    abv: "4.7%",
+                    ibu: "N/A",
+                    rating: "深色拉格",
+                    hops: "Žatec (Saaz) 酒花",
+                    process: "捷克深色拉格。",
+                    flavor: "香气：焦糖与烘焙麦芽。口感：深色却清爽。"
+                }
+            ]
+        }
+    },
+    {
+        id: "engkanto",
+        nameEn: "Engkanto Brewery",
+        nameZh: "菲常童话",
+        country: "🇵🇭 菲律宾",
+        countryCode: "philippines",
+        location: "Carmona, Cavite（2018年自Makati迁入）",
+        founded: "2017年",
+        founder: "Ian Paradies",
+        founderDesc: "因'菲律宾人在啤酒上被亏待了'而创业；Makati Poblacion的Polilya酒吧是酒厂试验厨房",
+        tags: ["菲律宾第一", "本土风味", "紫薯啤酒", "WBA世界最佳"],
+        highlight: "WBA世界最佳蜂蜜啤酒",
+        shortStory: "把紫薯（ube）、芒果和本地蜂蜜酿成啤酒的菲律宾酒厂：High Hive Honey Ale拿下2024世界啤酒大奖'世界最佳'——该奖设立以来第一瓶获奖的菲律宾精酿。",
+        fullStory: {
+            nameOrigin: "Engkanto是菲律宾民间传说中的自然精灵——以此表达啤酒带来的变化与想象力。",
+            founderJourney: [
+                { year: "2017", text: "Ian Paradies因'菲律宾人在啤酒上被亏待了'决心创业，与酿酒师Josh Karten在Makati开设微酒厂；Polilya酒吧（Tagalog语'飞蛾'）同期开出，成为酒厂试验厨房" },
+                { year: "2018", text: "迁至甲米地省Carmona的更大厂房" },
+                { year: "2021", text: "知名酿酒师Michael 'MJ' Jordan接棒：重新设计产品线，融入蜂蜜、芒果、紫薯（ube）等本土风味，开始横扫国际奖项" },
+                { year: "2024-2026", text: "High Hive Honey Ale获WBA 2024世界最佳蜂蜜与枫糖浆增味啤酒（2007年设奖以来菲律宾首获）；出口美国、澳洲、阿联酋、新加坡、中国香港、泰国、中国台湾；亮相MBCB北京" }
+            ],
+            philosophy: "用本土原料（本地蜂蜜、芒果、紫薯）重新定义菲律宾啤酒；与当地农民合作，做'更适合本地味蕾'的精酿。",
+            awards: [
+                "World Beer Awards 2024『世界最佳蜂蜜与枫糖浆增味啤酒』（菲律宾精酿史上首次）",
+                "WBA 2024六项奖项",
+                "UNTAPPD菲律宾酒厂排名TOP3",
+                "UNTAPPD2025社区奖1金",
+                "'菲律宾获奖最多的精酿酒厂'"
+            ],
+            beers: [
+                {
+                    name: "High Hive Honey Ale",
+                    style: "Pale Ale - Honey",
+                    abv: "5.1%",
+                    ibu: "N/A",
+                    rating: "WBA 2024世界最佳增味蜂蜜啤酒",
+                    hops: "N/A",
+                    process: "纯本地蜂蜜酿造，官方推荐搭配kare-kare炖菜。",
+                    flavor: "香气：蜂蜜与麦芽。口感：轻盈顺滑，甜而不腻。"
+                },
+                {
+                    name: "Live It Up Lager",
+                    style: "Lager",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "旗舰拉格",
+                    hops: "'新世界'酒花",
+                    process: "'新世界'酒花带来热带风味。",
+                    flavor: "香气：热带水果与饼干麦芽。口感：清爽易饮。"
+                },
+                {
+                    name: "Mango Nation Hazy IPA",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "核心款",
+                    hops: "N/A",
+                    process: "芒果浑浊IPA——菲律宾国果入酒。",
+                    flavor: "香气：芒果与热带酒花。口感：多汁饱满。"
+                }
+            ]
+        }
+    },
+    {
+        id: "fast-fashion",
+        nameEn: "Fast Fashion Brewing",
+        nameZh: "潮汐",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Seattle, WA（SoDo区+Lower Queen Anne双店）",
+        founded: "2020年（首酒Hot Pizza于2020年10月发售）",
+        founder: "Matt Storm & Brian Strumke",
+        founderDesc: "披萨店老板+游牧酿酒传奇的疫情之作：Stillwater创始人Strumke疫情被困西雅图，投身Storm的酿酒构想",
+        tags: ["酒花快闪", "Anchovy专属酒花", "披萨梗酒名", "drops文化"],
+        highlight: "拥有专属酒花的快闪酒厂",
+        shortStory: "把'快时尚'逻辑搬进啤酒：小批量、快节奏、喝完即消失。Stillwater创始人和西雅图披萨老板的疫情之作——还包下了一英亩酒花田，把实验品种24B-05命名为'凤尾鱼'。",
+        fullStory: {
+            nameOrigin: "Fast Fashion借自Strumke 2018年为Stillwater出的一款同名IPA——快时尚服装时髦但一次性，正如浑浊IPA的drops文化：拥抱'喝掉即消失'，与旗舰酒款文化彻底决裂。",
+            founderJourney: [
+                { year: "2018", text: "艺术项目把Stillwater创始人Brian Strumke带到西雅图，结识The Masonry（木火披萨+精酿酒吧）老板Matt Storm" },
+                { year: "2020", text: "疫情让Strumke的游牧生活停摆，他投身Storm的酿酒构想；9月宣布项目，10月首酒Hot Pizza发售——零媒体宣传纯靠粉丝，秒售罄。名字当天就定了：'开一家浑浊IPA厂就像开披萨店——底做好，换topping（酒花）就行'" },
+                { year: "2020-2021", text: "差异化战略：包下Segal Ranch一英亩的实验酒花24B-05命名为'Anchovy'（配Hot Pizza就像最荒谬的披萨topping）——风味是西瓜硬糖+柑橘+松脂。前48款酒中43款是IPA变体" },
+                { year: "2023-2026", text: "从No Boat的代工模式搬进SoDo自有酒厂（原Ebbits Field Flannels厂房）；扩展到西海岸IPA、拉格、农舍艾尔；与NBA传奇Shawn Kemp、Gary Payton合酿" }
+            ],
+            philosophy: "'拥抱新鲜、快速迭代'：每周新批次、新酒标，酒名玩流行文化梗（Hot Pizza、Tinned Fish、Ranch Cups）——'离旗舰酒款文化远到几乎认不出来，而这正是重点'。",
+            awards: [
+                "UNTAPPD2025社区奖2银2铜",
+                "New School Beer『2021年最佳新晋外州品牌』",
+                "专属酒花Anchovy（Segal Ranch独家签约）"
+            ],
+            beers: [
+                {
+                    name: "Hot Pizza",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "首酒+招牌（2020年10月）",
+                    hops: "Anchovy（Segal Ranch专属实验酒花）",
+                    process: "酒厂第一款酒：专属酒花Anchovy酿造，西瓜硬糖风味。",
+                    flavor: "香气：西瓜硬糖、柑橘、松脂。口感：经典浑浊IPA的饱满多汁。"
+                },
+                {
+                    name: "Gyoshō",
+                    style: "IPA - American (DDH)",
+                    abv: "6.3%",
+                    ibu: "N/A",
+                    rating: "与West Coast Brewing合酿",
+                    hops: "Freestyle NZ Cascade, Segal Ranch Anchovy, Strata",
+                    process: "与静冈West Coast Brewing合酿的双倍干投IPA。",
+                    flavor: "香气：新西兰酒花与Anchovy的复合热带香。口感：干脆多汁。"
+                },
+                {
+                    name: "Tinned Fish / Ranch Cups",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "drops文化代表作",
+                    hops: "轮换",
+                    process: "一次性小批次，喝完即无。",
+                    flavor: "香气：随批次而变的酒花组合。"
+                }
+            ]
+        }
+    },
+    {
+        id: "batch",
+        nameEn: "Batch Craft Beer & Kolaches",
+        nameZh: "原乡",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Austin, TX（Manor路，东区）",
+        founded: "2017年8月（酒吧）；2019年11月（酒厂）",
+        founder: "Noah Lit & Josh Lit（兄弟）",
+        founderDesc: "奥斯汀第一家kolache（捷克移民点心）主题精酿酒吧；酿酒师John Snyder的一杯法兰德斯红艾尔让兄弟俩提前一年半开酒厂",
+        tags: ["啤酒+面包", "料理酿酒", "BugRoom", "众筹起步"],
+        highlight: "啤酒与面包的独特组合",
+        shortStory: "捷克kolache面包+精酿啤酒的奥斯汀组合。兄弟俩本没打算开酒厂——直到试营业之夜喝到常客自酿的法兰德斯红艾尔：'当场决定把计划提前一年半'。",
+        fullStory: {
+            nameOrigin: "Batch——'一炉/一批'，呼应烘焙与酿酒的双重 batches。",
+            founderJourney: [
+                { year: "2016-2017", text: "Lit兄弟（与父亲Mark）在本地酒厂做kolache pop-up熬过装修期；2017年8月开业：糕点师Jasmine Jones主理的烘焙坊+12个酒头的精酿吧+400多款瓶装自选+狗友好啤酒花园" },
+                { year: "2019", text: "兄弟俩本没打算开酒厂——直到试营业之夜喝到常客John Snyder（前Jester King）自酿的法兰德斯红艾尔。4月发起Kickstarter，11月酒厂在隔壁开业：3.5桶电加热系统，隔壁'BugRoom'桶陈室" },
+                { year: "今天", text: "Snyder用厨师思维酿酒：Sjofen草莓农舍艾尔、赤霞珠葡萄+薰衣草+木槿的Galaxies Collide啤酒-葡萄酒混合、非洲香蕉啤酒Urwagwa（无麸质，'像梅斯卡尔遇上清酒遇上香蕉'）；Heath Shuford保持浑浊IPA（Cottonmouth）常在" }
+            ],
+            philosophy: "'我们是咖啡店+烘焙坊，所以应该酿茶啤、水果啤、葡萄酒啤——和厨房里做的东西相配的酒。'",
+            awards: [
+                "UNTAPPD2025社区奖2铜",
+                "奥斯汀第一家kolache主题精酿酒吧"
+            ],
+            beers: [
+                {
+                    name: "Urwagwa",
+                    style: "Traditional African Beer (Gluten-Free)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "限量瓶装代表",
+                    hops: "N/A",
+                    process: "非洲风格香蕉啤酒：香蕉泥+高粱+小米+香蕉皮提供野生酵母，无麸质。酒标由Noah的妻子Laura绘制。",
+                    flavor: "香气：香蕉与发酵谷物。口感：'mezcal遇上清酒遇上香蕉'。"
+                },
+                {
+                    name: "Sjofen",
+                    style: "Farmhouse Ale (Strawberry)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "开业首发款",
+                    hops: "N/A",
+                    process: "草莓农舍艾尔——'看起来像冰沙，喝起来很干'。",
+                    flavor: "香气：草莓与农舍酵母。口感：干型清爽。"
+                },
+                {
+                    name: "Cottonmouth",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "常驻浑浊IPA",
+                    hops: "N/A",
+                    process: "酒厂清亮线代表作。",
+                    flavor: "香气：柑橘热带水果。口感：多汁顺滑。"
+                }
+            ]
+        }
+    },
+    {
+        id: "barrel-theory",
+        nameEn: "Barrel Theory Beer Company",
+        nameZh: "短木",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "St. Paul, MN（Lowertown区）",
+        founded: "2017年6月",
+        founder: "Brett Splinter, Timmy Johnson, Todd Tibesar",
+        founderDesc: "Surly前IT总监+Surly前酿酒师+注册会计师：木桶理论——品牌高度取决于最短的桶板",
+        tags: ["木桶理论", "Surly血统", "浑浊技术流", "全线一致"],
+        highlight: "2019 GABF金牌",
+        shortStory: "'木桶能装多少水取决于最短的桶板'——Surly老兵三人组的品牌哲学：不以最畅销的单品定义自己，而以全线啤酒与服务的整体表现立身。'这酒我们自己不骄傲，就不会端给你。'",
+        fullStory: {
+            nameOrigin: "Barrel Theory来自李比希最小养分定律：木桶盛水量取决于最短的桶板。",
+            founderJourney: [
+                { year: "2016-2017", text: "Splinter心怀开厂梦五年、在Surly积累行业经验，与Surly前酿酒师Johnson、CPA Tibesar组队；2017年6月在圣保罗Lowertown开业（10桶系统+4000平方英尺地下桶陈酒窖）" },
+                { year: "2018-2019", text: "登上多个最佳新酒厂榜单；USA Today'最佳新酒厂'读者票选；2019 GABF金牌" },
+                { year: "近年", text: "Johnson以酵母共投、酒花产品组合与'Infinity Gauntlet'饱和策略成为浑浊IPA技术流代表" }
+            ],
+            philosophy: "木桶理论：全线品质一致性高于单一爆款；Thrillist评'这里没有最差的一款酒'。",
+            awards: [
+                "2019 GABF金牌",
+                "UNTAPPD2025社区奖9金7银5铜",
+                "USA Today最佳新酒厂读者票选",
+                "Thrillist『全美最炙手可热的32家酒厂』"
+            ],
+            beers: [
+                {
+                    name: "Rain Drops（key lime Berliner）",
+                    style: "Berliner Weisse",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "招牌酸啤",
+                    hops: "N/A",
+                    process: "酸橙风味柏林酸小麦。",
+                    flavor: "香气：酸橙。口感：清爽酸度，夏日解暑。"
+                },
+                {
+                    name: "浑浊IPA矩阵（双/三倍）",
+                    style: "Hazy IPA / DIPA / TIPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "技术流代表",
+                    hops: "'Infinity Gauntlet'酒花组合",
+                    process: "酵母共投+酒花产品组合，控制酒花灼烧的饱和工程。",
+                    flavor: "香气：饱和热带水果。口感：'喝一口还想再喝一口'。"
+                },
+                {
+                    name: "椰奶水果酸啤",
+                    style: "Sour - Fruited",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "高分酸啤",
+                    hops: "N/A",
+                    process: "椰子奶油构建饱满口感。",
+                    flavor: "香气：水果与椰香。口感：浓稠顺滑。"
+                }
+            ]
+        }
+    },
+    {
+        id: "pinta-barrel",
+        nameEn: "PINTA Barrel Brewing",
+        nameZh: "拼拼橡木",
+        country: "🇵🇱 波兰",
+        countryCode: "poland",
+        location: "Wieprz（小波兰省，紧邻Browar Pinta主厂）",
+        founded: "2019年立项，2021年投产",
+        founder: "Browar Pinta 团队",
+        founderDesc: "波兰精酿革命开创者的桶陈专厂：1329位众筹投资者，近415万兹罗提，'好东西需要时间'",
+        tags: ["桶陈专厂", "自发发酵", "帝国世涛", "野菌艾尔"],
+        highlight: "波兰桶陈与野菌发酵代表",
+        shortStory: "'波兰精酿革命之父'PINTA的桶陈专厂：1329位众筹者凑出的酒厂，Willett与Buffalo Trace桶里陈30个月的帝国世涛，和coolship自然接种的野菌艾尔——'好东西需要时间'。",
+        fullStory: {
+            nameOrigin: "PINTA意为'一品脱'；母公司Browar Pinta的Atak Chmielu IPA发布日被公认为'波兰精酿革命的开端'。",
+            founderJourney: [
+                { year: "2019", text: "5月发起众筹（1329位投资者、近415万兹罗提）——当时主厂Wieprz新厂甚至还没投产；'好东西需要时间'成为核心理念" },
+                { year: "2021", text: "桶陈专厂投产：1200升糖化系统的独立微酒厂，带coolship开放式冷却池的野菌发酵区" },
+                { year: "今天", text: "两条路线：深色桶陈（世涛/波特/大麦烈酒，Willett、Buffalo Trace、Heaven Hill、Rittenhouse黑麦、PX雪莉桶中陈14-30个月）与Wild Ale（3年陈雷司令葡萄野菌艾尔、红醋栗野菌艾尔）" }
+            ],
+            philosophy: "'好东西需要时间'：重视基础酒体、木桶选择与天然添加物的搭配；野菌线强调自发发酵、真实水果与季节表达。",
+            awards: [
+                "2024与2025波兰精酿大赛世涛与波特类年度冠军",
+                "2023波兰精酿大赛野菌酒类年度冠军",
+                "UNTAPPD2025社区奖9金13银6铜"
+            ],
+            beers: [
+                {
+                    name: "Liberty",
+                    style: "Stout - Imperial / Double",
+                    abv: "13%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD 1933评",
+                    hops: "N/A",
+                    process: "香草+椰子+咖啡；Willett与Heaven Hill波本桶陈20个月。",
+                    flavor: "香气：波本桶的香草椰子包裹烘焙麦芽。口感：浓稠如液体甜点。"
+                },
+                {
+                    name: "Patience",
+                    style: "Stout - Imperial / Double",
+                    abv: "14%",
+                    ibu: "N/A",
+                    rating: "Willett桶陈30个月",
+                    hops: "N/A",
+                    process: "椰子+香草；Willett波本桶30个月。",
+                    flavor: "香气：深邃桶香。口感：'耐心的回报'。"
+                },
+                {
+                    name: "Enology (Riesling)",
+                    style: "Wild Ale",
+                    abv: "7.5%",
+                    ibu: "N/A",
+                    rating: "UNTAPPD高分野菌",
+                    hops: "陈年酒花",
+                    process: "3年陈野菌艾尔+波兰西里西亚雷司令葡萄浸渍5个月。",
+                    flavor: "香气：雷司令的矿感与野菌。口感：干爽复杂。"
+                }
+            ]
+        }
+    },
+    {
+        id: "adroit-theory",
+        nameEn: "Adroit Theory Brewing Company",
+        nameZh: "灵敏理论",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Purcellville, VA",
+        founded: "2014年1月",
+        founder: "Mark Osborne",
+        founderDesc: "自称'全美最METAL的啤酒厂'：每个批次独立Ghost编号（已超1700个），酒标是暗黑短篇小说",
+        tags: ["重金属", "Ghost编号", "高酒精实验", "暗黑叙事"],
+        highlight: "精酿与METAL的完美结合",
+        shortStory: "'为消费者中极少数人酿造'——三倍IPA、甜品世涛、波本桶大麦烈酒，每个批次独立Ghost编号限量发售；酒标上写着完整的暗黑故事：法老武士、斩首俳句、克苏鲁之死。",
+        fullStory: {
+            nameOrigin: "Adroit Theory意为'灵巧的理论'。品牌口号'CONSUME LIFE / DRINK ART'。",
+            founderJourney: [
+                { year: "2014", text: "1月在弗吉尼亚珀塞尔维尔开业，以重金属与暗黑视觉为品牌核心" },
+                { year: "2014-2026", text: "不设固定经典款：每个新批次/风味赋予独立Ghost编号（已超1700个），每款限量'1 of 3000'；EBK系列酒标配武士俳句，AK系列是法老武士连载小说" },
+                { year: "今天", text: "三倍IPA、smoothie酸啤、甜品世涛（芝士蛋糕/Nilla威化/Heath巧克力棒级辅料）；2025年起在波特兰做长期pop-up" }
+            ],
+            philosophy: "暗黑艺术+高酒精+限量编号——酒即收藏品：'Craft Beer for the Select Few'。",
+            awards: [
+                "UNTAPPD2025社区奖11金6银8铜"
+            ],
+            beers: [
+                {
+                    name: "AK [genesis warrior edition]",
+                    style: "IPA - Imperial New England / Hazy",
+                    abv: "8.3%",
+                    ibu: "27",
+                    rating: "Ghost 625，限量4000",
+                    hops: "N/A",
+                    process: "法老武士叙事第一章的新英格兰帝国IPA。",
+                    flavor: "香气：热带水果。口感：低苦度的饱满浑浊。"
+                },
+                {
+                    name: "Don't Believe The Hype",
+                    style: "IPA - American",
+                    abv: "10.6%",
+                    ibu: "105",
+                    rating: "Ghost 241，'迄今最酒花的一款'",
+                    hops: "N/A",
+                    process: "致敬Public Enemy同名歌曲。",
+                    flavor: "香气：爆炸酒花。口感：高苦度高酒精的硬核IPA。"
+                },
+                {
+                    name: "Now I Am Death, Destroyer of Worlds",
+                    style: "IPA - Triple",
+                    abv: "10%",
+                    ibu: "124",
+                    rating: "Ghost 540",
+                    hops: "N/A",
+                    process: "三倍IPA——名字借自奥本海默引用的薄伽梵歌。",
+                    flavor: "香气：饱和酒花。口感：124 IBU的毁灭性苦度。"
+                }
+            ]
+        }
+    },
+    {
+        id: "ruse",
+        nameEn: "Ruse Brewing",
+        nameZh: "巧计",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Portland, OR（Brooklyn/Sellwood区）",
+        founded: "2015年底（合营），2018年7月自有酒厂",
+        founder: "Shaun Kalis & Devin Benware",
+        founderDesc: "两人2011年曾在同一家酒厂前后脚工作却未曾相识；因共同喜爱Brett农舍啤酒结缘，被IPA销量'10:1'教做人后转型",
+        tags: ["波特兰年度酒厂", "IPA双雄", "定制Brett", "现场音乐"],
+        highlight: "2019波特兰年度啤酒厂",
+        shortStory: "两个'前同事'在Culmination才第一次见面：'哦你就是Devin！'——靠Interpreter DIPA赢下俄勒冈啤酒奖后，被市场教育'IPA销量是赛松的十倍'，从桶农舍专家转型波特兰最佳IPA厂之一。",
+        fullStory: {
+            nameOrigin: "Ruse——'巧计/妙策'，呼应他们对酵母的策略性运用；与Imperial实验室共同培育定制Brett菌株'Stargazer'与'Suburban Brett'。",
+            founderJourney: [
+                { year: "2011-2015", text: "Kalis与Benware曾在Old Market Pub前后脚工作却未相识，直到Culmination Brewing才碰头——因共同喜爱Brett农舍啤酒决定合伙；2015年底以alternating proprietorship起步，前四款全是桶陈Brett赛松" },
+                { year: "2018", text: "7月自有taproom开业（老Iron Fireman厂房）；凭Interpreter DIPA拿下OBA浑浊类金牌（战胜Great Notion与Oakshire）——随后发现'IPA与赛松同台上架销量10:1'" },
+                { year: "2019", text: "The Oregonian/OregonLive『年度啤酒厂』：'无论点哪杯都是这座啤酒之城最好的之一'" },
+                { year: "今天", text: "淡出桶陈计划，以Translator（西海岸）与Imaginary Lines（浑浊）双旗舰成为波特兰IPA标杆；底特律披萨分店Crust Collective开到温哥华水岸；现场音乐是基因" }
+            ],
+            philosophy: "小批量、风味优先、灵活转身：'10桶系统的好处是趋势一变我们就能换'。",
+            awards: [
+                "The Oregonian/OregonLive『2019年波特兰年度啤酒厂』",
+                "2018 OBA浑浊酒花类金牌",
+                "多次俄勒冈啤酒奖金牌",
+                "UNTAPPD2025社区奖5金3银2铜"
+            ],
+            beers: [
+                {
+                    name: "Translator",
+                    style: "IPA - American (Northwest)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "常驻旗舰",
+                    hops: "N/A",
+                    process: "西北风格/西海岸IPA，多汁带坚实苦度。",
+                    flavor: "香气：柑橘松针。口感：苦甜平衡的西海岸骨架。"
+                },
+                {
+                    name: "Imaginary Lines",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "浑浊旗舰",
+                    hops: "N/A",
+                    process: "精准校准的饱和果香浑浊。",
+                    flavor: "香气：深层热带水果。口感：'最大愉悦不过界'。"
+                },
+                {
+                    name: "Interpreter DIPA",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "8.2%",
+                    ibu: "70",
+                    rating: "2018 OBA金牌",
+                    hops: "Citra, Mosaic",
+                    process: "首款浑浊IPA：Citra+Mosaic双倍投放。",
+                    flavor: "香气：焦糖麦芽与热带水果。口感：顺滑带温和苦度。"
+                }
+            ]
+        }
+    },
+    {
+        id: "pulpit-rock",
+        nameEn: "Pulpit Rock Brewing Company",
+        nameZh: "布道石",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Decorah, IA（路德学院城）",
+        founded: "2015年夏",
+        founder: "Pete Espinosa 等四位路德学院校友",
+        founderDesc: "首席酿酒师Slack与Teff都是Toppling Goliath老兵——'老做旗舰太乏味了'；名字来自创始人母亲故乡挪威的Preikestolen悬崖",
+        tags: ["挪威血统", "品质高于产量", "kveik实验", "小镇酒厂"],
+        highlight: "爱荷华州奖牌数第一",
+        shortStory: "在Toppling Goliath阴影下的小镇酒厂：'我甚至不喝酒，开业时也没有说得通的财务计划，但我们想为德科拉做点好事。'——结果UNTAPPD 4.21，2024年社区奖31枚奖牌居爱荷华州之首。",
+        fullStory: {
+            nameOrigin: "得名于挪威斯塔万格附近的Preikestolen（布道石）悬崖——创始人Pete的母亲家族来自崖下村庄；爱荷华德科拉本地也有一块同名岩石地标。",
+            founderJourney: [
+                { year: "2013-2014", text: "Pete与Kari Espinosa回德科拉定居，买下College Drive的自助洗衣房" },
+                { year: "2015", text: "四位路德学院校友（含三位亲家）开出Pulpit Rock——酿酒师Slack与Teff都来自镇上巨头Toppling Goliath：'我们讨厌旗舰这个词，想做点不一样的'。800平方英尺塞下7桶系统" },
+                { year: "2019-2024", text: "混合发酵木陈'游乐场'（原干洗店）；挪威基因融入酒款：kveik酵母、juleøl、挪威语酒名（Saftig=多汁）；UNTAPPD 4.21（22.6万+评分）" },
+                { year: "今天", text: "2024社区奖31枚奖牌（11金）居爱荷华州之首——金牌含帝国甜品世涛、美式大麦烈酒、美式IPA；受邀哥本哈根Mikkeller啤酒节；'从不追求大规模分销，只做最好的酒'" }
+            ],
+            philosophy: "'品质高于产量'：大部分酒只在本地与周边销售；故意给创造力留空间——'有些批次做一次就再也不做了'。",
+            awards: [
+                "UNTAPPD2024社区奖31枚奖牌（含11金），爱荷华州第一",
+                "UNTAPPD2025社区奖9金9银7铜",
+                "UNTAPPD全球Micro级TOP40",
+                "UNTAPPD综合4.21"
+            ],
+            beers: [
+                {
+                    name: "Saftig",
+                    style: "IPA - American",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "招牌（挪威语'多汁'）",
+                    hops: "Citra, Mosaic",
+                    process: "Citra+Mosaic的经典美式IPA。",
+                    flavor: "香气：柑橘、热带水果。口感：多汁易饮。"
+                },
+                {
+                    name: "Oh Joy",
+                    style: "Stout - Imperial / Double",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "帝国世涛代表",
+                    hops: "N/A",
+                    process: "酒厂深色代表作。",
+                    flavor: "香气：烘焙麦芽、黑巧克力。口感：浓稠温暖。"
+                },
+                {
+                    name: "Kveik/Juleøl系列",
+                    style: "Norwegian Heritage Beers",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "挪威传统实验线",
+                    hops: "N/A",
+                    process: "挪威农场酵母kveik与圣诞啤酒juleøl传统配方。",
+                    flavor: "香气：kveik带来的热带酯香。口感：多变实验。"
+                }
+            ]
+        }
+    },
+    {
+        id: "schilling",
+        nameEn: "Schilling Beer Co.",
+        nameZh: "席林",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Littleton, NH（怀特山区Ammonoosuc河畔）",
+        founded: "2013年9月26日",
+        founder: "Cozzens 三兄弟与终生好友 John Lenzini",
+        founderDesc: "密歇根三兄弟+化学家好友：名字纪念曾祖父，家族史里还查出一位德国酿酒师祖先Wilhelm Fink",
+        tags: ["欧洲拉格", "老磨坊酒厂", "煮出法", "Alexandr"],
+        highlight: "新罕布什尔州UNTAPPD第一",
+        shortStory: "反恐工作者、化学家和放弃博士学位的兄弟，在飞钓之旅上带着家酿酒桶敲定开厂——把1797年的老磨坊变成美国最被尊敬的拉格酒厂之一：'你复制不了我们拥有的这一切'。",
+        fullStory: {
+            nameOrigin: "Schilling纪念Cozzens兄弟已故的曾祖父Dr. R.J. Schilling；家族史惊喜：他们的曾曾祖父Wilhelm Fink曾是德国Auerhahn酒厂的酿酒师。",
+            founderJourney: [
+                { year: "欧洲觉醒", text: "Cozzens兄弟与发小Lenzini在欧洲完成'味觉觉醒'，只爱低酒精精工拉格；Lenzini是化学家（印第安纳大学德语+化学，汉堡大学留学），在奥地利生活十年，地下室里酿了无数批" },
+                { year: "2013", text: "三人在带着家酿酒桶的飞钓之旅上敲定计划；9月26日在利特尔顿开业——把约1797年的老磨坊改造成pub。分工：Stu管披萨厨房、John酿酒、Jeff管吧台" },
+                { year: "2015", text: "创立Resilience副牌作为美式艾尔项目（Combover IPA、Ponyhawk DIPA）" },
+                { year: "2018", text: "增建斯堪的纳维亚农舍风格生产酒厂与品鉴室；80%以上产量是拉格" },
+                { year: "今天", text: "旗舰Alexandr（5%捷克皮尔森）用摩拉维亚地板麦芽+捷克水质+煮出法；全年啤酒花园含冬季取暖小屋；Jeff曾任新罕布什尔酿酒师协会主席" }
+            ],
+            philosophy: "现代欧洲灵感小批量酒厂：在所有人追逐干投与桶陈的年代，专注平衡、细腻、易饮的传统风格——'这些风格存在了几个世纪是有原因的'。",
+            awards: [
+                "UNTAPPD2025社区奖27金13银15铜，新罕布什尔州TOP1",
+                "UNTAPPD捷克深色拉格全球TOP50占10席",
+                "USA Today '10BEST Readers' Choice Awards'"
+            ],
+            beers: [
+                {
+                    name: "Alexandr",
+                    style: "Pilsner - Czech",
+                    abv: "5%",
+                    ibu: "N/A",
+                    rating: "旗舰，美国最杰出捷克皮尔森之一",
+                    hops: "捷克酒花",
+                    process: "摩拉维亚地板发芽皮尔森麦芽+匹配捷克水质+煮出法，诞生在Lenzini家地下室。",
+                    flavor: "香气：面包麦芽与草本酒花。口感：酒体饱满却极易饮——'低酒精却有趣是最难的'。"
+                },
+                {
+                    name: "Resilience系列（Combover / Ponyhawk）",
+                    style: "IPA / DIPA",
+                    abv: "7% / N/A",
+                    ibu: "N/A",
+                    rating: "美式艾尔副牌",
+                    hops: "Galaxy, Vic Secret, Simcoe, Mosaic",
+                    process: "Schilling的美式浑浊实验线。",
+                    flavor: "香气：热带水果。口感：多汁现代。"
+                },
+                {
+                    name: "Helles与捷克深色拉格",
+                    style: "Lager（欧洲全系）",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "UNTAPPD捷克深色拉格全球TOP50占10席",
+                    hops: "欧洲酒花",
+                    process: "每种风格使用对应产地的原料与水质。",
+                    flavor: "香气：风格纯粹的麦芽与酒花香。口感：教科书级欧洲拉格。"
+                }
+            ]
+        }
+    },
+    {
+        id: "mount-holly",
+        nameEn: "Mount Holly Beer",
+        nameZh: "霍利山",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Mount Holly, VT（创始人家乡小镇）",
+        founded: "2020年（12月卖出首箱）",
+        founder: "Dan Tilly",
+        founderDesc: "伦敦银行家辞职回乡酿酒：不建酒厂，自带原料配方委托两家佛蒙特酒厂代工，自有冷藏车队保冷链",
+        tags: ["风土拉格", "酿酒师思维", "单一产地", "低度IPA"],
+        highlight: "酿酒师式拉格酿造",
+        shortStory: "'酿酒师式的拉格'——前伦敦银行家Dan Tilly的反向操作：周游欧美拜访农民选原料，把配方和谷物交给佛蒙特两家酒厂代酿，再用自己的冷藏车配送。每款酒都是一批特定大麦的风土展示。",
+        fullStory: {
+            nameOrigin: "以佛蒙特州的家乡小镇Mount Holly命名。",
+            founderJourney: [
+                { year: "2020", text: "Dan Tilly辞去伦敦银行工作回乡，'做你爱的事'；与负责销售物流的合伙人Mike Shannahan搭档，12月卖出第一箱" },
+                { year: "2020至今", text: "无自有厂房的轻模式：亲自筛选特定谷物/酒花/酵母→委托两家佛蒙特酒厂酿造→自有冷藏卡车拉回Mount Holly仓库配送；每年一款新鲜酒花啤酒庆祝收获" }
+            ],
+            philosophy: "'酿酒师式拉格'：单一产地拉格不模仿历史风格，而是展示特定大麦品种与种植地区——通过不同配方呈现本地农业原料的特点。",
+            awards: [
+                "UNTAPPD2025社区奖1银1铜"
+            ],
+            beers: [
+                {
+                    name: "Mount Holly Lager系列",
+                    style: "Lager（单一产地）",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "风土代表系列",
+                    hops: "佛蒙特本地啤酒花",
+                    process: "以佛蒙特州当地种植的大麦与酒花为原料，不同配方呈现本地风土。",
+                    flavor: "香气：干净麦芽。口感：'干净的纯粹表达'。"
+                },
+                {
+                    name: "Green Stand",
+                    style: "Lager / IPA hybrid",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "畅销款",
+                    hops: "N/A",
+                    process: "'喝起来像拉格、溢出佛蒙特IPA多汁风味'。",
+                    flavor: "香气：热带水果。口感：拉格骨架IPA灵魂。"
+                },
+                {
+                    name: "Green Mountain Gold",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "浑浊代表",
+                    hops: "N/A",
+                    process: "浑浊IPA。",
+                    flavor: "香气：菠萝与葡萄汁气息。口感：低度多汁。"
+                }
+            ]
+        }
+    },
+    {
+        id: "wunderkammer",
+        nameEn: "Wunderkammer Biermanufaktur",
+        nameZh: "珍奇博物馆",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Albany, VT（前Bonnieview Farm奶油厂）",
+        founded: "2016年创立，2021年独立复产",
+        founder: "Vasilios Gletsos",
+        founderDesc: "前Hill Farmstead首席酿酒师、木偶剧演员出身的酿酒艺术家——从酿造到酒标全一人完成，年产仅一两百桶",
+        tags: ["Hill Farmstead血统", "采集酿酒", "混合发酵", "地下啤酒洞"],
+        highlight: "顶级小众农舍酒厂",
+        shortStory: "把整座佛蒙特森林装进酒瓶：前Hill Farmstead首席酿酒师在地下15英尺的旧奶酪窖里，用火箭炉直火铜锅酿混合发酵啤酒——地衣、蘑菇、漆树、秋麒麟草，'人不能两次踏入同一条河'。",
+        fullStory: {
+            nameOrigin: "Wunderkammer是德语'珍奇柜'——收藏记忆、自然之物与拾得物的微型博物馆。",
+            founderJourney: [
+                { year: "1990s-2015", text: "Gletsos为Bread and Puppet木偶剧团来佛蒙特；缅因艺术学校毕业后赴俄勒冈酿酒；2005年结识Shaun Hill，2015年1月加入Hill Farmstead任首席酿酒师" },
+                { year: "2016", text: "在Hill Farmstead小系统上开启个人品牌——'如果不踩踩刹车抬起头，一晃又是五年'" },
+                { year: "2020-2021", text: "离开Hill Farmstead（一年竞业禁止）；凭Pete's Greens农场基金3万美元贷款，在前奶油厂重启：奶酪槽变糖化桶（冬季当coolship）、地下15英尺奶酪窖变啤酒洞、火箭炉直火铜锅烧废木" },
+                { year: "今天", text: "年产仅一两百桶，从酿造到贴标全一人完成，还兼着给农场送菜；采集漆树/蓍草/秋麒麟草/地衣/蘑菇/桦褐孔菌入酿；kveik酵母实验" }
+            ],
+            philosophy: "'赫拉克利特说人不能两次踏入同一条河'——原始手作：直火铜锅、无严格温控、Brett混合菌种、本地麦芽与啤酒花，酒糟还田喂牛。",
+            awards: [
+                "UNTAPPD2025社区奖2金3铜",
+                "VinePair『全美最佳酒厂』酿酒师评选上榜"
+            ],
+            beers: [
+                {
+                    name: "Memento Mori",
+                    style: "Mixed-Culture Ale",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "采集酒代表作",
+                    hops: "陈年酒花",
+                    process: "桦褐孔菌chaga+混合发酵+野玫瑰花瓣陈酿。",
+                    flavor: "香气：森林地表与野菌。口感：植物学啤酒的极致。"
+                },
+                {
+                    name: "From the Ruins of a Subterranean Feasting Hall (Vol.12)",
+                    style: "Mixed Fermentation Ale",
+                    abv: "6%",
+                    ibu: "N/A",
+                    rating: "Volume系列",
+                    hops: "N/A",
+                    process: "雪松/云杉/冷杉/松针混合发酵，橡木桶陈。",
+                    flavor: "香气：松针与柠檬。口感：秋季苹果酒般的清爽。"
+                },
+                {
+                    name: "Sumac Wheat",
+                    style: "Wheat Beer (Foraged)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "Amidst and Among季节版",
+                    hops: "N/A",
+                    process: "采集漆树籽的小麦啤酒——'庆祝能重新围坐一桌'。",
+                    flavor: "香气：漆树的柠檬感。口感：清爽适分享。"
+                }
+            ]
+        }
+    },
+    {
+        id: "ology",
+        nameEn: "Ology Brewing Co.",
+        nameZh: "奥乐极",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Tallahassee, FL（Midtown）",
+        founded: "2017年6月",
+        founder: "Nick Walker（与 Paul Woodward, Brian Clark, David Arendt）",
+        founderDesc: "味觉科学世家的第三代：祖父研究味觉（发现神秘果现象）、父亲研究嗅觉，他研究啤酒",
+        tags: ["科研世家", "科学梗酒名", "感官酿造", "全风格"],
+        highlight: "全美50佳新酒厂（2018）",
+        shortStory: "祖父是佛罗里达州立大学的味觉科学先驱（神秘果发现者），父亲是嗅觉心理学家——第三代Nick把实验室换成发酵罐：'我们每次接触那杯酒，都能影响最终结果，有点魔法'。",
+        fullStory: {
+            nameOrigin: "Ology='一门学问'；酒款名全是科学梗：Sensory Overload、Tesla's Pigeon、P-Value Pale Ale、Good Idea Altbier。",
+            founderJourney: [
+                { year: "家族", text: "祖父Lloyd Beidler：FSU心理生物学系著名学者、味觉科学先驱（发现神秘果改变味觉的现象）、1962年西雅图世博会科学协调人；父亲Jim Walker研究嗅觉" },
+                { year: "2017", text: "FSU生物学毕业的Nick（曾做护士）与三位好友6月开厂：'Ology的历史其实是遗传的'" },
+                { year: "2025", text: "八周年时在WeFunder发起众筹回馈社区——'当年也是在厨房餐桌和吧台上由亲友凑钱起步的'；塔拉哈西3店+坦帕1店" }
+            ],
+            philosophy: "酿造科学：质疑、假设、实验、迭代——'追求不同的、未被发现的、无与伦比的'。",
+            awards: [
+                "BeerAdvocate『全美50家最佳新酒厂』（2018）",
+                "Best Florida Beer最佳酸啤酒金奖",
+                "两次Tallahassee Magazine『最佳精酿酒厂』"
+            ],
+            beers: [
+                {
+                    name: "Sensory Overload",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "开业签名款",
+                    hops: "N/A",
+                    process: "新英格兰IPA——'感官超载'呼应家族研究。",
+                    flavor: "香气：热带水果与柑橘。口感：饱满多汁。"
+                },
+                {
+                    name: "Juice Lab系列",
+                    style: "Berliner Weisse (Fruited)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "人气酸啤系列",
+                    hops: "N/A",
+                    process: "水果柏林酸小麦。",
+                    flavor: "香气：成熟水果。口感：轻盈酸爽。"
+                },
+                {
+                    name: "P-Value Pale Ale / Good Idea Altbier",
+                    style: "Pale Ale / Altbier",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "科学梗传统风格",
+                    hops: "N/A",
+                    process: "传统风格也一丝不苟。",
+                    flavor: "香气：平衡麦芽与酒花。口感：干净经典。"
+                }
+            ]
+        }
+    },
+    {
+        id: "radiant",
+        nameEn: "Radiant Beer Co.",
+        nameZh: "辉光",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Anaheim, CA（近迪士尼）",
+        founded: "2020年12月试营业，2021年首酒",
+        founder: "Jonas Nemura, Andrew Bell, Cambria Griffith",
+        founderDesc: "三位The Bruery老兵重聚：Jonas是Bruery首批员工（十年从酿酒助理做到运营高级总监），Bell主理六年实验酿造",
+        tags: ["GABF年度小酒厂", "Bruery血统", "干净易饮", "Alpha King"],
+        highlight: "2021 GABF年度最佳小型啤酒厂",
+        shortStory: "The Bruery首批员工+实验酿造总监+市场总监的三人重聚——疫情中开业次年即拿下GABF年度最佳小型啤酒厂，2022年再夺Alpha King全美冠军：'Sending Out Light 7 days a week'。",
+        fullStory: {
+            nameOrigin: "Radiant——'光芒'，口号'Sending Out Light'。",
+            founderJourney: [
+                { year: "2008-2018", text: "Jonas Nemura从康奈尔毕业后做律师助理，赴新西兰啤酒屋学艺一年，回国经Left Coast进入精酿；2008年成为The Bruery首批员工，十年后升任运营高级总监；Bell在Bruery做六年实验酿造" },
+                { year: "2020-2021", text: "三人在迪士尼旁开出Radiant：疫情试营业→首酒（2021年1月）→taproom开放" },
+                { year: "2021-2022", text: "2021 GABF年度最佳小型啤酒厂；2022 Alpha King Challenge全美冠军；GABF金牌Second That Emotion（5.4%浑浊淡色）" }
+            ],
+            philosophy: "干爽、干净、易饮——'在保留啤酒本身风味的基础上控制复杂度，形成较为直接的产品表达'。",
+            awards: [
+                "2021 GABF年度最佳小型啤酒厂（1-250桶组）",
+                "2022 Alpha King Challenge全美冠军",
+                "GABF金牌 Second That Emotion"
+            ],
+            beers: [
+                {
+                    name: "Second That Emotion",
+                    style: "Pale Ale - New England / Hazy",
+                    abv: "5.4%",
+                    ibu: "N/A",
+                    rating: "GABF金牌",
+                    hops: "N/A",
+                    process: "低度浑浊淡色艾尔——冠军之作。",
+                    flavor: "香气：柔和热带水果。口感：低酒精的饱满香气体验。"
+                },
+                {
+                    name: "A Dark in the Light",
+                    style: "Stout / Dark Ale",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "GABF铜奖",
+                    hops: "N/A",
+                    process: "深色酒代表作。",
+                    flavor: "香气：烘焙麦芽。口感：平衡易饮。"
+                },
+                {
+                    name: "酒花与拉格轮换矩阵",
+                    style: "IPA / Lager",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "20头taproom直给表达",
+                    hops: "轮换",
+                    process: "小批次轮换。",
+                    flavor: "香气：干净酒花。口感：直接干脆。"
+                }
+            ]
+        }
+    },
+    {
+        id: "tall-trees",
+        nameEn: "Tall Trees Brew Lab",
+        nameZh: "乔•酿造",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Hillsboro, OR（波特兰都会区）",
+        founded: "约2021年",
+        founder: "Dan & Nate（创始 duo）",
+        founderDesc: "UNTAPPD全球Nano级TOP15的新锐：2021年配方赢得Reuben's Hop Idol家酿大赛，由Reuben's商业化",
+        tags: ["Nano酒厂", "浑浊专长", "Hop Idol冠军", "国际合酿"],
+        highlight: "UNTAPPD全球Nano级TOP15",
+        shortStory: "从家酿大赛冠军到UNTAPPD全球第43：这对俄勒冈duo的浑浊IPA用新西兰与美国酒花堆出饱满热带果香——与Fort George、Ruse等西北名厂的合酿名单长得吓人。",
+        fullStory: {
+            nameOrigin: "Tall Trees——太平洋西北针叶林的故乡意象；Brew Lab点出实验小厂定位。",
+            founderJourney: [
+                { year: "约2021", text: "在希尔斯伯勒创立，专注现代酒花风格" },
+                { year: "2021", text: "配方赢得Reuben's Brews主办的Hop Idol家酿大赛，由Reuben's以'Temple of the Stars'名义商业化（Citra+Galaxy）" },
+                { year: "近年", text: "UNTAPPD全球酒厂TOP43、Nano级TOP15；与Fort George（新鲜酒花皮尔森）、Ruse、Lyric、RaR、Brujos等频繁合酿" }
+            ],
+            philosophy: "饱满酒体与热带水果香气的高饱和浑浊表达；小批次快速迭代。",
+            awards: [
+                "UNTAPPD全球酒厂排名TOP43",
+                "UNTAPPD全球Nano级酒厂排名TOP15",
+                "Hop Idol 2021家酿大赛冠军",
+                "UNTAPPD2025社区奖1银"
+            ],
+            beers: [
+                {
+                    name: "Into the Murk",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "招牌浑浊双倍",
+                    hops: "Nelson Sauvin, Riwaka 等新西兰酒花",
+                    process: "浑浊双倍IPA。",
+                    flavor: "香气：饱满热带水果。口感：丝滑浓郁。"
+                },
+                {
+                    name: "Astral Canopy",
+                    style: "IPA - Triple New England / Hazy",
+                    abv: "10.3%",
+                    ibu: "N/A",
+                    rating: "三倍浑浊",
+                    hops: "N/A",
+                    process: "浑浊三倍IPA。",
+                    flavor: "香气：爆炸酒花。口感：10.3度的厚重多汁。"
+                },
+                {
+                    name: "Temple of the Stars（Reuben's酿造）",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "Hop Idol 2021冠军配方",
+                    hops: "Citra, Galaxy",
+                    process: "Reuben's Brews商业化酿造的获奖配方。",
+                    flavor: "香气：经典Citra+Galaxy热带组合。"
+                }
+            ]
+        }
+    },
+    {
+        id: "finback",
+        nameEn: "Finback Brewery",
+        nameZh: "长须鲸",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "New York City（皇后区Glendale+布鲁克林Gowanus+LIC三店）",
+        founded: "2011年创立，2014年首批酒",
+        founder: "Basil Lee（建筑师）& Kevin Stafford（平面设计师）",
+        founderDesc: "原名'Narwhal'被Sierra Nevada商标逼退，正愁时一头长须鲸搁浅皇后区海滩——'又可怕又美丽，像那时的我们'",
+        tags: ["酒标艺术", "搁浅鲸命名", "全风格创作", "Bruery式多元"],
+        highlight: "纽约州美式IPA金奖（2026）",
+        shortStory: "建筑师+平面设计师的家酿八年之作：极简酒标自己画，从浑浊IPA到波本桶世涛无所不酿。Gowanus新店还配了蒸馏厂、咖啡烘焙和李妈妈的中式饺子店。",
+        fullStory: {
+            nameOrigin: "原名Narwhal因Sierra Nevada抢先注册商标被迫放弃——正当两人觉得'像一头搁浅的鲸鱼'时，一头长须鲸搁浅Breezy Point海滩：'我们就用它了'。'鲸'（whale）后来成了精酿圈稀缺酒代称——'我们从没计划过这个'。",
+            founderJourney: [
+                { year: "2011-2013", text: "家酿八年的Lee（建筑师）与Stafford（平面设计师）立项，找场地两年：'扫过后街、运河、桥洞和工业无人区'；SBA贷款65万+家人资金30余万" },
+                { year: "2014", text: "皇后区Glendale开业（20桶系统）——以极简美学与全风格实力成为纽约精酿复兴中坚" },
+                { year: "2019", text: "布鲁克林Gowanus'饮品工作室'：5桶系统专注激进小批量，配Halftone蒸馏、Invisible Force咖啡和李妈妈的Dumpling Up（家族四十年中餐）" },
+                { year: "2026", text: "纽约州精酿啤酒大赛美式IPA金奖" }
+            ],
+            philosophy: "'创造力+热情'：没有Finback不敢碰的风格——酒标即艺术，两位创始人轮流设计（极简+亮色+几何）。",
+            awards: [
+                "2026纽约州精酿啤酒大赛美式IPA金奖",
+                "UNTAPPD2025社区奖3金3银1铜",
+                "Thrillist『全美12家最佳新酒厂』"
+            ],
+            beers: [
+                {
+                    name: "BQE",
+                    style: "Stout - Imperial (Bourbon BA)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "纽约最受追捧的限量世涛之一",
+                    hops: "N/A",
+                    process: "波本桶陈帝国世涛：布鲁克林烘焙咖啡+皇后区巧克力（名字来自B-Q-E高速）。",
+                    flavor: "香气：波本、咖啡、巧克力。口感：丝滑浓烈。"
+                },
+                {
+                    name: "Oscillation",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "旗舰浑浊系列",
+                    hops: "轮换",
+                    process: "浑浊IPA旗舰。",
+                    flavor: "香气：热带水果。口感：饱满顺滑。"
+                },
+                {
+                    name: "Kinda Brooklyn / Sorta Queens",
+                    style: "IPA - Imperial / Double (DDH)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "DDH双倍双子款",
+                    hops: "N/A",
+                    process: "双倍干投双倍IPA对款。",
+                    flavor: "香气：双倍饱和酒花。口感：浓郁多汁。"
+                }
+            ]
+        }
+    },
+    {
+        id: "resident-culture",
+        nameEn: "Resident Culture Brewing Co.",
+        nameZh: "荒邻",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Charlotte, NC（Plaza Midwood区）",
+        founded: "2017年9月2日",
+        founder: "Phillip & Amanda McLamb（夫妇）与 Chris Tropeano",
+        founderDesc: "'商业计划的第一步是说服我爸搬出去'——用父亲1982年买下的印刷厂开厂；酿酒师来自Russian River",
+        tags: ["Russian River血统", "街区+酵母双关", "夏洛特第一coolship", "手绘酒标"],
+        highlight: "美国东南部先锋酒厂",
+        shortStory: "Resident Culture一语双关：社区文化+酵母菌群。金融夫妇+Russian River酿酒师的组合，在从没酿过浑浊的Tropeano手中意外以浑浊成名——'没有先入之见反而是优势'。",
+        fullStory: {
+            nameOrigin: "既指酒厂的社区文化使命，也指啤酒里的酵母菌群——用本地酵母做真正属于这片土地的酒。",
+            founderJourney: [
+                { year: "2017", text: "McLamb夫妇（刚离开金融业）说服父亲Ed把1982年买下的印刷厂楼腾出来并投资；Tropeano放弃Russian River职位回北卡——'Beatification基酒的经验种下了coolship的种子'" },
+                { year: "2018", text: "凭Interpreter式浑浊实验打开局面：'我从没在西海岸酿过浑浊，更愿意学新工艺'；干投纪律：'用之前必须先闻，有时要放弃很贵的酒花'" },
+                { year: "2019-2026", text: "夏洛特第一个coolship装进taproom大窗后；与Perennial、Southern Grist、Outer Range等合酿；员工手绘插画构成独特视觉；'开业一年半零人员流失'" }
+            ],
+            philosophy: "'做真正属于这个地方的产品'——本地水果、本地酵母、街区气质。",
+            awards: [
+                "UNTAPPD2025社区奖1金2银3铜",
+                "Forbes疫情转型商业案例"
+            ],
+            beers: [
+                {
+                    name: "Lightning Drops",
+                    style: "IPA - New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "旗舰浑浊",
+                    hops: "N/A",
+                    process: "酒厂最畅销的浑浊IPA。",
+                    flavor: "香气：热带水果。口感：柔顺饱满。"
+                },
+                {
+                    name: "Human Potential",
+                    style: "IPA - Triple New England / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "浑浊三倍",
+                    hops: "N/A",
+                    process: "浑浊三倍IPA。",
+                    flavor: "香气：极致饱和。口感：高酒精的丝滑。"
+                },
+                {
+                    name: "Riding For the Feeling",
+                    style: "Pilsner - Italian",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "拉格线代表",
+                    hops: "N/A",
+                    process: "意大利皮尔森。",
+                    flavor: "香气：细腻草本。口感：干脆清爽。"
+                }
+            ]
+        }
+    },
+    {
+        id: "wills",
+        nameEn: "WILLS Beer",
+        nameZh: "本愿",
+        country: "🇨🇦 加拿大",
+        countryCode: "canada",
+        location: "Montreal（蒙特利尔）Mile-Ex区",
+        founded: "2023年7月开始酿造",
+        founder: "Ethan Wills & Alexander Wills（表兄弟）",
+        founderDesc: "餐厅老炮（Lawrence/Larrys合伙人）×石油工程师的表兄弟组合：'啤酒和化石燃料都是流经管道进罐的流体'",
+        tags: ["平衡哲学", "表兄弟创业", "多功能空间", "蒙特利尔新锐"],
+        highlight: "UNTAPPD加拿大Micro级TOP19",
+        shortStory: "蒙特利尔Mile-Ex的表兄弟酒厂：一个管创意（名餐厅Lawrence系出身），一个管理性（石油行业）。空间由Ethan的伴侣设计——'像漫步米兰街头撞见一个由老车库改造的画廊'。",
+        fullStory: {
+            nameOrigin: "WILLS即创始人家族姓氏；空间前身是Alexandraplatz酒吧。",
+            founderJourney: [
+                { year: "2023", text: "表兄弟Ethan（创意型，名餐厅Lawrence/Larrys/Boucherie Lawrence合伙人）与Alex（理性实践型，石油行业）7月开始在Mile-Ex酿酒——'一场真正的家族事业'" },
+                { year: "今天", text: "'无论何种风格，WILLS的啤酒都追求平衡、精确、易接近且令人满意'；常办DJ活动到深夜的社区空间" }
+            ],
+            philosophy: "'平衡'为核心：清晰风格表达+较好易饮性；酒厂与酒吧空间建立开放的社区体验。",
+            awards: [
+                "UNTAPPD2025社区奖2银",
+                "UNTAPPD加拿大Micro Brewery级TOP19"
+            ],
+            beers: [
+                {
+                    name: "拉格系列",
+                    style: "Lager",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "基石产品",
+                    hops: "N/A",
+                    process: "平衡易饮的拉格。",
+                    flavor: "香气：干净麦芽。口感：平衡清爽。"
+                },
+                {
+                    name: "淡色艾尔与IPA",
+                    style: "Pale Ale / IPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "核心系列",
+                    hops: "N/A",
+                    process: "清晰风格表达。",
+                    flavor: "香气：酒花与麦芽平衡。口感：易饮。"
+                }
+            ]
+        }
+    },
+    {
+        id: "ism",
+        nameEn: "ISM Brewing & Kitchen",
+        nameZh: "ISM",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Long Beach, CA（市中心Promenade）",
+        founded: "2023年12月",
+        founder: "Ian McCall",
+        founderDesc: "接管传奇Beachwood的DTLB旧址——他正是Beachwood前助理酿酒师；此前任Riip首席酿酒师（7枚GABF奖牌）",
+        tags: ["WBC奖牌收割机", "西海岸IPA", "Beachwood传承", "开业即巅峰"],
+        highlight: "WBC两金一铜（开业首年）",
+        shortStory: "名字是创始人Ian S. McCall的首字母，也是各种'主义'的后缀——'不局限于单一风格'。开业头几个月就拿下啤酒世界杯两金一铜，西海岸IPA在参赛最多的类别里夺金。",
+        fullStory: {
+            nameOrigin: "'ISM'是创始人名字的首字母，也借英文'主义'后缀表达开放与包容——持续探索不同类型的啤酒。",
+            founderJourney: [
+                { year: "2013-2018", text: "Ian McCall在Beachwood Brewing（DTLB）做助理酿酒师五年——亲历其9枚GABF奖牌（含4金）的时代" },
+                { year: "2018-2023", text: "任Riip Beer首席酿酒师，再揽7枚GABF奖牌（含Tangible Passion金牌）" },
+                { year: "2023", text: "12月回到老东家旧址开出ISM——首席酿酒师Gene Wagoner" },
+                { year: "2024", text: "WBC两金一铜：Western Standard Time西海岸IPA金（参赛最多类别）、Calf Fiend咖啡啤酒金、Plough & Harrow经典赛松铜——'Russian River拿金、Firestone Walker拿铜，能夹在两者之间太不可思议了'" },
+                { year: "2025", text: "WBC再获2银1铜；California Craft Brewers Cup" }
+            ],
+            philosophy: "西海岸IPA技术流：苦味要'来得快去得快'、发酵中干投推果香、连获奖配方也持续打磨。",
+            awards: [
+                "WBC 2024：2金1铜",
+                "WBC 2025：2银1铜",
+                "UNTAPPD美国BrewPub级TOP41",
+                "UNTAPPD2025社区奖1金"
+            ],
+            beers: [
+                {
+                    name: "Western Standard Time",
+                    style: "IPA - West Coast",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "WBC 2024金牌（参赛最多类别）",
+                    hops: "N/A",
+                    process: "西海岸IPA：更瘦的麦芽、小麦增体、受控氯化物。",
+                    flavor: "香气：柑橘松针。口感：干脆利落，'来得快去得快'的苦。"
+                },
+                {
+                    name: "Calf Fiend",
+                    style: "Brown Ale - Coffee",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "WBC 2024金牌",
+                    hops: "N/A",
+                    process: "咖啡棕色艾尔。",
+                    flavor: "香气：咖啡与烘焙麦芽。口感：顺滑平衡。"
+                },
+                {
+                    name: "Plough & Harrow",
+                    style: "Farmhouse Ale - Classic Saison",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "WBC 2024铜、2025银",
+                    hops: "N/A",
+                    process: "经典赛松。",
+                    flavor: "香气：辛香与农舍酵母。口感：干爽经典。"
+                }
+            ]
+        }
+    },
+    {
+        id: "peiping-machine",
+        nameEn: "Peiping Machine",
+        nameZh: "北平机器",
+        country: "🇨🇳 中国",
+        countryCode: "china",
+        location: "Beijing（方家胡同46号院起家），北京9家门店+重庆1家",
+        founded: "2016年",
+        founder: "李威（创始人，曾任央视主持人、两届北京自酿啤酒协会会长）",
+        founderDesc: "在老机床厂厂房一见钟情：'北平机器总厂'的名字在那一刻浮现——现在靠煎饼节和绿豆沙小麦定义北京精酿",
+        tags: ["中式食材", "绿豆沙小麦", "煎饼节", "WBC金牌"],
+        highlight: "2026 WBC金牌（绿豆沙小麦）",
+        shortStory: "2015年李威听说方家胡同46号院有酒吧转让——46号院是北京第一机床厂旧址，前身正是'北平机器总厂'。'我对那高大的厂房一见钟情'。如今绿豆沙小麦拿了WBC金奖，煎饼节办到了第六届。",
+        fullStory: {
+            nameOrigin: "方家胡同46号院前身是北平机器总厂（北京第一机床厂），品牌由此得名；'新鲜、本土、创新'是核心主张。",
+            founderJourney: [
+                { year: "2015-2016", text: "时任北京自酿啤酒协会会长、前央视主持人的李威偶然发现方家胡同46号院的老厂房，2016年开出第一家店" },
+                { year: "2020", text: "发起北平机器煎饼节——至2026年已连续举办六届，成为北京本地美食市集名片；招牌烤鸭煎饼配精酿" },
+                { year: "2020-2026", text: "绿豆沙小麦（为煎饼节量身打造，唤起绿豆冰棍记忆）获2026 WBC金奖；百花深处IPA、明前龙井小麦、御塘贡米拉格、铁观音拉格等获欧洲之星、布鲁塞尔、WBA多项大奖；门店扩至10家" }
+            ],
+            philosophy: "'新鲜、本土、创新'：最新鲜的呈现+与本地餐食和本土文化融合，创造极致味觉体验——'精酿搭配煎饼'的特色消费场景。",
+            awards: [
+                "2026 WBC金牌（绿豆沙小麦）",
+                "2026 英国WBA金奖+中国最佳+银奖（御塘贡米/铁观音）",
+                "2020欧洲之星金奖",
+                "2021-2023布鲁塞尔BBC 4枚奖牌",
+                "2022/2024/2025英国WBA共12枚奖牌"
+            ],
+            beers: [
+                {
+                    name: "绿豆沙小麦",
+                    style: "Wheat Beer (Mung Bean)",
+                    abv: "3.7%",
+                    ibu: "N/A",
+                    rating: "2026 WBC金奖",
+                    hops: "N/A",
+                    process: "绿豆增味小麦（配料含螺旋藻），为煎饼节量身打造——'天津煎饼必须绿豆面'。",
+                    flavor: "香气：绿豆雪糕。口感：柔和清新，3.7度却有丰富香气变化。"
+                },
+                {
+                    name: "百花深处IPA",
+                    style: "IPA",
+                    abv: "6.7%",
+                    ibu: "65",
+                    rating: "多次国际获奖",
+                    hops: "N/A",
+                    process: "旗舰IPA，名字取自北京胡同。",
+                    flavor: "香气：柑橘酒花。口感：标准美式IPA骨架。"
+                },
+                {
+                    name: "明前龙井小麦",
+                    style: "Wheat Beer (Longjing Tea)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "国际获奖款",
+                    hops: "N/A",
+                    process: "明前龙井茶增味小麦。",
+                    flavor: "香气：茶香与麦香。口感：清新中式。"
+                }
+            ]
+        }
+    },
+    {
+        id: "quadraft",
+        nameEn: "Quadraft Brewing",
+        nameZh: "分野酿造",
+        country: "🇨🇳 中国",
+        countryCode: "china",
+        location: "山东淄博（果园旁野生发酵车间）→ 2023蓬莱二厂；北京研发",
+        founded: "2021年",
+        founder: "三位创始人（主创张凯）",
+        founderDesc: "'Quadraft'=Quadrant：四大元素构成象限+酵母计数盘；'分野'=古代观星象限——'既要仰望星空，又要低头看显微镜'",
+        tags: ["野菌酸啤", "陶罐发酵", "考古灵感", "风土实验"],
+        highlight: "中国野菌酸啤代表新锐",
+        shortStory: "在淄博一个果酒厂的果园旁建起野生发酵车间；第一款野菌酒'撒马尔罕的金萄'致敬贾湖遗址考古发现——马瑟兰葡萄+枣花蜜+陶罐自发发酵，历时七个月。",
+        fullStory: {
+            nameOrigin: "'Quadraft'变形于Quadrant（象限）——酿造四大元素（麦芽、酒花、酵母、水）+显微镜下的酵母计数盘；'分野'是中国古代观星的象限系统。",
+            founderJourney: [
+                { year: "2021", text: "三位创始人在山东淄博果酒厂果园旁建野生发酵酸啤车间，专注野菌啤酒" },
+                { year: "2021-2022", text: "首款野菌酒'撒马尔罕的金萄'：灵感来自考古学家Patrick McGovern的贾湖遗址发现——蓬莱马瑟兰葡萄+淄博枣花蜜+高温陶罐+蓍草柠檬马鞭草代替酒花+冷却船过夜接种，历时7个月" },
+                { year: "2023", text: "蓬莱建酸啤'二厂'（葡萄产区），北京研发非野菌实验款；在白洋淀有机农场采集酵母" },
+                { year: "2024", text: "与巧力可合酿可可酸艾尔：海南可可果肉+树莓——'搭乘风土与记忆的方舟，重返海南'" }
+            ],
+            philosophy: "'微生物是调料，不是主导'——细致监控pH与温度；将料理、葡萄酒与本地文化的理念技法与啤酒融合，寻找啤酒的'本地性'。",
+            awards: [
+                "北京实力精酿新锐（MBCB官方）",
+                "中国野菌酸啤代表性新厂牌"
+            ],
+            beers: [
+                {
+                    name: "撒马尔罕的金萄",
+                    style: "Honey Grape Wild Ale",
+                    abv: "7%",
+                    ibu: "N/A",
+                    rating: "首款野菌酒",
+                    hops: "欧蓍草、柠檬马鞭草（代替酒花）",
+                    process: "马瑟兰葡萄发酵汁+枣花蜜分阶段参与陶罐自发发酵。",
+                    flavor: "香气：覆盆子、蜂蜜、山楂、樱桃。口感：清新酸度与味觉穿透力。"
+                },
+                {
+                    name: "猿猴亚当酸艾尔",
+                    style: "Sour Adam-style Ale",
+                    abv: "7.3%",
+                    ibu: "N/A",
+                    rating: "招牌酸艾尔",
+                    hops: "N/A",
+                    process: "混合浆果增味的Sour Adam风格。",
+                    flavor: "香气：浆果与野菌。口感：复杂深邃。"
+                },
+                {
+                    name: "可可酸艾尔（×巧力可）",
+                    style: "Sour Ale (Cacao)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "跨界合酿",
+                    hops: "N/A",
+                    process: "猿猴亚当基底+海南本季可可果肉+可可碎+树莓。",
+                    flavor: "香气：可可的热带水果面。口感：酸甜交融。"
+                }
+            ]
+        }
+    },
+    {
+        id: "beer-guys",
+        nameEn: "Beer Guys Taproom",
+        nameZh: "啤酒帮",
+        country: "🇨🇳 中国",
+        countryCode: "china",
+        location: "Beijing（鼓楼起家）",
+        founded: "2016年成立，2018年首款商业化自酿",
+        founder: "主创团队（主酿周小雷）",
+        founderDesc: "主酿周小雷2014年在家酿了几十批次，直到2018年才推出第一款商业化酒——酒标全部手工粉笔/油画绘制",
+        tags: ["中国味道", "手工酒标", "小批量", "十周年"],
+        highlight: "中式风格先行者",
+        shortStory: "从鼓楼精酿酒吧到自酿厂牌：粽子、糖炒栗子、红豆、酸梅汤——中国人熟悉的传统风味不断成为灵感。2026年正值十周年。",
+        fullStory: {
+            nameOrigin: "2016年从北京鼓楼的一家精酿酒吧起步。",
+            founderJourney: [
+                { year: "2014-2018", text: "主酿周小雷2014年开始家酿，数十个小批次反复尝试，2018年推出首款商业化自酿" },
+                { year: "2016-2026", text: "从酒吧到自酿厂牌，始终小批量酿造：糯香淡艾（粽子）、栗子世涛（糖炒栗子）、烟熏乌梅酸波特（酸梅汤）；酒标全部手工粉笔/油画绘制，全球无二；2026年成立十周年" }
+            ],
+            philosophy: "'中国味道'先行者：不追求大规模生产，用小批量酿造寻找属于自己的中国风味。",
+            awards: [
+                "CCBA中国精酿啤酒大奖赛酸啤组金奖",
+                "UNTAPPD2023中国地区酒厂TOP4",
+                "UNTAPPD2026中国地区酒厂TOP8"
+            ],
+            beers: [
+                {
+                    name: "糯香淡艾",
+                    style: "Pale Ale (Glutinous Rice)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "招牌",
+                    hops: "N/A",
+                    process: "粽子灵感的糯香淡色艾尔。",
+                    flavor: "香气：糯米清香。口感：柔和易饮。"
+                },
+                {
+                    name: "栗子世涛",
+                    style: "Stout (Chestnut)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "季节经典",
+                    hops: "N/A",
+                    process: "糖炒栗子增味世涛。",
+                    flavor: "香气：烤栗子与烘焙麦芽。口感：温暖饱满。"
+                },
+                {
+                    name: "烟熏乌梅酸波特",
+                    style: "Sour Porter (Smoked Plum)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "CCBA酸啤金奖",
+                    hops: "N/A",
+                    process: "酸梅汤灵感的烟熏酸波特。",
+                    flavor: "香气：烟熏乌梅。口感：酸甜烟熏交织。"
+                }
+            ]
+        }
+    },
+    {
+        id: "eastgate",
+        nameEn: "EASTGATE",
+        nameZh: "青门",
+        country: "🇨🇳 中国",
+        countryCode: "china",
+        location: "Tianjin（生产研发基地），天津/杭州多家餐酒吧",
+        founded: "2016年",
+        founder: "技术先锋型主创团队",
+        founderDesc: "国内'学院派'精酿厂牌代表：保持技术冷静的同时，注重创新、幽默的表达",
+        tags: ["学院派", "技术流", "全风格", "天禄奖常客"],
+        highlight: "CBC天禄奖常客",
+        shortStory: "青门致力于融合西方酿造理念与东方的食材和审美——获奖酒款涵盖IPA、世涛、酸啤及增味啤酒多个风格领域，是'学院派'中国精酿的代表。",
+        fullStory: {
+            nameOrigin: "青门——古城门意象，取'东方之门'的酿造愿景。",
+            founderJourney: [
+                { year: "2016", text: "在天津成立，专注中国本土精酿" },
+                { year: "今天", text: "生产研发扎根天津，产品业务覆盖全国，在天津、杭州设有多家餐酒吧；多次斩获中国国际啤酒挑战赛'天禄奖'与中国精酿啤酒大奖赛各奖项" }
+            ],
+            philosophy: "学院派精酿：西方酿造理念×东方食材与审美，技术冷静+表达幽默。",
+            awards: [
+                "多次CBC中国国际啤酒挑战赛'天禄奖'",
+                "多次CCBA中国精酿啤酒大奖赛奖项"
+            ],
+            beers: [
+                {
+                    name: "获奖IPA系列",
+                    style: "IPA",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "多次天禄奖",
+                    hops: "N/A",
+                    process: "技术流IPA。",
+                    flavor: "香气：标准之上的精准表达。"
+                },
+                {
+                    name: "世涛与酸啤系列",
+                    style: "Stout / Sour",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "风格全覆盖获奖款",
+                    hops: "N/A",
+                    process: "深色与酸啤双线。",
+                    flavor: "香气：风格纯粹。口感：技术严谨。"
+                }
+            ]
+        }
+    },
+    {
+        id: "wild-west",
+        nameEn: "Wild West Brewing Co.",
+        nameZh: "美西啤酒",
+        country: "🇨🇳 中国",
+        countryCode: "china",
+        location: "Chengdu, Sichuan（邛崃酒厂+成都锦里品酒室）",
+        founded: "2016年",
+        founder: "Scott & Carol Hunt（夫妇）",
+        founderDesc: "犹他州半导体工程师（20年家酿、BJCP裁判、28枚家酿奖牌）×四川姑娘的夫妻档",
+        tags: ["ABC中国最佳", "夫妻档", "中西合璧", "冷IPA"],
+        highlight: "2025亚洲啤酒锦标赛中国年度最佳酒厂",
+        shortStory: "犹他×四川的'美西'夫妻档：严谨西方工艺×当地风味。'宇宙双倍'摘下2024亚洲最佳IPA，2025年当选ABC中国年度最佳酒厂。",
+        fullStory: {
+            nameOrigin: "'美西'源自两位创始人的故乡——Scott来自美国狂野西部的犹他州，Carol来自中国狂野西部的四川。",
+            founderJourney: [
+                { year: "2016", text: "跨越半个地球的夫妻档在成都邛崃建厂——用好当地水源+进口原料+美式前沿技术；Scott是20年家酿经验的前半导体工程师，持BJCP裁判资质，家酿时代获28枚奖牌，2012年曾作为Epic Brewing的GABF Pro-Am搭档" },
+                { year: "2024", text: "'宇宙双倍浑浊IPA'获亚洲啤酒锦标赛（ABC）'亚洲最佳IPA'" },
+                { year: "2025", text: "获ABC中国年度最佳酒厂；2023-2025共获14项大奖+2枚金牌" }
+            ],
+            philosophy: "'严谨的西方酿酒工艺与当地风味有机结合'——口感稳定、干净、平衡、独特：'中国白'在比利时小麦中加入四川新鲜柑橘。",
+            awards: [
+                "2025 ABC中国年度最佳酒厂",
+                "2023-2025 ABC 14项大奖+2金",
+                "2024 ABC亚洲最佳IPA（宇宙双倍）"
+            ],
+            beers: [
+                {
+                    name: "宇宙双倍 Cosmic Thing",
+                    style: "IPA - Imperial / Double New England / Hazy",
+                    abv: "8.5%",
+                    ibu: "45",
+                    rating: "2024亚洲最佳IPA",
+                    hops: "N/A",
+                    process: "双倍浑浊'果汁炸弹'。",
+                    flavor: "香气：热带水果轰炸。口感：饱满多汁。"
+                },
+                {
+                    name: "九重天 Cloud 9 IPA",
+                    style: "IPA - New England / Hazy",
+                    abv: "7%",
+                    ibu: "45",
+                    rating: "UNTAPPD 572评",
+                    hops: "N/A",
+                    process: "浑浊IPA。",
+                    flavor: "香气：柑橘热带。口感：柔和饱满。"
+                },
+                {
+                    name: "不妥协冷IPA",
+                    style: "IPA - Cold",
+                    abv: "6.8%",
+                    ibu: "55",
+                    rating: "技术实验款",
+                    hops: "Strata, Mosaic, Amarillo",
+                    process: "拉格酵母低温发酵+大米带来干爽。",
+                    flavor: "香气：复合酒花。口感：干爽清脆。"
+                }
+            ]
+        }
+    },
+    {
+        id: "heroes",
+        nameEn: "Heroes Beer Co.",
+        nameZh: "英雄",
+        country: "🇭🇰 中国香港",
+        countryCode: "hongkong",
+        location: "Hong Kong（油塘）",
+        founded: "2017年",
+        founder: "Christopher Wong（创办人兼首席酿酒师）与 Jason、Angus",
+        founderDesc: "'啤酒英雄平台'：每酿一款新酒就邀请一位啤酒迷担任主角，把他的故事酿成酒",
+        tags: ["啤酒英雄平台", "港产精酿", "故事酿造", "AIBA金牌"],
+        highlight: "RateBeer 2019香港最佳啤酒厂",
+        shortStory: "Heroes不只做酿酒——每款酒都邀请一位啤酒迷深度访谈，把他的背景、价值观与热爱酿成味道、包装与英雄故事：'喝一口，你就品尝到这位英雄的超能力'。",
+        fullStory: {
+            nameOrigin: "Heroes相信每个人都可以成为英雄——'啤酒英雄平台'把啤酒爱好者变成啤酒英雄。",
+            founderJourney: [
+                { year: "2017", text: "Christopher Wong、Jason、Angus三人在香港创立Heroes" },
+                { year: "2017-2026", text: "每款新酒一位'主角'：深度访谈→创作反映其性格的味道、设计与故事；获AIBA金牌、RateBeer『2019香港最佳啤酒厂』；出口中国大陆、台湾、新加坡、马来西亚、澳洲、奥地利" }
+            ],
+            philosophy: "让消费者成为产品故事的主角：'希望这些故事鼓励你发挥内在的独特英雄特质'。",
+            awards: [
+                "AIBA澳洲国际啤酒大奖赛金牌",
+                "亚洲啤酒杯（ABC）金牌",
+                "RateBeer『2019香港最佳啤酒厂』",
+                "UNTAPPD2025社区奖2银1铜"
+            ],
+            beers: [
+                {
+                    name: "啤酒英雄系列",
+                    style: "全风格轮换",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "每款对应一位真实啤酒英雄",
+                    hops: "N/A",
+                    process: "深度访谈'主角'后量身创作。",
+                    flavor: "香气：随英雄故事而变。口感：一人一味。"
+                }
+            ]
+        }
+    },
+    {
+        id: "redears",
+        nameEn: "REDEARS Brewing",
+        nameZh: "赤耳",
+        country: "🇨🇳 中国",
+        countryCode: "china",
+        location: "Beijing（总部），浙江自有酿造工厂",
+        founded: "2019年底成立，2020年6月首款上市",
+        founder: "杜鸿博、陈镱（三位不同专业背景的创始人）",
+        founderDesc: "'面红耳赤之后，请继续向前'——2020年首创中国第一款绿豆风味精酿，开创'绿豆啤酒'品类",
+        tags: ["绿豆啤酒开创者", "市井灵感", "风物有源", "中国啤酒"],
+        highlight: "绿豆啤酒品类开创者",
+        shortStory: "在中国广袤的地域里寻找一切作为灵感：绿豆啤酒、东方茉莉、地粮拉格——'风物有源'。创始人希望啤酒'让人与人、人与生活发生奇妙的连接'。",
+        fullStory: {
+            nameOrigin: "源自'面红耳赤之后，请继续向前'的精神理念——鼓励人们面对挑战时保持热情与勇气。",
+            founderJourney: [
+                { year: "2019-2020", text: "三位不同专业背景的创始人在精酿行业打磨多年后创立赤耳；多番考量选定绿豆——2020年6月中国第一款绿豆风味精酿上市，开创全新品类，引来众多品牌模仿" },
+                { year: "今天", text: "从绿豆系列到'本地制造'企划、'地粮拉格系'——始终'好喝，好玩儿'：东方茉莉、草场地、白桃Cider等" }
+            ],
+            philosophy: "'风物有源'：用精酿表达中国的传统文化与现代精神，传递温暖与善意。",
+            awards: [
+                "2020 CBC中式啤酒组一星天禄奖",
+                "CCBA艾尔创新组铜奖",
+                "2025 AIBA 1金3银",
+                "CBC一星与三星天禄",
+                "CCBA金银铜奖",
+                "2026 WBA铜"
+            ],
+            beers: [
+                {
+                    name: "绿豆啤酒",
+                    style: "Pale Ale (Mung Bean)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "品类开创者",
+                    hops: "N/A",
+                    process: "中国第一款绿豆风味精酿（淡色艾尔）。",
+                    flavor: "香气：绿豆冰棍。口感：清淡易饮，夏日解暑。"
+                },
+                {
+                    name: "东方茉莉",
+                    style: "Flavored Ale (Jasmine)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "人气款",
+                    hops: "N/A",
+                    process: "茉莉花茶风味增味。",
+                    flavor: "香气：茉莉花香。口感：清新雅致。"
+                },
+                {
+                    name: "地粮拉格系",
+                    style: "Lager (Local Grains)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "风土系列",
+                    hops: "N/A",
+                    process: "大地谷物风味的本地拉格企划。",
+                    flavor: "香气：谷物甜香。口感：干净本土。"
+                }
+            ]
+        }
+    },
+    {
+        id: "young-master",
+        nameEn: "Young Master Brewery",
+        nameZh: "少爷",
+        country: "🇭🇰 中国香港",
+        countryCode: "hongkong",
+        location: "Hong Kong（鸭脷洲2013首厂+黄竹坑2016二厂）",
+        founded: "2013年12月",
+        founder: "Rohit Dugar",
+        founderDesc: "名字来自1963年港片与'工厂少爷'的成长故事——把厂设在60年代老工业中心，秉承'胼手胝足'的老香港精神",
+        tags: ["香港精酿鼻祖", "亚洲最大桶陈室", "咸柠啤", "香港制造"],
+        highlight: "香港规模最大评分最高酒厂",
+        shortStory: "家酿爱好者Rohit Dugar 2013年在鸭脷洲开了香港第一家精酿酒厂——如今坐拥两厂与全亚洲最大木桶陈酿室，'咸柠啤'把茶餐厅味道酿进了啤酒。",
+        fullStory: {
+            nameOrigin: "'少爷'（siu yeh）灵感来自1963年香港电影与旧香港'工厂少爷'——俏皮精神+白手起家的职业道德。",
+            founderJourney: [
+                { year: "2013", text: "Rohit Dugar在鸭脷洲创立少爷（10吨小批量系统），真正开创香港本地精酿" },
+                { year: "2016", text: "黄竹坑二厂投产（40吨系统+装瓶装罐线），跻身亚洲最大啤酒厂之一" },
+                { year: "今天", text: "全亚洲最大木桶陈酿室+比利时风格混合发酵酸啤专用橡木桶；客户含文华东方、四季、香格里拉；出口新加坡、中国内地、马来西亚、日本、美国；团队多人持Cicerone/BJCP资质" }
+            ],
+            philosophy: "原创思维+大胆口味+系统化技术：'从日常经典到桶陈、酸啤与野生发酵，在传统风格与本地表达之间持续探索'。",
+            awards: [
+                "全香港规模最大、评分最高精酿酒厂",
+                "UNTAPPD2025社区奖2金1银3铜",
+                "亚洲获奖最多的精酿酒厂之一"
+            ],
+            beers: [
+                {
+                    name: "Cha Chaan Teng Gose 咸柠啤",
+                    style: "Gose (Salted Lime)",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "港风代表",
+                    hops: "N/A",
+                    process: "茶餐厅咸柠檬风味古斯。",
+                    flavor: "香气：咸柠檬。口感：微咸酸爽，地道港味。"
+                },
+                {
+                    name: "1842 IPA",
+                    style: "IPA - Imperial / Double",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "旗舰（纪念香港开埠年份）",
+                    hops: "N/A",
+                    process: "双倍IPA。",
+                    flavor: "香气：浓烈酒花。口感：饱满有力。"
+                },
+                {
+                    name: "柚子山椒小麦酸啤",
+                    style: "Berliner Weisse (Yuzu & Sansho)",
+                    abv: "4%",
+                    ibu: "35",
+                    rating: "居酒屋系列",
+                    hops: "N/A",
+                    process: "柚子+山椒的柏林酸小麦。",
+                    flavor: "香气：柚子清香+山椒辛香。口感：明亮酸感，收口辛香。"
+                }
+            ]
+        }
+    },
+    {
+        id: "green-cheek",
+        nameEn: "Green Cheek Beer Co.",
+        nameZh: "绿颊鹦鹉",
+        country: "🇺🇸 美国",
+        countryCode: "usa",
+        location: "Orange, CA（橘郡四店：Orange/Costa Mesa/Sunset Beach/Oceanside）",
+        founded: "2017年6月23日",
+        founder: "Evan Price & Brian Rauso",
+        founderDesc: "Noble Ale Works前首席酿酒师+前CEO的组合：2016年WBC年度小型酒厂与年度酿酒师得主",
+        tags: ["西海岸IPA", "WBC奖牌收割机", "鹦鹉吉祥物", "无旗舰"],
+        highlight: "WBC累计12枚奖牌",
+        shortStory: "名字来自橘郡本地定居的绿颊鹦鹉——没人知道它们何时来此，创始人希望酒厂也能这样自然融入社区。'我没有旗舰款：重复做同样的事永远不会让我快乐。'",
+        fullStory: {
+            nameOrigin: "Green Cheek源自南加州橘郡的绿颊锥尾鹦鹉（没人知道这种鸟何时定居于此）；四只吉祥物叫Cheeky、Pierre、Kee Wee和Matt。",
+            founderJourney: [
+                { year: "2010-2016", text: "Evan Price：TAPS Fish House两年半（2010-2011连续GABF年度brewpub团队）→ Noble Ale Works首席酿酒师五年：2016 WBC金（I Love It! IPA）+银（Gose）+铜（Nobility），荣膺WBC年度小型酒厂与年度酿酒师；与CEO Brian Rauso因股东矛盾先后离开" },
+                { year: "2017", text: "4月接手倒闭Valiant酒厂的设备场地，6月23日开业——开业首发几乎售罄" },
+                { year: "2019-2024", text: "收购Barley Forge开Costa Mesa brewpub；收购Bagby Beer Co开Oceanside店（Jeff Bagby加盟强化拉格）；四店、员工超100人，UNTAPPD 4.14（32.6万+评分）、累计821款酒" },
+                { year: "2023-2026", text: "2023 WBC独揽4奖（与10 Barrel、Fat Head's并列当届最多）；WBC累计12枚奖牌、GABF累计10枚；《Craft Beer & Brewing》读者票选小型酒厂组第1名（2022-2025连续四年）" }
+            ],
+            philosophy: "'走钢丝式的平衡，永远瞄准古老的易饮性'：从酒花皮尔森到浑浊IPA，从德式拉格到柏林酸小麦——'我绝不原地踏步'；每批酒都根据品鉴笔记迭代。",
+            awards: [
+                "WBC累计12枚奖牌（2023年4枚，并列当届最多）",
+                "GABF累计10枚奖牌",
+                "《Craft Beer & Brewing》读者票选小型酒厂组第1名×4年（2022-2025）",
+                "UNTAPPD2025社区奖19枚奖牌"
+            ],
+            beers: [
+                {
+                    name: "DDH Radiant Beauty",
+                    style: "IPA - West Coast (DDH)",
+                    abv: "6.7%",
+                    ibu: "N/A",
+                    rating: "GABF获奖作",
+                    hops: "新西兰与华盛顿州特色酒花",
+                    process: "双倍干投西海岸IPA。",
+                    flavor: "香气：树脂感与柑橘。口感：干脆平衡。"
+                },
+                {
+                    name: "Wherever You Go",
+                    style: "IPA - Juicy / Hazy",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "2023 WBC金奖",
+                    hops: "N/A",
+                    process: "2023年WBC Juicy/Hazy IPA组金牌。",
+                    flavor: "香气：多汁热带水果。口感：丝滑饱满。"
+                },
+                {
+                    name: "Shhhhhh… Brown Ale",
+                    style: "Brown Ale - English",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "2023 WBC金奖",
+                    hops: "N/A",
+                    process: "'这是Ryan的获奖棕色艾尔'——英式传统风格的现代精度。",
+                    flavor: "香气：坚果焦糖。口感：经典平衡。"
+                }
+            ]
+        }
+    },
+    {
+        id: "weiherer",
+        nameEn: "Brauerei Kundmüller (Weiherer Bier)",
+        nameZh: "维赫勒",
+        country: "🇩🇪 德国",
+        countryCode: "germany",
+        location: "Weiher村（班贝格附近，全村约110人）",
+        founded: "1874年（2024年庆祝150周年）",
+        founder: "Michael Bayer（创立）；现由Roland与Oswald Kundmüller兄弟经营",
+        founderDesc: "1960年继任者'在位仅几小时'当夜猝逝的传奇家族；1964年农民Erwin Kundmüller入赘开启Kundmüller时代——白天种田冬天酿酒",
+        tags: ["百年酒厂", "Rauch烟熏", "有机太阳能", "Kräusen Hell"],
+        highlight: "连续两年Finest Beer Selection年度酒厂",
+        shortStory: "巴伐利亚110人小村里的150年家族酒厂：农民Erwin白天种地冬天酿酒（没有制冷），如今兄弟Roland与Oswald把有机认证+太阳能酒厂+世界首款'县啤酒'全玩了一遍——Kräusen Hell拿下WBC金牌。",
+        fullStory: {
+            nameOrigin: "Weiherer来自村名Weiher；Kundmüller姓氏源于1964年的婚姻——酿酒世家的小女儿Anna嫁给农民Erwin Kundmüller。",
+            founderJourney: [
+                { year: "1782-1874", text: "庄园自1782年家族所有（原本还种葡萄）；1874年Michael Bayer在旧榨油坊址上建酒厂，只在冬天酿一种酒" },
+                { year: "1902-1964", text: "Bayer家族三代传承（1907年Johann猝逝、继父Grünthaler接手的波折）；1960年继任者Michael Grünthaler'在位仅几个小时'当晚心脏病去世——留下妻子与三个女儿；1964年Anna与Erwin Kundmüller结婚，Erwin在600升'mother'木桶中用传统方式冬酿" },
+                { year: "1989-2012", text: "Roland加入引入Bock与开桶仪式；1990年新糖化车间；2007年Roland与Oswald兄弟共掌：2011年有机认证、2012年'Solarbier'太阳能酒厂" },
+                { year: "2024-2026", text: "150周年；2024 WBC：Kräusen Hell金+烟熏/小麦博克两银；2025 WBC：Weiherer Rauch金；连续两年Finest Beer Selection年度酒厂" }
+            ],
+            philosophy: "有机+太阳能的乡村家族酒厂：从经典拉格到特殊风格与跨国合酿——'早在精酿潮流兴起之前'就推出香槟瓶Bock Bourbon Style与世界首款'县啤酒'36 Kreisla。",
+            awards: [
+                "2024 WBC：Kräusen Hell窖藏啤酒金、烟熏/小麦博克双银",
+                "2025 WBC：Weiherer Rauch烟熏组金",
+                "2025与2026年Finest Beer Selection年度酒厂",
+                "WBC累计6枚奖牌；欧洲之星累计33枚奖牌"
+            ],
+            beers: [
+                {
+                    name: "Weiherer Kräusen Hell",
+                    style: "Lager - Kellerbier / Kräusen",
+                    abv: "4.9%",
+                    ibu: "N/A",
+                    rating: "WBC 2024金牌+两夺欧洲之星'世界冠军'",
+                    hops: "N/A",
+                    process: "窖藏啤酒（Kräusen：主发酵末期加新发酵液自然碳酸化）。",
+                    flavor: "香气：新鲜麦芽与酒花。口感：鲜活未过滤的经典弗兰肯。"
+                },
+                {
+                    name: "Weiherer Rauch",
+                    style: "Rauchbier (Smoked)",
+                    abv: "5.3%",
+                    ibu: "N/A",
+                    rating: "WBC 2025金、欧洲之星金",
+                    hops: "N/A",
+                    process: "烟熏啤酒。",
+                    flavor: "香气：细腻烟熏与香料。口感：麦芽支撑下的柔和烟感。"
+                },
+                {
+                    name: "36 Kreisla",
+                    style: "County Beer（世界首款'县啤酒'）",
+                    abv: "N/A",
+                    ibu: "N/A",
+                    rating: "2021 Golden Beer Idea奖",
+                    hops: "N/A",
+                    process: "2015年由Kundmüller发起、班贝格县参与的合酿项目。",
+                    flavor: "香气：本地风土的集体表达。口感：社区之酒。"
+                }
+            ]
+        }
+    },
+    {
+        id: "wagner",
+        nameEn: "Brauerei Wagner Merkendorf",
+        nameZh: "韦格纳",
+        country: "🇩🇪 德国",
+        countryCode: "germany",
+        location: "Merkendorf（班贝格附近，900人村庄）",
+        founded: "1797年（另有来源记为1861年）；1919年起Wagner家族经营",
+        founder: "Wagner家族（1919年起）",
+        founderDesc: "班贝格地区'崇拜级'乡村酒厂：900人的村子里竟有两家酒厂，Wagner与Hummel隔街相望",
+        tags: ["百年传承", "Ungespund不加压", "欧洲之星常客", "啤酒花园"],
+        highlight: "2025欧洲之星德国淡色拉格金牌",
+        shortStory: "Merkendorf村两家酒厂之一：1797年 brewing 记载（一说1861年开业），1919年Wagner家族接手。招牌Ungespundetes Lagerbier——'不加压'贮酒，碳酸柔和，是班贝格地区代表性的传统类型。",
+        fullStory: {
+            nameOrigin: "Wagner家族1919年接手时酒厂原名已不可考；酒馆墙上挂着家族的酿酒文凭。",
+            founderJourney: [
+                { year: "1797/1861-1919", text: "村内酿酒记载始于1797年（一说1861年实际开业）；1919年Wagner家族接手，沿用至今——保留与酒厂相连的传统啤酒馆及啤酒花园" },
+                { year: "今天", text: "年产约17,000百升；五款常规生啤+季节Festbier与Bock；在竞争激烈的淡色拉格类别中屡次获欧洲之星认可" }
+            ],
+            philosophy: "传统德国拉格的保守主义精品：Ungespund不加压工艺（开放容器部分发酵，碳酸较柔和）。",
+            awards: [
+                "2025欧洲之星德国淡色拉格组金牌",
+                "2016欧洲之星波西米亚皮尔森银牌",
+                "2017、2018欧洲之星波西米亚皮尔森铜牌"
+            ],
+            beers: [
+                {
+                    name: "Ungespundetes Lagerbier",
+                    style: "Lager - Ungespund",
+                    abv: "5.3%",
+                    ibu: "N/A",
+                    rating: "招牌",
+                    hops: "N/A",
+                    process: "'不加压'贮酒：部分在开放容器发酵，碳酸表现柔和——班贝格地区代表性传统类型。",
+                    flavor: "香气：新鲜麦芽。口感：柔和碳酸，鲜活易饮。"
+                },
+                {
+                    name: "Richard Wagner Dunkel",
+                    style: "Lager - Dark",
+                    abv: "5.5%",
+                    ibu: "N/A",
+                    rating: "常规款",
+                    hops: "N/A",
+                    process: "深色拉格。",
+                    flavor: "香气：烘焙麦芽。口感：柔和深色经典。"
+                },
+                {
+                    name: "Märzen",
+                    style: "Lager - Märzen",
+                    abv: "5.4%",
+                    ibu: "N/A",
+                    rating: "季节传统",
+                    hops: "N/A",
+                    process: "三月酿造、秋季供应的琥珀色传统酒。",
+                    flavor: "香气：焦糖麦芽。口感：饱满经典。"
+                }
+            ]
+        }
     }
 ];
 
@@ -1490,204 +5203,6 @@ function getBreweryAge(founded) {
     return `建厂${age}年`;
 }
 
-/* ================= Supabase REST API (直接调用，apikey 通过 URL 参数传递) ================= */
-
-const SUPABASE_URL = 'https://izjtmafnvppjnqnvgdun.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml6anRtYWZudnBwam5xbnZnZHVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzc4NDQsImV4cCI6MjA5NjkxMzg0NH0.Fs-FLZqTgj9sB3xx6pkUknHuIp37SzVnu3o3gWaGZ-M';
-
-async function sbSelect(table, id) {
-    let url = SUPABASE_URL + '/rest/v1/' + table + '?select=*&apikey=' + encodeURIComponent(SUPABASE_KEY);
-    if (id !== undefined) url += '&id=eq.' + encodeURIComponent(id);
-    try {
-        const res = await fetch(url, { method: 'GET' });
-        const text = await res.text();
-        if (!text || text.startsWith('PGRST')) {
-            console.warn('[sbSelect] error response:', text.substring(0, 100));
-            return [];
-        }
-        try { return JSON.parse(text); }
-        catch (e) { return []; }
-    } catch (err) {
-        console.error('[sbSelect] fetch error:', err);
-        return [];
-    }
-}
-
-async function sbUpsert(table, record) {
-    const url = SUPABASE_URL + '/rest/v1/' + table + '?apikey=' + encodeURIComponent(SUPABASE_KEY);
-    try {
-        const res = await fetch(url, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Prefer': 'resolution=merge-duplicates' },
-            body: JSON.stringify(record)
-        });
-        const text = await res.text();
-        if (!res.ok) {
-            console.error('[sbUpsert] HTTP error:', res.status, text);
-            return false;
-        }
-        if (text && text.startsWith('PGRST')) {
-            console.error('[sbUpsert] Supabase error:', text);
-            return false;
-        }
-        return true;
-    } catch (err) {
-        console.error('[sbUpsert] fetch error:', err);
-        return false;
-    }
-}
-
-async function sbUpdate(table, id, record) {
-    const url = SUPABASE_URL + '/rest/v1/' + table + '?id=eq.' + encodeURIComponent(id) + '&apikey=' + encodeURIComponent(SUPABASE_KEY);
-    try {
-        const res = await fetch(url, {
-            method: 'PATCH',
-            headers: { 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
-            body: JSON.stringify(record)
-        });
-        return res.ok;
-    } catch (err) {
-        console.error('[sbUpdate] fetch error:', err);
-        return false;
-    }
-}
-
-/* 用户本地点赞状态（防止重复点赞） */
-function getUserLikes() {
-    try { return JSON.parse(localStorage.getItem('mbcb_user_likes')) || {}; }
-    catch { return {}; }
-}
-
-function saveUserLikes(data) {
-    localStorage.setItem('mbcb_user_likes', JSON.stringify(data));
-}
-
-/* 本地计数回退（仅本地存储，不依赖 Supabase） */
-function getLocalCounts() {
-    try { return JSON.parse(localStorage.getItem('mbcb_local_counts')) || {}; }
-    catch { return {}; }
-}
-
-function saveLocalCounts(data) {
-    localStorage.setItem('mbcb_local_counts', JSON.stringify(data));
-}
-
-function getLocalCount(id) {
-    const counts = getLocalCounts();
-    return counts[id] || 0;
-}
-
-function setLocalCount(id, count) {
-    const counts = getLocalCounts();
-    counts[id] = count;
-    saveLocalCounts(counts);
-}
-
-async function toggleHeart(event, id) {
-    event.stopPropagation();
-    const likes = getUserLikes();
-    const hasLiked = !!likes[id];
-
-    try {
-        // 读取当前计数
-        const rows = await sbSelect('hearts', id);
-        const current = (rows && rows[0]) ? rows[0].count : getLocalCount(id);
-        const next = hasLiked ? Math.max(0, current - 1) : current + 1;
-
-        // 写入更新（存在则更新，不存在则插入）
-        const ok = await sbUpsert('hearts', { id: id, count: next });
-        if (!ok) {
-            console.warn('[toggleHeart] Supabase write failed, falling back to local count');
-            setLocalCount(id, next);
-        }
-
-        likes[id] = !hasLiked;
-        saveUserLikes(likes);
-        updateHeartUI(id, next, !hasLiked);
-    } catch (err) {
-        console.error('[toggleHeart] error:', err);
-        // 回退到本地计数
-        const localCurrent = getLocalCount(id);
-        const next = hasLiked ? Math.max(0, localCurrent - 1) : localCurrent + 1;
-        setLocalCount(id, next);
-        likes[id] = !hasLiked;
-        saveUserLikes(likes);
-        updateHeartUI(id, next, !hasLiked);
-    }
-}
-
-function updateHeartUI(id, count, liked) {
-    const btn = document.querySelector(`.heart-btn[data-id="${id}"]`);
-    if (btn) {
-        // 强制重绘动画：先移除 liked，再添加（触发心跳动画）
-        if (liked && !btn.classList.contains('liked')) {
-            btn.classList.remove('liked');
-            // 强制重排
-            void btn.offsetWidth;
-            btn.classList.add('liked');
-        } else if (!liked) {
-            btn.classList.remove('liked');
-        }
-        const countEl = btn.querySelector('.heart-count');
-        if (countEl) {
-            // 数字变化动画
-            countEl.style.transform = 'scale(1.4)';
-            countEl.style.opacity = '0.7';
-            countEl.textContent = count;
-            setTimeout(() => {
-                countEl.style.transform = 'scale(1)';
-                countEl.style.opacity = '1';
-            }, 200);
-        }
-    }
-}
-
-async function initHearts() {
-    try {
-        console.log('[initHearts] starting initialization');
-        // 初始化：为每个酒厂插入 count=0（若不存在）
-        for (const b of breweries) {
-            await sbUpsert('hearts', { id: b.id, count: 0 });
-        }
-
-        // 读取所有初始值并渲染
-        const rows = await sbSelect('hearts');
-        const likes = getUserLikes();
-        if (Array.isArray(rows)) {
-            rows.forEach(r => {
-                updateHeartUI(r.id, r.count, !!likes[r.id]);
-            });
-        } else {
-            console.warn('[initHearts] rows is not an array, skipping initial render');
-        }
-
-        // 每 3 秒轮询一次，实现跨用户同步（无需 WebSocket）
-        setInterval(async () => {
-            try {
-                const rows = await sbSelect('hearts');
-                const likes = getUserLikes();
-                if (Array.isArray(rows)) {
-                    rows.forEach(r => {
-                        updateHeartUI(r.id, r.count, !!likes[r.id]);
-                    });
-                }
-            } catch (e) {
-                console.error('[initHearts] poll error:', e);
-            }
-        }, 3000);
-        console.log('[initHearts] initialization complete');
-    } catch (err) {
-        console.error('[initHearts] initialization failed:', err);
-        // 回退到本地计数渲染
-        const likes = getUserLikes();
-        const counts = getLocalCounts();
-        breweries.forEach(b => {
-            const count = counts[b.id] || 0;
-            updateHeartUI(b.id, count, !!likes[b.id]);
-        });
-    }
-}
-
 function renderBreweries(filter = 'all') {
     const grid = document.getElementById('breweryGrid');
     const filtered = filter === 'all' ? breweries : breweries.filter(b => b.countryCode === filter);
@@ -1695,10 +5210,6 @@ function renderBreweries(filter = 'all') {
     grid.innerHTML = filtered.map(b => `
         <div class="brewery-card" data-country="${b.countryCode}" onclick="openModal('${b.id}')">
             <div class="card-header">
-                <button class="heart-btn card-heart" onclick="toggleHeart(event, '${b.id}')" data-id="${b.id}">
-                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                    <span class="heart-count" data-count="${b.id}">0</span>
-                </button>
                 <div class="brewery-name-en">${b.nameEn}</div>
                 <div class="brewery-name-zh">${b.nameZh}</div>
                 <div class="location">
@@ -1870,7 +5381,6 @@ function filterBreweries(country) {
 }
 
 renderBreweries();
-try { initHearts(); } catch(e) { console.warn('Supabase init skipped:', e); }
 </script>
 </body>
 </html>

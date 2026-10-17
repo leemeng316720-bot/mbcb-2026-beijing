@@ -1,0 +1,59 @@
+{
+  "brewery_id": "mikkeller",
+  "name": {
+    "english": "Mikkeller",
+    "chinese": "美奇乐"
+  },
+  "location": {
+    "country": "丹麦",
+    "country_en": "Denmark",
+    "city": "Copenhagen（哥本哈根）Humletorvet 27",
+    "city_en": "Copenhagen",
+    "address": "全球40+市场；酒吧遍布东京、伦敦、巴黎、台北、法罗群岛、塔林等；曾自有酒厂于美国圣地亚哥与纽约；2024年嘉士伯入股20%"
+  },
+  "founded": "2006年",
+  "founded_en": "2006",
+  "founder": {
+    "name": "Mikkel Borg Bjergsø & Kristian Klarup Keller",
+    "name_zh": "米克尔·博格·比尔格瑟 & 克里斯蒂安·克拉鲁普·凯勒",
+    "name_origin": "Mikkeller=Mikkel+Keller两人姓氏组合。Mikkel原是哥本哈根Det Fri Gymnasium高中的数学与物理老师；Keller是记者（2007年离开，转做音乐记者）。Keith Shore创作的Henry与Sally形象是品牌视觉标识。",
+    "family": "Mikkel的孪生兄弟Jeppe Jarnit-Bjergsø曾在Vesterbro开啤酒店Ølbutikken售卖Mikkeller，后因嫌隙创立Evil Twin——'宿敌双子'之名即源于此。"
+  },
+  "history": {
+    "kitchen": "2006年，Mikkel与发小Keller把哥本哈根家中的厨房变成微型酒厂，参考美国酿酒书疯狂实验酵母、麦芽与酒花；参加家酿比赛屡屡获奖。",
+    "breakthrough": "突破之作是Beer Geek Breakfast——在燕麦世涛中加入法压壶咖啡，被RateBeer论坛票选为第一世涛，哥本哈根厨房从此站上世界舞台。",
+    "gypsy": "Mikkeller以'吉普赛酿造'模式成名：不自有酒厂，租用全球合作酒厂设备生产自己的配方与一次性实验酒——由此保持了空前的灵活性与创造力，累计推出1000+款酒。",
+    "empire": "2010年在Viktoriagade开出第一家Mikkeller Bar（距兄弟的Ølbutikken仅几米——兄弟嫌隙的导火索）；此后扩张为全球帝国：32家酒吧餐厅、Mikkeller Running Club（100+分会、上万成员）、Mikkeller Beer Celebration（MBC啤酒节——北京站MBCB即由其主办）、无醇啤酒线与Ramen to Biiru拉面店等。",
+    "today": "曾为Noma等丹麦顶尖餐厅做店酒；2024年嘉士伯从私募基金Orkila与Mikkel手中收购20%股份并获得丹麦经销权，Mikkel保留控股权并继续担任CEO；中国大陆首店（全球最大旗舰店）于北京西四开业。"
+  },
+  "specialty": {
+    "primary": "全风格实验：从易饮皮尔森到桶陈世涛、酸啤、烈性酒",
+    "styles": ["Experimental IPA", "Oatmeal Coffee Stout", "Sour", "Barrel-Aged", "Lager", "无醇啤酒"],
+    "philosophy": "'啤酒无边界'——水果、香料、咖啡、巧克力皆可入酒；通过MBC啤酒节、跑团、全球酒吧网络与跨界合作，把啤酒与设计、运动、艺术和餐饮融合。'挑战酒友们的味蕾'是永恒的使命。"
+  },
+  "awards": [
+    "UNTAPPD2025社区奖21金23银25铜，丹麦第一",
+    "多次入选RateBeer世界TOP10酒厂",
+    "2006年即获'丹麦年度啤酒厂'，两次获评全球第五佳酒厂",
+    "Mikkeller Beer Celebration：全球顶级啤酒节IP（哥本哈根/北京等站）",
+    "产品出口50个国家"
+  ],
+  "notable_beers": [
+    "Beer Geek Breakfast - 成名作：加法压咖啡的燕麦世涛，RateBeer论坛票选第一世涛",
+    "Beer Geek系列 - 帝国世涛家族（Bourbon Barrel等桶陈版本）",
+    "Evergreen IPA / 各类浑浊实验IPA",
+    "Henry & Sally艺术酒标系列",
+    "无醇啤酒线 - '喝过都说好'的无醇浑浊与酸啤"
+  ],
+  "sources": [
+    "https://www.linkedin.com/company/mikkeller-aps",
+    "https://www.peterfisk.com/gamechanger/mikkeller/",
+    "https://en.horten.dk/news/2024/januar/mikkeller-partners-with-carlsberg",
+    "https://beerbay.es/countries/denmark/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "MBCB主办方/东道主，重新定义啤酒边界的丹麦先锋"
+  }
+}

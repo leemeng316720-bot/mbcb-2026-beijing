@@ -1,0 +1,57 @@
+{
+  "brewery_id": "weiherer",
+  "name": {
+    "english": "Brauerei Kundmüller (Weiherer Bier)",
+    "chinese": "维赫勒"
+  },
+  "location": {
+    "country": "德国",
+    "country_en": "Germany",
+    "region": "巴伐利亚州上弗兰肯地区",
+    "region_en": "Upper Franconia, Bavaria",
+    "city": "Weiher村（班贝格附近Viereth-Trunstadt，全村约110名居民）",
+    "city_en": "Weiher, near Bamberg",
+    "address": "庄园自1782年起家族所有；酒厂+客栈+啤酒花园+自有 butcher 与蒸馏厂（Erwin's Stöffla）"
+  },
+  "founded": "1874年（Michael Bayer创立，2024年庆祝150周年）",
+  "founder_en": "1874 by Michael Bayer (150th anniversary in 2024)",
+  "founder": {
+    "name": "Michael Bayer（创立）；现由Roland与Oswald Kundmüller兄弟经营",
+    "name_zh": "米夏埃尔·拜尔 → Kundmüller家族",
+    "name_origin": "Kundmüller姓氏来自1964年的婚姻：酿酒世家Bayer/Grünthaler家的小女儿Anna嫁给农民Erwin Kundmüller——Erwin白天种田冬天酿酒（当时没有制冷设备），沿用600升'mother'大木桶在岩石酒窖中储酒，一年仅产约350百升。"
+  },
+  "history": {
+    "dynasty": "1874年Michael Bayer在旧榨油坊址上建酒厂（只在冬天酿一种酒）。1902年传子Johann，1907年Johann猝逝；继父Adam Grünthaler接手并注册加入班贝格酿酒师行会。1960年继任者Michael Grünthaler'在位仅几个小时'——当晚心脏病发作去世，留下妻子和三个女儿；1964年Anna与Erwin Kundmüller的婚姻开启了今天的Kundmüller时代。",
+    "roland": "1989年Roland加入：在学徒期酒厂只酿一种Weiherer Lager，他引入了Weiherer Bock和传奇的开桶仪式；1990年新糖化车间（沿用至今）；1997年首次瓶装并推出首款上发酵酒（Weisse）与Pils；2007年Roland与弟弟Oswald共同掌管。",
+    "innovation": "'早在精酿潮流兴起之前'的实验：2011年获有机酒厂认证；2012年成为'Solarbier'太阳能酒厂（部分产品全部使用可再生能源酿造）；2011年推出香槟瓶装的Bock Bourbon Style；2015年创造世界上第一款'县啤酒'36 Kreisla（2021年获Golden Beer Idea奖）；产品涵盖传统拉格、烟熏、窖藏、小麦博克、IPA及无醇系列30+款，酒窖常年18款生啤。"
+  },
+  "specialty": {
+    "primary": "传统弗兰肯拉格：Kräusen Hell窖藏啤酒、Rauch烟熏啤酒、Kellerbier、Weizenbock",
+    "styles": ["Kellerbier / Kräusen Hell", "Rauchbier", "Pils", "Weizen", "Bock", "IPA"],
+    "philosophy": "有机+太阳能的乡村家族酒厂：从经典拉格到特殊风格，再到跨国合酿与特殊批次——150年传统与当代创新的平衡。"
+  },
+  "awards": [
+    "2024 WBC：Kräusen Hell窖藏啤酒组金牌，烟熏啤酒与小麦博克两枚银牌",
+    "2025 WBC：Weiherer Rauch烟熏啤酒组金牌",
+    "2025与2026年Finest Beer Selection『年度酒厂』",
+    "WBC累计6枚奖牌；欧洲之星累计33枚奖牌",
+    "Kräusen Hell两夺'啤酒世界杯'（欧洲之星），Weiherer Rauch欧洲之星金牌"
+  ],
+  "notable_beers": [
+    "Weiherer Kräusen Hell - 4.9%窖藏啤酒：'两个世界冠军'（WBC 2024金+欧洲之星）",
+    "Weiherer Rauch - 5.3%烟熏啤酒：WBC 2025金、欧洲之星金、WBC 2022/2024银",
+    "Weiherer Keller / Urstöffla / Weisse - 2014年Selection金奖三件套",
+    "Weiherer Bock Bourbon Style - 2011年香槟瓶装实验先驱",
+    "36 Kreisla - 世界首款'县啤酒'（2021 Golden Beer Idea）"
+  ],
+  "sources": [
+    "https://www.brauerei-kundmueller.com/weiherer-bier/chronik",
+    "https://biere-aus-franken.de/Brauereien/Kundmueller-Weiherer-Bier/",
+    "https://www.spiritsanddistilling.com/countryside-distilling-in-franconia",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，首次中国亮相，传承百年的经典酒厂"
+  }
+}

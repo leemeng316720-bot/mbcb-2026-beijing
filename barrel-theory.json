@@ -1,0 +1,58 @@
+{
+  "brewery_id": "barrel-theory",
+  "name": {
+    "english": "Barrel Theory Beer Company",
+    "chinese": "短木"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "明尼苏达州",
+    "state_en": "Minnesota",
+    "city": "St. Paul（圣保罗）Lowertown区，248 East 7th Street",
+    "city_en": "St. Paul, MN",
+    "address": "历史商业建筑内，带4000平方英尺石灰岩地下桶陈酒窖（可容150桶）"
+  },
+  "founded": "2017年6月",
+  "founded_en": "June 2017",
+  "founder": {
+    "name": "Brett Splinter, Timmy Johnson, Todd Tibesar",
+    "name_zh": "布雷特·斯普林特、蒂米·约翰逊、托德·蒂贝萨尔",
+    "name_origin": "Barrel Theory——'木桶理论'：源于李比希最小养分定律（木桶盛水量取决于最短的桶板）。品牌不以最畅销或评价最高的单品定义自己，而以全线啤酒与客户服务的整体表现立身。",
+    "background": "Splinter与Johnson都是Surly Brewing前员工（IT总监与酿酒师），Tibesar是注册会计师——'三人组把团队协作视为品质控制的基础：酿造、服务及其他环节需要彼此配合'。"
+  },
+  "history": {
+    "founding": "Splinter心怀开厂梦五年，先去Surly积累了行业经验。2016年11月宣布项目，2017年6月在圣保罗Lowertown开业：10桶糖化系统+90座品酒室，地下酒窖用上了建筑原有的木材与石材。",
+    "philosophy": "品控哲学一句话：'如果这酒我们自己不骄傲，就不会端给你。'——不因产量小就降低标准，酒款只在品酒室与有限本地渠道供应。",
+    "rise": "开业即登上多个本地与全国最佳新酒厂榜单，获USA Today'最佳新酒厂'读者票选；Thrillist评'这里没有最差的一款酒'；City Pages赞其'一致而平衡的伟大'。",
+    "craft": "Tim Johnson从家酿与'换酒文化'（beer trading）出发掌握浑浊IPA、水果酸啤与桶陈世涛；技术上以酵母共投、酒花产品组合与'Infinity Gauntlet'酒花饱和策略著称。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA（双/三倍）、水果酸啤、桶陈世涛、柏林酸小麦",
+    "styles": ["Hazy IPA / DIPA / TIPA", "Fruited Sour", "Barrel-Aged Stout", "Berliner Weisse", "Pilsner"],
+    "philosophy": "木桶理论：全线品质一致性高于单一爆款；'喝了一口还想再喝一口'的酒花饱和工程。"
+  },
+  "awards": [
+    "2019 GABF金牌",
+    "UNTAPPD2025社区奖9金7银5铜",
+    "USA Today'最佳新酒厂'读者票选",
+    "Thrillist『全美最炙手可热的32家酒厂』之一"
+  ],
+  "notable_beers": [
+    "Rain Drops / Drop Tops - 招牌系列（含key lime柏林酸小麦）",
+    "浑浊IPA矩阵 - 双/三倍浑浊的技术流代表作",
+    "椰奶增味水果酸啤 - 用椰子奶油构建饱满口感",
+    "桶陈世涛系列 - 150桶地下酒窖出品"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Barrel_Theory_Beer_Company",
+    "https://www.beerandbrewing.com/podcast-episode-362-tim-johnson-of-barrel-theory",
+    "https://heavytable.com/preview-barrel-theory-beer-co/",
+    "https://www.hopculture.com/the-best-new-breweries-of-2017/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，木桶理论践行者"
+  }
+}

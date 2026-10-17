@@ -1,0 +1,59 @@
+{
+  "brewery_id": "3-fonteinen",
+  "name": {
+    "english": "Brouwerij 3 Fonteinen",
+    "chinese": "三泉"
+  },
+  "location": {
+    "country": "比利时",
+    "country_en": "Belgium",
+    "city": "Beersel（贝尔塞尔，Pajottenland地区，布鲁塞尔西南）",
+    "city_en": "Beersel",
+    "address": "Hoogstraat 2A / Molenstraat 47；设lambik-O-Droom品酒室"
+  },
+  "founded": "1882年（酒馆兼贵兹混酿坊）",
+  "founded_en": "1882, as an inn and gueuze blendery",
+  "founder": {
+    "name": "Jacobus Vanderlinden & Joanna Brillens（创始）；Debelder家族（1953年接手）",
+    "name_zh": "雅各布斯·范德林登夫妇；后由Debelder家族经营",
+    "name_origin": "3 Fonteinen在荷兰语中意为'三个喷泉/三口泉'——一说来自早年前台上流出兰比克、法柔与克里克三种酒的三个瓷质手压泵，一说来自村中村民取水的三口水井。",
+    "key_figure": "Armand Debelder——兰比克传奇，90年代贵兹最暗淡时的孤独守护者"
+  },
+  "history": {
+    "origins": "1882年，Jacobus Vanderlinden与妻子Joanna在森讷河谷的Beersel村开了一间酒馆并开始混酿贵兹。二战后家族无继承人，1953年由Gaston Debelder与妻子Raymonde Dedoncker接手——原是农民的Gaston迅速掌握了混酿技术，1961年把生意搬到教堂广场并亲手在地下挖出用于陈酿的酒窖。60-70年代，这里还是佛兰德作家、艺术家与知识分子'Mijol俱乐部'（围绕作家Herman Teirlinck）的据点，喝掉了大量贵兹。",
+    "armand": "1982年Gaston退休，儿子Armand（学过厨师）接管混酿、Guido管餐厅。90年代贵兹市场跌至谷底，比利时只剩三家混酿坊，两兄弟一度想放弃——1993年Armand获奖后重燃信念，联合发起HORAL（传统兰比克高级理事会）推广贵兹，期间从Boon、Girardin、Lindemans采购麦汁。1998年，他做出关键决定：不再只做混酿坊，开始自己酿造兰比克。",
+    "disaster": "2009年5月，一场温控事故导致酒厂大量瓶装贵兹因二次发酵爆瓶、几乎拖垮Armand。在助理酿酒师Michaël Blancquaert等人帮助下，酒厂于2012年恢复酿造，涅槃重生。",
+    "today": "如今3 Fonteinen是比利时最后一批传统兰比克酿造者与贵兹混酿大师之一：原料来自Pajot地区有机农场Dubbeldoel的本地大麦小麦（酒糟回喂奶牛），兰比克用Gerda Legrand手工编织的篮子滤酒，2019年赠送给周边家庭120棵樱桃树、收获时收购果实，桃子来自Hageland果园。Vintage系列的酒标采用画家Felix De Boeck的作品；还与比利时说唱歌手Zwangere Guy推出过葡萄兰比克。"
+  },
+  "specialty": {
+    "primary": "传统兰比克、贵兹混酿、克里克与水果兰比克",
+    "styles": ["Lambic", "Gueuze", "Kriek", "Fruit Lambic (plum/grape/raspberry/blackberry)"],
+    "philosophy": "坚持100%自然发酵（coolship开放式冷却承接Pajottenland空气中约85种野生微生物），从酿造到装瓶沿用传统工艺，橡木桶中陈化至少三年形成复杂风味——风土、手工与本地社区是全部信条。"
+  },
+  "awards": [
+    "比利时'活文化遗产企业'认证",
+    "UNTAPPD比利时酒厂排名TOP15",
+    "UNTAPPD贵兹风格全球TOP50榜单占25席",
+    "国际啤酒挑战赛（International Beer Challenge）金奖",
+    "UNTAPPD全球Micro Brewery级酒厂排名TOP20"
+  ],
+  "notable_beers": [
+    "Oude Geuze Cuvée Armand & Gaston - 老贵兹（纪念Armand的父亲Gaston），混酿1-2-3年兰比克",
+    "Oude Geuze - 经典老贵兹",
+    "Oude Kriek - 老克里克：整颗酸樱桃在年轻兰比克中浸渍",
+    "Vintage系列 - 年份贵兹，Felix De Boeck画作战标",
+    "葡萄/李子/覆盆子/黑莓浸渍兰比克 - 当代实验线",
+    "Zwangere Guy葡萄兰比克 - 与比利时说唱歌手合酿"
+  ],
+  "sources": [
+    "https://www.3fonteinen.be/",
+    "https://www.visitvlaamsbrabant.be/zien-en-doen/vind-iets-om-te-doen/3-fonteinen",
+    "https://objectivefoodie.com/2023/12/25/visiting-cantillon-and-3-fonteinen-the-best-lambic-producers/",
+    "https://bierothek.de/brauereien/brouwerij-3-fonteinen",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，比利时活文化遗产，百年兰比克酒厂"
+  }
+}

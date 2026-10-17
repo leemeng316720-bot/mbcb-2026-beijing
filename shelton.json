@@ -1,0 +1,59 @@
+{
+  "brewery_id": "shelton",
+  "name": {
+    "english": "Shelton Brewing",
+    "chinese": "谢尔顿"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "德克萨斯州",
+    "state_en": "Texas",
+    "city": "Beaumont（现阶段酿造地），长期计划在休斯顿设立酒厂",
+    "city_en": "Beaumont, TX (brewing facility); Houston location planned"
+  },
+  "founded": "2025年3月正式运营",
+  "founded_en": "Launched March 2025",
+  "founder": {
+    "name": "Chris Shelton",
+    "name_zh": "克里斯·谢尔顿",
+    "name_origin": "酒厂名称来自创始人Chris Shelton的姓氏",
+    "background": "拥有超过20年职业精酿酿造经验。曾任职于爱荷华州击倒巨人(Toppling Goliath)酿酒厂（Pseudo Sue时代之前），此后在韩国首尔The Booth Brewing等海外酒厂工作，2020-2023年担任休斯顿全食超市(Whole Foods Market) Post Oak门店酿酒厂的首席酿酒师。2025年创立Shelton Brewing。"
+  },
+  "history": {
+    "whole_foods_era": "2020-2023年，Chris Shelton执掌休斯顿全食超市酿酒厂，期间发布50余款酒花啤酒，Untappd综合均分高达4.40，让休斯顿本地爱好者在家门口就能喝到极度饱和酒花风格的作品。他的Gotta Have My Hops浑浊双倍IPA被Hop Culture杂志评为'2023年我们喝到的最佳啤酒'之一（全榜单仅23款，其中酒花/浑浊类仅3款）。",
+    "shelton_launch": "Chris花了2024年大部分时间筹划下一步，2025年春天Shelton Brewing正式亮相（3月开始运营），目前借用德州Beaumont的酿造设施生产，并规划在休斯顿建立自己的酒厂。",
+    "hopzy_concept": "Chris将自己的高酒花饱和度浑浊/酒花类作品称为'Hopzy Ales'。Shelton的酒款在二级市场（trade market）上常年是最抢手的一类，在欧洲和亚洲也有大量拥趸。",
+    "rise": "凭借Whole Foods时期积累的口碑和开业即4.3+的均分，Shelton Brewing在数月内冲上Untappd全球Micro Brewery（微型酒厂）排名前列。"
+  },
+  "specialty": {
+    "primary": "高饱和度浑浊IPA/酒花型啤酒（'Hopzy Ales'），兼顾传统皮尔森",
+    "styles": ["Hazy IPA", "Double Hazy IPA", "Triple Hazy IPA", "Pilsner", "Hazy Pale Ale"],
+    "philosophy": "极致酒花饱和度与新鲜度表达，大量使用新西兰（Nectaron、Nelson Sauvin、Riwaka）与美国顶级酒花，部分酒款每桶投放20磅以上酒花"
+  },
+  "awards": [
+    "UNTAPPD全球Micro Brewery（微型酒厂）排名TOP1",
+    "Hop Culture 2025年度最佳新酒厂之一（The Best 9）",
+    "VinePair 2025年度26家最佳新酒厂之一（The 26 Best New Breweries of 2025）",
+    "UNTAPPD首届社区奖德克萨斯州浑浊IPA单/双/三倍三个类别金奖（Chris Shelton旗下酒款）",
+    "Whole Foods时期的Gotta Have My Hops被Hop Culture评为'2023年我们喝到的最佳啤酒'之一"
+  ],
+  "notable_beers": [
+    "We'll Carry On - 三倍浑浊IPA，与Lyric Brewing、BreakThru Brewing合酿，10.25% ABV，UNTAPPD 4.61",
+    "Jabber Time - 浑浊IPA，UNTAPPD 4.5（249评）",
+    "Econ Don - 浑浊IPA，Simcoe+Nectaron酒花配Motueka酒花kief，6.8% ABV，UNTAPPD 4.3（352评）",
+    "Defiant - 传统皮尔森，5.4% ABV，UNTAPPD 4.26",
+    "What the Klaus? - 双倍级'Hopzy Ale'，每桶投放20磅以上酒花（Citra、Citra Cryo、Nelson、Nectaron），8.0% ABV"
+  ],
+  "sources": [
+    "https://vinepair.com/articles/best-new-breweries-2025/",
+    "https://larrykoestler.substack.com/p/my-favorite-beers-i-had-for-the-first",
+    "https://www.reddit.com/r/HoustonBeer/comments/1geakzn/whatever_happened_to_chris_shelton_of_whole_foods/",
+    "https://untappd.com/SheltonBrewing/beer",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，UNTAPPD全球微型酒厂排名TOP1，首次中国亮相"
+  }
+}

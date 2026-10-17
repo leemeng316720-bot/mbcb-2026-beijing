@@ -1,0 +1,58 @@
+{
+  "brewery_id": "engkanto",
+  "name": {
+    "english": "Engkanto Brewery",
+    "chinese": "菲常童话"
+  },
+  "location": {
+    "country": "菲律宾",
+    "country_en": "Philippines",
+    "city": "Carmona, Cavite（甲米地省卡尔莫纳，2018年自Makati迁入）；Makati Poblacion有Polilya taproom",
+    "city_en": "Carmona, Cavite / Makati"
+  },
+  "founded": "2017年",
+  "founded_en": "2017",
+  "founder": {
+    "name": "Ian Paradies",
+    "name_zh": "伊恩·帕拉迪斯",
+    "head_brewer": "Josh Karten（创始酿酒师）；2021年起Michael “MJ” Jordan",
+    "name_origin": "Engkanto是菲律宾民间传说中的自然精灵——以此表达啤酒带来的变化与想象力。"
+  },
+  "history": {
+    "founding": "Ian Paradies发现'菲律宾人在啤酒上被亏待了'，决心酿造更好的精酿。2017年与酿酒师Josh Karten在Makati开设微酒厂，原始产品线：拉格、金色艾尔、淡色艾尔、IPA、双倍IPA。同期开出的Polilya酒吧（Tagalog语'飞蛾'）成为酒厂的试验厨房。",
+    "expansion": "2018年迁至甲米地省Carmona的更大厂房。2021年，知名酿酒师Michael 'MJ' Jordan接棒，重新设计产品：更 approachable、更令人兴奋、更强调合酿，融入蜂蜜、芒果、紫薯（ube）等本土风味。",
+    "global": "如今是'菲律宾获奖最多的精酿酒厂'：产品出口美国、澳大利亚、阿联酋、新加坡、中国香港、泰国、中国台湾。2024年世界啤酒大奖（WBA）蜂蜜与枫糖浆增味组'世界最佳啤酒'（High Hive Honey Ale）——该奖项2007年设立以来首获此荣誉的菲律宾精酿。"
+  },
+  "specialty": {
+    "primary": "本土风味精酿：蜂蜜艾尔、紫薯拉格、芒果浑浊IPA、双倍IPA",
+    "styles": ["Lager", "Honey Ale", "Hazy IPA", "Double IPA", "Ube Lager", "Wheat Ale"],
+    "philosophy": "用本土原料（本地蜂蜜、芒果、紫薯）重新定义菲律宾啤酒；与当地农民合作，做'更适合本地味蕾'的精酿。"
+  },
+  "awards": [
+    "World Beer Awards 2024『世界最佳蜂蜜与枫糖浆增味啤酒』——High Hive Honey Ale（菲律宾精酿史上首次）",
+    "WBA 2024六项奖项",
+    "UNTAPPD菲律宾酒厂排名TOP3",
+    "UNTAPPD2025社区奖1金",
+    "Asia Beer Championship等赛事获奖",
+    "'菲律宾获奖最多的精酿酒厂'"
+  ],
+  "notable_beers": [
+    "High Hive Honey Ale - 5.1%，纯本地蜂蜜酿造，WBA 2024世界最佳增味蜂蜜啤酒，官方推荐搭配kare-kare炖菜",
+    "Live It Up Lager - 旗舰拉格，'新世界'酒花带来热带风味",
+    "Paint Me Purple Ube Lager - 紫薯拉格",
+    "Mango Nation Hazy IPA - 芒果浑浊IPA",
+    "Green Lava Double IPA - 双倍IPA",
+    "Nutty & Nice Choco Nut Stout / Dew Drop Dalandan Wheat Ale - 限量款"
+  ],
+  "sources": [
+    "https://engkanto.com.ph/pages/our-engkanto-story",
+    "https://philstarlife.com/100list/414343-engkanto-brewery",
+    "https://www.kollectivehustle.com/blog/filam-owned-engkanto-brewery-is-proof-that-filipino-craft-beer-is-the-real-deal",
+    "https://kubo.com.ph/spirits-of-the-glass-in-the-philippines-10-locally-made-liquor-to-try/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，UNTAPPD菲律宾前三酒厂，首次中国亮相"
+  }
+}

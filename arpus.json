@@ -1,0 +1,57 @@
+{
+  "brewery_id": "arpus",
+  "name": {
+    "english": "Ārpus Brewing Co.",
+    "chinese": "盒子思维"
+  },
+  "location": {
+    "country": "拉脱维亚",
+    "country_en": "Latvia",
+    "city": "Stapriņi, Ādažu novads（里加近郊，初址Eimuri村）",
+    "city_en": "Stapriņi near Riga",
+    "address": "20百升糖化系统，20/40百升发酵罐；440毫升罐装+KeyKeg，冷库保鲜"
+  },
+  "founded": "2017年（2019年迁入自有酒厂）",
+  "founder_en": "Founded 2017 by Latvian craft beer geeks; own facility 2019",
+  "founder": {
+    "name": "Girts Tihomirovs 等拉脱维亚精酿爱好者（联合创始人）",
+    "name_zh": "Girts Tihomirovs 等",
+    "name_origin": "Ārpus是拉脱维亚语'外面/之外'——寓意'跳出框架、超越大众拉格'，为敢于走出舒适区的人酿造风味与香气 overwhelming 的酒。"
+  },
+  "history": {
+    "founding": "2017年由一群拉脱维亚精酿极客与家酿爱好者创立，目标是酿造多汁酒花艾尔、水果酸啤与 bold 帝国世涛。2019年在里加附近的Eimuri村建成自有酒厂（10hl起步，后扩为20hl系统）。",
+    "rise": "凭借浓郁风味与饱满口感迅速成为波罗的海地区最受瞩目的新星，被UNTAPPD用户投为波罗的海国家第一酒厂；总打卡量突破95万。",
+    "collabs": "与澳洲Badlands合酿四倍干投QIPA（Cryo Mosaic、Cryo Citra、Riwaka、Nelson Sauvin），与爱沙尼亚Põhjala合酿Sunrise Over Tallinn，与瑞典Duckpond合酿Tropical Darkness等——国际合酿网络横跨欧洲。",
+    "plans": "规划桶陈帝国世涛与野菌发酵项目。"
+  },
+  "specialty": {
+    "primary": "现代酒花艾尔（双倍/三倍干投）、水果酸啤、帝国世涛",
+    "styles": ["DDH IPA", "TDH DIPA", "Fruited Sour", "Gose", "Imperial Stout", "QIPA"],
+    "philosophy": "浓郁风味与饱满口感，'为敢于走出舒适区的人酿酒'。"
+  },
+  "awards": [
+    "UNTAPPD拉脱维亚酒厂排名TOP1（波罗的海国家第一）",
+    "UNTAPPD2025社区奖13金12银8铜，拉脱维亚第一",
+    "包揽UNTAPPD拉脱维亚TOP50榜单",
+    "UNTAPPD总打卡量95万+"
+  ],
+  "notable_beers": [
+    "DDH Galaxy / DDH Vic Secret - 双倍干投IPA 6.5%",
+    "TDH Australia - 三倍干投双倍IPA：100%澳洲酒花（Galaxy、Enigma、Vic Secret）",
+    "Triple Berry Gose - 6.8%，粉红喜马拉雅盐+黑加仑+树莓+黑莓",
+    "Triple Fruit Sour - 6.5%",
+    "Ārpus × Badlands QDH QIPA - 与Badlands合酿，11%（Cryo Mosaic、Cryo Citra、Riwaka、Nelson Sauvin）",
+    "Sunrise Over Tallinn - 与Põhjala合酿DIPA"
+  ],
+  "sources": [
+    "https://lvbev.com/brand/arpus/",
+    "https://www.idiots.beer/arpus-latvias-new-wave/",
+    "https://untappd.com/ArpusBrewing",
+    "https://www.drikkeriget.dk/drik-251119-arpus/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，UNTAPPD拉脱维亚第一酒厂"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "brewery_id": "ology",
+  "name": {
+    "english": "Ology Brewing Co.",
+    "chinese": "奥乐极"
+  },
+  "location": {
+    "country": "美国",
+    "country_en": "USA",
+    "state": "佛罗里达州",
+    "state_en": "Florida",
+    "city": "Tallahassee（塔拉哈西）Midtown，6th Avenue",
+    "city_en": "Tallahassee, FL",
+    "address": "塔拉哈西3家taproom+坦帕1家；产品遍布全州货架"
+  },
+  "founded": "2017年6月",
+  "founder_en": "June 2017",
+  "founder": {
+    "name": "Nick Walker（与好友 Paul Woodward, Brian Clark, David Arendt）",
+    "name_zh": "尼克·沃克 等四位所有人",
+    "name_origin": "Ology意为'一门学问/学科'——致敬Nick的科研世家：祖父Lloyd Beidler是佛罗里达州立大学心理生物学系著名学者（味觉科学先驱，发现了神秘果改变味觉的现象，1962年西雅图世博会科学协调人）；父亲Jim Walker研究嗅觉（气味如何影响心理）。酒款名常见理化与生物学梗。",
+    "background": "Nick Walker FSU生物学学士（2011）+护理学学士（2012），做过医院护士；家酿多年后与好友于2017年6月开厂。"
+  },
+  "history": {
+    "founding": "'Ology的历史其实是遗传的'——成长于科研家庭的Nick把实验室换成发酵罐：用科学方法研究每一个微小工艺变化如何创造新饮品。",
+    "science": "'我们每次接触那杯酒，都能影响最终结果——这就是好玩的地方，有点魔法。'从浑浊IPA到桶陈世涛、拉格、水果酸啤再到自酿朗姆与波本，Ology把传统酿造与新技术结合。",
+    "today": "八周年（2025年）时在WeFunder发起众筹回馈塔拉哈西社区——'当年也是在厨房餐桌和吧台上由亲友凑钱起步的'；两次获Tallahassee Magazine『最佳精酿酒厂』读者票选。"
+  },
+  "specialty": {
+    "primary": "浑浊IPA、柏林酸小麦（Juice Lab水果系列）、实验世涛与拉格，兼产烈酒与咖啡",
+    "styles": ["Hazy IPA", "Session IPA", "Fruited Berliner Weisse", "Altbier", "Pale Ale", "Barrel-Aged Stout"],
+    "philosophy": "酿造科学：把科学方法论带进每一品脱——质疑、假设、实验、迭代；'追求不同的、未被发现的、无与伦比的'。"
+  },
+  "awards": [
+    "BeerAdvocate『全美50家最佳新酒厂』（2018）",
+    "Best Florida Beer最佳酸啤酒金奖",
+    "UNTAPPD2025社区奖1银1铜",
+    "两次Tallahassee Magazine『最佳精酿酒厂』"
+  ],
+  "notable_beers": [
+    "Sensory Overload - 新英格兰IPA，开业签名款（'感官超载'呼应家族研究）",
+    "Tesla's Pigeon - 社交型IPA",
+    "Juice Lab系列 - 水果柏林酸小麦",
+    "Good Idea Altbier / P-Value Pale Ale - 科学梗传统风格",
+    "Ology Pilz - 皮尔森"
+  ],
+  "sources": [
+    "https://ologybrewing.com/about/",
+    "https://www.beeradvocate.com/mag/17226/50-of-the-best-new-breweries/",
+    "https://flamingomag.com/2024/04/15/ology-brewing-co/",
+    "https://www.tallahassee.com/story/entertainment/restaurants/2025/06/20/suggested-headline-ology-launches-crowdfunding-project-amid-8th-anniversary-partyby-danny-aller-mat/84241758007/",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，出身科研世家的先锋酒厂"
+  }
+}

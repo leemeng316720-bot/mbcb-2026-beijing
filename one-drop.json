@@ -1,0 +1,65 @@
+{
+  "brewery_id": "one-drop",
+  "name": {
+    "english": "One Drop Brewing Co.",
+    "chinese": "一滴"
+  },
+  "location": {
+    "country": "澳大利亚",
+    "country_en": "Australia",
+    "state": "新南威尔士州",
+    "state_en": "New South Wales",
+    "city": "Botany, Sydney（悉尼 botany 区）",
+    "city_en": "Botany, Sydney",
+    "address": "旧造纸仓库改造，Botany是悉尼邮编2019的港口郊区——酒厂2019年开业，与邮编同数字"
+  },
+  "founded": "2016年中开始筹备，2019年1月开业",
+  "founded_en": "Planning began mid-2016, opened January 2019",
+  "founder": {
+    "name": "Meg Barbic & Clay Grant（夫妻）",
+    "name_zh": "梅格·巴比奇 & 克莱·格兰特",
+    "brewer": "Nick Calder-Scholes（尼克·考尔德-斯科尔斯，首席酿酒师）",
+    "name_origin": "One Drop得名于雷鬼音乐的标志性'One Drop'节奏（Bob Marley推广的节拍：预期的第一拍被'滴落'省略）。Clay是个'永远的雷鬼狂热者'；更深的含义是水滴入水的涟漪效应——'这就是我们的品牌含义：触及家庭、社区，一种涟漪效应。'"
+  },
+  "history": {
+    "background": "Meg Barbic在Botany出生长大，后创立软件科技公司；Clay Grant是新西兰人，来自Masterton小镇，原本为父亲做电力线路工作。2015年Clay转行做餐饮，为悉尼酒厂（如Batch Brewing）上门烤全猪烤全羊，由此发现'酒厂是什么、怎么运作'，回家对Meg说：'我有个主意，我们可以在Botany做这件事。'",
+    "sell_house": "没人愿意给这对从未酿过酒的夫妻投资，唯一的办法是卖掉房子——他们2017年中卖掉了家，带着三个年幼的孩子去克罗地亚（Meg父母的故乡）旅行。",
+    "meet_nick": "回程前两天，Clay在萨格勒布参观The Garden酒厂，意外发现酿酒师Nick Calder-Scholes也是新西兰人（曾在伦敦Fourpure酿酒）。Clay对Meg说：'太好了！我遇到了我们的首席酿酒师，他只是还不知道而已。'签完15年仓库租约后Clay发消息邀请Nick，六周后（2018年1月）Nick回复'感兴趣，聊聊吧'，2018年9月正式加入。",
+    "zoning_crisis": "开业前联邦ZF将建筑所在区域划为'仅限港口用途'，酒厂差点胎死腹中，Nick和Meg紧急申诉后获得特批。",
+    "opening": "2019年1月第一个周末开业——'2019'恰好也是Botany的邮编。他们是Botany现代精酿时代第一家酒厂。开业头三个月就拿下三枚AIBA金奖（含Botany Bay Lager与XPA）。",
+    "covid_pivot": "2020年COVID封锁差点压垮这家一岁大的酒厂。Clay回忆：'我们当时想，管他呢，做点疯狂的东西吧。'他们酿了一款双倍香草奶油氮气煎饼奶昔IPA，意外引爆网络销售，从此一发不可收，被迫（也乐于）走上厚 smoothie 酸啤之路。",
+    "rise": "凭借每升420克水果的厚果泥酸啤、高酒精冰沙等'受控的混乱'，One Drop成为澳大利亚厚果泥/甜品酸啤的公认先锋，五年内推出300多款酒，并在GABS澳洲精酿 hottest 100中拿下酸啤首个前十名次。日本是其最老的出口市场。"
+  },
+  "specialty": {
+    "primary": "厚 smoothie/甜品酸啤（果泥之王）、浑浊IPA、水 profile 复刻拉格",
+    "styles": ["Smoothie/Pastry Sour", "Hazy IPA", "XPA", "Lager", "Slushie Beer", "Pastry Stout"],
+    "philosophy": "Clay和Meg负责天马行空的创意概念（Meg甚至想要一款灰色的'混凝土'啤酒），首席酿酒师Nick（自称'会把一切组装起来让它成立'的大厨型酿酒师）负责执行。水果用量最高达420克/升。拉格系列会把水处理成中性后按世界名产地的矿物 profile 重建——巴塞罗那河流 profile 做西班牙拉格、捷克/意大利/牙买加（'Wah Gwan'）同理。Meg爱酸啤，Clay爱酒花，风格互补。"
+  },
+  "awards": [
+    "2019年AIBA澳洲国际啤酒大奖开业首三个月三枚金奖",
+    "UNTAPPD澳大利亚水果酸艾尔风格TOP50榜单占26席",
+    "UNTAPPD澳大利亚甜品酸艾尔风格TOP50榜单占49席",
+    "UNTAPPD2025社区奖6金7银6铜，奖牌总数澳大利亚地区TOP1",
+    "GABS Hottest 100澳洲精酿榜——首个进入前十的酸啤"
+  ],
+  "notable_beers": [
+    "Botany Bay Lager - 旗舰拉格，开业数月即获AIBA金奖，'人民的啤酒'",
+    "WE FLY* - smoothie酸啤，UNTAPPD 4.3（419评）",
+    "LIQUID CHOCOLATE CREME - 液体巧克力奶油smoothie酸啤，UNTAPPD 4.4（291评）",
+    "RASPBERRY + CREAM DOUBLE TAKE* - 树莓奶油smoothie酸啤，UNTAPPD 4.4（109评）",
+    "XPA - 2019年AIBA金奖，4.3% ABV",
+    "Pressure Drop Smoothie Sour - smoothie酸啤，UNTAPPD 4.2（337评）"
+  ],
+  "sources": [
+    "https://www.japanbeertimes.com/2024/10/one-drop/",
+    "https://brewsnews.com.au/a-brewery-for-botany/",
+    "https://craftypint.com/news/3348/one-drop-five-years-in-five-beers",
+    "https://craftypint.com/brewery/482/one-drop-brewing-co",
+    "https://untappd.com/OneDropBrewingCo/beer",
+    "MBCB官方公众号文章（酒厂揭秘系列）"
+  ],
+  "mbcb_appearance": {
+    "year": "2026",
+    "description": "首次亮相MBCB，澳大利亚果泥之王"
+  }
+}
